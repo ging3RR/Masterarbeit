@@ -1,12 +1,11 @@
+source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/Aussortieren.R")
 
 #read in data
-Arbeitszeit_files <- list.files(path = "E:/R Projects/Daten_MA/grs/1930_022",
-                             pattern = ".txt") #get all file names
 
 
-pathArbeitszeit <- "E:/R Projects/Daten_MA/grs/1930_022" # create an object with the path
+pathArbeitszeit <- "E:/R Projects/Daten_MA/Masterarbeit/data/grs" # create an object with the path
 
-Arbeitszeit_files <- str_c(pathArbeitszeit, Arbeitszeit_files, sep = "/") # string together the path and the file name
+Arbeitszeit_files <- str_c(pathArbeitszeit, Arbeitszeit, sep = "/") # string together the path and the file name
 
 
 #import and pre cleaning
@@ -58,7 +57,7 @@ textplot_wordcloud(my_dfm, min_count = 20, random_order = FALSE, rotation = 0.25
 
 # topic models
 
-my_dfm_trim <- dfm_trim(my_dfm, min_termfreq = 20)
+my_dfm_trim <- dfm_trim(my_dfm, min_termfreq = 100)
 
 set.seed(100)
 if (require("stm")) {

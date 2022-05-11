@@ -5,8 +5,6 @@ library(stringr)
 library(dplyr)
 library(quanteda)
 library(readtext)
-#set wd
-setwd("E:/R Projects/Daten_MA/grs")
 
 
 #1930----
