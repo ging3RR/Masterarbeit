@@ -76,6 +76,6 @@ my_dtm <- convert(my_dfm_trim, to = "topicmodels") #convert to topicmodels forma
 
 set.seed(100)
 lda_topicmodel <- topicmodels::LDA(my_dtm, method = "VEM", k = 10 )
-terms(lda_topicmodel, 10)
+Topics_VEM_10 <- terms(lda_topicmodel, 20)
 
-lda_topicmodel
+Topics_VEM_10[, 10]
