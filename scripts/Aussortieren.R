@@ -1,10 +1,7 @@
 ## This script will find all Txt's with the word Arbeitszeit in it
 #packages
 
-library(stringr)
-library(dplyr)
-library(quanteda)
-library(readtext)
+source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
 
 
 #1930----
