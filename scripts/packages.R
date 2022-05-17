@@ -10,3 +10,8 @@ library(readtext)
 library(topicmodels)
 library(ldaPrototype)
 library(tosca)
+
+
+#Arbeitgeber
+library(xml2)
+library(XML)
