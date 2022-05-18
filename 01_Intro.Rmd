@@ -2,7 +2,22 @@
 title: "01_Intro"
 author: "Lukas Jakob"
 date: '2022-05-09'
-output: html_document
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    
+fontsize: 12pt
+geometry: margin = 1.2in
+
+header-includes:
+- \usepackage{placeins}
+- \usepackage{setspace}
+- \usepackage{chngcntr}
+- \onehalfspacing
+- \counterwithin{figure}{section}
+- \counterwithin{table}{section}
+
 ---
 
 ```{r setup, include=FALSE}
@@ -10,3 +25,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
+#Titel 1
+
+Hello World
+
+
+#Titel 2
