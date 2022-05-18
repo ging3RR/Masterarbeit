@@ -10,6 +10,7 @@ library(readtext)
 library(topicmodels)
 library(ldaPrototype)
 library(tosca)
+library(ggplot2)
 
 
 #Arbeitgeber
