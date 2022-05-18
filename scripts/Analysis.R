@@ -2,7 +2,9 @@
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/Aussortieren.R")
 
-#read in data----
+#preprocessing / not needed anymore----
+
+#read in data
 
 
 pathArbeitszeit <- "E:/R Projects/Daten_MA/Masterarbeit/data/grs" # create an object with the path
@@ -33,6 +35,24 @@ TextArbeitszeit$text <- str_replace_all(TextArbeitszeit$text, fixed("GEWERKSCHAF
 
 TextArbeitszeit$text <- gsub(pattern = "\\¬ \\s+", replacement = "", x = TextArbeitszeit$text) # remove all the whitespaces, words separated by - can now be tokenized as one word
 
+#create the textmeta
+
+TextArbeitszeit$date <- str_extract(string = TextArbeitszeit$doc_id, pattern = "[1][9][0-9][0-9]") # find the 4 number pattern with 1 in as first number = year
+
+TextArbeitszeit$date <- as.numeric(TextArbeitszeit$date)
+
+TextArbeitszeit$id <- str_extract(string = TextArbeitszeit$doc_id, pattern = "[0][0-9][0-9][0-9]")# find the 4 number pattern with 0 in as first number = Id
+
+TextArbeitszeit$id <- as.numeric(TextArbeitszeit$id)
+#save(TextArbeitszeit, file = "TextArbeitszeit.rda") #only run once to save the data
+
+#read the rdata files----
+
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/TextArbeitszeit.rda")
+
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitszeit_docs.rda")
+
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitszeit_vocab.rda")
 
 #create a corpus----
 my_corpus <- corpus(TextArbeitszeit)
@@ -47,11 +67,24 @@ my_corpus_token <- tokens(my_corpus, remove_punct = T)
 
 my_dfm <- dfm(my_corpus_token)
 
-my_dfm <- dfm_remove(my_dfm, stopwords("de"), min_nchar = 4) #take out stopwords
+my_dfm <- dfm_remove(my_dfm, stopwords("de"), min_nchar = 5) #take out stopwords
 
 topfeatures(my_dfm, 50) 
 
 my_dfm_trim <- dfm_trim(my_dfm, min_termfreq = 100)
+
+#statistics with corpus meta data----
+
+tokenInfo <- summary(object = my_corpus, n = 2000, showmeta = T) # save the summary in an object
+
+
+token_Info2<- tokenInfo %>% group_by(date) %>% summarise(freq = n()) #group by year and count the texts per year
+ 
+
+ggplot(data=token_Info2, aes(x = date, y = freq, group = 1)) + geom_line() + geom_point() +
+  scale_x_continuous(labels = c(seq(1930, 1970, 5)), breaks = seq(1930, 1970, 5)) +
+  theme_bw()
+
 
 #wordcloud----
 
@@ -60,7 +93,7 @@ library("quanteda.textplots")
 textplot_wordcloud(my_dfm, min_count = 20, random_order = FALSE, rotation = 0.25,
                    color = RColorBrewer::brewer.pal(8, "Dark2"))
 
-# topic models-----
+#topic models-----
 
 my_dfm_trim <- dfm_trim(my_dfm, min_termfreq = 100)
 
@@ -87,20 +120,11 @@ Topics_VEM_10[, 10]
 
 #create an LDA package ready corpus 
 
-#create the textmeta that is needed for the textmeta() function
-
-TextArbeitszeit$date <- str_extract(string = TextArbeitszeit$doc_id, pattern = "[1][9][0-9][0-9]") # find the 4 number pattern with 1 in as first number = year
-
-TextArbeitszeit$id <- str_extract(string = TextArbeitszeit$doc_id, pattern = "[0][0-9][0-9][0-9]")# find the 4 number pattern with 0 in as first number = Id
-
 yrs <- TextArbeitszeit$date
 yrs <- lubridate::ymd(yrs, truncated = 2L) #R cannot make a date variable with only a year, so make a dummy year variable
 #source https://stackoverflow.com/questions/30255833/convert-four-digit-year-values-to-class-date
 
 TextArbeitszeit$date <- yrs
-
-TextArbeitszeit$names <- 1:length(TextArbeitszeit$doc_id)# create a names variable to prevent error:
-#Error in LDARep Assertion on 'docs' failed: Must have names
 
 # make the tosca corpus
 
@@ -108,13 +132,19 @@ corpus_tosca <- textmeta(meta = as.meta(x = TextArbeitszeit, cols = colnames(Tex
                                       dateCol = "date", titleCol = "doc_id"),
                        text = TextArbeitszeit$text)
 
+
 tosca_corpus <- cleanTexts(corpus_tosca)
 
 wordlist <- makeWordlist(tosca_corpus$text)
 
+
+
 Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, reduce = T)
 
-names(Corpus_Prototype)s
+#save(Corpus_Prototype, file = "Arbeitszeit_docs.rda") only run this once to save the files
+#save(wordlist, file = "Arbeitszeit_vocab.rda") 
+
+names(Corpus_Prototype)
 
 
 #use the LDAPrototpye function
