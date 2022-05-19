@@ -154,8 +154,13 @@ Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, re
 #use the LDAPrototpye function
 names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
 
-LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,vocabMerge = wordlist$words,
-                              n = 10, seeds = 1:5, k = 10)
+LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
+                              n = 10, seeds = 1:10, id = "first_try", K = 15)
 
 
+Prototype_LDA <- getPrototype(LDA_Prototype)
 
+
+tosca::topWords(getTopics(getLDA(LDA_Prototype)), 5)
+
+plotTopic(object = corpus_tosca, ldaresult = getLDA(LDA_Prototype), ldaID = getID(LDA_Prototype))
