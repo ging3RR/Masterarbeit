@@ -33,6 +33,10 @@ TextArbeitszeit$text <- str_replace_all(TextArbeitszeit$text, fixed(">"), "?") #
 
 TextArbeitszeit$text <- str_replace_all(TextArbeitszeit$text, fixed("GEWERKSCHAFTLICHE  RUNDSCHAU"), "") # remove kopfzeile
 
+TextArbeitszeit$text <- str_replace_all(TextArbeitszeit$text, fixed("¦°chlm"), "") # remove sonderzeichen
+
+TextArbeitszeit$text <- str_replace_all(TextArbeitszeit$text, "[[:punct:]]", "") #remove all punctuation
+
 TextArbeitszeit$text <- gsub(pattern = "\\¬ \\s+", replacement = "", x = TextArbeitszeit$text) # remove all the whitespaces, words separated by - can now be tokenized as one word
 
 #create the textmeta
@@ -133,22 +137,25 @@ corpus_tosca <- textmeta(meta = as.meta(x = TextArbeitszeit, cols = colnames(Tex
                        text = TextArbeitszeit$text)
 
 
-tosca_corpus <- cleanTexts(corpus_tosca)
+#define stopwords  
+sw<- c(tm::stopwords("german"))
+#create clean corpus
+tosca_corpus <- cleanTexts(corpus_tosca, sw = sw)
 
+#make wordlist
 wordlist <- makeWordlist(tosca_corpus$text)
-
-
 
 Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, reduce = T)
 
 #save(Corpus_Prototype, file = "Arbeitszeit_docs.rda") only run this once to save the files
 #save(wordlist, file = "Arbeitszeit_vocab.rda") 
 
-names(Corpus_Prototype)
-
 
 #use the LDAPrototpye function
+names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
 
-LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,vocabMerge = wordlist$words, n = 10, seeds = 1:5)
+LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,vocabMerge = wordlist$words,
+                              n = 10, seeds = 1:5, k = 10)
+
 
 
