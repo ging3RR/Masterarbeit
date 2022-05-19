@@ -132,15 +132,22 @@ TextArbeitszeit$date <- yrs
 
 # make the tosca corpus
 
-corpus_tosca <- textmeta(meta = as.meta(x = TextArbeitszeit, cols = colnames(TextArbeitszeit), idCol = "id",
-                                      dateCol = "date", titleCol = "doc_id"),
+corpus_tosca <- textmeta(meta = as.meta(x = TextArbeitszeit, 
+                                        cols = colnames(TextArbeitszeit), 
+                                        idCol = "id",
+                                      dateCol = "date", 
+                                      titleCol = "doc_id"),
+                         dateFormat = "%Y-%m-%d",
                        text = TextArbeitszeit$text)
 
 
 #define stopwords  
-sw<- c(tm::stopwords("german"))
+sw<- c(tm::stopwords("german"), "dass")
 #create clean corpus
-tosca_corpus <- cleanTexts(corpus_tosca, sw = sw)
+tosca_corpus <- cleanTexts(object = corpus_tosca, sw = sw, ucp = T)
+#somehow the cleanTexts() removes all meta, fill in the meta again
+tosca_corpus$meta <- corpus_tosca$meta
+
 
 #make wordlist
 wordlist <- makeWordlist(tosca_corpus$text)
@@ -158,9 +165,27 @@ LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words
                               n = 10, seeds = 1:10, id = "first_try", K = 15)
 
 
-Prototype_LDA <- getPrototype(LDA_Prototype)
+
+#get the Prototype LDA
+Prototype_LDA <- getLDA(LDA_Prototype)
+#get the topics of the Prototype LDA
+topics_Prototype <- getTopics(Prototype_LDA)
+#see the n top words of the Prototype Topics
+tosca::topWords(topics_Prototype, 5)
 
 
-tosca::topWords(getTopics(getLDA(LDA_Prototype)), 5)
+#trying the same with 30 repetitions --> so far minor differences
+LDA_Prototype_30 <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
+                                 n = 30, seeds = 1:30, id = "first_try", K = 15)
+Prototype_LDA_30 <- getLDA(LDA_Prototype_30)
+topics_Prototype_30 <- getTopics(Prototype_LDA_30)
 
-plotTopic(object = corpus_tosca, ldaresult = getLDA(LDA_Prototype), ldaID = getID(LDA_Prototype))
+tosca::topWords(topics_Prototype_30, 5)
+
+
+clustRes <- clusterTopics(ldaresult = Prototype_LDA, xlab = "Topic", ylab = "Distance")
+clustRes <- clusterTopics(ldaresult = Prototype_LDA_30, xlab = "Topic", ylab = "Distance")
+
+#topics over time 
+plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = getID(LDA_Prototype),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7))
