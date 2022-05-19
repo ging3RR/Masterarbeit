@@ -71,7 +71,7 @@ my_corpus_token <- tokens(my_corpus, remove_punct = T)
 
 my_dfm <- dfm(my_corpus_token)
 
-my_dfm <- dfm_remove(my_dfm, stopwords("de"), min_nchar = 5) #take out stopwords
+my_dfm <- dfm_remove(my_dfm, stopwords("de"), min_nchar = 3) #take out stopwords
 
 topfeatures(my_dfm, 50) 
 
