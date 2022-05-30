@@ -1,6 +1,6 @@
 ##1st step
-#prep----
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
+#prep----
 
 
 Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/all_xml_exports.csv", encoding = "UTF-8")
@@ -46,6 +46,10 @@ write.csv(x = Arbeitgeber_Arbeitszeit_csv, file = "Arbeitgeber_Arbeitszeit.csv",
 ##2nd step
 #prep----
 Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
+#remove all the whitespaces, words separated by - can now be tokenized as one word
+Arbeitgeber_csv$complete_text <- gsub(pattern = "\\-\\s+", 
+                             replacement = "", 
+                             x = Arbeitgeber_csv$complete_text) 
 #create an LDA package ready corpus ----
 
 yrs <- Arbeitgeber_csv$date
@@ -85,9 +89,11 @@ Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, re
 
 #use the LDAPrototpye function
 names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
-
+#use tic toc to measure time
+tic("LDA_Prototype")
 LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
-                              n = 5, seeds = 1:5, id = "first_try", K = 15)
+                              n = 10, seeds = 1:10, id = "first_try", K = 15, progress = TRUE)
+toc()
 
 
 
@@ -98,6 +104,8 @@ topics_Prototype <- getTopics(Prototype_LDA)
 #see the n top words of the Prototype Topics
 tosca::topWords(topics_Prototype, 5)
 
+#cluster the results
+clustRes <- clusterTopics(ldaresult = Prototype_LDA, xlab = "Topic", ylab = "Distance")
 
 #trying the same with 30 repetitions --> so far minor differences
 LDA_Prototype_30 <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
@@ -107,6 +115,12 @@ topics_Prototype_30 <- getTopics(Prototype_LDA_30)
 
 tosca::topWords(topics_Prototype_30, 5)
 
-
-clustRes <- clusterTopics(ldaresult = Prototype_LDA, xlab = "Topic", ylab = "Distance")
 clustRes <- clusterTopics(ldaresult = Prototype_LDA_30, xlab = "Topic", ylab = "Distance")
+
+#topics over time 
+#clean the date variable
+tosca_corpus$meta$date <- as.Date(tosca_corpus$meta$date, "%Y-%m-%d")
+#plot
+plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
+          unit = "year",
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7))
