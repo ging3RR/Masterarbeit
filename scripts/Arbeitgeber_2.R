@@ -1,6 +1,9 @@
-##1st step
+#prep-----
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
-#prep----
+Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
+##1st step Preparation of corpus----
+
+#prep
 
 
 Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/all_xml_exports.csv", encoding = "UTF-8")
@@ -8,7 +11,7 @@ Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/all
 summary(Arbeitgeber_csv)
 Arbeitgeber_csv$text[1]
 
-#create the textmeta----
+#create the textmeta
 
 #rename the text Variable to path to avoid confusion
 Arbeitgeber_csv <- rename(.data = Arbeitgeber_csv, path = text )
@@ -18,7 +21,7 @@ Arbeitgeber_csv$date <- str_extract(string = Arbeitgeber_csv$path, pattern = "[1
 Arbeitgeber_csv$date <- as.numeric(Arbeitgeber_csv$date)
 
 
-#Kwic Analysis of Arbeitszeit----
+#Kwic Analysis of Arbeitszeit
 
 #make a corpus with quanteda
 Arbeitgeber_corpus <- corpus(x = Arbeitgeber_csv, text_field = "complete_text")
@@ -43,13 +46,37 @@ Arbeitgeber_Arbeitszeit_csv <- filter(.data = Arbeitgeber_csv, Arbeitgeber_csv$d
 write.csv(x = Arbeitgeber_Arbeitszeit_csv, file = "Arbeitgeber_Arbeitszeit.csv", fileEncoding = "UTF-8")
 
 
-##2nd step
-#prep----
-Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
+
+
+##2nd step Statistical Overview----
+#create quanteda corpus
+corpus_Arbeitgeber <- corpus(Arbeitgeber_csv, text_field = "complete_text")
+
+#store the Info in an object
+tokenInfo_Arbeitgeber <- summary(object = corpus_Arbeitgeber, n = 2500, showmeta = T)
+
+#group by year and count the texts per year
+token_Info2_Arbeitgeber<- tokenInfo %>% group_by(date) %>% summarise(freq = n()) 
+
+#plot the object
+ggplot(data=token_Info2_Arbeitgeber, aes(x = date, y = freq, group = 1)) + geom_line() + geom_point() +
+  scale_x_continuous(labels = c(seq(1930, 1970, 5)), breaks = seq(1930, 1970, 5)) +
+  theme_bw()
+
+##3rd step LDA----
 #remove all the whitespaces, words separated by - can now be tokenized as one word
 Arbeitgeber_csv$complete_text <- gsub(pattern = "\\-\\s+", 
                              replacement = "", 
                              x = Arbeitgeber_csv$complete_text) 
+Arbeitgeber_csv$complete_text <- gsub(pattern = "\\;\\s+", 
+                                      replacement = "", 
+                                      x = Arbeitgeber_csv$complete_text) 
+Arbeitgeber_csv$complete_text <- gsub(pattern = "\\..\\s+", 
+                                      replacement = "", 
+                                      x = Arbeitgeber_csv$complete_text) 
+Arbeitgeber_csv$complete_text <- gsub(pattern = "\\. .\\s+", 
+                                      replacement = "", 
+                                      x = Arbeitgeber_csv$complete_text) 
 #create an LDA package ready corpus ----
 
 yrs <- Arbeitgeber_csv$date
@@ -124,3 +151,5 @@ tosca_corpus$meta$date <- as.Date(tosca_corpus$meta$date, "%Y-%m-%d")
 plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
           unit = "year",
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7))
+
+
