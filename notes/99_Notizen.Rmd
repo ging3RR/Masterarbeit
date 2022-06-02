@@ -1,0 +1,52 @@
+---
+title: "Notizen"
+author: "Lukas Jakob"
+date: '2022-06-02'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Stichproben Arbeitgeber
+
+Um einen besseren Einblick in das emprirische Material zu erhalten wurde eine Stichprobe von 15 Artikeln gemacht. Diese werden hier händisch kodiert. Die Stichprobe wurden mit `sample.int(n = 2217, size = 15)` gezogen.
+
+
+- 1797  Statistik
+- 209   Vergleich zu Amerika, Arbeitsschutz, verwirrender Text
+- 476   Werbung technisches Produkt
+- 409   Beitrag zum Beschäftigungsgrad, Krieg fordert Arbeitszeitreduktion
+- 1246  Arbeitszeitreduktion --> Ausländische Arbeiter, Vetrag > Gesetz
+- 1505  Werbung Ovomaltine
+- 917   Statistik
+- 155   Beschreibung über einen Job
+- 1122  Hochkonjunktur, mehr ausländische Arbeitskraft, Preis gleich bleiben, keine Arbeitszeitreduktion oder Lohnerhöhungen
+- 591   Schweden Unterrichtsform für Ausbildung geht nicht auf Arbeitszeit
+- 128   Schweiz als Lohninsel, Senkung von Löhnen und Preisen für Anpassung an den Weltmarkt
+- 474   Werbung technisches Produkt
+- 1513  Statistik
+- 37    Lohn
+- 1364  Produktivitätssteigerung fraghaft, verfrühte Arbeitszeitreduktion in Verwaltungen
+
+
+## Stichprobe Arbeitnehmer
+
+Auch beim Arbeitnehmer-Korpus wurde eine Stichprobe gezogen. `sample.int(n = 1027, size = 15)`
+
+- 288   Interpretation von Arbeitszeitstatistiken, positive Bilanz
+- 654   Arbeitszeitreduktion und Folgen auf die Kosten
+- 488   Verkürzung der Arbeitszeit Max Weber
+- 690   Wichtigkeit von Arbeitnehmer Organisation für bessere Arbeitsbedingungen
+- 41    Informationen vom Internationalen Gewerkschaftsbund
+- 867   Information zu Kompromiss von Arbeitgeber und Arbeitnehmer --> Arbeitsfriede, Arbeitszeit nur wenn wirtschaftlich möglich
+- 974   Solidarisierung mit ausländischer Arbeiterschaft
+- 693   Internationaler Vergleich, Lohn und Arbeitszeit schlecht
+- 335   Informationen zur internationalen Arbeitskonferenz
+- 211   Internationale Arbeitskonferenz, automatische Tafelglashütten
+- 845   Jugendliche und Arbeitnehmerinnen, Information zu einem Gesetztesentwurf
+- 702   Analyse zu Arbeitszeitentwicklung und Argumenten der Gegner
+- 496   Rationierung von Lebensmitteln pro Arbeit
+- 506   Verkürzung der Arbeitszeit Max Weber
+- 187   Informationen vom Internationalen Gewerkschaftsbund, Arbeitszeit als wichtiges Thema gegen Arbeitslosigkeit
