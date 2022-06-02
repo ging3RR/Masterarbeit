@@ -374,9 +374,17 @@ pre code {
 <li><a href="#stichproben-arbeitgeber">Stichproben Arbeitgeber</a></li>
 <li><a href="#stichprobe-arbeitnehmer">Stichprobe Arbeitnehmer</a></li>
 <li><a href="#erste-interpretationen">Erste Interpretationen</a></li>
+<li><a href="#lda-topics">LDA Topics</a>
+<ul>
+<li><a href="#arbeitgeber">Arbeitgeber</a></li>
+<li><a href="#arbeitnehmer">Arbeitnehmer</a></li>
+</ul></li>
 </ul>
 </div>
 
+<pre class="r"><code>library(knitr)
+load(file = &quot;E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitgeber.rds&quot;)
+load(file = &quot;E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds&quot;)</code></pre>
 <div id="stichproben-arbeitgeber" class="section level2">
 <h2>Stichproben Arbeitgeber</h2>
 <p>Um einen besseren Einblick in das emprirische Material zu erhalten
@@ -448,6 +456,229 @@ Vergleiche. Bei der Arbeitgeberseite meistens negative Vergleiche (im
 Ausland ist das und das schief gegangen), auf der Arbeitnehmerseite eher
 negative Vergleiche der Schweiz (im Ausland ist es so und so bei uns in
 der Schweiz leider noch so)</p>
+</div>
+<div id="lda-topics" class="section level2">
+<h2>LDA Topics</h2>
+<div id="arbeitgeber" class="section level3">
+<h3>Arbeitgeber</h3>
+<pre class="r"><code>kable(x = Topwords_Arbeitgeber)</code></pre>
+<table>
+<colgroup>
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="9%" />
+<col width="8%" />
+<col width="4%" />
+<col width="7%" />
+<col width="1%" />
+<col width="7%" />
+<col width="4%" />
+<col width="8%" />
+<col width="7%" />
+<col width="4%" />
+<col width="5%" />
+<col width="9%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">arbeit</td>
+<td align="left">de</td>
+<td align="left">fr</td>
+<td align="left">gewerkschaften</td>
+<td align="left">wb</td>
+<td align="left">de</td>
+<td align="left">art</td>
+<td align="left">e</td>
+<td align="left">arbeitszeit</td>
+<td align="left">franken</td>
+<td align="left">quartal</td>
+<td align="left">bundesrat</td>
+<td align="left">dr</td>
+<td align="left">ag</td>
+<td align="left">staaten</td>
+</tr>
+<tr class="even">
+<td align="left">mitarbeiter</td>
+<td align="left">indice</td>
+<td align="left">arbeitnehmer</td>
+<td align="left">streik</td>
+<td align="left">arbeitskräfte</td>
+<td align="left">schweiz</td>
+<td align="left">stunden</td>
+<td align="left">i</td>
+<td align="left">mehr</td>
+<td align="left">mio</td>
+<td align="left">export</td>
+<td align="left">nationalrat</td>
+<td align="left">zürich</td>
+<td align="left">telefon</td>
+<td align="left">krise</td>
+</tr>
+<tr class="odd">
+<td align="left">menschen</td>
+<td align="left">par</td>
+<td align="left">art</td>
+<td align="left">verhandlungen</td>
+<td align="left">ausländischen</td>
+<td align="left">la</td>
+<td align="left">arbeitnehmer</td>
+<td align="left">n</td>
+<td align="left">heute</td>
+<td align="left">rund</td>
+<td align="left">nachfrage</td>
+<td align="left">kommission</td>
+<td align="left">seiten</td>
+<td align="left">tel</td>
+<td align="left">amerikanischen</td>
+</tr>
+<tr class="even">
+<td align="left">betrieb</td>
+<td align="left">quartal</td>
+<td align="left">ferien</td>
+<td align="left">gewerkschaft</td>
+<td align="left">bundesrat</td>
+<td align="left">vt</td>
+<td align="left">arbeitszeit</td>
+<td align="left">a</td>
+<td align="left">schon</td>
+<td align="left">°o</td>
+<td align="left">beschäftigung</td>
+<td align="left">initiative</td>
+<td align="left">verlag</td>
+<td align="left">zürich</td>
+<td align="left">vereinigten</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="left">ouvriers</td>
+<td align="left">arbeiter</td>
+<td align="left">bauund</td>
+<td align="left">öffentlichen</td>
+<td align="left">et</td>
+<td align="left">vorschriften</td>
+<td align="left">d</td>
+<td align="left">sei</td>
+<td align="left">stunden</td>
+<td align="left">rückgang</td>
+<td align="left">stundenwoche</td>
+<td align="left">fr</td>
+<td align="left">grauguss</td>
+<td align="left">europäischen</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="arbeitnehmer" class="section level3">
+<h3>Arbeitnehmer</h3>
+<pre class="r"><code>kable(x = Topwords_Arbeitnehmer)</code></pre>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="9%" />
+<col width="5%" />
+<col width="6%" />
+<col width="6%" />
+<col width="4%" />
+<col width="3%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="4%" />
+<col width="4%" />
+<col width="5%" />
+<col width="6%" />
+<col width="7%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">frauen</td>
+<td align="left">heft</td>
+<td align="left">fr</td>
+<td align="left">arbeitszeit</td>
+<td align="left">arbeitnehmer</td>
+<td align="left">menschen</td>
+<td align="left">evd</td>
+<td align="left">gewerkschaften</td>
+<td align="left">dr</td>
+<td align="left">internationalen</td>
+<td align="left">e</td>
+<td align="left">prozent</td>
+<td align="left">freiheit</td>
+<td align="left">stunden</td>
+<td align="left">automation</td>
+</tr>
+<tr class="even">
+<td align="left">lohn</td>
+<td align="left">weber</td>
+<td align="left">wurde</td>
+<td align="left">mehr</td>
+<td align="left">bestimmungen</td>
+<td align="left">arbeit</td>
+<td align="left">nr</td>
+<td align="left">wurde</td>
+<td align="left">schweizerischen</td>
+<td align="left">konferenz</td>
+<td align="left">kongress</td>
+<td align="left">arbeiter</td>
+<td align="left">regierung</td>
+<td align="left">jugendlichen</td>
+<td align="left">wirtschaft</td>
+</tr>
+<tr class="odd">
+<td align="left">frau</td>
+<td align="left">max</td>
+<td align="left">verband</td>
+<td align="left">arbeiter</td>
+<td align="left">art</td>
+<td align="left">uhr</td>
+<td align="left">eg</td>
+<td align="left">gewerkschaftsbund</td>
+<td align="left">seiten</td>
+<td align="left">uebereinkommen</td>
+<td align="left">t</td>
+<td align="left">zahl</td>
+<td align="left">revolution</td>
+<td align="left">arbeitszeit</td>
+<td align="left">produktion</td>
+</tr>
+<tr class="even">
+<td align="left">familien</td>
+<td align="left">gewerkschaftsbund</td>
+<td align="left">zürich</td>
+<td align="left">heute</td>
+<td align="left">gesetz</td>
+<td align="left">muß</td>
+<td align="left">brb</td>
+<td align="left">initiative</td>
+<td align="left">verfasser</td>
+<td align="left">internationale</td>
+<td align="left">r</td>
+<td align="left">stunden</td>
+<td align="left">demokratie</td>
+<td align="left">ueberstunden</td>
+<td align="left">kaufkraft</td>
+</tr>
+<tr class="odd">
+<td align="left">versicherten</td>
+<td align="left">fr</td>
+<td align="left">verbandes</td>
+<td align="left">immer</td>
+<td align="left">ferien</td>
+<td align="left">pausen</td>
+<td align="left">verfg</td>
+<td align="left">gewerkschaftsbundes</td>
+<td align="left">verlag</td>
+<td align="left">frage</td>
+<td align="left">s</td>
+<td align="left">pro</td>
+<td align="left">politik</td>
+<td align="left">fabriken</td>
+<td align="left">produktivität</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
