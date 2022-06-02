@@ -87,7 +87,7 @@ Arbeitgeber_csv$date <- yrs
 
 # make the tosca corpus
 
-corpus_tosca <- textmeta(meta = as.meta(x = Arbeitgeber_csv, 
+corpus_tosca_Arbeitgeber <- textmeta(meta = as.meta(x = Arbeitgeber_csv, 
                                         cols = colnames(Arbeitgeber_csv), 
                                         idCol = "doc_id",
                                         dateCol = "date", 
@@ -99,56 +99,48 @@ corpus_tosca <- textmeta(meta = as.meta(x = Arbeitgeber_csv,
 #define stopwords  
 sw<- c(tm::stopwords("german"), "dass")
 #create clean corpus
-tosca_corpus <- cleanTexts(object = corpus_tosca, sw = sw, ucp = T)
+tosca_corpus_Arbeitgeber <- cleanTexts(object = corpus_tosca_Arbeitgeber, sw = sw, ucp = T)
 #somehow the cleanTexts() removes all meta, fill in the meta again
-tosca_corpus$meta <- corpus_tosca$meta
+tosca_corpus_Arbeitgeber$meta <- corpus_tosca_Arbeitgeber$meta
 
 
 
 #make wordlist
-wordlist <- makeWordlist(tosca_corpus$text)
+wordlist_Arbeitgeber <- makeWordlist(tosca_corpus_Arbeitgeber$text)
 
-Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, reduce = T)
+Corpus_Prototype_Arbeitgeber <- LDAprep(text = tosca_corpus_Arbeitgeber$text, vocab = wordlist_Arbeitgeber$words, reduce = T)
 
 #save(Corpus_Prototype, file = "Arbeitszeit_docs.rda") only run this once to save the files
 #save(wordlist, file = "Arbeitszeit_vocab.rda") 
 
 
 #use the LDAPrototpye function
-names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
+names(Corpus_Prototype_Arbeitgeber) = paste0("id", seq_along(Corpus_Prototype_Arbeitgeber)) #to name the lists, otherwise the code cannot run
 #use tic toc to measure time
 tic("LDA_Prototype")
-LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
-                              n = 10, seeds = 1:10, id = "first_try", K = 15, progress = TRUE)
+LDA_Prototype_Arbeitgeber <- LDAPrototype(docs = Corpus_Prototype_Arbeitgeber, vocabLDA = wordlist_Arbeitgeber$words,
+                              n = 15, seeds = 1:15, id = "first_try", K = 15, progress = TRUE)
 toc()
 
 
 
 #get the Prototype LDA
-Prototype_LDA <- getLDA(LDA_Prototype)
+Prototype_LDA_Arbeitgeber <- getLDA(LDA_Prototype_Arbeitgeber)
 #get the topics of the Prototype LDA
-topics_Prototype <- getTopics(Prototype_LDA)
+topics_Prototype_Arbeitgeber <- getTopics(Prototype_LDA_Arbeitgeber)
 #see the n top words of the Prototype Topics
-tosca::topWords(topics_Prototype, 5)
+Topwords_Arbeitgeber <- tosca::topWords(topics_Prototype_Arbeitgeber, 5)
 
 #cluster the results
-clustRes <- clusterTopics(ldaresult = Prototype_LDA, xlab = "Topic", ylab = "Distance")
+clustRes_Arbeitgeber <- clusterTopics(ldaresult = Prototype_LDA_Arbeitgeber, xlab = "Topic", ylab = "Distance")
 
-#trying the same with 30 repetitions --> so far minor differences
-LDA_Prototype_30 <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
-                                 n = 30, seeds = 1:30, id = "first_try", K = 15)
-Prototype_LDA_30 <- getLDA(LDA_Prototype_30)
-topics_Prototype_30 <- getTopics(Prototype_LDA_30)
 
-tosca::topWords(topics_Prototype_30, 5)
-
-clustRes <- clusterTopics(ldaresult = Prototype_LDA_30, xlab = "Topic", ylab = "Distance")
 
 #topics over time 
 #clean the date variable
-tosca_corpus$meta$date <- as.Date(tosca_corpus$meta$date, "%Y-%m-%d")
+tosca_corpus_Arbeitgeber$meta$date <- as.Date(tosca_corpus_Arbeitgeber$meta$date, "%Y-%m-%d")
 #plot
-plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
+plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, ldaID = names(Corpus_Prototype_Arbeitgeber),
           unit = "year",
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7))
 
