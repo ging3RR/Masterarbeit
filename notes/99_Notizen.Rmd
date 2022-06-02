@@ -2,7 +2,20 @@
 title: "Notizen"
 author: "Lukas Jakob"
 date: '2022-06-02'
-output: html_document
+output: 
+  html_document:
+    toc: True
+    
+fontsize: 12pt
+geometry: margin = 1.2in #Ränder
+
+header-includes: 
+- \usepackage{placeins} # https://cocky-elion-5880fb.netlify.app/2016/03/30/writing-your-thesis-with-r-markdown-5-the-thesis-layout/
+- \usepackage{setspace}
+- \usepackage{chngcntr}
+- \linespread{1.25}  
+- \counterwithin{figure}{section}
+- \counterwithin{table}{section}
 ---
 
 ```{r setup, include=FALSE}
@@ -50,3 +63,9 @@ Auch beim Arbeitnehmer-Korpus wurde eine Stichprobe gezogen. `sample.int(n = 102
 - 496   Rationierung von Lebensmitteln pro Arbeit
 - 506   Verkürzung der Arbeitszeit Max Weber
 - 187   Informationen vom Internationalen Gewerkschaftsbund, Arbeitszeit als wichtiges Thema gegen Arbeitslosigkeit
+
+## Erste Interpretationen
+
+Die Zeitung der Arbeitnehmer scheint vor allem für politische Informationen gebraucht zu werden. Es scheint auch einige persönliche wie auch wissenschaftliche Analysen zu geben.
+Auf der Arbeitgeberseite gibt es auch unkommentierte Beiträge zur Arbeitszeit (so zum Beispiel die Statistiken). Ein Unterschied zur Arbeitnehmerzeitung ist, dass es in der Arbeitgeberschrift Werbung gibt. Der Anteil an persönlichen und wissenschaftlichen Analysen ist in der Stichprobe höher als bei der Arbeitnehmerzeitung.
+Beide Zeitungen zeigen immer wieder internationale Vergleiche. Bei der Arbeitgeberseite meistens negative Vergleiche (im Ausland ist das und das schief gegangen), auf der Arbeitnehmerseite eher negative Vergleiche der Schweiz (im Ausland ist es so und so bei uns in der Schweiz leider noch so)
