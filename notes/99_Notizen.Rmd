@@ -95,6 +95,7 @@ Auch beim Arbeitnehmer-Korpus wurde eine Stichprobe gezogen. `sample.int(n = 102
 ### 2. Stichprobe
 
 `sample.int(n = 1027, size = 15)`
+
 - 730   Analyse Vollbeschäftigung, Forderung Einbezug von Arbeitnehmenden
 - 242   Statistik zu Erfolg einer Bewegung
 - 846   Analyse Generalstreik, Distanzierung von kommunistischen Beschuldigungen
@@ -129,7 +130,7 @@ Aus Arbeitnehmersicht scheint die Arbeitszeitverkürzung eine ideologische Forde
 
 Im Arbeitnehmerkorpus scheint es je nach Zeit auch eine unterschiedliche Distanzierung zu kommunistischer Haltung zu geben. Während in den Nachkriegsjahren eine Distanz von der kommunistischen Haltung zu sehen ist, ist in der Vorkriegszeit noch keine Distanz zu erkennen. So wird in einem Text zur Jugendarbeit zum Beispielt von "jungen Proletatieren" gesprochen (Text 119). In einem anderen Text (994) wird über die Lösung von ideologischen Ketten in den zwanziger Jahren gesprochen.
 
-Wann wurde das Obligationenrecht revidiiert? --> GAV seit dem Gesetztesähnlich (Quelle Text 994)
+Wann wurde das Obligationenrecht revidiiert? --> GAV seit dem Gesetztesähnlich (Quelle Text 994) --> 1905 Botschaft BR, 1911 Parlamentsbeschluss, 1912 Inkrafttretung
 
 ## LDA Topics
 
