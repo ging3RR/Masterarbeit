@@ -30,6 +30,8 @@ load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds"
 
 ## Stichproben Arbeitgeber
 
+### 1 Stichprobe
+
 Um einen besseren Einblick in das emprirische Material zu erhalten wurde eine Stichprobe von 15 Artikeln gemacht. Diese werden hier händisch kodiert. Die Stichprobe wurden mit `sample.int(n = 2217, size = 15)` gezogen.
 
 
@@ -49,9 +51,29 @@ Um einen besseren Einblick in das emprirische Material zu erhalten wurde eine St
 - 37    Lohn
 - 1364  Produktivitätssteigerung fraghaft, verfrühte Arbeitszeitreduktion in Verwaltungen
 
+### 2 Stichprobe
+
+`sample.int(n = 2217, size = 15)`
+
+- 1770    Information Handelskammer, Hochkonjunktur keine Arbeitszeitverkürzung
+- 1593    Analyse zu Arbeitslosenversicherung & Einführung 5 Tage Woche Basel Stadt
+- 2141    Analyse zu entplafonierten Ausländer*innen
+- 1795    Statistik
+- 69      Analyse Stoffbranchen, schlechte Konjunkturlage zu wenig Nachfrage, Verkürzung Arbeitszeit
+- 2173    Analyse Freizeitgestaltung, klare Trennung von Arbeitszeit und Freizeit
+- 1739    Analyse Streik Gipser, Kritik SGB und SP
+- 760     Analyse zum Entwurf des Arbeitsgesetz
+- 1409    Dokument vorhin anschauen
+- 621     Werbung technisches Produkt
+- 630     Statistik, Event Ausschreibungen
+- 846     Analyse Schweiz im Vergleich zu USA/Ausland, Schweiz muss mehr arbeiten weil Bodenschätze fehlen
+- 377     Analyse Stoffbranchen, Arbeitsfriede, Kompromiss zu möglicher Arbeitszeitverlängerung
+- 1834    Analyse Arbeitszeit Verwaltung, Fremdarbeiter*innen
+- 19      Analyse Streiks, Kritik Kommunistischer Metallarbeiterverband
 
 ## Stichprobe Arbeitnehmer
 
+### 1. Stichprobe
 Auch beim Arbeitnehmer-Korpus wurde eine Stichprobe gezogen. `sample.int(n = 1027, size = 15)`
 
 - 288   Interpretation von Arbeitszeitstatistiken, positive Bilanz
@@ -70,11 +92,44 @@ Auch beim Arbeitnehmer-Korpus wurde eine Stichprobe gezogen. `sample.int(n = 102
 - 506   Verkürzung der Arbeitszeit Max Weber
 - 187   Informationen vom Internationalen Gewerkschaftsbund, Arbeitszeit als wichtiges Thema gegen Arbeitslosigkeit
 
-## Erste Interpretationen
+### 2. Stichprobe
 
+`sample.int(n = 1027, size = 15)`
+- 730   Analyse Vollbeschäftigung, Forderung Einbezug von Arbeitnehmenden
+- 242   Statistik zu Erfolg einer Bewegung
+- 846   Analyse Generalstreik, Distanzierung von kommunistischen Beschuldigungen
+- 444   medizinische Analyse von Jugendarbeit
+- 119   Analyse historische Entwicklung Gesetz Jugendarbeit
+- 872   Analyse historische Entwicklung GAV
+- 387   Analyse historische Entwicklung Arbeitsabmachungen
+- 001   Verkürzung der Arbeitszeit Max Weber
+- 726   Analyse USA, Forderungen nach Lohnerhöhung und Arbeitszeitverkürzung
+- 417   Zitat Regierungsrat zur Regelung in Kollektivverträgen
+- 335   siehe oben
+- 241   Analyse politische/ökonimische Lage, Ausblick (und Betonung Notwendigkeit) Arbeitsgesetz
+- 323   Information zu Regelgung von Kündigung und Lohnzahlung
+- 545   Analyse zu Besprechung eines Entwurfs des SGB
+
+
+Weil ein Text bereits in der ersten Stichprobe vorgekommen ist wird nocheinmal ein Text ausgewählt: `sample.int(n = 1027, size = 1)`
+
+- 994   Analyse historische Entwicklung GAV und Rechtslage
+
+
+## Interpretationen
+
+### Nach 1. Stichprobe
 Die Zeitung der Arbeitnehmer scheint vor allem für politische Informationen gebraucht zu werden. Es scheint auch einige persönliche wie auch wissenschaftliche Analysen zu geben.
 Auf der Arbeitgeberseite gibt es auch unkommentierte Beiträge zur Arbeitszeit (so zum Beispiel die Statistiken). Ein Unterschied zur Arbeitnehmerzeitung ist, dass es in der Arbeitgeberschrift Werbung gibt. Der Anteil an persönlichen und wissenschaftlichen Analysen ist in der Stichprobe höher als bei der Arbeitnehmerzeitung.
 Beide Zeitungen zeigen immer wieder internationale Vergleiche. Bei der Arbeitgeberseite meistens negative Vergleiche (im Ausland ist das und das schief gegangen), auf der Arbeitnehmerseite eher negative Vergleiche der Schweiz (im Ausland ist es so und so bei uns in der Schweiz leider noch so)
+
+### Nach 2. Stichprobe
+Grosser Unterschied der Konjunkturlage ist bei der Arbeitgeberzeitung deutlich zu spüren. Arbeitzeitverkürzung bedeutet unterschiedliche Dinge je nach Konjunkturphase. In einer schlechten Phase wird die Arbeitszeitverkürzung von Arbeitgeberseite her genutzt, um den Betrieb zu schützen und weiterhin überleben zu lassen. Es besteht zu wenig Nachfrage und somit zu wenig Arbeit, die Arbeitszeitverkürzung geht zu Lasten der Arbeitnehmer*innen. In einer starken Konjunkturphase wird die Arbeitszeitverkürzung von den Arbeitgeber als eine einschränkende Auflage wahrgenommen, die das Wachstum der Unternehmen verhindert. Es besteht eine hohe Nachfrage und die Arbeitsstunden reichen nicht aus. Eine Arbeitszeitverkürzung würde darum noch stärker schaden.
+Aus Arbeitnehmersicht scheint die Arbeitszeitverkürzung eine ideologische Forderung zu sein, die von der konjunkturrellen Lage unabhängig ist. Die Lage spielt aber dennoch eine Rolle für die Verhandlungen zwischen Arbeitgeber und Arbeitnehmer. Da auch die Arbeitnehmer in ihren Kompromissen die momentane Lage mit einbezieht (z.B. Phasenweise Reduktion statt Reduktion auf einmal).
+
+Im Arbeitnehmerkorpus scheint es je nach Zeit auch eine unterschiedliche Distanzierung zu kommunistischer Haltung zu geben. Während in den Nachkriegsjahren eine Distanz von der kommunistischen Haltung zu sehen ist, ist in der Vorkriegszeit noch keine Distanz zu erkennen. So wird in einem Text zur Jugendarbeit zum Beispielt von "jungen Proletatieren" gesprochen (Text 119). In einem anderen Text (994) wird über die Lösung von ideologischen Ketten in den zwanziger Jahren gesprochen.
+
+Wann wurde das Obligationenrecht revidiiert? --> GAV seit dem Gesetztesähnlich (Quelle Text 994)
 
 ## LDA Topics
 
