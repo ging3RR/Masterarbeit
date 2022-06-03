@@ -371,9 +371,21 @@ pre code {
 
 <div id="TOC">
 <ul>
-<li><a href="#stichproben-arbeitgeber">Stichproben Arbeitgeber</a></li>
-<li><a href="#stichprobe-arbeitnehmer">Stichprobe Arbeitnehmer</a></li>
-<li><a href="#erste-interpretationen">Erste Interpretationen</a></li>
+<li><a href="#stichproben-arbeitgeber">Stichproben Arbeitgeber</a>
+<ul>
+<li><a href="#stichprobe">1 Stichprobe</a></li>
+<li><a href="#stichprobe-1">2 Stichprobe</a></li>
+</ul></li>
+<li><a href="#stichprobe-arbeitnehmer">Stichprobe Arbeitnehmer</a>
+<ul>
+<li><a href="#stichprobe-2">1. Stichprobe</a></li>
+<li><a href="#stichprobe-3">2. Stichprobe</a></li>
+</ul></li>
+<li><a href="#interpretationen">Interpretationen</a>
+<ul>
+<li><a href="#nach-1.-stichprobe">Nach 1. Stichprobe</a></li>
+<li><a href="#nach-2.-stichprobe">Nach 2. Stichprobe</a></li>
+</ul></li>
 <li><a href="#lda-topics">LDA Topics</a>
 <ul>
 <li><a href="#arbeitgeber">Arbeitgeber</a></li>
@@ -387,6 +399,8 @@ load(file = &quot;E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitgeber.
 load(file = &quot;E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds&quot;)</code></pre>
 <div id="stichproben-arbeitgeber" class="section level2">
 <h2>Stichproben Arbeitgeber</h2>
+<div id="stichprobe" class="section level3">
+<h3>1 Stichprobe</h3>
 <p>Um einen besseren Einblick in das emprirische Material zu erhalten
 wurde eine Stichprobe von 15 Artikeln gemacht. Diese werden hier
 händisch kodiert. Die Stichprobe wurden mit
@@ -415,8 +429,39 @@ Anpassung an den Weltmarkt</li>
 Arbeitszeitreduktion in Verwaltungen</li>
 </ul>
 </div>
+<div id="stichprobe-1" class="section level3">
+<h3>2 Stichprobe</h3>
+<p><code>sample.int(n = 2217, size = 15)</code></p>
+<ul>
+<li>1770 Information Handelskammer, Hochkonjunktur keine
+Arbeitszeitverkürzung</li>
+<li>1593 Analyse zu Arbeitslosenversicherung &amp; Einführung 5 Tage
+Woche Basel Stadt</li>
+<li>2141 Analyse zu entplafonierten Ausländer*innen</li>
+<li>1795 Statistik</li>
+<li>69 Analyse Stoffbranchen, schlechte Konjunkturlage zu wenig
+Nachfrage, Verkürzung Arbeitszeit</li>
+<li>2173 Analyse Freizeitgestaltung, klare Trennung von Arbeitszeit und
+Freizeit</li>
+<li>1739 Analyse Streik Gipser, Kritik SGB und SP</li>
+<li>760 Analyse zum Entwurf des Arbeitsgesetz</li>
+<li>1409 Dokument vorhin anschauen</li>
+<li>621 Werbung technisches Produkt</li>
+<li>630 Statistik, Event Ausschreibungen</li>
+<li>846 Analyse Schweiz im Vergleich zu USA/Ausland, Schweiz muss mehr
+arbeiten weil Bodenschätze fehlen</li>
+<li>377 Analyse Stoffbranchen, Arbeitsfriede, Kompromiss zu möglicher
+Arbeitszeitverlängerung</li>
+<li>1834 Analyse Arbeitszeit Verwaltung, Fremdarbeiter*innen</li>
+<li>19 Analyse Streiks, Kritik Kommunistischer
+Metallarbeiterverband</li>
+</ul>
+</div>
+</div>
 <div id="stichprobe-arbeitnehmer" class="section level2">
 <h2>Stichprobe Arbeitnehmer</h2>
+<div id="stichprobe-2" class="section level3">
+<h3>1. Stichprobe</h3>
 <p>Auch beim Arbeitnehmer-Korpus wurde eine Stichprobe gezogen.
 <code>sample.int(n = 1027, size = 15)</code></p>
 <ul>
@@ -442,8 +487,33 @@ Gesetztesentwurf</li>
 als wichtiges Thema gegen Arbeitslosigkeit</li>
 </ul>
 </div>
-<div id="erste-interpretationen" class="section level2">
-<h2>Erste Interpretationen</h2>
+<div id="stichprobe-3" class="section level3">
+<h3>2. Stichprobe</h3>
+<p><code>sample.int(n = 1027, size = 15)</code> - 730 Analyse
+Vollbeschäftigung, Forderung Einbezug von Arbeitnehmenden - 242
+Statistik zu Erfolg einer Bewegung - 846 Analyse Generalstreik,
+Distanzierung von kommunistischen Beschuldigungen - 444 medizinische
+Analyse von Jugendarbeit - 119 Analyse historische Entwicklung Gesetz
+Jugendarbeit - 872 Analyse historische Entwicklung GAV - 387 Analyse
+historische Entwicklung Arbeitsabmachungen - 001 Verkürzung der
+Arbeitszeit Max Weber - 726 Analyse USA, Forderungen nach Lohnerhöhung
+und Arbeitszeitverkürzung - 417 Zitat Regierungsrat zur Regelung in
+Kollektivverträgen - 335 siehe oben - 241 Analyse politische/ökonimische
+Lage, Ausblick (und Betonung Notwendigkeit) Arbeitsgesetz - 323
+Information zu Regelgung von Kündigung und Lohnzahlung - 545 Analyse zu
+Besprechung eines Entwurfs des SGB</p>
+<p>Weil ein Text bereits in der ersten Stichprobe vorgekommen ist wird
+nocheinmal ein Text ausgewählt:
+<code>sample.int(n = 1027, size = 1)</code></p>
+<ul>
+<li>994 Analyse historische Entwicklung GAV und Rechtslage</li>
+</ul>
+</div>
+</div>
+<div id="interpretationen" class="section level2">
+<h2>Interpretationen</h2>
+<div id="nach-1.-stichprobe" class="section level3">
+<h3>Nach 1. Stichprobe</h3>
 <p>Die Zeitung der Arbeitnehmer scheint vor allem für politische
 Informationen gebraucht zu werden. Es scheint auch einige persönliche
 wie auch wissenschaftliche Analysen zu geben. Auf der Arbeitgeberseite
@@ -456,6 +526,37 @@ Vergleiche. Bei der Arbeitgeberseite meistens negative Vergleiche (im
 Ausland ist das und das schief gegangen), auf der Arbeitnehmerseite eher
 negative Vergleiche der Schweiz (im Ausland ist es so und so bei uns in
 der Schweiz leider noch so)</p>
+</div>
+<div id="nach-2.-stichprobe" class="section level3">
+<h3>Nach 2. Stichprobe</h3>
+<p>Grosser Unterschied der Konjunkturlage ist bei der Arbeitgeberzeitung
+deutlich zu spüren. Arbeitzeitverkürzung bedeutet unterschiedliche Dinge
+je nach Konjunkturphase. In einer schlechten Phase wird die
+Arbeitszeitverkürzung von Arbeitgeberseite her genutzt, um den Betrieb
+zu schützen und weiterhin überleben zu lassen. Es besteht zu wenig
+Nachfrage und somit zu wenig Arbeit, die Arbeitszeitverkürzung geht zu
+Lasten der Arbeitnehmer*innen. In einer starken Konjunkturphase wird die
+Arbeitszeitverkürzung von den Arbeitgeber als eine einschränkende
+Auflage wahrgenommen, die das Wachstum der Unternehmen verhindert. Es
+besteht eine hohe Nachfrage und die Arbeitsstunden reichen nicht aus.
+Eine Arbeitszeitverkürzung würde darum noch stärker schaden. Aus
+Arbeitnehmersicht scheint die Arbeitszeitverkürzung eine ideologische
+Forderung zu sein, die von der konjunkturrellen Lage unabhängig ist. Die
+Lage spielt aber dennoch eine Rolle für die Verhandlungen zwischen
+Arbeitgeber und Arbeitnehmer. Da auch die Arbeitnehmer in ihren
+Kompromissen die momentane Lage mit einbezieht (z.B. Phasenweise
+Reduktion statt Reduktion auf einmal).</p>
+<p>Im Arbeitnehmerkorpus scheint es je nach Zeit auch eine
+unterschiedliche Distanzierung zu kommunistischer Haltung zu geben.
+Während in den Nachkriegsjahren eine Distanz von der kommunistischen
+Haltung zu sehen ist, ist in der Vorkriegszeit noch keine Distanz zu
+erkennen. So wird in einem Text zur Jugendarbeit zum Beispielt von
+“jungen Proletatieren” gesprochen (Text 119). In einem anderen Text
+(994) wird über die Lösung von ideologischen Ketten in den zwanziger
+Jahren gesprochen.</p>
+<p>Wann wurde das Obligationenrecht revidiiert? –&gt; GAV seit dem
+Gesetztesähnlich (Quelle Text 994)</p>
+</div>
 </div>
 <div id="lda-topics" class="section level2">
 <h2>LDA Topics</h2>
