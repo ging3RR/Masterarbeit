@@ -19,3 +19,7 @@ library(tictoc)
 
 #Rmarkdown
 library(knitr)
+
+#Vergleich
+library(quanteda.textstats)
+library(quanteda.textplots)
