@@ -148,3 +148,8 @@ kable(x = Topwords_Arbeitgeber)
 kable(x = Topwords_Arbeitnehmer)
 ```
 
+
+
+#Textbereinigung
+
+Im Arbeitgeber gibt es viele Seite die sowohl deutsche als auch französische Begriffe drin haben. Dies macht es schwierig vergleichende Analyse zu machen.
