@@ -1,6 +1,7 @@
 
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/Aussortieren.R")
+source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 
 #preprocessing / not needed anymore----
 
@@ -141,8 +142,7 @@ corpus_tosca <- textmeta(meta = as.meta(x = TextArbeitszeit,
                        text = TextArbeitszeit$text)
 
 
-#define stopwords  
-sw<- c(tm::stopwords("german"), "dass")
+
 #create clean corpus
 tosca_corpus <- cleanTexts(object = corpus_tosca, sw = sw, ucp = T)
 #somehow the cleanTexts() removes all meta, fill in the meta again

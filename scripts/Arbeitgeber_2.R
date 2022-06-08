@@ -1,5 +1,6 @@
 #prep-----
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
+source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
 ##1st step Preparation of corpus----
 
@@ -96,8 +97,7 @@ corpus_tosca_Arbeitgeber <- textmeta(meta = as.meta(x = Arbeitgeber_csv,
                          text = Arbeitgeber_csv$complete_text)
 
 
-#define stopwords  
-sw<- c(tm::stopwords("german"), "dass")
+
 #create clean corpus
 tosca_corpus_Arbeitgeber <- cleanTexts(object = corpus_tosca_Arbeitgeber, sw = sw, ucp = T)
 #somehow the cleanTexts() removes all meta, fill in the meta again
