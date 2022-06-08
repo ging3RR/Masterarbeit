@@ -5,18 +5,20 @@ date: '2022-05-09'
 output: 
   pdf_document:
     toc: true #table of contents
-    toc_depth: 2 
+    toc_depth: 2
+  includes:
+    in_header: tex/frontpage.tex   
     
 fontsize: 12pt
 geometry: margin = 1.2in #Ränder
 
-header-includes: 
-- \usepackage{placeins} # https://cocky-elion-5880fb.netlify.app/2016/03/30/writing-your-thesis-with-r-markdown-5-the-thesis-layout/
-- \usepackage{setspace}
-- \usepackage{chngcntr}
-- \linespread{1.25}  
-- \counterwithin{figure}{section}
-- \counterwithin{table}{section}
+# header-includes: 
+# - \usepackage{placeins} # https://cocky-elion-5880fb.netlify.app/2016/03/30/writing-your-thesis-with-r-markdown-5-the-thesis-layout/
+# - \usepackage{setspace}
+# - \usepackage{chngcntr}
+# - \linespread{1.25}  
+# - \counterwithin{figure}{section}
+# - \counterwithin{table}{section}
 
 ---
 
