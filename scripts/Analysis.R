@@ -1,6 +1,6 @@
 
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
-source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/Aussortieren.R")
+#source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/Aussortieren.R")
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 
 #preprocessing / not needed anymore----
@@ -171,7 +171,7 @@ Prototype_LDA <- getLDA(LDA_Prototype)
 #get the topics of the Prototype LDA
 topics_Prototype <- getTopics(Prototype_LDA)
 #see the n top words of the Prototype Topics
-tosca::topWords(topics_Prototype, 5)
+Topwords_Arbeitnehmer <- tosca::topWords(topics_Prototype, 5)
 
 
 #trying the same with 30 repetitions --> so far minor differences
