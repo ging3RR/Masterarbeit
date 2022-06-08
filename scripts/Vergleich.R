@@ -24,6 +24,15 @@ Arbeitgeber_csv$complete_text <- gsub(pattern = "\\. .\\s+",
 Arbeitgeber_csv$organisation <- "Arbeitgeber"
 TextArbeitszeit$organisation <- "Arbeitnehmer"
 
+#create one object of both corpora objects
+TextArbeitszeit$date <- as.character(TextArbeitszeit$date)
+filter_Arbeitsnehmer <- TextArbeitszeit %>%  select(doc_id, text, date, organisation)
+Arbeitgeber_csv$date <- as.character(Arbeitgeber_csv$date)
+filter_Arbeitsgeber <- Arbeitgeber_csv %>% select(doc_id, complete_text, date, 
+                                                  organisation) %>% rename(text = complete_text) 
+                       
+                        
+all_texts <- bind_rows(filter_Arbeitsgeber, filter_Arbeitsnehmer)
 #create corpus objects
 corpus_Arbeitgeber <- corpus(Arbeitgeber_csv, text_field = "complete_text")
 corpus_Arbeitnehmer <- corpus(TextArbeitszeit)
@@ -59,3 +68,28 @@ ggplot(data = freq_weight, aes(x = nrow(freq_weight):1, y = frequency)) +
                      labels = freq_weight$feature) +
   labs(x = NULL, y = "Relative frequency")
 toc()
+
+
+#Sentiment Analysis
+#read in the Dictionaries
+positive_terms_all <- readLines("data/SentiWS_v2.0_Positive.txt")
+negative_terms_all <- readLines("data/SentiWS_v2.0_Negative.txt")
+
+#restrict the data to only words that occur in the text
+positive_terms_in_suto <- intersect(colnames(corpus_dfm), positive_terms_all)
+counts_positive <- rowSums(corpus_dfm[, positive_terms_in_suto])
+
+negative_terms_in_suto <- intersect(colnames(corpus_dfm), negative_terms_all)
+counts_negative <- rowSums(corpus_dfm[, negative_terms_in_suto])
+
+#relativ numbers
+counts_all_terms <- rowSums(corpus_dfm)
+
+relative_sentiment_frequencies <- data.frame(
+  positive = counts_positive / counts_all_terms,
+  negative = counts_negative / counts_all_terms
+)
+
+sentiments_per_organisation <- aggregate(relative_sentiment_frequencies, by = list(organisation = all_texts$organisation), mean)
+
+head(sentiments_per_organisation)
