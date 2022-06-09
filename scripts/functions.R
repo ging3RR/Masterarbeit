@@ -10,3 +10,5 @@ colorize <- function(x, color) {
             x)
   } else x
 }
+
+
