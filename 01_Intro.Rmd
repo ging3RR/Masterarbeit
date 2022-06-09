@@ -3,12 +3,12 @@ title: "01_Intro"
 author: "Lukas Jakob"
 date: '2022-05-09'
 output: 
-  pdf_document:
+  html_document:
     toc: true #table of contents
     toc_depth: 2
   includes:
     in_header: tex/frontpage.tex   
-    
+bibliography: "literatur.bib"  
 fontsize: 12pt
 geometry: margin = 1.2in #Ränder
 
@@ -26,10 +26,24 @@ geometry: margin = 1.2in #Ränder
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Aufbau der Masterarbeit:
 
-#Titel 1
+* Einführung
+* Forschungsgegenstand:
+  * Arbeitszeitverkürzung - Was ist Arbeitszeitverkürzung?
+  * Schweizerische Arbeitszeitverkürzung
+  * Organisationen - Feldbeschreibung
+* Methoden
+* Daten
+* Resultate
+* Kritik
+* Zusammenfassung
 
-Hello World
 
 
-#Titel 2
+# Einführung
+
+
+
+
+# Titel 2
