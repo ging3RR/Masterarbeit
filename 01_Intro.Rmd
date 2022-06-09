@@ -31,10 +31,10 @@ Aufbau der Masterarbeit:
 * Einführung
 * Forschungsgegenstand:
   * Arbeitszeitverkürzung - Was ist Arbeitszeitverkürzung?
-  * Schweizerische Arbeitszeitverkürzung
   * Organisationen - Feldbeschreibung
-* Methoden
-* Daten
+  * Forschungsfrage
+  * Historisch-juristische Entwicklung
+* Methoden & Daten
 * Resultate
 * Kritik
 * Zusammenfassung
