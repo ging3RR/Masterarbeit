@@ -1,11 +1,8 @@
 ---
-title: "02_Forschungsgegenstand"
-author: "Lukas Jakob"
-date: '2022-06-09'
 output: html_document
 bibliography: "literatur.bib"
 ---
-
+ <style> body {text-align: justify} </style> <!-- https://stackoverflow.com/questions/58713332/justify-text-in-rmarkdown-html-output-in-yaml-header -->
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source("scripts/functions.R")
@@ -13,7 +10,7 @@ source("scripts/functions.R")
 ```
 
 
-## Forschungsgegenstand
+## Forschungsgegenstand allgemein
 
 Für eine klare und strukturierte soziologische Diskussion ist die Definition der Begriffe eine wichtige Grundlage. Auch bei der Diskussion um die Arbeitszeit gilt es im Vornherein die zentralen Begriffe für die Diskussion der Arbeitszeitverkürzung genauer zu beschreiben. Diese Beschreibung der zentralen Begriffe folgt im ersten Teil dieses Kapitels. Anschliessend folgt eine Übersicht über die wichtigen Organisationen und Institutionen, die mit dem Thema der Arbeitszeitverkürzung in der Schweiz stark involviert sind. 
 
@@ -24,17 +21,43 @@ Für das Wort Arbeitszeitverkürzung gibt es im aktuellen Sprachgebrauch mehrere
 
 Ein weiterer Begriff der, vor allem auch in den Medien, stellvertretend für eine Arbeitszeitverkürzung steht ist die Viertagewoche. `r colorize("Quellen", "red")`. Dieser Begriff bezeichnet die Reduktion der Lohn-/Erwerbsarbeitszeit von fünf auf vier Tage. Wie später im Datenmaterial ersichtlich wird, ist dies keine neue Art diese Debatte zu beschreiben. In den früheren Phasen der Arbeitszeitverkürzung wurde oft von einer Fünftagewoche gesprochen. Die Viertagewoche steht somit auch stellvertretend für den Inhalt der aktuellen Debatte und präzisiert noch stärker was mit Arbeitszeitverkürzung gemeint ist. Dennoch bleibt ein Problem bei der Verwendung dieses Begriffs. Auch wenn in der Viertagewoche eine Arbeitszeitverkürzung impliziert ist, bedeutet dies nicht automatisch, dass eine Verminderung der Arbeitstage zu einer Arbeitszeitverkürzung führt. Die Viertagewoche kann für die Gestaltung attraktiverer Arbeitsverhältnisse genutzt werden wie ein Beispiel der Firma 25h Hotels. Das Unternehmen führte im Frühjahr 2022 die Viertagewoche für alle ihre Mitarbeitenden ein. In diesem Modell wird an vier Tagen neun Stunden gearbeitet. Die Differenz zur Vertraglichen Normalarbeitszeit wird wie (Minus)Überstunden gehandhabt. Dieses Beispiel zeigt weitere wichtige Dimensionen der Diskussion um die Arbeitszeitverkürzung auf.
 
-Die Zeit die für die Arbeit aufgewendet wird lässt sich weiter in unterschiedliche Phasen oder Teile einteilen, die alle eine gewisse Zeit beanspruchen. Zusätzlich zur Arbeitszeit gibt es die Pausen, die heutzutage üblicherweise in der Arbeitszeit mit eingerechnet werden. `r colorize("QUELLEN", "blue")`. Nebst den Pausen gibt es jedoch auch noch andere "nicht-produktive" Phasen während der Arbeitszeit, die zum Beispiel durch Ermüdung ausgelöst werden. Wie oben im Beispiel vom Unternehmen 25h Hotels gezeigt, werden auch die Überstunden (sowohl plus als auch minus) mit der Arbeitszeit verrechnet. Dies wird üblicherweise in einem Jahresarbeitszeitmodell verrechnet. Die Arbeitszeit lässt sich somit in folgende Zeiten unterteilen:
+Die Zeit die für die Arbeit aufgewendet wird lässt sich weiter in unterschiedliche Phasen oder Teile einteilen, die alle eine gewisse Zeit beanspruchen. Zusätzlich zur Arbeitszeit gibt es die Pausen, die heutzutage üblicherweise in der Arbeitszeit mit eingerechnet werden. `r colorize("QUELLEN", "blue")`. Nebst den Pausen gibt es jedoch auch noch andere "nicht-produktive" Phasen während der Arbeitszeit, die zum Beispiel durch Ermüdung ausgelöst werden. Wie oben im Beispiel vom Unternehmen 25h Hotels gezeigt, werden auch die Überstunden (sowohl plus als auch minus) mit der Arbeitszeit verrechnet. Dies wird vermutlich in einem Jahresarbeitszeitmodell verrechnet. Die Arbeitszeit lässt sich somit in folgende Zeiten unterteilen:
 
-* Arbeitszeit = produktive Arbeitszeit + Pausen + nicht-produktive Arbeitszeit + Überstunden
+$$Arbeitszeit = produktive Arbeitszeit + Pausen + nicht-produktive Arbeitszeit + Überstunden$$
 
-Als Gegenstück zur Arbeitszeit gibt es die Freizeit, die neben der Arbeitszeit und der Zeit für den Schlaf, den Rest des Tages füllt. Doch auch die Freizeit besteht aus unterschiedlichen Phasen oder Teilen. So schreibt `r colorize("AUTOR", "red")` von der Erholungszeit und der tatsächlichen Freizeit. Die Erholungszeit ist die Zeit die der Körper für die physische und psychische Erholung nach der Arbeitszeit braucht. In seiner Analyse aus dem Jahr `r colorize("JAHR", "red")` berechnete er die Erholungszeit anhand der verbrauchten Kalorien. Er gibt auch einen Hinweis darauf, dass dies für mental fordernde Arbeit schwieriger zu berechnen ist. Jedoch ist die Annahme, dass die Erholungszeit von psychisch fordernder Arbeit höher ist als von rein physischer Arbeit. Die tatsächliche Freizeit ist die Zeit die nach Abzug der Erholungszeit noch zur Verfügung steht. Anhand dieser Definitionen lässt sich die tatsächliche Freizeit folgendermassen berechnen:
+Als Gegenstück zur Arbeitszeit gibt es die Freizeit, die neben der Arbeitszeit und der Zeit für den Schlaf, den Rest des Tages füllt. Doch auch die Freizeit besteht aus unterschiedlichen Phasen oder Teilen. So schreibt `r colorize("AUTOR", "red")` von der Erholungszeit und der tatsächlichen Freizeit. Die Erholungszeit ist die Zeit die der Körper für die physische und psychische Erholung nach der Arbeitszeit braucht. In seiner Analyse aus dem Jahr `r colorize("JAHR", "red")` berechnete er die Erholungszeit anhand der verbrauchten Kalorien. Er gibt auch einen Hinweis darauf, dass dies für mental fordernde Arbeit schwieriger zu berechnen ist. Jedoch ist die Annahme, dass die Erholungszeit von psychisch fordernder Arbeit höher ist als von rein physischer Arbeit. Die tatsächliche Freizeit ist die Zeit, die nach Abzug der Erholungszeit noch zur Verfügung steht. Anhand dieser Definitionen lässt sich die tatsächliche Freizeit folgendermassen berechnen:
 
-* tatsächliche Freizeit = 24 Stunden - (Arbeitszeit + Erholungszeit + Schlafenszeit)
+$$tatsächliche Freizeit = 24 Stunden - (Arbeitszeit + Erholungszeit + Schlafenszeit)$$
 
 Ein wichtiger Aspekt für die Verhandlung von Arbeitszeitverkürzungen war jeweils auch die Verhandlungen um die Ferien. Diese Verhandlungen waren besonders in der Schweiz ziemlich komplex und verschachtelt und führten zu mehreren kantonalen wie auch nationalen Rechtsgebungen. `r colorize("AUTOR Dissertation","blue")`
 
-Nebst den Verhandlungen um die Arbeitszeit waren auch stets Lohnverhandlungen geführt worden. Die Analyse und Diskussion um Lohnverhandlungen kann an diesem Punkt jedoch nicht aufgenommen werden, da sie zu komplex ist und einer eigenen Analyse bedarf. `r colorize("eventuell ein Hinweis auf ein Werk, das sich mit Lohnverhandlungen in der Schweiz beschäftigt", "orange")` Dennoch gibt es einen Begriff der in der Debatte um Arbeitszeitverkürzungen eine zentrale Rolle spielt. Der (volle) Lohnausgleich bedeutet, dass für die neue Arbeitszeit immer noch derselbe Lohn bezahlt wird. Nebst dem vollen Lohnausgleich gibt es auch einen teil Lohnausgleich. Wie bei den Ferien und Überstunden wurden die meisten Arbeitszeitverkürzungskompromisse zusammen mit Lohnausgleichen verhandelt. 
+Sowohl die Ferien wie auch der Arbeitszeit können in unterschiedlichen Zeiträumen betrachtet werden. Dabei sind es je nach Thema Jahres-, Monats, Wochen- oder Tagesdimensionen, die entscheidend sind. Wichtig für die Diskussion ist die Normierung von Arbeitszeit oder Ferien auf einen bestimmten Zeitraum, da dies ermöglicht über diese Normierung Verhandlungen zu treffen.
+
+Nebst den Verhandlungen um die Arbeitszeit waren auch stets Lohnverhandlungen geführt worden. Die Analyse und Diskussion um Lohnverhandlungen kann an diesem Punkt jedoch nicht aufgenommen werden, da sie zu komplex ist und einer eigenen Analyse bedarf. `r colorize("eventuell ein Hinweis auf ein Werk, das sich mit Lohnverhandlungen in der Schweiz beschäftigt", "orange")` Dennoch gibt es einen Begriff der in der Debatte um Arbeitszeitverkürzungen eine zentrale Rolle spielt. Der volle Lohnausgleich bedeutet, dass für die neue (tiefere) Arbeitszeit immer noch derselbe Lohn bezahlt wird. Nebst dem vollen Lohnausgleich gibt es auch einen teil Lohnausgleich. Wie bei den Ferien und Überstunden werden die meisten Arbeitszeitverkürzungskompromisse zusammen mit Lohnausgleichen verhandelt. 
 
 
-Jahresarbeitszeit, Monatsarbeitszeit und Wochenarbeitszeit
+### Involvierte Organisationen
+
+Die Debatte um die Arbeitszeitverkürzung war seit jeher eine internationale Diskussion. Dies ist gut erkennbar an der Forderung des ersten internationalen Arbeiterkongress (sic!) von 1889, der den 8h-Tag forderte und an dem Leute aus 20 Ländern teilgenommen haben `r colorize ("QUELLE", "red")`. Die Parteien die an der Debatte um die Arbeitszeitverkürzung teilnehmen sind, im europäischen Kontext, in den meisten Fällen die gleichen. So ist die Verhandlung rund um die Arbeitszeit generell eine Verhandlung zwischen Arbeitgeber:innen und Arbeitnehmer:innen. Dies gilt sowohl für Österreich und Deutschland `r colorize ("QUELLE", "red")`, wie auch Frankreich und Belgien `r colorize ("QUELLE", "red")`. Der Organisationsgrad dieser Parteien kann unterschiedlich ausgeprägt sein. So können die Verhandlungen z.B. auf Verbandsebene oder auf Unternehmungsebene diskutiert werden. Auch wie stark der Staat involviert ist, kann sich von Land zu Land unterscheiden. `r colorize ("Hier einige Beispiel von den Texten", "orange")`. 
+
+
+
+## Forschungsfrage
+
+Im vorderen Teil wurden die Begriffe sowie Organisationen rund um die Arbeitszeit im allgemeinen ausgeführt. Bevor diese genauer spezifiziert und für diese Arbeit definiert werden, macht es Sinn eine Einführung in die Fragestellung, die dieser Arbeit zugrunde liegt, einzugehen. Dies hilft besser zu verstehen, wieso die Begriffe und Organisationen ausgewählt worden sind, die in dieser Arbeit analytisch betrachtet werden. Anschliessend an die Herleitung der Fragestellung folgt die Definition der oben benannten Begriffe für diese Arbeit.
+
+### Historische und juristische Entwicklung
+
+### Fragestellung
+
+* Wie wurde von den Verbänden der beiden Vertragsparteien rund um das Thema Arbeitszeitverkürzung kommuniziert?
+* Ist es möglich Erkenntnisse aus der bisherigen Literatur auch mit quantitativen Vorgehen zu erkennen und zu bestätigen?
+* Können die Kompromisse rund um die Arbeitszeit in der Kommunikation der Verbände erkannt werden?
+
+### Arbeitszeitverkürzung
+
+Im Anbetracht der weiter oben geführten Diskussion um die Definition der Arbeitszeit, ist es sinnvoll genauer zu beschreiben, wie in dieser Forschungsarbeit Arbeitszeitverkürzung definiert wird. Als Arbeitszeitsverkürzung wurden alle Regelungen berücksichtigt, die eine tiefere **Wochenarbeitszeit** und mindestens zum Teil einen Lohnausgleich beinhaltet haben. Ausserdem sind vor allem die Regelungen interessant, die zu einer nationalen oder branchenübergreifenden Arbeitszeitregelung führten. Durch diese Definition ist es möglich die Entwicklung in der gesamten Schweiz zu betrachten, statt sich in der Entwicklung einer Branche zu verlieren.
+
+### Organisationen
+
+Für die Schweiz sind in der Vorkriegszeit und der nachfolgenden Hochkonjunktur folgende Organisationen involviert: SGB, Arbeitgeberverband, Nationalrat, Ständerat, Bundesrat `r colorize ("Abbildung und Ausführung Dissertation", "blue")`. 
