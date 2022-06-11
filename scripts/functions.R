@@ -12,3 +12,11 @@ colorize <- function(x, color) {
 }
 
 
+newline <- function(x) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\linebreak", x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<br>",
+            x)
+  } else x
+}
