@@ -1,6 +1,8 @@
 ---
 output: html_document
 bibliography: "references.bib"
+fontsize: 12pt
+geometry: margin = 1.2in 
 ---
  <style> body {text-align: justify} </style> <!-- https://stackoverflow.com/questions/58713332/justify-text-in-rmarkdown-html-output-in-yaml-header -->
 ```{r setup, include=FALSE}
@@ -50,7 +52,7 @@ Im vorderen Teil wurden die Begriffe sowie Organisationen rund um die Arbeitszei
 
 Im Anbetracht der weiter oben geführten Diskussion um die Definition der Arbeitszeit, ist es sinnvoll genauer zu beschreiben, wie in dieser Forschungsarbeit Arbeitszeitverkürzung definiert wird. Als Arbeitszeitsverkürzung wurden alle Regelungen berücksichtigt, die eine tiefere **Wochenarbeitszeit** und mindestens zum Teil einen Lohnausgleich beinhaltet haben. Ausserdem sind vor allem die Regelungen interessant, die zu einer nationalen oder branchenübergreifenden Arbeitszeitregelung führten. Durch diese Definition ist es möglich die Entwicklung in der gesamten Schweiz zu betrachten, statt sich in der Entwicklung einer Branche zu verlieren.
 
-### Historische und juristische Entwicklung
+### Nationale Gesetzgebungen
 
 An dieser Stelle ist es hilfreich einen kurzen historischen Blick auf die Entwicklung der Arbeitszeitregulierungen in der Schweiz zu werfen. Dadurch können die interessanten Zeitpunkte, unter der Definition der Arbeitszeitverkürzung von oben, in der Entwicklung festgestellt werden. Einen ausführlichen Überblick über die Entwicklung der Arbeitszeitregulierungen bis zu den 1960er Jahren liefert die Dissertation von Kaufmann. Anlässlich der Diskussionen um die Vierzigstundenwoche schreibt Kaufmann über die Geschichte der Arbeitszeitverkürzungen in der Schweiz. Im ersten Teil widmet er sich dabei der Arbeitszeitgesetzgebung[@kaufmannVierzigstundenwocheSchweizAnschaulichtheoretischer1960, S. 7-76] . Vor dem Jahr 1874 war es dem Bund rechtlich nicht erlaubt die Arbeitszeit gesetzlich zu regeln. Die Gesetzgebung in diesem Bereich war in der Hoheit der Kantone. Viele dieser Gesetze waren vor allem auf den Schutz der jugendlichen Fabrikmitarbeitenden und Kindern gerichtet. 
 Für einen Überblick der wichtigsten Arbeitszeitbestimmungen in den Kantonen siehe folgende Abbildung: 
@@ -62,7 +64,25 @@ Nebst der Entwicklung in Fabriken geht Kaufmann auch auf die Regelungen vom Gewe
 Für die Transportanstalten trat im Jahr 1873 ein *Bundesgesetz über den Bau und Betrieb von Eisenbahnen in Kraft*. In diesem Gesetz war die Arbeitszeit noch nicht geregelt, jedoch waren die Anzahl Freitage geregelt. Die Anzahl Freitage wurden mit jeder Anpassung der Arbeitszeit auch angepasst. Im Jahr 1956 waren gesetzlich 60 Ruhetage pro Jahr festgeschrieben. Die erste Arbeitszeitregulierung war 1890 in Kraft. Das *Bundesgesetz betreffend Arbeitszeit beim Betriebe der Eisenbahnen und anderer Transportanstalten* regelte die normale tägliche Arbeitszeit auf 12 Stunden (72 Stunden pro Woche). Dieses Bundesgesetz wurde in den Jahren 1902 (11 Stunden pro Tag = 66-Stundenwoche) und 1920 (8 Stunden pro Tag = 48-Stundenwoche) überarbeitet. Bis zum Arbeitsgesetz wurden lediglich 1948 und 1956 noch einige Veränderungen an den Ferien- und Ruhetagen vorgenommen. <br>
 Für das Bundespersonal wurde 1927 eine Bundesgesetz festgelegt. Die Arbeitszeit wurde auf 45.5 Stunden festgelegt. 
 
-In der Schweiz gab es somit bis zum Arbeitsgesetz von 1964 keine eidgenössische Gesetzgebung, die auf alle Arbeitnehmenden zugetroffen hat. Dieses Arbeitsgesetz stellt aber auch in der aktuellen Zeit die einzige nationale Rechtsgebung für die Arbeitszeit dar. Das Gesetz hat ausserdem seit der Einführung auch kaum Anpassungen (im Bereich Arbeitszeit) erhalten. Die normale Wochenarbeitszeit wurde bei der Einführung auf 46 Stunden pro Woche für Arbeitnehmer in industriellen Betrieben sowie für Büropersonal, technische und andere Angestellte, mit Einschluss des Verkaufspersonals in Grossbetrieben des Detailhandels" (Art. 9a) festgelegt. Für alle übrigen Arbeitnehmer war die wöchentliche Höchstarbeitszeit auf 50 Stunden `r colorize("(stimmt das?)", "blue")` festgelegt. Die einzige Anpassung die es in dieser Regelgung gab war ... als die Höchstarbeitszeit von 46 auf 45 Stunden pro Woche heruntergesetzt wurde.
+In der Schweiz gab es somit bis zum Arbeitsgesetz von 1964 keine eidgenössische Gesetzgebung, die auf alle Arbeitnehmenden zugetroffen hat. Dieses Arbeitsgesetz stellt aber auch in der aktuellen Zeit die einzige nationale Rechtsgebung für die Arbeitszeit dar. Das Gesetz hat ausserdem seit der Einführung auch kaum Anpassungen (im Bereich Arbeitszeit) erhalten. Die normale Wochenarbeitszeit wurde bei der Einführung auf 46 Stunden pro Woche für Arbeitnehmer *"in industriellen Betrieben sowie für Büropersonal, technische und andere Angestellte, mit Einschluss des Verkaufspersonals in Grossbetrieben des Detailhandels"* (Art. 9a) festgelegt. Für alle übrigen Arbeitnehmer war die wöchentliche Höchstarbeitszeit auf 50 Stunden `r colorize("(stimmt das?)", "blue")` festgelegt. Die einzige Anpassung die es in dieser Regelgung gab war ... als die Höchstarbeitszeit von 46 auf 45 Stunden pro Woche heruntergesetzt wurde.
+
+Doch auch wenn es keine nationalen Gesetzgebungen mehr gegeben hat, wurde die Arbeitszeit weiterhin verhandelt. Wie dies in der Schweiz funktioniert wird im nächsten Abschnitt erläutert.
+
+### Kollektivverträge
+
+Die Regelung der Arbeitszeit, sowie andere Arbeitsschutzmassnahmen, können durch einen Gesamtarbeitsvertrag (GAV) weiter spezifiziert werden. Das ARG ist lediglich der Mindestschutz, der für alle Arbeitnehmenden eingehalten werden muss. Der GAV wird durch die berechtigten Verhandlungsparteien ausgehandelt und unterschrieben. `r colorize("hier mehr Info zur Rechtslage", "blue") `.
+
+Auf Arbeitnehmerseite gibt es viele unterschiedliche Verbände, die teilweise zusammengeschlossen und teilweise unabhängig voneinander sind. Eine der wichtigsten Dachorganisationen ist der Schweizerische Gewerkschaftsbund (SGB). Viele der wichtigsten Gewerkschaftsverbände sind Teil des SGB. Nach dem 2. Weltkrieg waren dies unter anderem (alle Namen nur im generischen Maskulin) der Schweizerische Metall- und Uhrenarbeiterverband (SMUV) oder der Schweizerische Textil- und Fabrikarbeiterverband (STFV). Aber auch der Schweizerische Verband des Personals öffentlicher Dienste (VPOD), der heutzutage zu den grössten Gewerkschaften zählt, ist Teil des SGB. Speziell zu erwähnen ist ausserdem noch, dass die meisten Mitglieder des Föderativverbandes des Personals öffentlicher Verwaltung und Betriebe (rund 100'000 Mitglieder), auch Mitglieder eines Verbandes innerhalb des SGB sind. Der SGB ist Mitgliedermässig der grösste Bund von Arbeitnehmenden. Nicht nur durch die Grösse sondern auch durch die politische Haltung ist der SGB die wichtigste Arbeitnehmer:innen-Organisation in der Frage der Arbeitszeitverkürzung. 
+
+Nebst dem SGB gibt es noch weitere Verbunde, die sich nicht nur der Arbeiter:innenbewegung anschlossen, sondern sich ideologisch auch noch anders positionierten. Diese von Wüthrich bezeichneten Minderheitsgewerkschaften sind der Christlich-Nationale Gewerkschaftsbund (CNG), der Schweizerische Verband Evangelischer Arbeiter und Angestellter und der Landesverband freier Schweizer Arbeiter (LFSA, liberale Weltanschauung). 
+Der letzte unabhängige Verband ist die Vereinigung Schweizerischer Angestelltenverbände (VSA), welche die Angestellten der Privatwirtschaft unter sich vereinigt. 
+
+Die Zusammenarbeit zwischen den Minderheitsgewerkschaften, dem VSA und dem SGB ist kaum vorhanden `r colorize("Hardmeier 1970", "blue")`. Der SGB ist ausserdem fast der einzige Gewerkschaftsbund, der in der politischen Diskussion rund um die Arbeitszeitverkürzung aktiv war. Auch der CNG war noch ein bisschen involviert, die andere Bunde jedoch kaum oder gar nicht[@alma99312190105505, S.6].
+
+Die Arbeitgeber:innen sind in vier Dachverbänden organisiert: Schweizerischer Handels- und Industrieverein (SHIV), Zentralverband schweizerischer Arbeitgeber-Organisationen (ZSAO), Schweizerischer Gewerbeverband (SGV) und dem Schweizerischen Bauernverband (SBV). Der wichtigste Verband für die politische Stellung der Arbeitgeber:innen zur Arbeitszeitverkürzung war der ZSAO, der in den 1920er Jahren praktisch als Gegenbewegung zur Arbeitnehmer:innenbewegung gegründet wurde. Der Bauernverband ist in der Frage der Arbeitszeit als Arbeitgeberverband kaum wichtig. Der Austausch zwischen der Arbeitgeber:innenverbänden ist viel ausgeprägter als auf der Arbeitnehmer:innen-Seite. Im Gegensatz dazu setzten sich die drei Verbände ZSAO, SHIV und SGV für die wichtigen Entscheidungen zusammen. Viele der Mitglieder in einem Verband sind auch in anderen Verbänden Mitglieder. Und auch auf der Führungsstufe ist die Koordination durch gegenseitige Vertretung gesichert [@alma99312190105505, S.7 ff.].
+
+Sowohl der SGB wie auch der ZSAO sind jedoch nicht in der Lage Gesamtarbeitsverträge unterschreiben zu können. Die GAV werden jeweils auf Branchen- oder Unternehmensebene unterzeichnet. 
+
 
 
 ### Fragestellung
@@ -73,9 +93,7 @@ In der Schweiz gab es somit bis zum Arbeitsgesetz von 1964 keine eidgenössische
 
 
 
-### Organisationen
 
-Für die Schweiz sind in der Vorkriegszeit und der nachfolgenden Hochkonjunktur folgende Organisationen involviert: SGB, Arbeitgeberverband, Nationalrat, Ständerat, Bundesrat `r colorize ("Abbildung und Ausführung Dissertation", "blue")`. 
 
 
 
