@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 source("scripts/functions.R")
 
 ```
-
+# Kapitel 2
 
 ## Forschungsgegenstand allgemein
 
@@ -90,10 +90,4 @@ Sowohl der SGB wie auch der ZSAO sind jedoch nicht in der Lage Gesamtarbeitsvert
 * Wie wurde von den Verbänden der beiden Vertragsparteien rund um das Thema Arbeitszeitverkürzung kommuniziert?
 * Ist es möglich Erkenntnisse aus der bisherigen Literatur auch mit quantitativen Vorgehen zu erkennen und zu bestätigen?
 * Können die Kompromisse rund um die Arbeitszeit in der Kommunikation der Verbände erkannt werden?
-
-
-
-
-
-
 
