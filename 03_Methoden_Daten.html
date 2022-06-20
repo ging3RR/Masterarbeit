@@ -444,7 +444,33 @@ anderem das <code>LDA Prototype</code>Package von Rieger et
 al. verwendet<span class="citation">(Rieger et al. 2020; Rieger
 2020)</span>. Dieses Package sorgt für bessere Reproduzierbarkeit bei
 LDA Analysen von Texten.</p>
-<p><strong>HIER AUF DIE LDA METHODEN EINGEHEN</strong></p>
+<p>Die <em>Latent dirichlet allocation</em> (LDA) ist eine Textanalyse
+Methode, die dazu dient die Dimensionen eines Korpus zu verringern <span class="citation">(Blei, Ng, and Jordan 2003)</span>. In dieser Methoden
+werden alle Wörter in unterschiedliche Wortlisten zugeteilt. In diesen
+Wortliste, auch Topics genannt, werden die Wörter aufgrund eines
+Wahrscheinlichkeitswertes sortiert. Die Topwörter mit den höchsten
+Werten sollten idealerweise ein menschlich interpretierbares Thema
+innerhalb des Korpus repräsentieren. Die Anzahl der Topics kann vor der
+Analyse vorgegeben werden. Die Anzahl soll dabei so gewählt werden, dass
+nicht alle Themen der Texte in den Wortlisten vorkommen. Das Ziel soll
+eine Reduktion der Dimension bleiben. Dennoch müssen es genügend Topics
+sein, um als Grundlage für eine Analyse des Forschunggegenstands dienen
+zu können <span class="citation">(von Nordheim, Müller, and Scheppe
+2019)</span>. Die Anzahl der Topics wird also durch die Themen und die
+Komplexität des Korpus vorgegeben<span class="citation">(Binkley et al.
+2014)</span>. Da die Topics menschlich interpretierbar sein sollen,
+spielt auch die Vertrautheit mit dem empirischen Material eine wichtige
+Rolle, da sonst allfällige wichtige Wörter nicht erkannt werden. Weil in
+der Bestimmung der Wahrscheinlichkeiten der erste Schritt zufällig ist,
+kann das LDA Verfahren oft verschiedene Resultate ergeben. Um dies zu
+verhindern werden beim <code>LDA Prototype</code>Package mehrere
+Durchgängen gemacht. Von all diesen Durchgängen wird schlussendlich ein
+LDA Durchgang mit der grössten Ähnlichkeit zu allen anderen bestimmt.
+Diesen LDA Durchgang nennen Rieger et al. den Prototype. Diese Methode
+dient somit zur Absicherung und besseren Reproduzierbarkeit eines LDA
+Ergebnisses. Die Autor:innen empfehlen mindestens 50 Durchgänge
+ausrechnen zu lassen und dies je nach Komplexität der Korpora zu
+erhöhen. <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 </div>
 <div id="daten" class="section level2">
 <h2>Daten</h2>
@@ -496,6 +522,18 @@ einmal das Wort Arbeitszeit vorkommt.</p>
 <p><strong>HIER INFOS ZU DIMENSIONEN DER AUSSORTIERTEN
 KORPORA</strong></p>
 <div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-10.1145/2597008.2597150" class="csl-entry">
+Binkley, David, Daniel Heinz, Dawn Lawrie, and Justin Overfelt. 2014.
+<span>“Understanding <span>LDA</span> in Source Code Analysis.”</span>
+In <em>Proceedings of the 22nd International Conference on Program
+Comprehension</em>, 26–36. <span>ICPC</span> 2014. <span>New York, NY,
+USA</span>: <span>Association for Computing Machinery</span>. <a href="https://doi.org/10.1145/2597008.2597150">https://doi.org/10.1145/2597008.2597150</a>.
+</div>
+<div id="ref-10.5555/944919.944937" class="csl-entry">
+Blei, David M., Andrew Y. Ng, and Michael I. Jordan. 2003. <span>“Latent
+Dirichlet Allocation.”</span> <em>Journal of Machine Learning
+Research</em> 3 (March): 993–1022.
+</div>
 <div id="ref-riegerLdaPrototypeMethodGet2020" class="csl-entry">
 Rieger, Jonas. 2020. <span>“<span class="nocase">ldaPrototype</span>:
 <span>A</span> Method in <span>R</span> to Get a <span>Prototype</span>
@@ -508,8 +546,22 @@ Rieger, Jonas, Lars Koppers, Carsten Jentsch, and Jörg Rahnenführer.
 Dirichlet Allocation</span> by <span>Assessing Its Stability Using
 Clustering Techniques</span> on <span>Replicated Runs</span>.”</span> <a href="https://doi.org/10.48550/arXiv.2003.04980">https://doi.org/10.48550/arXiv.2003.04980</a>.
 </div>
+<div id="ref-vonnordheimYoungFreeBiased2019a" class="csl-entry">
+von Nordheim, Gerret, Henrik Müller, and Michael Scheppe. 2019.
+<span>“Young, Free and Biased: <span>A</span> Comparison of Mainstream
+and Right-Wing Media Coverage of the 201516 Refugee Crisis in
+<span>German</span> Newspapers.”</span> <em>Journal of Alternative &amp;
+Community Media</em> 4 (1): 38–56. <a href="https://doi.org/10.1386/joacm_00042_1">https://doi.org/10.1386/joacm_00042_1</a>.
 </div>
 </div>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>Eine genaue technische Ausführung zu den LDA Methoden
+findet sich in den zitierten Texten von Blei et al. und Rieger et al.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
 
