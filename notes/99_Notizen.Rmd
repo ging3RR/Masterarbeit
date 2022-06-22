@@ -150,6 +150,14 @@ kable(x = Topwords_Arbeitnehmer)
 
 
 
-#Textbereinigung
+## Textbereinigung
 
 Im Arbeitgeber gibt es viele Seite die sowohl deutsche als auch französische Begriffe drin haben. Dies macht es schwierig vergleichende Analyse zu machen.
+
+
+## Nächste Schritte
+
+* Resultate einbauen
+* Einführung zum Thema schreiben
+* Abrunden vom zweiten Teil
+* Statistische Überblicke Material
