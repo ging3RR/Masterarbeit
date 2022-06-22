@@ -1,13 +1,5 @@
----
-output: html_document
-bibliography: "references.bib"
-fontsize: 12pt
-geometry: margin = 1.2in 
----
+
 <style> body {text-align: justify} </style> <!-- https://stackoverflow.com/questions/58713332/justify-text-in-rmarkdown-html-output-in-yaml-header -->
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Kapitel 3
 
