@@ -160,10 +160,10 @@ Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, re
 
 #use the LDAPrototpye function
 names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
-
+tic("LDA_Prototype")
 LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
-                              n = 15, seeds = 1:15, id = "first_try", K = 15)
-
+                              n = 50, seeds = 1:50, id = "first_try", K = 15)
+toc()
 
 
 #get the Prototype LDA
@@ -173,7 +173,7 @@ topics_Prototype <- getTopics(Prototype_LDA)
 #see the n top words of the Prototype Topics
 Topwords_Arbeitnehmer <- tosca::topWords(topics_Prototype, 5)
 
-
+save(Topwords_Arbeitnehmer, file = "data/Topwords_Arbeitnehmer.rds")
 #trying the same with 30 repetitions --> so far minor differences
 LDA_Prototype_30 <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
                                  n = 30, seeds = 1:30, id = "first_try", K = 15)

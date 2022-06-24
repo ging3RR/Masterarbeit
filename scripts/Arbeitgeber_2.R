@@ -65,6 +65,7 @@ ggplot(data=token_Info2_Arbeitgeber, aes(x = date, y = freq, group = 1)) + geom_
   theme_bw()
 
 ##3rd step LDA----
+tic("full_LDA")
 #remove all the whitespaces, words separated by - can now be tokenized as one word
 Arbeitgeber_csv$complete_text <- gsub(pattern = "\\-\\s+", 
                              replacement = "", 
@@ -119,10 +120,10 @@ names(Corpus_Prototype_Arbeitgeber) = paste0("id", seq_along(Corpus_Prototype_Ar
 #use tic toc to measure time
 tic("LDA_Prototype")
 LDA_Prototype_Arbeitgeber <- LDAPrototype(docs = Corpus_Prototype_Arbeitgeber, vocabLDA = wordlist_Arbeitgeber$words,
-                              n = 15, seeds = 1:15, id = "first_try", K = 15, progress = TRUE)
+                              n = 50, seeds = 1:50, id = "first_try", K = 15, progress = TRUE)
 toc()
 
-
+toc()
 
 #get the Prototype LDA
 Prototype_LDA_Arbeitgeber <- getLDA(LDA_Prototype_Arbeitgeber)
@@ -134,7 +135,7 @@ Topwords_Arbeitgeber <- tosca::topWords(topics_Prototype_Arbeitgeber, 5)
 #cluster the results
 clustRes_Arbeitgeber <- clusterTopics(ldaresult = Prototype_LDA_Arbeitgeber, xlab = "Topic", ylab = "Distance")
 
-
+save(Topwords_Arbeitgeber, file = "data/Topwords_Arbeitgeber.rds")
 
 #topics over time 
 #clean the date variable
