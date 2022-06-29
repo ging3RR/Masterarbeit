@@ -161,3 +161,9 @@ Im Arbeitgeber gibt es viele Seite die sowohl deutsche als auch französische Be
 * Einführung zum Thema schreiben
 * Abrunden vom zweiten Teil
 * Statistische Überblicke Material
+
+
+## Stopwords
+
+`sample.int(n = 152, size = 5)`
+[1]  58  51  88  55 106
