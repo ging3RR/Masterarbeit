@@ -251,28 +251,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-/* for pandoc --citeproc since 2.11 */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 
 
@@ -387,12 +365,73 @@ pre code {
 </div>
 
 
+<pre class="r"><code>source(&quot;~/Masterarbeit/scripts/functions.R&quot;)</code></pre>
 <style> body {text-align: justify} </style>
 <p><!-- https://stackoverflow.com/questions/58713332/justify-text-in-rmarkdown-html-output-in-yaml-header --></p>
 <div id="kapitel-2" class="section level1">
 <h1>Kapitel 2</h1>
-<div id="forschungsgegenstand-allgemein" class="section level2">
-<h2>Forschungsgegenstand allgemein</h2>
+<div id="stand-der-literatur" class="section level2">
+<h2>Stand der Literatur</h2>
+<p>In dieser Arbeit wird sowohl eine soziologische, wie auch technische
+Herangehensweise gewählt. Dies gilt für die Methodik, die im dritten
+Kapitel genauer ausgeführt wird, wie auch für die theoretische
+Fragestellungen. Diese Fragestellung wird in diesem Abschnitt genauer
+beschrieben.</p>
+<p>Das Thema Arbeitszeitverkürzung rund um den zweiten Weltkrieg und in
+der Nachkriegszeit wurde schon in einigen Schriften behandelt. In diesem
+Kapitel wird auf einige dieser Werke eingegangen und es wurde versucht
+die wichtigen Erkenntnisse zusammenzutragen. Die Werke setzten sich
+dabei mit der theoretischen Behandlung der Arbeitszeit auseinander.
+Einerseits ging es dabei um die Wirtschaftliche und rechtliche Frage der
+Arbeitszeitverkürzung, andererseits um die politischen Verhandlungen
+zwischen den involvierten Organisationen.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Seltener miteinbezogen
+wurde die Kommunikation der Organisationen (mit Ausnahme der
+Kommunikation des Staates) an die Öffentlichkeit. Die Kommunikation der
+Organisationen, ausserhalb von Verhandlungen, ist in diesem Kontext
+weniger oft beachtet worden. Dieses Thema bietet eine weitere
+interessante Dimension für die Analyse der Arbeitszeitverkürzung in der
+Schweiz. <span style="color: blue;">MEHR INFOS ZU
+ORGANISATIONSKOMMUNIKATION</span> Als Grundlage für die Analyse werden
+die Mitgliederzeitschriften des Arbeitnehmer:innenverbandes und des
+Arbeitgeber:innenverbandes analysiert. Es handelt sich somit um eine
+spezielle Art der Kommunkation, die zwar öffentlich war, sich jedoch an
+Mitglieder gerichtet hat. Der Erwerb der Zeitschriften war
+kostenpflichtig. Dies indiziert ein gewisses Mass an Interesse und
+Hingabe der angesprochenen Personen. <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Die Kommunikationssoziologische Frage ist
+in einem explorativem Forschungskontext zu verorten. Das Ziel ist die
+explorative Erforschung der Mitgliederkommunikation der beiden Verbände.
+Es geht dabei weniger um die allgemeine Bedeutung der Arbeitszeitfrage
+in diese Verbänden. Vielmehr geht es um die Themen, Ansichten und
+Argumente rund um die Arbeitszeitverkürzung, die den Mitglieder
+kommuniziert worden sind.</p>
+<p>Für die Analyse dieser Texte werden computergestützte
+Textanalyseverfahren verwendet. <span style="color: blue;">MEHR ZU
+TEXTANALYSEN IN SOZIALWISSENSCHAFTEN</span> (grösste Datenmengen,
+historische Bedeutung etc.) Aus technischer Sicht sind für diese Arbeit
+mehrere Fragestellungen interessant. Einerseits ist die Frage, ob die
+bisherigen Erkenntnisse aus der Forschungsliteratur mit diesen Methoden
+reproduzierbar sind. Idealerweise sollten die Erkentnisse aus den
+(meist) qualitativen Analysen auch mit den quantitativen Vorgehensweisen
+erkennbar sein. Andererseits ist die Anwendung von computergestützten
+Methoden auf dieses empirische Material interessant. Da es sich beim
+empirischen Material um historische Zeitschriften aus Archivbeständen
+handelt und nicht um digitale Produkte der Neuzeit. Somit leistet diese
+Arbeit auch einen Beitrag zu den Herausforderungen der
+soziologisch-historischen Herangehensweise kombiniert mit
+Datenwissenschaften.</p>
+<p><span style="color: orange;">weitere Mögliche
+Fragestellungen:</span></p>
+<ul>
+<li>Ist es möglich Erkenntnisse aus der bisherigen Literatur auch mit
+quantitativen Vorgehen zu erkennen und zu bestätigen?</li>
+<li>Wie verhält sich die Kommunikation rund um das Thema Arbeitszeit bei
+den beiden Verbänden? Werden ähnliche Themen angesprochen?</li>
+<li>Ist LDA für die Analyse von Mitgliederzeitschriften ein geeignetes
+Analysetool</li>
+</ul>
+</div>
+<div id="forschungsgegenstand" class="section level2">
+<h2>Forschungsgegenstand</h2>
 <p>Für eine klare und strukturierte soziologische Diskussion ist die
 Definition der Begriffe eine wichtige Grundlage. Auch bei der Diskussion
 um die Arbeitszeit gilt es im Vornherein die zentralen Begriffe für die
@@ -401,15 +440,14 @@ Beschreibung der zentralen Begriffe folgt im ersten Teil dieses
 Kapitels. Anschliessend folgt eine Übersicht über die wichtigen
 Organisationen und Institutionen, die mit dem Thema der
 Arbeitszeitverkürzung in der Schweiz stark involviert sind.</p>
-<div id="arbeitszeitverkürzung" class="section level3">
-<h3>Arbeitszeitverkürzung</h3>
+<div id="arbeitszeit" class="section level3">
+<h3>Arbeitszeit</h3>
 <p>Für das Wort Arbeitszeitverkürzung gibt es im aktuellen
 Sprachgebrauch mehrere Alternativen. Die Forschenden Bader et al. nutzen
 eine solche Alternative. Sie beschreiben in ihrem Working Paper den
-Begriff Erwerbsarbeitszeit <span class="citation">(Bader et al.
-2020)</span>. Ein anderer Begriff der sich auch auf dieses Verhältnis
-bezieht ist Lohnarbeit <span class="citation">(Stöger et al.
-2015)</span>. Diese beiden Begriffen grenzen sich vom Begriff der
+Begriff Erwerbsarbeitszeit <span class="citation">[@baderWenigerIstMehr2020]</span>. Ein anderer Begriff
+der sich auch auf dieses Verhältnis bezieht ist Lohnarbeit <span class="citation">[@stogerArbeitszeitverkurzungAlsVoraussetzung2015]</span>.
+Diese beiden Begriffen grenzen sich vom Begriff der
 Arbeitszeitverkürzung durch eine Präzisierung ab. Arbeit bezieht sich in
 diesem Fall ausschliesslich auf ein Lohn- bzw. Erwerbsverhältnis, in dem
 die menschliche Arbeit für eine (heutzutage meistens) monetäre
@@ -485,8 +523,7 @@ eine wichtige Rolle, da die meisten Unternehmen mit einem
 Jahresarbeitszeitmodell arbeiten<span style="color: red;">QUELLE</span>.
 Wichtig für die Diskussion ist die Normierung von Arbeitszeit auf einen
 bestimmten Zeitraum, da diese Quantifizierung der Arbeit es ermöglicht
-Vergleiche und Analysen durchzuführen<span class="citation">(Espeland
-and Stevens 2008)</span>.</p>
+Vergleiche und Analysen durchzuführen<span class="citation">[@espelandSociologyQuantification2008]</span>.</p>
 <p>Nebst den Verhandlungen um die Arbeitszeit waren auch stets
 Lohnverhandlungen geführt worden. Die Analyse und Diskussion um
 Lohnverhandlungen kann an diesem Punkt jedoch nicht aufgenommen werden,
@@ -500,35 +537,7 @@ den Ferien und Überstunden werden die meisten
 Arbeitszeitverkürzungskompromisse zusammen mit Lohnausgleichen
 verhandelt.</p>
 </div>
-<div id="involvierte-organisationen" class="section level3">
-<h3>Involvierte Organisationen</h3>
-<p>Die Debatte um die Arbeitszeitverkürzung war seit jeher eine
-internationale Diskussion. Dies ist gut erkennbar an der Forderung des
-ersten internationalen Arbeiterkongress (sic!) von 1889, der den 8h-Tag
-forderte und an dem Leute aus 20 Ländern teilgenommen haben <span style="color: red;">QUELLE</span>. Die Parteien die an der Debatte um
-die Arbeitszeitverkürzung teilnehmen sind, im europäischen Kontext, in
-den meisten Fällen die gleichen. So ist die Verhandlung rund um die
-Arbeitszeit generell eine Verhandlung zwischen Arbeitgeber:innen und
-Arbeitnehmer:innen. Dies gilt sowohl für Österreich und Deutschland
-<span class="citation">(Wüthrich 1987)</span>, wie auch Frankreich und
-Belgien<span class="citation">(Rudischhauser 2017)</span> . Der
-Organisationsgrad dieser Parteien kann unterschiedlich ausgeprägt sein.
-So können die Verhandlungen z.B. auf Verbandsebene oder auf
-Unternehmungsebene diskutiert werden. Auch wie stark der Staat
-involviert ist, kann sich von Land zu Land unterscheiden. <span style="color: orange;">Hier einige Beispiel von den Texten</span>.</p>
-</div>
-</div>
-<div id="forschungsfrage" class="section level2">
-<h2>Forschungsfrage</h2>
-<p>Im vorderen Teil wurden die Begriffe sowie Organisationen rund um die
-Arbeitszeit im allgemeinen ausgeführt. Bevor diese genauer spezifiziert
-und für diese Arbeit definiert werden, macht es Sinn eine Einführung in
-die Fragestellung, die dieser Arbeit zugrunde liegt, einzugehen. Dies
-hilft besser zu verstehen, wieso die Begriffe und Organisationen
-ausgewählt worden sind, die in dieser Arbeit analytisch betrachtet
-werden. Anschliessend an die Herleitung der Fragestellung folgt die
-Definition der oben benannten Begriffe für diese Arbeit.</p>
-<div id="arbeitszeitverkürzung-1" class="section level3">
+<div id="arbeitszeitverkürzung" class="section level3">
 <h3>Arbeitszeitverkürzung</h3>
 <p>Im Anbetracht der weiter oben geführten Diskussion um die Definition
 der Arbeitszeit, ist es sinnvoll genauer zu beschreiben, wie in dieser
@@ -548,7 +557,7 @@ aus vier verschiedenen Hauptrichtungen. Erstens ist sie durch die
 Bundesverfassung geregelt. Hier sind insbesondere der Artikel 110
 (Rechtliche Erlaubnis Vorschriften zum Thema Arbeit zu erlassen), Art.
 122 (Regelung Zivilrecht), Art. 28 (Koalitionsfreiheit) und der Artikel
-8 Ziff. 3 (Gleichstellung von Mann und Frau [!sic]) zu erwähnen.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Der zweite
+8 Ziff. 3 (Gleichstellung von Mann und Frau [!sic]) zu erwähnen.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Der zweite
 Einfluss auf das Arbeitsrecht ist der Einzelarbeitsvertrag, der vor
 allem durch die OR Artikel 319-355 definiert wird. Drittens gibt es das
 Recht des Gesamtarbeitsvertrages (OR Artikel 356 bis 358). Als vierter
@@ -574,8 +583,8 @@ Arbeitszeitregulierungen bis zu den 1960er Jahren liefert die
 Dissertation von Kaufmann. Anlässlich der Diskussionen um die
 Vierzigstundenwoche schreibt Kaufmann über die Geschichte der
 Arbeitszeitverkürzungen in der Schweiz. Im ersten Teil widmet er sich
-dabei der Arbeitszeitgesetzgebung<span class="citation">(Kaufmann 1960,
-S. 7-76)</span> . Vor dem Jahr 1874 war es dem Bund rechtlich nicht
+dabei der Arbeitszeitgesetzgebung<span class="citation">[@kaufmannVierzigstundenwocheSchweizAnschaulichtheoretischer1960,
+S. 7-76]</span> . Vor dem Jahr 1874 war es dem Bund rechtlich nicht
 erlaubt die Arbeitszeit gesetzlich zu regeln. Die Gesetzgebung in diesem
 Bereich war in der Hoheit der Kantone. Viele dieser Gesetze waren vor
 allem auf den Schutz der jugendlichen Fabrikmitarbeitenden und Kindern
@@ -704,12 +713,12 @@ Arbeiter (LFSA, liberale Weltanschauung). Der letzte unabhängige Verband
 ist die Vereinigung Schweizerischer Angestelltenverbände (VSA), welche
 die Angestellten der Privatwirtschaft unter sich vereinigt.</p>
 <p>Die Zusammenarbeit zwischen den Minderheitsgewerkschaften, dem VSA
-und dem SGB ist kaum vorhanden <span class="citation">(Hardmeier
-1970)</span>. Der SGB ist ausserdem fast der einzige Gewerkschaftsbund,
-der in der politischen Diskussion rund um die Arbeitszeitverkürzung
-aktiv war. Auch der CNG war noch ein bisschen involviert, die andere
-Bunde jedoch kaum oder gar nicht<span class="citation">(Wüthrich 1987,
-S.6)</span>.</p>
+und dem SGB ist kaum vorhanden <span class="citation">[@hardmeierAusGeschichteSchweizerischen1970]</span>.
+Der SGB ist ausserdem fast der einzige Gewerkschaftsbund, der in der
+politischen Diskussion rund um die Arbeitszeitverkürzung aktiv war. Auch
+der CNG war noch ein bisschen involviert, die andere Bunde jedoch kaum
+oder gar nicht<span class="citation">[@alma99312190105505,
+S.6]</span>.</p>
 <p>Die Arbeitgeber:innen sind in vier Dachverbänden organisiert:
 Schweizerischer Handels- und Industrieverein (SHIV), Zentralverband
 schweizerischer Arbeitgeber-Organisationen (ZSAO), Schweizerischer
@@ -723,7 +732,7 @@ viel ausgeprägter als auf der Arbeitnehmer:innen-Seite. Im Gegensatz
 dazu setzten sich die drei Verbände ZSAO, SHIV und SGV für die wichtigen
 Entscheidungen zusammen. Viele der Mitglieder in einem Verband sind auch
 in anderen Verbänden Mitglieder. Und auch auf der Führungsstufe ist die
-Koordination durch gegenseitige Vertretung gesichert <span class="citation">(Wüthrich 1987, S.7 ff.)</span>.</p>
+Koordination durch gegenseitige Vertretung gesichert <span class="citation">[@alma99312190105505, S.7 ff.]</span>.</p>
 <p>Sowohl der SGB wie auch der ZSAO sind jedoch nicht in der Lage
 Gesamtarbeitsverträge unterschreiben zu können. Die GAV werden jeweils
 auf Branchen- oder Unternehmensebene unterzeichnet.</p>
@@ -734,8 +743,8 @@ Schweiz</h3>
 <p>Der Autor Wüthrich schreibt in seiner Dissertation von einem
 <em>“schweizerischen, arbeitszeitpolitischen Stil”</em>, der vor allem
 durch ein starke Disziplin im Arbeitsverhältnis und Berücksichtigung der
-volkswirtschaftlichen Lage definiert wird <span class="citation">(Wüthrich 1987, S.195 ff.)</span>. Grundsätzlich ist
-die Einstellung zur Arbeitszeitreduktion eher zurückhaltend. In der
+volkswirtschaftlichen Lage definiert wird <span class="citation">[@alma99312190105505, S.195 ff.]</span>. Grundsätzlich
+ist die Einstellung zur Arbeitszeitreduktion eher zurückhaltend. In der
 Diskussion zur Einführung des Arbeitszeitgesetzes kommt dies gut zum
 vorschein. So sind die Arbeitgeber klar der Meinung, dass ein
 bundesweites Gesetz die Arbeitszeit nicht heruntersetzen dürfe. Obwohl
@@ -764,13 +773,14 @@ Arbeitszeitentwicklung in der Schweiz nicht immer konservativ geprägt
 war. Zu seiner Zeit war das Glarner Fabrikpolizeigesetz von 1864,
 welches auch als Grundlage des eidgenössichen Fabrikgesetzes von 1877
 diente, eines der fortschrittlichsten seiner Zeit (auch international)
-war <span class="citation">(Kaufmann 1960, S.16)</span>. Auch bei den
-Anpassungen des eidgenössischen Fabrikgesetzes nach dem Landesstreik von
-1918 wurde eine progressive Reduktion der Arbeitszeit gesetzlich
-festgeschrieben. Von diesem progressiven Stil haben sich die
-Verhandlungsparteien dann aber immer weiter gelöst. Auch heutzutage sind
-die Wochenarbeitszeiten sowohl im ArG, wie auch in den GAV auf einem
-sehr hohen Niveau und gehören europäisch zu den höchsten.</p>
+war <span class="citation">[@kaufmannVierzigstundenwocheSchweizAnschaulichtheoretischer1960,
+S.16]</span>. Auch bei den Anpassungen des eidgenössischen
+Fabrikgesetzes nach dem Landesstreik von 1918 wurde eine progressive
+Reduktion der Arbeitszeit gesetzlich festgeschrieben. Von diesem
+progressiven Stil haben sich die Verhandlungsparteien dann aber immer
+weiter gelöst. Auch heutzutage sind die Wochenarbeitszeiten sowohl im
+ArG, wie auch in den GAV auf einem sehr hohen Niveau und gehören
+europäisch zu den höchsten.</p>
 </div>
 <div id="bedeutung-des-arbeitsfriedens-für-die-schweiz" class="section level3">
 <h3>Bedeutung des Arbeitsfriedens für die Schweiz</h3>
@@ -785,7 +795,7 @@ auf den Einfluss der konjunkturellen Lage auf die Arbeitszeitdiskussion
 eingegangen. Im zweiten Abschnitt dann auf den Umgang mit
 Fremdarbeiter:innen. Beides sind wichtige Themen die den Diskurs im
 Parlament, dem Bundesrat, Arbeitgeber:innenverbänden und
-Arbeitnehmer:innenverbänden stark geprägt haben<span class="citation">(siehe Kapitel 3 Wüthrich 1987)</span>.</p>
+Arbeitnehmer:innenverbänden stark geprägt haben<span class="citation">[siehe Kapitel 3 @alma99312190105505]</span>.</p>
 <p>In einer Analyse zu den wirtschaftlichen Folgen und Voraussetzungen
 einer Arbeitszeitverkürzung schreibt der Autor Michaelis auch über die
 geeignete Konjunkturphase. Dabei kommt er zu folgendem Schluss:</p>
@@ -800,7 +810,7 @@ Vollbeschäftigung herrscht. Ob dieser Zustand im Verlaufe eines
 Aufstieges oder Niedergangs erreicht wird oder ob er vielleicht den
 Höhepunkt eines Konjunkturzyklus darstellt, ist weniger wichtig”</p>
 <footer>
-—<span class="citation">(Michaelis 1960, S. 87)</span>
+—<span class="citation">[@alma997904240105505, S. 87]</span>
 </footer>
 </blockquote>
 <p>Die Konjunkturphase ist somit nicht die einzige Dimension, die es zu
@@ -835,51 +845,54 @@ Arbeitszeitverkürzung würde diese Tendenzen noch verstärken. Dies
 resultiert dann entweder in Überstunden (damit die Produktion erhöht
 wird) oder einer Zunahme der Preise (damit nicht mehr soviel konsumiert
 werden kann). Somit wären auch Arbeitnehmer:innen negativ von einer
-Arbeitszeitreduktion betroffen <span class="citation">(Michaelis 1960,
-S. 79-90)</span>.</p>
+Arbeitszeitreduktion betroffen <span class="citation">[@alma997904240105505, S. 79-90]</span>.</p>
 <p>Die Analyse von Michaelis ist aus einer betriebs- und
 volkswirtschaftlichen Perspektive. Viele der theoretischen Annahmen
 gründen somit in der Lehre der Wirtschaftswissenschaften. Gerade aus
 soziologischer Perspektive ist es aber notwendig diese Annahmen auch zu
 hinterfragen. Ein gutes Beispiel zum Grund für die Hinterfragung von
 wirtschaftlichen Theorien findet sich einem Beitrag von Mirowski und
-Nik-Kha zur Radiofrequenzversteigerung in den USA <span class="citation">(Mirowski and Nik-Khah 2007)</span>. Generell ist die
-ganze Forschung rund um die Performativität von Wirtschaftstheorien
-<span class="citation">(siehe zum Beispiel Callon 1998a; MacKenzie
-2007)</span> ein guter Anlass um Annahmen der Wirtschaftstheorie auch
-kritisch zu beleuchten. Bezogen auf die Analyse von Michaelis gibt es
-dabei vor allem zwei Punkte, die es zu hinterfragen gibt. Ersten geht
-der Autor davon aus, dass mit einer Arbeitszeitverkürzung ein
-Prdouktionsrückgang verbunden ist. Dass dies nicht immer so ist zeigt
-unter anderem das Experiment der Arbeitszeitverkürzung in Island <span class="citation">(Haraldsson and Kellam 2021)</span>. In diesem Beitrag
-zeigen die Autoren Haraldsson und Kellam auf, dass die Verkürzung der
-Arbeitszeit vor allem mit einer Reorganisation verbunden ist. Bestehende
-Strukturen werden verändert und optimiert, sodass dieselbe Arbeit in
-weniger Zeit erledigt werden kann. Einen grossen Punkt der sich zeigte
-war vor allem das Einsparen oder Verkürzen von Meetings. Dieses
-Experiment wurde in einem spezifischen nationalen Kontext und “nur” mit
-Staatsangestellten durchgeführt. Daher sind die Ergebnisse nicht
-zwingend auf alle anderen Staaten oder auf die Privatwirtschaft
-übertragbar. Dennoch sollten diese Ergebnisse nicht einfach ignoriert
-werden. Denn auch theoretische Abhandlungen des Themas aus eher
-sozialwissenschaftlichen Perspektive zeigen, dass mit
+Nik-Kha zur Radiofrequenzversteigerung in den USA <span class="citation">[@mirowskiMarketsMadeFlesh2007]</span>. Generell ist
+die ganze Forschung rund um die Performativität von Wirtschaftstheorien
+<span class="citation">[siehe zum Beispiel @callonLawsMarkets1998a;
+@mackenzieEconomistsMakeMarkets2007a]</span> ein guter Anlass um
+Annahmen der Wirtschaftstheorie auch kritisch zu beleuchten. Bezogen auf
+die Analyse von Michaelis gibt es dabei vor allem zwei Punkte, die es zu
+hinterfragen gibt. Ersten geht der Autor davon aus, dass mit einer
+Arbeitszeitverkürzung ein Prdouktionsrückgang verbunden ist. Dass dies
+nicht immer so ist zeigt unter anderem das Experiment der
+Arbeitszeitverkürzung in Island <span class="citation">[@haraldssonGoingPublicIceland2021]</span>. In diesem
+Beitrag zeigen die Autoren Haraldsson und Kellam auf, dass die
+Verkürzung der Arbeitszeit vor allem mit einer Reorganisation verbunden
+ist. Bestehende Strukturen werden verändert und optimiert, sodass
+dieselbe Arbeit in weniger Zeit erledigt werden kann. Einen grossen
+Punkt der sich zeigte war vor allem das Einsparen oder Verkürzen von
+Meetings. Dieses Experiment wurde in einem spezifischen nationalen
+Kontext und “nur” mit Staatsangestellten durchgeführt. Daher sind die
+Ergebnisse nicht zwingend auf alle anderen Staaten oder auf die
+Privatwirtschaft übertragbar. Dennoch sollten diese Ergebnisse nicht
+einfach ignoriert werden. Denn auch theoretische Abhandlungen des Themas
+aus eher sozialwissenschaftlichen Perspektive zeigen, dass mit
 Arbeitszeitreduktion nicht unbedingt eine Einbusse an Produktivtät
-verbunden sein muss <span class="citation">(Siehe dazu Bader et al.
-2020; Stöger et al. 2015)</span>. Zweitens geht Michaelis von der
-Annahme aus, dass Lohnverhandlungen den Arbeitszeitsverhandlungen zuvor
-kommen und erst wenn der Lohn auf der “gerechtfertigten” Höhe ist, wird
-überhaupt über die Arbeitszeit diskutiert. Wie bereits beschrieben
-lassen sich diese Themen aber nicht so einfach voneinander lösen. In der
-Dissertation von Wüthrich wird klar, dass diese Verhandlung rund um die
-Themen Lohn, Arbeitszeit und Ferien parallel und gleichzeitig verlaufen.
-Ein weiteres Beispiel, das der Annahme von Michaelis widerspricht, ist
-in der Dissertation von Kaufmann aufzufinden. Kaufmann schreibt von
-einer <em>bewussten Mehrarbeitspolitik</em>, die das Ziel hat durch
-Arbeitszeitreduktion den Lohn zu erhöhen. Die Reduktion der Arbeitszeit
-wird dann zu einem Mittel zur Lohnpolitik <span class="citation">(Kaufmann 1960, S. 65f.)</span>. Die Ansprüche rund um
-den Lohn und die Arbeitszeit lassen sich somit nicht in eine Reihenfolge
-einteilen. Beide Bedürfnisse können zu unterschiedlichen Zeiten und je
-nach Voraussetzung von der Arbeitnehmer:innenseite gefordert werden.</p>
+verbunden sein muss <span class="citation">[Siehe dazu
+@baderWenigerIstMehr2020;
+@stogerArbeitszeitverkurzungAlsVoraussetzung2015]</span>. Zweitens geht
+Michaelis von der Annahme aus, dass Lohnverhandlungen den
+Arbeitszeitsverhandlungen zuvor kommen und erst wenn der Lohn auf der
+“gerechtfertigten” Höhe ist, wird überhaupt über die Arbeitszeit
+diskutiert. Wie bereits beschrieben lassen sich diese Themen aber nicht
+so einfach voneinander lösen. In der Dissertation von Wüthrich wird
+klar, dass diese Verhandlung rund um die Themen Lohn, Arbeitszeit und
+Ferien parallel und gleichzeitig verlaufen. Ein weiteres Beispiel, das
+der Annahme von Michaelis widerspricht, ist in der Dissertation von
+Kaufmann aufzufinden. Kaufmann schreibt von einer <em>bewussten
+Mehrarbeitspolitik</em>, die das Ziel hat durch Arbeitszeitreduktion den
+Lohn zu erhöhen. Die Reduktion der Arbeitszeit wird dann zu einem Mittel
+zur Lohnpolitik <span class="citation">[@kaufmannVierzigstundenwocheSchweizAnschaulichtheoretischer1960,
+S. 65f.]</span>. Die Ansprüche rund um den Lohn und die Arbeitszeit
+lassen sich somit nicht in eine Reihenfolge einteilen. Beide Bedürfnisse
+können zu unterschiedlichen Zeiten und je nach Voraussetzung von der
+Arbeitnehmer:innenseite gefordert werden.</p>
 <p>Ein Merkmal der Hochkonjunktur in der Nachkriegszeit war die
 Vollbeschäftigung der Arbeitnehmer:innen. Doch auch mit einer
 Vollbeschäftigung war es immer noch nicht möglich der Nachfrage im In-
@@ -890,12 +903,12 @@ Arbeitnehmer:innen (vor allem italienische Arbeitnehmer) aus dem Ausland
 in der Schweiz anzustellen. Diese Anstellungen sind in den 50er und 60er
 Jahren immer wie weiter gestiegen. Im Jahr 1964 hat die Anzahl der
 Fremdarbeiter:innen 721’000 erreicht und machte damit über einen Drittel
-aller Erwerbstätigen aus <span class="citation">(Wüthrich 1987, S.
-156)</span>. Die Anstellungsverhältnisse für diese Arbeitnehmer:innen
+aller Erwerbstätigen aus <span class="citation">[@alma99312190105505, S.
+156]</span>. Die Anstellungsverhältnisse für diese Arbeitnehmer:innen
 waren generell ziemlich schlecht. So war es zum Beispiel nur mit einer
 Bewilligung möglich den Beruf zu wechseln. Da viele der einheimischen
 Arbeitnehmer:innen die Phase ausnutzen konnten um in einen anderen
-(Wunsch)Beruf zu wechseln <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, war dies den ausländischen Arbeitstätigen
+(Wunsch)Beruf zu wechseln <a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, war dies den ausländischen Arbeitstätigen
 nicht möglich. Des weiteren war es der Familie der Fremdarbeiter:innen
 nicht erlaubt in die Schweiz nachzuziehen. Dies war erst möglich nach
 einer gesetzlich festgelegten Frist, die zu Beginn drei Jahre dauerte.
@@ -906,12 +919,12 @@ Lebens- und Arbeitsbedingungen der italienischen Arbeitnehmer:innen
 gesehen und kritisierte diese aufs schärfste. Der Bundesrat hat
 anschliessend ein Abkommen ausgehandelt in dem wirtschaftliche und
 soziale Besserstellungen der Fremdarbeiter:innen veranlasst werden.
-Ausserdem wurde die Nachzügelfrist von 36 auf 18 Monate verkürzt
-(S.157f.). Im Buch von Wüthrich und in den von ihm zitierten Quellen
-wird auf diesen Zustand oft das Wort Überfremdung angewendet. Dieser
-Zustand führte immer wieder zur Kritik aus unterschiedlichen Richtungen.
-Es geht sogar soweit, dass der Autor Riedo dies als eine innenpolitische
-Krise der Schweiz beschreibt <span class="citation">(Riedo 1976)</span>.
+Ausserdem wurde die Nachzügelfrist von 36 auf 18 Monate verkürzt (S.157
+f.). Im Buch von Wüthrich und in den von ihm zitierten Quellen wird auf
+diesen Zustand oft das Wort Überfremdung angewendet. Dieser Zustand
+führte immer wieder zur Kritik aus unterschiedlichen Richtungen. Es geht
+sogar soweit, dass der Autor Riedo dies als eine innenpolitische Krise
+der Schweiz beschreibt <span class="citation">[@riedoProblemAuslaendischenArbeitskraefte1976]</span>.
 Unter anderem war ein grosses Problem die Hausknappheit, die durch den
 hohen Zuzug von Fremdarbeiter:innen ausgelöst worden war. Von den Seiten
 der Arbeitgeber:innen wurden vor allem die Vorschriften des Staates
@@ -927,8 +940,8 @@ Absicht den Wachstum und die Investition zu stoppen. Zur selben Zeit
 wurde auch ein Kreditbeschluss verfasst, der zum Ziel hatte den
 Geldzufluss aus dem Ausland zu stoppen. Dies führte zu heftigen
 Prosteten auf der Seite von der Arbeitgeber:innen und wurde als
-Einschnitt in die Wirtschaftsfreiheit betrachtet <span class="citation">(Wüthrich 1987, S. 157 ff.)</span>. Auch auf Seite der
-Arbeitnehmer:innen gab es Unzufriedenheit mit dem hohen
+Einschnitt in die Wirtschaftsfreiheit betrachtet <span class="citation">[@alma99312190105505, S. 157 ff.]</span>. Auch auf
+Seite der Arbeitnehmer:innen gab es Unzufriedenheit mit dem hohen
 Fremdarbeiter:innenbestand. So wurde zum Beispiel kritisiert, dass die
 Übermässigen Einnahmen der guten Konjunkturphase ausschliesslich für den
 weiteren Ausbau der Gewinne der Unternehmer:innen eingesetzt wurde. Es
@@ -949,119 +962,37 @@ Anzahl Fremdarbeiter:innen zu verschulden hat. Stattdessen waren es die
 Arbeitnehmer:innen die für diese übermässigen Investitionen aufkommen
 mussten.</p>
 </div>
-<div id="fragestellung" class="section level3">
-<h3>Fragestellung</h3>
-<ul>
-<li>Wie wurde von den Verbänden der beiden Vertragsparteien rund um das
-Thema Arbeitszeitverkürzung kommuniziert?</li>
-<li>Ist es möglich Erkenntnisse aus der bisherigen Literatur auch mit
-quantitativen Vorgehen zu erkennen und zu bestätigen?</li>
-<li>Wie verhält sich die Kommunikation rund um das Thema Arbeitszeit bei
-den beiden Verbänden? Werden ähnliche Themen angesprochen?</li>
-<li>Ist LDA für die Analyse von Mitgliederzeitschriften ein geeignetes
-Analysetool</li>
-</ul>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-baderWenigerIstMehr2020" class="csl-entry">
-Bader, Christoph, Hugo Hanbury, Sebastian Neubert, and Stephanie Moser.
-2020. <span>“Weniger Ist <span>Mehr</span> - <span>Der</span> Dreifache
-<span>Gewinn</span> Einer <span>Reduktion</span> Der
-<span>Erwerbsarbeitszeit</span>. <span>Weniger</span> Arbeiten Als
-<span>Transformationsstrategie</span> Für Eine Ökologischere, Gerechtere
-Und Zufriedenere <span>Gesellschaft</span> - <span>Implikationen</span>
-Für Die <span>Schweiz</span>.”</span> {{CDE Working Papers}} 6.
-<span>Bern</span>: <span>Centre for Development and Environment
-(CDE)</span>.
-</div>
-<div id="ref-callonLawsMarkets1998a" class="csl-entry">
-Callon, Michel. 1998a. <em>The Laws of the Markets</em>. Sociological
-Review Monograph. <span>Oxford [etc</span>: <span>Blackwell/The
-Sociological Review</span>.
-</div>
-<div id="ref-espelandSociologyQuantification2008" class="csl-entry">
-Espeland, Wendy Nelson, and Mitchell L. Stevens. 2008. <span>“A
-<span>Sociology</span> of <span>Quantification</span>.”</span>
-<em>European Journal of Sociology / Archives Européennes de Sociologie /
-Europäisches Archiv Für Soziologie</em> 49 (3): 401–36. <a href="https://www.jstor.org/stable/23998802">https://www.jstor.org/stable/23998802</a>.
-</div>
-<div id="ref-haraldssonGoingPublicIceland2021" class="csl-entry">
-Haraldsson, Gudmundur D., and Jack Kellam. 2021. <span>“Going
-<span>Public</span>: <span>Iceland</span>’s <span>Journey</span> to a
-<span>Shorter Working Week</span> – <span>Alda</span>,”</span> June. <a href="https://en.alda.is/2021/07/04/going-public-icelands-journey-to-a-shorter-working-week/">https://en.alda.is/2021/07/04/going-public-icelands-journey-to-a-shorter-working-week/</a>.
-</div>
-<div id="ref-hardmeierAusGeschichteSchweizerischen1970" class="csl-entry">
-Hardmeier, Benno. 1970. <em>Aus Der <span>Geschichte</span> Der
-Schweizerischen <span>Arbeiterbewegung</span></em>. <span>Bern</span>:
-<span>Schweizerische Arbeiterbildungszentrale</span>.
-</div>
-<div id="ref-kaufmannVierzigstundenwocheSchweizAnschaulichtheoretischer1960" class="csl-entry">
-Kaufmann, Peter. 1960. <span>“Vierzigstundenwoche in der Schweiz? : ein
-anschaulich-theoretischer Beitrag zur Geschichte und zur Problematik der
-Arbeitszeitsverkürzung in der Schweiz.”</span> <em>Vierzigstundenwoche
-in der Schweiz? ein anschaulich-theoretischer Beitrag zur Geschichte und
-zur Problematik der Arbeitszeitsverkürzung in der Schweiz</em>.
-Staatswissenschaftliche Studien. Neue Folge Bd. 41. <span>Zürich</span>:
-<span>Polygr. Verl.</span>
-</div>
-<div id="ref-mackenzieEconomistsMakeMarkets2007a" class="csl-entry">
-MacKenzie, Donald. 2007. <em>Do <span>Economists Make Markets</span>?:
-<span>On</span> the <span>Performativity</span> of
-<span>Economics</span></em>. <span>Princeton University Press</span>. <a href="https://doi.org/10.2307/j.ctv10vm29m">https://doi.org/10.2307/j.ctv10vm29m</a>.
-</div>
-<div id="ref-alma997904240105505" class="csl-entry">
-Michaelis, Dietrich. 1960. <span>“Zur Frage der Arbeitszeitverkürzung in
-der Schweiz.”</span> <span>Winterthur</span>: <span>Verlag P.G.
-Keller</span>.
-</div>
-<div id="ref-mirowskiMarketsMadeFlesh2007" class="csl-entry">
-Mirowski, Philip, and Edward Nik-Khah. 2007. <span>“Markets <span>Made
-Flesh</span>:”</span> In <em>Do <span>Economists Make
-Markets</span>?</em>, edited by Donald MacKenzie, Fabian Muniesa, and
-Lucia Siu, 190–224. On the <span>Performativity</span> of
-<span>Economics</span>. <span>Princeton University Press</span>. <a href="https://doi.org/10.2307/j.ctv10vm29m.11">https://doi.org/10.2307/j.ctv10vm29m.11</a>.
-</div>
-<div id="ref-riedoProblemAuslaendischenArbeitskraefte1976" class="csl-entry">
-Riedo, Ren’e. 1976. <span>“Das Problem der ausländischen Arbeitskräfte
-in der schweizerischen Gewerkschaftspolitik von 1945-1970.”</span>
-Europäische Hochschulschriften. Reihe 5, Volks- und Betriebswirtschaft
-Bd. 133. <span>Bern</span>: <span>H. Lang</span>.
-</div>
-<div id="ref-RudischhauserSabine2017Ft8D" class="csl-entry">
-Rudischhauser, Sabine. 2017. <span>“From the 8-<span>Hour</span> Day to
-the 40-<span>Hour</span> Week: <span>Legitimization</span> Discourses of
-Labour Legislation Between the Wars in France and Belgium.”</span>
-<em>Politics and Governance</em> 5 (1): 6–14.
-</div>
-<div id="ref-stogerArbeitszeitverkurzungAlsVoraussetzung2015" class="csl-entry">
-Stöger, Ursula, Fritz Böhle, Norbert Huchler, Marc Jungtäubl, Vera
-Kahlenber, and Margit Weihrich. 2015. <span>“Arbeitszeitverkürzung Als
-<span>Voraussetzung</span> Für Ein Neues Gesellschaftliches
-<span>Produktionsmodell</span>.”</span> Expertise. <span>München</span>:
-<span>ISF München</span>. <a href="https://www.isf-muenchen.de/pdf/Arbeitszeitverkuerzung_als_Voraussetzung.pdf">https://www.isf-muenchen.de/pdf/Arbeitszeitverkuerzung_als_Voraussetzung.pdf</a>.
-</div>
-<div id="ref-alma99312190105505" class="csl-entry">
-Wüthrich, Werner. 1987. <span>“Ökonomische, rechtliche und
-verbandspolitische Fragen in der Auseinandersetzung um die Arbeitszeit
-während der Hochkonjunktur (1946-1975) in der Schweiz und in
-Österreich.”</span> <span>Grüsch</span>: <span>Rüegger</span>.
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />
 <ol>
-<li id="fn1"><p>Weitere Artikel sind Art. 11 Ziff. 1 (Schutz von
+<li id="fn1"><p>Die Debatte um die Arbeitszeitverkürzung war seit jeher
+eine internationale Diskussion. Dies ist gut erkennbar an der Forderung
+des ersten internationalen Arbeiterkongress (sic!) von 1889, der den
+8h-Tag forderte und an dem Leute aus 20 Ländern teilgenommen haben <span style="color: red;">QUELLE</span>. Die Parteien die an der Debatte um
+die Arbeitszeitverkürzung teilnehmen sind, im europäischen Kontext, in
+den meisten Fällen die gleichen. So ist die Verhandlung rund um die
+Arbeitszeit generell eine Verhandlung zwischen Arbeitgeber:innen und
+Arbeitnehmer:innen. Dies gilt sowohl für Österreich und Deutschland
+<span class="citation">[@alma99312190105505]</span>, wie auch Frankreich
+und Belgien<span class="citation">[@RudischhauserSabine2017Ft8D]</span>
+. Der Organisationsgrad dieser Parteien kann unterschiedlich ausgeprägt
+sein. So können die Verhandlungen z.B. auf Verbandsebene oder auf
+Unternehmungsebene diskutiert werden. Auch wie stark der Staat
+involviert ist, kann sich von Land zu Land unterscheiden. <span style="color: orange;">Hier einige Beispiel von den Texten</span>. <a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>weitere Informationen zu den Zeitschriften weiter
+unten<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Weitere Artikel sind Art. 11 Ziff. 1 (Schutz von
 Jugendlichen und Kindern), Art. 22 (Versammlungsfreiheit), Art. 23
-(Vereinigungsfreiheit) und Art. 27 (Wirtschaftsfreiheit)<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Durch die Vollbeschäftigung waren überall immer wieder
+(Vereinigungsfreiheit) und Art. 27 (Wirtschaftsfreiheit)<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Durch die Vollbeschäftigung waren überall immer wieder
 Leute gesucht um Stellen zu besetzten. Im Gegensatz zu schlechtere
 Konjunkturphasen war also eine Arbeitnehmer:innen Knappheit auf dem
 Arbeitsmarkt. Dies sorgte dafür, dass die Verhandlungsmacht der
 Arbeitnehmer:innen grösser war als zu anderen Zeiten. Viele Personen
 nutzten dies um aus den Jobs in der Industrie in Gewerbe oder Bürojobs
-zu wechseln.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+zu wechseln.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
