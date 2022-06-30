@@ -24,8 +24,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(knitr)
-load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitgeber.rds")
-load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds")
+load(file = "~/Masterarbeit/data/Topwords_Arbeitgeber.rds")
+load(file = "~/Masterarbeit/data/Topwords_Arbeitnehmer.rds")
 ```
 
 ## Stichproben Arbeitgeber
