@@ -387,10 +387,11 @@ pre code {
 </div>
 
 
+<pre class="r"><code>source(&quot;~/Masterarbeit/scripts/functions.R&quot;)</code></pre>
 <style> body {text-align: justify} </style>
 <p><!-- https://stackoverflow.com/questions/58713332/justify-text-in-rmarkdown-html-output-in-yaml-header --></p>
-<div id="kapitel-3" class="section level1">
-<h1>Kapitel 3</h1>
+<div id="methoden" class="section level1">
+<h1>Methoden</h1>
 <p>In diesem Kapitel folgt die Beschreibung des empirischen Materials
 sowie der verwendeten Methoden für die Analyse der Daten. In dieser
 Arbeit wird eine soziologische Sichtweise auf die Frage der
@@ -431,19 +432,24 @@ die virtuelle Umgebung in der gearbeitet wird nachgebaut werden. Dies
 verhindert unter anderem auch Fehler durch unterschiedliche Versionen
 von Softwares.</p>
 <p>Die ganze Arbeit wurde in RStudio geschrieben. Die Texte sind in
-RMarkdown geschrieben und werden mithilfe von <code>Bookdown</code>zu
-einem PDF Output zusammengefügt. Die Scripte für die Analyse sind zum
-grössten Teil in der R Programmiersprache geschrieben. Eines der Data
-Cleaning Scripts wurde in Python geschrieben, da eines der Probleme
-nicht in R gelöst werden konnte. Auch dieses Python Script ist innerhalb
-der RStudio Umgebung mithilfe des <code>reticulate</code> Packages
-ausführbar. Es ist möglich, die Analysen im vierten Teil dieser Arbeit
-nachrechnen zu lassen und allenfalls andere Parameter zu wählen, um
-bessere Forschungsergebnisse zu erhalten. Für diese Analyse wurde unter
-anderem das <code>LDA Prototype</code>Package von Rieger et
-al. verwendet<span class="citation">(Rieger et al. 2020; Rieger
-2020)</span>. Dieses Package sorgt für bessere Reproduzierbarkeit bei
-LDA Analysen von Texten.</p>
+RMarkdown geschrieben und werden mithilfe von <code>Bookdown</code> zu
+einem PDF Output zusammengefügt. Der Workflow für die Arbeit und das
+Github Repository stammt von Thea Knowles <span class="citation">(Knowles 2019)</span> in Anlehnung an Lucy D’Agostino
+McGowan <span class="citation">(D’Agostino McGowan 2018)</span>. Ein
+weiteres wichtiges Mittel für die Arbeit mit Bookdown in RStudio stammt
+aus der Dokumenation des Packages geschrieben von Yihui Xie, der das
+Package auch entwickelt hat <span class="citation">(Xie 2022)</span>.
+Die Scripte für die Analyse sind zum grössten Teil in der R
+Programmiersprache geschrieben. Eines der Data Cleaning Scripts wurde in
+Python geschrieben, da eines der Probleme nicht in R gelöst werden
+konnte. Auch dieses Python Script ist innerhalb der RStudio Umgebung
+mithilfe des <code>reticulate</code> Packages ausführbar. Es ist
+möglich, die Analysen im vierten Teil dieser Arbeit nachrechnen zu
+lassen und allenfalls andere Parameter zu wählen, um bessere
+Forschungsergebnisse zu erhalten. Für diese Analyse wurde unter anderem
+das <code>LDA Prototype</code>Package von Rieger et al. verwendet<span class="citation">(Rieger et al. 2020; Rieger 2020)</span>. Dieses
+Package sorgt für bessere Reproduzierbarkeit bei LDA Analysen von
+Texten.</p>
 <p>Die <em>Latent dirichlet allocation</em> (LDA) ist eine Textanalyse
 Methode, die dazu dient die Dimensionen eines Korpus zu verringern <span class="citation">(Blei, Ng, and Jordan 2003)</span>. In dieser Methoden
 werden alle Wörter in unterschiedliche Wortlisten zugeteilt. In diesen
@@ -482,26 +488,27 @@ Arbeitgeber-Organisationen (ZSAO) zwei der wichtigsten
 Verhandlungsteilnehmer rund um die Arbeitszeitdiskussion. Es war möglich
 für beide dieser Verbände den gesamten Bestand der Mitgliederzeitungen
 von 1930 bis 1970 zu erhalten. <br> Die Mitgliederzeitung des SGB heisst
-Gewerkschaftliche Rundschau und ist in den Jahren … bis … im
-Vierteljahrestakt und in den Jahren … bis … im Monatstakt herausgegeben
-worden. <strong>MEHR INFOS ZUR ZEITUNG</strong> Die digitalen Scans der
-Gewerkschaftlichen Rundschau sind auf dem E-Periodica Archiv der ETH
-Zürich öffentlich zugänglich. Für diese Arbeit hat der Autor die
-digitalisierten Texte im .txt Format erhalten. <br> Die Zeitung des ZSAO
-ist jährlich erschienen und trägt den Namen Arbeitsgeber.<strong>MEHR
-INFOS ZUR ZEITUNG</strong> Die Zeitschriften sind vor Kurzem auch an das
-Archiv der ETHZ übergeben worden. Sie sind jedoch nicht öffentlich
-zugänglich. Eine digitalisierte Version der Zeitschriften konnte das
-Wirtschaftsarchiv der Universität Basel zu Verfügung stellen. Diese
-Texte waren im OCR Verfahren der Firma … eingelesen worden. Als Output
-dieses Verfahrens entstehen XML Dateien. Wie bereits angesprochen
-mussten für das Einlesen dieser Texte in RStudio ein Python Script
-verwendet werden. Der Grund dafür war die Struktur des XML, in dem der
-Textinhalt in einer verschachtelten Child Node zu finden war. In der R
-Sprache konnte dieses Problem leider nicht gelöst werden, da der
-gewünschte Synthax nicht herausgefunden werden konnte. Da dieses Problem
-einfacher in Python gelöst werden konnte, wurde schlussendlich zu dieser
-weniger eleganten Lösung zurückgegriffen.</p>
+Gewerkschaftliche Rundschau und ist in den Jahren 1909 bis 1946
+monatlich und in den Jahren 1947 bis 1994 im Vierteljahrestakt
+herausgegeben worden. <strong>MEHR INFOS ZUR ZEITUNG</strong> Die
+digitalen Scans der Gewerkschaftlichen Rundschau sind auf dem
+E-Periodica Archiv der ETH Zürich öffentlich zugänglich. Für diese
+Arbeit hat der Autor die digitalisierten Texte im .txt Format erhalten.
+<br> Die Zeitung des ZSAO ist jährlich erschienen und trägt den Namen
+Arbeitsgeber.<strong>MEHR INFOS ZUR ZEITUNG</strong> Die Zeitschriften
+sind vor Kurzem auch an das Archiv der ETHZ übergeben worden. Sie sind
+jedoch nicht öffentlich zugänglich. Eine digitalisierte Version der
+Zeitschriften konnte das Wirtschaftsarchiv der Universität Basel zu
+Verfügung stellen. Diese Texte waren im OCR Verfahren der Firma …
+eingelesen worden. Als Output dieses Verfahrens entstehen XML Dateien.
+Wie bereits angesprochen mussten für das Einlesen dieser Texte in
+RStudio ein Python Script verwendet werden. Der Grund dafür war die
+Struktur des XML, in dem der Textinhalt in einer verschachtelten Child
+Node zu finden war. In der R Sprache konnte dieses Problem leider nicht
+gelöst werden, da der gewünschte Synthax nicht herausgefunden werden
+konnte. Da dieses Problem einfacher in Python gelöst werden konnte,
+wurde schlussendlich zu dieser weniger eleganten Lösung
+zurückgegriffen.</p>
 <p><strong>ZUSAMMENFASSENDE INFORMATIONEN ZU DEN TEXTEN</strong></p>
 <p>Da das Thema dieser Arbeit der Diskurs um die Arbeitszeitverkürzung
 ist, war es sinnvoll das empirische Material vorzusortieren. In den
@@ -534,6 +541,14 @@ Blei, David M., Andrew Y. Ng, and Michael I. Jordan. 2003. <span>“Latent
 Dirichlet Allocation.”</span> <em>Journal of Machine Learning
 Research</em> 3 (March): 993–1022.
 </div>
+<div id="ref-dagostinomcgowanOneYearDissertate2018" class="csl-entry">
+D’Agostino McGowan, Lucy. 2018. <span>“One Year to Dissertate.”</span>
+<span>Live Free or Dichotomize</span>. 2018. <a href="https://livefreeordichotomize.com/2018/09/14/one-year-to-dissertate/">https://livefreeordichotomize.com/2018/09/14/one-year-to-dissertate/</a>.
+</div>
+<div id="ref-knowlesDissertatingRMarkdownBookdown2019" class="csl-entry">
+Knowles, Thea. 2019. <em>Dissertating with <span>RMarkdown</span> and
+<span>Bookdown</span></em>. <a href="https://bookdown.org/thea_knowles/dissertating_rmd_presentation/">https://bookdown.org/thea_knowles/dissertating_rmd_presentation/</a>.
+</div>
 <div id="ref-riegerLdaPrototypeMethodGet2020" class="csl-entry">
 Rieger, Jonas. 2020. <span>“<span class="nocase">ldaPrototype</span>:
 <span>A</span> Method in <span>R</span> to Get a <span>Prototype</span>
@@ -552,6 +567,10 @@ von Nordheim, Gerret, Henrik Müller, and Michael Scheppe. 2019.
 and Right-Wing Media Coverage of the 201516 Refugee Crisis in
 <span>German</span> Newspapers.”</span> <em>Journal of Alternative &amp;
 Community Media</em> 4 (1): 38–56. <a href="https://doi.org/10.1386/joacm_00042_1">https://doi.org/10.1386/joacm_00042_1</a>.
+</div>
+<div id="ref-xieBookdownAuthoringBooks2022" class="csl-entry">
+Xie, Yihui. 2022. <em>Bookdown: <span>Authoring Books</span> and
+<span>Technical Documents</span> with <span>R Markdown</span></em>. <a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a>.
 </div>
 </div>
 </div>
