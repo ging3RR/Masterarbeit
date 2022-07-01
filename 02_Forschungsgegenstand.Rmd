@@ -73,9 +73,7 @@ In der Schweiz gab es somit bis zum Arbeitsgesetz von 1964 keine eidgenössische
 
 Wie bereits erwähnt ist der einzige Ort im Schweizer Recht, an dem die Arbeitszeit geregelt ist, das Arbeitsgesetz. Weitere Möglichkeiten zur Bestimmung von Arbeitsstunden sind in den Gesamtarbeitsverträgen zu finden. Eine Übersicht über diese Gesamtarbeitsverträge findet sich im nächsten Kapitel. 
 
-### Gesamtarbeitsverträge
-
-Die Regelung der Arbeitszeit, sowie andere Arbeitsschutzmassnahmen, können durch einen Gesamtarbeitsvertrag (GAV) weiter spezifiziert werden. Das ARG ist lediglich der Mindestschutz, der für alle Arbeitnehmenden eingehalten werden muss. Der GAV wird durch die berechtigten Verhandlungsparteien ausgehandelt und unterschrieben. `r colorize("hier mehr Info zur Rechtslage", "blue") `.
+### Die Ordnungskräfte in der Schweiz
 
 Auf Arbeitnehmerseite gibt es viele unterschiedliche Verbände, die teilweise zusammengeschlossen und teilweise unabhängig voneinander sind. Eine der wichtigsten Dachorganisationen ist der Schweizerische Gewerkschaftsbund (SGB). Viele der wichtigsten Gewerkschaftsverbände sind Teil des SGB. Nach dem 2. Weltkrieg waren dies unter anderem (alle Namen nur im generischen Maskulin) der Schweizerische Metall- und Uhrenarbeiterverband (SMUV) oder der Schweizerische Textil- und Fabrikarbeiterverband (STFV). Aber auch der Schweizerische Verband des Personals öffentlicher Dienste (VPOD), der heutzutage zu den grössten Gewerkschaften zählt, ist Teil des SGB. Speziell zu erwähnen ist ausserdem noch, dass die meisten Mitglieder des Föderativverbandes des Personals öffentlicher Verwaltung und Betriebe (rund 100'000 Mitglieder), auch Mitglieder eines Verbandes innerhalb des SGB sind. Der SGB ist Mitgliedermässig der grösste Bund von Arbeitnehmenden. Nicht nur durch die Grösse sondern auch durch die politische Haltung ist der SGB die wichtigste Arbeitnehmer:innen-Organisation in der Frage der Arbeitszeitverkürzung. 
 
@@ -86,7 +84,20 @@ Die Zusammenarbeit zwischen den Minderheitsgewerkschaften, dem VSA und dem SGB i
 
 Die Arbeitgeber:innen sind in vier Dachverbänden organisiert: Schweizerischer Handels- und Industrieverein (SHIV), Zentralverband schweizerischer Arbeitgeber-Organisationen (ZSAO), Schweizerischer Gewerbeverband (SGV) und dem Schweizerischen Bauernverband (SBV). Der wichtigste Verband für die politische Stellung der Arbeitgeber:innen zur Arbeitszeitverkürzung war der ZSAO, der in den 1920er Jahren praktisch als Gegenbewegung zur Arbeitnehmer:innenbewegung gegründet wurde. Der Bauernverband ist in der Frage der Arbeitszeit als Arbeitgeberverband kaum wichtig. Der Austausch zwischen der Arbeitgeber:innenverbänden ist viel ausgeprägter als auf der Arbeitnehmer:innen-Seite. Im Gegensatz dazu setzten sich die drei Verbände ZSAO, SHIV und SGV für die wichtigen Entscheidungen zusammen. Viele der Mitglieder in einem Verband sind auch in anderen Verbänden Mitglieder. Und auch auf der Führungsstufe ist die Koordination durch gegenseitige Vertretung gesichert [@alma99312190105505, S.7 ff.].
 
-Sowohl der SGB wie auch der ZSAO sind jedoch nicht in der Lage Gesamtarbeitsverträge unterschreiben zu können. Die GAV werden jeweils auf Branchen- oder Unternehmensebene unterzeichnet. 
+
+
+### Gesamtarbeitsverträge
+
+Die Regelung der Arbeitszeit, sowie andere Arbeitsschutzmassnahmen, können durch einen Gesamtarbeitsvertrag (GAV) weiter spezifiziert werden. Das ARG ist lediglich der Mindestschutz, der für alle Arbeitnehmenden eingehalten werden muss. Der GAV wird durch die berechtigten Verhandlungsparteien ausgehandelt und unterschrieben. Sowohl der SGB wie auch der ZSAO sind jedoch nicht in der Lage Gesamtarbeitsverträge unterschreiben zu können. Die GAV können nur von Arbeitgeber:innen, deren direkten Verbände und von Arbeitnehmer:innenverbänden unterschrieben werden^[wie bereits erwähnt finden sich die Bestimmungen zum GAV in OR Art. 356 - 358]. Der SGB und der ZSAO sind beides Verbände aus Verbänden und haben dadurch keine rechtliche Grundlage die GAV zu unterschreiben. Sie wirken somit als Koordinationsstelle und Austausch für die jeweiligen Vertragsparteien. Es gibt verschiedenen GAV mit unterschiedlichen Wirkungsgebieten. Gallati bezeichnet für seine Arbeit fünf unterschiedliche GAV:
+
+* Firmenverträge, die das Verhältnis innerhalb eines Unternehmens regeln
+* Ortsverträge, die das Verhältnis innerhalb einer Gemeinde regeln ^[Der Verband evanglischer Arbeiter und Angestellter (!sic) ist nach Ortsprinzip organisiert. Wahrscheinlich unterzeichnet der SVEA somit die meisten dieser Verträge. Andere Möglichkeiten sind GAV für Gemeindsmitarbeitende]
+* Kantonalverträge
+* Landesteilverträge
+* Landesverträge ^[Die meisten Personen werden von Landesverträge erfasst. Diese Verträge sind vor allem verbreitet in Branchen die gut organisiert sind und in der ganzen Schweiz vertreten sind [@gallatiArbeitsfriedeSchweizUnd1976, S.80 f.]]
+
+
+Bis zu den 1920er Jahren war der GAV auf beiden Seiten nicht beliebt. Für die Arbeitgeber:innen war die Verhandlung eine Privatsache und nicht kollektiv machbar. Die Arbeitnehmer:innen befürchteten einen Stillstand durch kollektive Verhandlungen. Mit der Änderung der Rechtlage und der Integration des GAV in das OR im Jahr 1911 war zumindest der rechtliche Pfeiler gestellt. Es dauerte aber trotzdem noch einige Jahre bis sich der GAV als Arbeitszeitregulation durchsetzten konnte. Ab den 30er Jahren bis zum heutigen Tag ist der GAV das wichtigste Mittel zur kollektiven Festsetzung der Arbeitszeit[@gallatiArbeitsfriedeSchweizUnd1976, S.74 ff.].
 
 
 ## Der Charakter der gesetzlichen Arbeitszeitverkürzung in der Schweiz
@@ -98,6 +109,16 @@ Als zusätzliche Bemerkung lässt sich sagen, dass die Arbeitszeitentwicklung in
 
 ### Bedeutung des Arbeitsfriedens für die Schweiz
 
+Der Arbeitsfriede ist ein Wort, das in den von Wüthrich geschildereten Diskussionen immer wieder fällt. Nebst der offensichtlichen Bedeutung für die politische Debatte, ist es ausserdem eine spezielle Eigenschaft der Arbeitrechtsverhandlungen, die es in dieser Form sonst in anderen Ländern nicht gibt. Der Arbeitsfriede ist für alle beteiligten Parteien ein wichtiges Prinzip, das es einzuhalten gilt. Aus diesen Gründen ist es sinnvoll an dieser Stelle genauer auf das Konzept des Arbeitsfrieden einzugehen.
+
+Rechtlich ist der Arbeitsfrieden im OR. Art. 357a Ziff 2. geregelt:
+
+>*"Jede Vertragspartei ist verpflichtet, den Arbeitsfrieden zu wahren und sich insbesondere jeder Kampfmassnahme zu enthalten, soweit es sich um Gegenstände handelt, die im Gesamtarbeitsvertrag geregelt sind; die Friedenspflicht gilt nur unbeschränkt, wenn dies ausdrücklich bestimmt ist."* 
+
+Der Autor Gallati unterscheidet aufgrund dieser Regelung zwei unterschiedliche Arten des Arbeitsfriedens. Einerseits die relative Friendspflicht, bei der die jeweiligen GAV Bestimmungen eingehalten werden. Dabei gibt es die negative Seite der Friedenspflich, bei der beide Parteien verboten wird die Bestimmungen aufzulösen oder Gewalt anzuwenden um dies zu forcieren. Als positive Seite der Ausübung der Friendspflicht bezeichnet Gallati die Pflicht die einzelnen Mitglieder auch von Gewalt abzuhalten (auch Einwirkungspflicht genannt). Hier sind die Lücken der relativen Friendspflicht gut erkennbar. Sie gelten nur für die Vertragsparteien des GAV und für die in den GAV bestimmten Gewaltaktionen. Alles was nicht explizit in den GAV vermerkt ist kann nicht als Friendensbruch interpretiert werden. So sind zum Beispiel Sympathie- oder Solidaritätsaktionen nicht ausgeschlossen. Auch Proteste von einzelnen Gruppen (und nicht von den Verbänden) können nicht zwingend als Friedensbruch angesehen werden. Bei der absoluten Friendspflicht sind diese Einschränkungen nicht mehr gültig. Die absolute Friendspflicht muss in den GAV ausdrücklich erwähnt werden, aber bezieht sich dann sowohl auf alle Aktionen, wie auch auf alle Personen, Gruppen und Verbände[@gallatiArbeitsfriedeSchweizUnd1976, S.102 ff.]. 
+
+Ein wichtiger Punkt in der Entwicklung des Arbeitsfriedens war das sogenannte Friedensabkommen von 1937. In diesem Jahr schlossen die Arbeitnehmer:innenverbände der Metallindustrie (unter anderem der Schweizerische Metall- und Uhrenarbeiterverband SMUV) und der Arbeitgeberverband schweizerischer Maschinen- und Metallindustrieller (!sic) ASM zusammen einen speziellen GAV ab. In diesem GAV wurde nur die absolute Friedenspflicht geregelt, alle anderen Themen wurden später in zusätzlichen Verträgen gereglet. Die Besonderheit dieses Ereignisses war vor allem, dass die beiden Verbände in der Vergangenheit eher verfeindet waren. Grund für dieses plötzliche Übereinkommen war die geplante Einmischung des Bundes bei der Bestimmung der Löhne. Dieser Wechsel von freiwilliger Schlichtung des Staates zu einer Zwangsschlichtung wurde von beiden Seiten nicht geduldet. Eine Möglichkeit den Bund an diesem Plan zu hindern, war gemeinsam ein Abkommen abzuschliessen. Dieses Abkommen war ein Wendepunkt im Sozialpartnerverhältnis[@gallatiArbeitsfriedeSchweizUnd1976, S.111 ff.].  
+
 
 ### Der Einfluss der Volkswirtschaftlichen Lage
 
@@ -105,7 +126,7 @@ Wie bereits erwähnt ist ein wichtiger Teil des Schweizerischen Arbeitszeitpolit
 
 In einer Analyse zu den wirtschaftlichen Folgen und Voraussetzungen einer Arbeitszeitverkürzung schreibt der Autor Michaelis auch über die geeignete Konjunkturphase. Dabei kommt er zu folgendem Schluss:
 
->"Unter Berücksichtigung der Tatsache, dass von den durch eine Arbeitszeitverkürzung beeinflussbaren Grössen der Beschäftigungsgrad, das Produktionsvolumen sowie die Höhe der Lohnsätze, der Unternehmergewinne und der Realeinkommen die wichtigsten sind, scheinen die Voraussetzung für eine Arbeitszeitverkürzung am günstigsten, wenn und solange der Beschäftigungsgrad relativ gross ist, jedoch noch keine Vollbeschäftigung herrscht. Ob dieser Zustand im Verlaufe eines Aufstieges oder Niedergangs erreicht wird oder ob er vielleicht den Höhepunkt eines Konjunkturzyklus darstellt, ist weniger wichtig"
+>*"Unter Berücksichtigung der Tatsache, dass von den durch eine Arbeitszeitverkürzung beeinflussbaren Grössen der Beschäftigungsgrad, das Produktionsvolumen sowie die Höhe der Lohnsätze, der Unternehmergewinne und der Realeinkommen die wichtigsten sind, scheinen die Voraussetzung für eine Arbeitszeitverkürzung am günstigsten, wenn und solange der Beschäftigungsgrad relativ gross ist, jedoch noch keine Vollbeschäftigung herrscht. Ob dieser Zustand im Verlaufe eines Aufstieges oder Niedergangs erreicht wird oder ob er vielleicht den Höhepunkt eines Konjunkturzyklus darstellt, ist weniger wichtig"*
 >
 > `r tufte::quote_footer("---[@alma997904240105505, S. 87]")`
 

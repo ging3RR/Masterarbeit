@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  1 JUL 2022 10:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  1 JUL 2022 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,62 +496,82 @@ Overfull \hbox (33.37169pt too wide) detected at line 186
  []
 
 [5] [6]
-<images/Arbeitszeitgesetze_vor_1874.jpg, id=152, 1378.14874pt x 2375.87625pt>
+<images/Arbeitszeitgesetze_vor_1874.jpg, id=159, 1378.14874pt x 2375.87625pt>
 File: images/Arbeitszeitgesetze_vor_1874.jpg Graphic file (type jpg)
 <use images/Arbeitszeitgesetze_vor_1874.jpg>
 Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 213.
 (pdftex.def)             Requested size: 360.51825pt x 621.51982pt.
 [7] [8 <./images/Arbeitszeitgesetze_vor_1874.jpg>] [9] [10]
-Underfull \hbox (badness 1308) in paragraph at lines 232--234
+Underfull \hbox (badness 1308) in paragraph at lines 230--232
 []\T1/lmr/m/n/12 Nebst dem SGB gibt es noch weit-ere Ver-bunde, die sich nicht nur der Ar-
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 232--234
+Underfull \hbox (badness 3138) in paragraph at lines 230--232
 \T1/lmr/m/n/12 beiter:innenbewegung an-schlossen, son-dern sich ide-ol-o-gisch auch noch an-ders
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 232--234
+Underfull \hbox (badness 1112) in paragraph at lines 230--232
 \T1/lmr/m/n/12 der Christlich-Nationale Gew-erkschafts-bund (CNG), der Schweiz-erische Ver-band
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 237--238
+Underfull \hbox (badness 1377) in paragraph at lines 235--236
 []\T1/lmr/m/n/12 Die Ar-beit-ge-ber:innen sind in vier Dachver-bän-den or-gan-isiert: Schweiz-erischer
  []
 
-[11] [12] [13] [14]
-Underfull \hbox (badness 3713) in paragraph at lines 271--272
+
+Underfull \hbox (badness 1558) in paragraph at lines 240--241
+\T1/lmr/m/n/12 Die Regelung der Ar-beit-szeit, sowie an-dere Ar-beitss-chutz-mass-nah-men, kön-nen
+ []
+
+[11] [12] [13]
+Underfull \hbox (badness 3029) in paragraph at lines 278--279
+[]\T1/lmr/m/n/12 Ein wichtiger Punkt in der En-twick-lung des Ar-beits-friedens war das so-ge-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 278--279
+\T1/lmr/m/n/12 nan-nte Friedens-abkom-men von 1937. In diesem Jahr schlossen die Ar-beit-
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 278--279
+\T1/lmr/m/n/12 und Uhre-nar-beit-er-ver-band SMUV) und der Ar-beit-ge-berver-band schweiz-erischer
+ []
+
+[14] [15]
+Underfull \hbox (badness 3713) in paragraph at lines 300--301
 \T1/lmr/m/n/12 Die Fra-gen rund um die Volk-swirtschaft und die Kon-junk-turlage hat den
  []
 
-[15] [16] [17]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 288.
+[16] [17] [18]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 317.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [18] [19]
-Overfull \hbox (5.33pt too wide) in paragraph at lines 334--336
+) [19] [20] [21]
+Overfull \hbox (5.33pt too wide) in paragraph at lines 366--368
 \T1/lmr/m/n/12 theoretischer Beitrag zur Geschichte und zur Prob-lematik der Ar-beit-szeitsverkürzung
  []
 
-[20] [21] (./_main.aux)
+[22] [23] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: F4BB763EB55F31382150CD7CABAFC943;3078.
+(rerunfilecheck)             Checksum: A066F038694E87E44DA37A5BC50D6694;3326.
  ) 
 Here is how much of TeX's memory you used:
- 11378 strings out of 479997
- 179333 string characters out of 5886779
- 480229 words of memory out of 5000000
- 29280 multiletter control sequences out of 15000+600000
+ 11388 strings out of 479997
+ 179532 string characters out of 5886779
+ 483301 words of memory out of 5000000
+ 29282 multiletter control sequences out of 15000+600000
  537079 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,8n,77p,6044b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,8n,77p,6044b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (21 pages, 2060330 bytes).
+Output written on _main.pdf (23 pages, 2071952 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
