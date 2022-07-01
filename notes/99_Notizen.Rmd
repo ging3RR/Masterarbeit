@@ -167,3 +167,5 @@ Im Arbeitgeber gibt es viele Seite die sowohl deutsche als auch französische Be
 
 `sample.int(n = 152, size = 5)`
 [1]  58  51  88  55 106
+
+Da die Debatte um die Arbeitszeitverkürzung  seit jeher eine internationale Diskussion. Dies ist gut erkennbar an der Forderung des ersten internationalen Arbeiterkongress (sic!) von 1889, der den 8h-Tag forderte und an dem Leute aus 20 Ländern teilgenommen haben 
