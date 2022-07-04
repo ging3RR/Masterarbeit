@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  1 JUL 2022 13:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  4 JUL 2022 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -485,8 +485,13 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 152.
-[2] [3] [4]
+(Font)              <5> on input line 149.
+[2] [3]
+Underfull \hbox (badness 1728) in paragraph at lines 154--155
+[]\T1/lmr/m/n/12 Als Grund-lage für die Anal-yse wer-den die Mit-gliederzeitschriften des Ar-beit-
+ []
+
+[4] [5]
 
 LaTeX Warning: Command \" invalid in math mode on input line 186.
 
@@ -495,13 +500,13 @@ Overfull \hbox (33.37169pt too wide) detected at line 186
 \OML/lmm/m/it/12 Arbeitszeit \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 produktiveArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Pausen \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 nicht \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 produktiveArbeitszeit \OT1/lmr/m/n/12 + Ü\OML/lmm/m/it/12 berstunden
  []
 
-[5] [6]
-<images/Arbeitszeitgesetze_vor_1874.jpg, id=159, 1378.14874pt x 2375.87625pt>
+[6] [7]
+<images/Arbeitszeitgesetze_vor_1874.jpg, id=177, 1378.14874pt x 2375.87625pt>
 File: images/Arbeitszeitgesetze_vor_1874.jpg Graphic file (type jpg)
 <use images/Arbeitszeitgesetze_vor_1874.jpg>
 Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 213.
 (pdftex.def)             Requested size: 360.51825pt x 621.51982pt.
-[7] [8 <./images/Arbeitszeitgesetze_vor_1874.jpg>] [9] [10]
+[8] [9 <./images/Arbeitszeitgesetze_vor_1874.jpg>] [10] [11]
 Underfull \hbox (badness 1308) in paragraph at lines 230--232
 []\T1/lmr/m/n/12 Nebst dem SGB gibt es noch weit-ere Ver-bunde, die sich nicht nur der Ar-
  []
@@ -526,7 +531,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 240--241
 \T1/lmr/m/n/12 Die Regelung der Ar-beit-szeit, sowie an-dere Ar-beitss-chutz-mass-nah-men, kön-nen
  []
 
-[11] [12] [13]
+[12] [13] [14]
 Underfull \hbox (badness 3029) in paragraph at lines 278--279
 []\T1/lmr/m/n/12 Ein wichtiger Punkt in der En-twick-lung des Ar-beits-friedens war das so-ge-
  []
@@ -537,41 +542,41 @@ Underfull \hbox (badness 2080) in paragraph at lines 278--279
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 278--279
-\T1/lmr/m/n/12 und Uhre-nar-beit-er-ver-band SMUV) und der Ar-beit-ge-berver-band schweiz-erischer
+Underfull \hbox (badness 4621) in paragraph at lines 278--279
+\T1/lmr/m/n/12 nehmer:innenverbände der Met-allindus-trie (unter an-derem der Schweiz-erische
  []
 
-[14] [15]
-Underfull \hbox (badness 3713) in paragraph at lines 300--301
+[15] [16] [17]
+Underfull \hbox (badness 3713) in paragraph at lines 302--303
 \T1/lmr/m/n/12 Die Fra-gen rund um die Volk-swirtschaft und die Kon-junk-turlage hat den
  []
 
-[16] [17] [18]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 317.
+[18] [19] [20]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 319.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [19] [20] [21]
-Overfull \hbox (5.33pt too wide) in paragraph at lines 366--368
+) [21] [22] [23]
+Overfull \hbox (5.33pt too wide) in paragraph at lines 374--376
 \T1/lmr/m/n/12 theoretischer Beitrag zur Geschichte und zur Prob-lematik der Ar-beit-szeitsverkürzung
  []
 
-[22] [23] (./_main.aux)
+[24] [25] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: A066F038694E87E44DA37A5BC50D6694;3326.
+(rerunfilecheck)             Checksum: F011EA4DB7786FCBF06115F026E1FEEA;3220.
  ) 
 Here is how much of TeX's memory you used:
- 11388 strings out of 479997
- 179532 string characters out of 5886779
- 483301 words of memory out of 5000000
- 29282 multiletter control sequences out of 15000+600000
+ 11392 strings out of 479997
+ 179712 string characters out of 5886779
+ 480262 words of memory out of 5000000
+ 29280 multiletter control sequences out of 15000+600000
  537079 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,8n,77p,6044b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,8n,77p,6044b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (23 pages, 2071952 bytes).
+Output written on _main.pdf (25 pages, 2079875 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 379 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
