@@ -43,12 +43,12 @@ corpus_combined <- corpus_Arbeitgeber + corpus_Arbeitnehmer
 #make a dfm
 corpus_dfm <- tokens(corpus_combined, remove_punct = T, 
                      remove_symbols = T,
-                     remove_numbers = T) %>% 
+                     remove_numbers = T)  %>% 
   tokens_remove(sw) %>% tokens_group(groups = organisation) %>% 
-  dfm()
+  dfm() %>% dfm_wordstem()
 
 #calculate keyness (https://quanteda.io/articles/pkgdown/examples/plotting.html)
-result_keyness <- textstat_keyness(corpus_dfm, target = "Arbeitgeber")
+result_keyness <- textstat_keyness(corpus_dfm, target = "Arbeitnehmer")
 
 #plot
 textplot_keyness(result_keyness)
@@ -71,25 +71,36 @@ toc()
 
 
 #Sentiment Analysis
-#read in the Dictionaries
-positive_terms_all <- readLines("data/SentiWS_v2.0_Positive.txt")
-negative_terms_all <- readLines("data/SentiWS_v2.0_Negative.txt")
+#read in the Dictionaries (http://inhaltsanalyse-mit-r.de/sentiment.html)
+load("data/Rauh_SentDictionaryGerman.RData")
+sentiment.lexikon.rauh <- dictionary(list(positive = str_trim(sent.dictionary$feature[sent.dictionary$sentiment>0]),
+                                          negative = str_trim(sent.dictionary$feature[sent.dictionary$sentiment<0])))
 
-#restrict the data to only words that occur in the text
-positive_terms_in_suto <- intersect(colnames(corpus_dfm), positive_terms_all)
-counts_positive <- rowSums(corpus_dfm[, positive_terms_in_suto])
 
-negative_terms_in_suto <- intersect(colnames(corpus_dfm), negative_terms_all)
-counts_negative <- rowSums(corpus_dfm[, negative_terms_in_suto])
 
-#relativ numbers
-counts_all_terms <- rowSums(corpus_dfm)
+# sentiment pro organisation
+meine_dfm_sentiment_org <- corpus_dfm %>% 
+  dfm_lookup(dictionary = sentiment.lexikon.rauh)
 
-relative_sentiment_frequencies <- data.frame(
-  positive = counts_positive / counts_all_terms,
-  negative = counts_negative / counts_all_terms
-)
+meine_dfm_sentiment_org_prop <- dfm_weight(meine_dfm_sentiment_org, scheme = "prop")
 
-sentiments_per_organisation <- aggregate(relative_sentiment_frequencies, by = list(organisation = all_texts$organisation), mean)
 
-head(sentiments_per_organisation)
+
+# plot
+sentiment.org <- convert(meine_dfm_sentiment_org_prop, "data.frame") %>% 
+  gather(positive, negative, key = "Polarität", value = "Sentiment")
+ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
+  geom_bar(stat="identity") + scale_colour_brewer(palette = "Set1") + 
+  scale_fill_brewer(palette = "Accent") + 
+  ggtitle("Sentiment-Scores in den Zeitungen nach Verband") +
+  xlab("") + ylab("Anteil") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# sentiment pro text
+corpus_dfm_text <- tokens(corpus_combined, remove_punct = T, 
+                          remove_symbols = T,
+                          remove_numbers = T)  %>% 
+  tokens_remove(sw) %>% 
+  dfm() %>% dfm_wordstem() %>% dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+
