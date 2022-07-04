@@ -130,12 +130,20 @@ Prototype_LDA_Arbeitgeber <- getLDA(LDA_Prototype_Arbeitgeber)
 #get the topics of the Prototype LDA
 topics_Prototype_Arbeitgeber <- getTopics(Prototype_LDA_Arbeitgeber)
 #see the n top words of the Prototype Topics
-Topwords_Arbeitgeber <- tosca::topWords(topics_Prototype_Arbeitgeber, 5)
+Topwords_Arbeitgeber <- tosca::topWords(topics_Prototype_Arbeitgeber, 7)
 
 #cluster the results
 clustRes_Arbeitgeber <- clusterTopics(ldaresult = Prototype_LDA_Arbeitgeber, xlab = "Topic", ylab = "Distance")
 
 save(Topwords_Arbeitgeber, file = "data/Topwords_Arbeitgeber.rds")
+
+
+
+
+
+
+
+
 
 #topics over time 
 #clean the date variable

@@ -171,7 +171,7 @@ Prototype_LDA <- getLDA(LDA_Prototype)
 #get the topics of the Prototype LDA
 topics_Prototype <- getTopics(Prototype_LDA)
 #see the n top words of the Prototype Topics
-Topwords_Arbeitnehmer <- tosca::topWords(topics_Prototype, 5)
+Topwords_Arbeitnehmer <- tosca::topWords(topics_Prototype, 7)
 
 save(Topwords_Arbeitnehmer, file = "data/Topwords_Arbeitnehmer.rds")
 #trying the same with 30 repetitions --> so far minor differences
