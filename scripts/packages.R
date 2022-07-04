@@ -24,3 +24,4 @@ library(tufte)
 #Vergleich
 library(quanteda.textstats)
 library(quanteda.textplots)
+library(tidyr)
