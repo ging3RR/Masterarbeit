@@ -1,7 +1,3 @@
-
- <style> body {text-align: justify} </style> <!-- https://stackoverflow.com/questions/58713332/justify-text-in-rmarkdown-html-output-in-yaml-header -->
-
-
 # Forschungsstand
 
 In dieser Arbeit wird sowohl eine soziologische, wie auch technische Herangehensweise gewählt. Dies gilt für die Methodik, die im dritten Kapitel genauer ausgeführt wird, wie auch für die theoretische Fragestellungen. Diese Fragestellung wird in diesem Abschnitt genauer beschrieben. 
@@ -122,21 +118,21 @@ Der Autor Gallati unterscheidet aufgrund dieser Regelung zwei unterschiedliche A
 
 Ein wichtiger Punkt in der Entwicklung des Arbeitsfriedens war das sogenannte Friedensabkommen von 1937. In diesem Jahr schlossen die Arbeitnehmer:innenverbände der Metallindustrie (unter anderem der Schweizerische Metall- und Uhrenarbeiterverband SMUV) und der Arbeitgeberverband schweizerischer Maschinen- und Metallindustrieller (!sic) ASM zusammen einen speziellen GAV ab. In diesem GAV wurde nur die absolute Friedenspflicht geregelt, alle anderen Themen wurden später in zusätzlichen Verträgen gereglet. Die Besonderheit dieses Ereignisses war vor allem, dass die beiden Verbände in der Vergangenheit eher verfeindet waren. Grund für dieses plötzliche Übereinkommen war die geplante Einmischung des Bundes bei der Bestimmung der Löhne. Dieser Wechsel von freiwilliger Schlichtung des Staates zu einer Zwangsschlichtung wurde von beiden Seiten nicht geduldet. Eine Möglichkeit den Bund an diesem Plan zu hindern, war gemeinsam ein Abkommen abzuschliessen. Dieses Abkommen war ein Wendepunkt im Sozialpartnerverhältnis[@gallatiArbeitsfriedeSchweizUnd1976, S.111 ff.].  In den nachfolgenden Jahren mussten waren die Verhandlungen für die Verlängerung öfters zäh. Trotzdem wurde das Friedensabkommen immer wieder erneuert. Die Auswirkungen des Abkommens sind mannigfaltig und auf alle einzugehen sprengt den Rahmen dieser Arbeit. Die Arbeitszeitdiskussionen sind lediglich ein Teil der Verhandlungen. Dennoch ist das Friedensabkommen ein sehr grosser Teil des Verhandlungscharakters und bestimmt wie diese Verhandlungen geführt werden. Gallati schreibt von sechs Verabredungen in den Jahren 1949 bis 1975, in der die Arbeitszeit für die Metallbranche neu geregelt wird. Nebst der Arbeitszeit wurde unter anderem auch Kinderzulagen, Lohn, Ferien und vieles andere aufgrund des Friedensabkommens neu geregelt (S.125). Auch in anderen Branchen wurde das Friedensabkommen in diesen Jahren mehr und mehr angewandt.
 
-Eine Auswirkung des Arbeitsfriedens sind die friedlichen Verhandlungen und somit das Ausbleiben von Arbeitskämpfen. Als Arbeitskämpfen werden Streiks (Arbeitnehmer:innen) oder Arbeitsausschlüsse (Arbeitgeber:innen) definiert.
+Eine Auswirkung des Arbeitsfriedens sind die friedlichen Verhandlungen und somit das Ausbleiben von Arbeitskämpfen. Als Arbeitskämpfen werden Streiks (Arbeitnehmer:innen) oder Arbeitsausschlüsse (Arbeitgeber:innen) definiert. Die folgende Tabelle ist aus der Publikation von Gallati (S.155): 
 
 ```{r Arbeitskämpfe in der Schweiz 1922 bis 1971}
 Streik <- read.csv("E:/R Projects/Daten_MA//Masterarbeit/data/Streik_1922_1971.csv")
 
 Streik <- as.data.frame(Streik)
 
-kbl(Streik, caption = "Arbeitskämpfe in der Schweiz 1922 bis 1971", booktabs = T) %>%
-  kable_styling(latex_options = "striped")
+kbl(Streik, caption = "Arbeitskämpfe in der Schweiz 1922 bis 1971", booktabs = T) %>% 
+  kable_styling(latex_options = c("scale_down", "hold_position"))
 
 ```
 
-In einem weiteren Teil des Buches beschreibt Gallati die Arbeitsmarktstrategien von umliegenden Ländern. Dabei unterscheidet er zwischen zwei unterschiedlichen Typen. In Österreich und Deutschland sind es eher friedlichen Arbeitsmarktstrategien, die der Schweiz ähnlich sind. Keines der beiden Ländern kennt jedoch den expliziten Arbeitsfrieden. Der andere Typ sind Länder, in denen Arbeitskämpfe stark verbreitet sind. Gallati beschreibt in diesem Typ die Länder Frankreich und England. Da die Publikation von Gallati aus den 70er Jahren ist, werden hier die Entwicklung seit dieser Zeit dargestellt. Wichtig zu beachten sind die Skalen auf der Y-Achse die je nach Land unterschiedliche Grössen haben. Bei den "verlorenen" Arbeitstagen [@iloDaysNotWorked2019] ist gut zu sehen, dass in den deutschsprachigen Ländern weniger Arbeitstage betroffen sind. Aber auch bei Frankreich und vor allem England ist ein Rückgang seit den 70er Jahren zu verzeichnen. Bei den betroffenen Arbeitnehmer:innen [@iloWorkersInvolvedStrikes2019] sind in Frankreich und England auch wieder ein Trend zum Rückgang zu verzeichnen. In Deutschland sind eher weniger Personen betroffen. In der Schweiz und Österreich sind, mit Ausnahmen von jeweils einem Peak, kaum Leute betroffen. Interessanterweise scheint es in der Schweiz in den 10er Jahren des 21. Jahrhunderts ausserordentlich viele Arbeitnehmer:innen zu betreffen. Dies lässt sich zumindest als ein Indiz für die Aktualität der Verhandlungen von Arbeitsbedingungen interpretieren.
+In einem weiteren Teil des Buches beschreibt Gallati die Arbeitsmarktstrategien von umliegenden Ländern. Dabei unterscheidet er zwischen zwei unterschiedlichen Typen. In Österreich und Deutschland sind es eher friedlichen Arbeitsmarktstrategien, die der Schweiz ähnlich sind. Keines der beiden Ländern kennt jedoch den expliziten Arbeitsfrieden. Der andere Typ sind Länder, in denen Arbeitskämpfe stark verbreitet sind. Gallati beschreibt in diesem Typ die Länder Frankreich und England. Da die Publikation von Gallati aus den 70er Jahren ist, werden hier die Entwicklung seit dieser Zeit dargestellt. Wichtig zu beachten sind die Skalen auf der Y-Achse die je nach Land unterschiedliche Grössen haben. Bei den "verlorenen" Arbeitstagen [@iloDaysNotWorked2019] ist gut zu sehen, dass in den deutschsprachigen Ländern weniger Arbeitstage betroffen sind.
 
-```{r Tage nicht gearbeitet}
+```{r Tage nicht gearbeitet preparation, include=FALSE}
 days_not_worked <- read.csv("E:/R Projects/Daten_MA//Masterarbeit/data/days_not_worked.csv")
 
 df_days_not_worked  <- days_not_worked  %>% rename(country = ï..ref_area.label) %>% 
@@ -144,14 +140,18 @@ df_days_not_worked  <- days_not_worked  %>% rename(country = ï..ref_area.label)
   filter(classif1.label == "Economic activity (Broad sector): Total") %>% 
   rename(days = obs_value) %>% mutate(days_in_th = days/1000)
 
+
+```
+
+```{r, fig.cap= "Tage nicht gearbeitet"}
+
 ggplot(df_days_not_worked, aes(x = time, y = days_in_th)) + 
-  geom_line()+ facet_grid(rows = vars(country), scales = "free_y") + ylab("Tage in Tausend") + xlab("Jahr") + 
-  ggtitle("Tage nicht gearbeitet pro Land") + theme_bw() + 
-  labs(caption = "")
+  geom_line()+ facet_grid(rows = vars(country), scales = "free_y") + ylab("Tage in Tausend") + xlab("Jahr") + theme_bw() + labs( caption = "International Labour Organization 2019")
 ```
 
 
-```{r Involvierte Arbeitende}
+```{r Involvierte Arbeitende setup}
+
 workers_involved <- read.csv("E:/R Projects/Daten_MA//Masterarbeit/data/workers_inv.csv")
 
 df_workers_involved  <- workers_involved  %>% rename(country = ï..ref_area.label) %>% 
@@ -159,13 +159,16 @@ df_workers_involved  <- workers_involved  %>% rename(country = ï..ref_area.labe
   filter(classif1.label == "Economic activity (Broad sector): Total") %>% rename(workers_in_th = obs_value) %>% 
   mutate(workers = workers_in_th*1000)
 
-ggplot(df_workers_involved, aes(x = time, y = workers_in_th)) + 
-  geom_line() + facet_grid(rows = vars(country), scales = "free_y") + ylab("Arbeitnehmer:innen in Tausend") +
-  xlab("Jahr")
-  ggtitle("Beteiligte Arbeitnehmer:innen") + theme_bw() + 
-  labs(caption = "")
+
 ```
 
+```{r, fig.cap= "Beteiligte Arbeitnehmer:innen"}
+ggplot(df_workers_involved, aes(x = time, y = workers_in_th)) + 
+  geom_line() + facet_grid(rows = vars(country), scales = "free_y") + ylab("Arbeitnehmer:innen in Tausend") +
+  xlab("Jahr") + theme_bw() + labs(caption = "International Labour Organization 2019")
+```
+
+Aber auch bei Frankreich und vor allem England ist ein Rückgang seit den 70er Jahren zu verzeichnen. Bei den betroffenen Arbeitnehmer:innen [@iloWorkersInvolvedStrikes2019] sind in Frankreich und England auch wieder ein Trend zum Rückgang zu verzeichnen. In Deutschland sind eher weniger Personen betroffen. In der Schweiz und Österreich sind, mit Ausnahmen von jeweils einem Peak, kaum Leute betroffen. Interessanterweise scheint es in der Schweiz in den 10er Jahren des 21. Jahrhunderts ausserordentlich viele Arbeitnehmer:innen zu betreffen. Dies lässt sich zumindest als ein Indiz für die Aktualität der Verhandlungen von Arbeitsbedingungen interpretieren.
 
 
 ### Der Einfluss der Volkswirtschaftlichen Lage

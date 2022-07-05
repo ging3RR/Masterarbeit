@@ -1,0 +1,62 @@
+# Resultate
+
+```{r Setup Results, include=FALSE}
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitgeber.rds")
+Topwords_Arbeitgeber <- t(Topwords_Arbeitgeber)
+Topwords_Arbeitgeber <- as.data.frame(Topwords_Arbeitgeber)
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds")
+Topwords_Arbeitnehmer <- t(Topwords_Arbeitnehmer)
+Topwords_Arbeitnehmer <- as.data.frame(Topwords_Arbeitnehmer)
+```
+
+
+## Sentiment Analyse
+```{r Setup Sentiment Analyse, include=FALSE}
+#Sentiment Analysis
+#read in the Dictionaries (http://inhaltsanalyse-mit-r.de/sentiment.html)
+load("data/Rauh_SentDictionaryGerman.RData")
+sentiment.lexikon.rauh <- dictionary(list(positive = str_trim(sent.dictionary$feature[sent.dictionary$sentiment>0]),
+                                          negative = str_trim(sent.dictionary$feature[sent.dictionary$sentiment<0])))
+
+
+
+# sentiment pro organisation
+meine_dfm_sentiment_org <- corpus_dfm %>% 
+  dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+meine_dfm_sentiment_org_prop <- dfm_weight(meine_dfm_sentiment_org, scheme = "prop")
+
+
+
+# plot
+sentiment.org <- convert(meine_dfm_sentiment_org_prop, "data.frame") %>% 
+  gather(positive, negative, key = "Polarität", value = "Sentiment")
+
+sentiment_plot <- ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
+  geom_bar(stat="identity") + scale_colour_brewer(palette = "Set1") + 
+  scale_fill_brewer(palette = "Accent") + 
+  ggtitle("Sentiment-Scores in den Zeitungen nach Verband") +
+  xlab("") + ylab("Anteil") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r,fig.cap="Sentiment Analyse"}
+plot(sentiment_plot)
+```
+
+
+## LDA
+
+### Arbeitnehmer:innen
+
+```{r, results='asis'}
+kbl(Topwords_Arbeitnehmer, caption = "Topics Arbeitnehmer", booktabs = T) %>% 
+  kable_styling(latex_options = c("scale_down", "hold_position"))
+```
+
+### Arbeitgeber:innen
+
+```{r}
+kbl(Topwords_Arbeitgeber, caption = "Topics Arbeitgeber", booktabs = T) %>% 
+  kable_styling(latex_options = c("scale_down", "hold_position"))
+```

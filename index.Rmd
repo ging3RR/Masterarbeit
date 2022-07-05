@@ -20,13 +20,13 @@ link-citations: true
 fontsize: 12pt
 geometry: margin = 1.2in #Ränder
 
-# header-includes:
-# - \usepackage{placeins} # https://cocky-elion-5880fb.netlify.app/2016/03/30/writing-your-thesis-with-r-markdown-5-the-thesis-layout/
-# - \usepackage{setspace}
-# - \usepackage{chngcntr}
-# - \linespread{1.25}
-# - \counterwithin{figure}{section}
-# - \counterwithin{table}{section}
+header-includes:
+- \usepackage{placeins} # https://cocky-elion-5880fb.netlify.app/2016/03/30/writing-your-thesis-with-r-markdown-5-the-thesis-layout/
+- \usepackage{setspace}
+- \usepackage{chngcntr}
+- \linespread{1.25}
+- \counterwithin{figure}{section}
+- \counterwithin{table}{section}
 
 ---
 ```{r setup, include=FALSE}
@@ -40,6 +40,7 @@ knitr::opts_chunk$set(
 ```{r load packages, include=FALSE}
 
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/functions.R")
+source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
 ```
 
 

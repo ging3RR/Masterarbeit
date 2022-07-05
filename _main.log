@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  4 JUL 2022 16:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.5)  5 JUL 2022 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **_main.tex
 (./_main.tex
-LaTeX2e <2022-06-01> patch level 3
-L3 programming layer <2022-06-16> (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2022-06-01> patch level 4
+L3 programming layer <2022-07-01> (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -368,38 +368,46 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \cslhangindent=\skip62
 \csllabelwidth=\skip63
 \cslentryspacingunit=\skip64
-(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box61
 ) (./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 104.
+Package hyperref Info: Link coloring OFF on input line 110.
 (./_main.out) (./_main.out)
 \@outlinefile=\write3
 \openout3 = `_main.out'.
@@ -438,33 +446,33 @@ Package hyperref Info: Link coloring OFF on input line 104.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 106.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 112.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 106.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 112.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 106.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 112.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 106.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 112.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 106.
+(Font)              <14.4> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 106.
+(Font)              <10> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 106.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 106.
+(Font)              <7> on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./_main.toc
@@ -474,109 +482,150 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
-)
+[1
+
+{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `_main.toc'.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 116.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 122.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1
-
-{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 149.
-[2] [3]
-Underfull \hbox (badness 1728) in paragraph at lines 154--155
+(Font)              <5> on input line 155.
+[2] [3] [4]
+Underfull \hbox (badness 1728) in paragraph at lines 160--162
 []\T1/lmr/m/n/12 Als Grund-lage für die Anal-yse wer-den die Mit-gliederzeitschriften des Ar-beit-
  []
 
-[4] [5]
+[5] [6]
 
-LaTeX Warning: Command \" invalid in math mode on input line 186.
+LaTeX Warning: Command \" invalid in math mode on input line 193.
 
 
-Overfull \hbox (33.37169pt too wide) detected at line 186
+Overfull \hbox (33.37169pt too wide) detected at line 193
 \OML/lmm/m/it/12 Arbeitszeit \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 produktiveArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Pausen \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 nicht \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 produktiveArbeitszeit \OT1/lmr/m/n/12 + Ü\OML/lmm/m/it/12 berstunden
  []
 
-[6] [7]
-<images/Arbeitszeitgesetze_vor_1874.jpg, id=177, 1378.14874pt x 2375.87625pt>
+[7] [8] [9]
+<images/Arbeitszeitgesetze_vor_1874.jpg, id=210, 1378.14874pt x 2375.87625pt>
 File: images/Arbeitszeitgesetze_vor_1874.jpg Graphic file (type jpg)
 <use images/Arbeitszeitgesetze_vor_1874.jpg>
-Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 213.
+Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 220.
 (pdftex.def)             Requested size: 360.51825pt x 621.51982pt.
-[8] [9 <./images/Arbeitszeitgesetze_vor_1874.jpg>] [10] [11]
-Underfull \hbox (badness 1308) in paragraph at lines 230--232
+[10] [11 <./images/Arbeitszeitgesetze_vor_1874.jpg>] [12] [13]
+Underfull \hbox (badness 1308) in paragraph at lines 237--239
 []\T1/lmr/m/n/12 Nebst dem SGB gibt es noch weit-ere Ver-bunde, die sich nicht nur der Ar-
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 230--232
+Underfull \hbox (badness 3138) in paragraph at lines 237--239
 \T1/lmr/m/n/12 beiter:innenbewegung an-schlossen, son-dern sich ide-ol-o-gisch auch noch an-ders
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 230--232
+Underfull \hbox (badness 1112) in paragraph at lines 237--239
 \T1/lmr/m/n/12 der Christlich-Nationale Gew-erkschafts-bund (CNG), der Schweiz-erische Ver-band
  []
 
-
-Underfull \hbox (badness 1377) in paragraph at lines 235--236
+[14]
+Underfull \hbox (badness 1377) in paragraph at lines 242--243
 []\T1/lmr/m/n/12 Die Ar-beit-ge-ber:innen sind in vier Dachver-bän-den or-gan-isiert: Schweiz-erischer
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 240--241
+Underfull \hbox (badness 1558) in paragraph at lines 247--248
 \T1/lmr/m/n/12 Die Regelung der Ar-beit-szeit, sowie an-dere Ar-beitss-chutz-mass-nah-men, kön-nen
  []
 
-[12] [13] [14]
-Underfull \hbox (badness 3029) in paragraph at lines 278--279
+[15] [16] [17]
+Underfull \hbox (badness 3029) in paragraph at lines 285--286
 []\T1/lmr/m/n/12 Ein wichtiger Punkt in der En-twick-lung des Ar-beits-friedens war das so-ge-
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 278--279
+Underfull \hbox (badness 2080) in paragraph at lines 285--286
 \T1/lmr/m/n/12 nan-nte Friedens-abkom-men von 1937. In diesem Jahr schlossen die Ar-beit-
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 278--279
+Underfull \hbox (badness 4621) in paragraph at lines 285--286
 \T1/lmr/m/n/12 nehmer:innenverbände der Met-allindus-trie (unter an-derem der Schweiz-erische
  []
 
-[15] [16] [17]
-Underfull \hbox (badness 3713) in paragraph at lines 302--303
+[18] [19]
+<_main_files/figure-latex/unnamed-chunk-2-1.pdf, id=279, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 317.
+(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
+<_main_files/figure-latex/unnamed-chunk-3-1.pdf, id=280, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 323.
+(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
+[20 <./_main_files/figure-latex/unnamed-chunk-2-1.pdf>] [21 <./_main_files/figure-latex/unnamed-chunk-3-1.pdf>] [22] [23]
+Underfull \hbox (badness 3713) in paragraph at lines 349--350
 \T1/lmr/m/n/12 Die Fra-gen rund um die Volk-swirtschaft und die Kon-junk-turlage hat den
  []
 
-[18] [19] [20]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 319.
+[24] [25] [26] [27]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 366.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [21] [22] [23]
-Overfull \hbox (5.33pt too wide) in paragraph at lines 374--376
+) [28] [29]
+<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=388, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 391.
+(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
+[30] [31 <./_main_files/figure-latex/unnamed-chunk-4-1.pdf>] [32] [33]
+Overfull \hbox (5.33pt too wide) in paragraph at lines 511--513
 \T1/lmr/m/n/12 theoretischer Beitrag zur Geschichte und zur Prob-lematik der Ar-beit-szeitsverkürzung
  []
 
-[24] [25] (./_main.aux)
+[34] [35] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: F011EA4DB7786FCBF06115F026E1FEEA;3220.
+(rerunfilecheck)             Checksum: BEF98AD7FDB74FC72A534662A8C4174C;3839.
  ) 
 Here is how much of TeX's memory you used:
- 11392 strings out of 479997
- 179712 string characters out of 5886779
- 480262 words of memory out of 5000000
- 29280 multiletter control sequences out of 15000+600000
+ 11562 strings out of 479996
+ 184198 string characters out of 5886759
+ 488232 words of memory out of 5000000
+ 29407 multiletter control sequences out of 15000+600000
  537079 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,8n,77p,6044b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,9n,77p,6044b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (25 pages, 2079875 bytes).
+Output written on _main.pdf (35 pages, 2108807 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

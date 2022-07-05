@@ -90,7 +90,7 @@ meine_dfm_sentiment_org_prop <- dfm_weight(meine_dfm_sentiment_org, scheme = "pr
 sentiment.org <- convert(meine_dfm_sentiment_org_prop, "data.frame") %>% 
   gather(positive, negative, key = "Polarität", value = "Sentiment")
 
-ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
+sentiment_plot <- ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
   geom_bar(stat="identity") + scale_colour_brewer(palette = "Set1") + 
   scale_fill_brewer(palette = "Accent") + 
   ggtitle("Sentiment-Scores in den Zeitungen nach Verband") +
