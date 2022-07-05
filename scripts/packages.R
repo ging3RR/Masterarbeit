@@ -20,6 +20,7 @@ library(tictoc)
 #Rmarkdown
 library(knitr)
 library(tufte)
+library(kableExtra)
 
 #Vergleich
 library(quanteda.textstats)
