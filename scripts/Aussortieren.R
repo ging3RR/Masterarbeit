@@ -1970,7 +1970,47 @@ Arbeitszeit_1970 <- unique(Arbeitszeit_1970)
 
 
 #append all lists ----
-
+full_text <- bind_rows(Text1930, 
+               Text1931,
+               Text1932,
+               Text1933,
+               Text1934,
+               Text1935,
+               Text1936,
+               Text1937,
+               Text1938,
+               Text1939,
+               Text1940,
+               Text1941,
+               Text1942,
+               Text1943,
+               Text1944,
+               Text1945,
+               Text1946,
+               Text1947,
+               Text1948,
+               Text1949,
+               Text1950,
+               Text1951,
+               Text1952,
+               Text1953,
+               Text1954,
+               Text1955,
+               Text1956,
+               Text1957,
+               Text1958,
+               Text1959,
+               Text1960,
+               Text1961,
+               Text1962,
+               Text1963,
+               Text1964,
+               Text1965,
+               Text1966,
+               Text1967,
+               Text1968,
+               Text1969,
+               Text1970)
 
 Arbeitszeit <- c(Arbeitszeit_1930, 
                  Arbeitszeit_1931,
@@ -2019,4 +2059,4 @@ Arbeitszeit <- c(Arbeitszeit_1930,
 
 #remove all objects but one----
 
-rm(list = setdiff(ls(), "Arbeitszeit"))
+rm(list = setdiff(ls(), c("Arbeitszeit", "full_text")))

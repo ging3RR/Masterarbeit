@@ -1,7 +1,75 @@
 
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
-tic("Vergleich")
+
+# full corpora ----
+#Arbeitnehmer
+load("E:/R Projects/Daten_MA/Masterarbeit/data/full_text.rds")
+#create the textmeta
+full_text$date <- str_extract(string = full_text$doc_id, pattern = "[1][9][0-9][0-9]") # find the 4 number pattern with 1 in as first number = year
+
+full_text$date <- as.numeric(full_text$date)
+
+full_text$id <- str_extract(string = full_text$doc_id, pattern = "[0][0-9][0-9][0-9]")# find the 4 number pattern with 0 in as first number = Id
+
+full_text$id <- as.numeric(full_text$id)
+
+
+
+#Arbeitgeber
+Arbeitgeber_alle <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/all_xml_exports.csv", encoding = "UTF-8")
+
+
+#create the textmeta
+
+#rename the text Variable to path to avoid confusion
+Arbeitgeber_alle  <- rename(.data = Arbeitgeber_alle , path = text )
+#create date variable
+Arbeitgeber_alle$date <- str_extract(string = Arbeitgeber_alle$path, pattern = "[1][9][0-9][0-9]") # find the 4 number pattern with 1 in as first number = year
+
+Arbeitgeber_alle$date <- as.numeric(Arbeitgeber_alle$date)
+
+#create variable to seperate the corpora
+Arbeitgeber_alle$organisation <- "Arbeitgeber"
+full_text$organisation <- "Arbeitnehmer"
+
+
+#create one object of both corpora objects
+full_text$date <- as.character(full_text$date)
+full_text <- full_text %>%  select(doc_id, text, date, organisation)
+Arbeitgeber_alle$date <- as.character(Arbeitgeber_alle$date)
+Arbeitgeber_alle <- Arbeitgeber_alle %>% select(doc_id, complete_text, date, 
+                                                  organisation) %>% rename(text = complete_text) 
+
+
+
+#corpus
+corpus_full_Arbeitgeber <- corpus(Arbeitgeber_alle, text_field = "text")
+corpus_full_Arbeitnehmer <- corpus(full_text, text_field = "text")
+#make a subcorpus with the right years
+corpus_full_Arbeitgeber <- corpus_subset(corpus_full_Arbeitgeber, date >=1930)
+corpus_full_Arbeitgeber <- corpus_subset(corpus_full_Arbeitgeber, date <=1970)
+
+# combine corpus
+corpus_full_combined <- corpus_full_Arbeitgeber + corpus_full_Arbeitnehmer
+
+
+
+#store the Info in an object
+tokenInfo_full <- summary(object = corpus_full_combined, n = 100000, showmeta = T)
+
+#group by year and count the texts per year
+tokenInfo_full2 <- tokenInfo_full %>%  group_by(date,organisation) %>% summarise(freq = n())
+tokenInfo_full2$date <- as.integer(tokenInfo_full2$date)
+tokenInfo_full2_df <- as.data.frame(tokenInfo_full2)
+
+#plot the object
+ggplot(data=tokenInfo_full2_df, aes(x = date, y = freq)) + geom_line() + geom_point() + 
+  geom_smooth(method = NULL, level = 0.80, col="purple") +
+  scale_x_continuous(labels = c(seq(1930, 1970, 5)), breaks = seq(1930, 1970, 5)) + 
+  facet_grid(rows = vars(organisation), scales = "free_y") + theme_bw()
+
+# Arbeitszeit Texte-----
 load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/TextArbeitszeit.rda")
 
 Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
@@ -67,7 +135,7 @@ ggplot(data = freq_weight, aes(x = nrow(freq_weight):1, y = frequency)) +
   scale_x_continuous(breaks = nrow(freq_weight):1,
                      labels = freq_weight$feature) +
   labs(x = NULL, y = "Relative frequency")
-toc()
+
 
 
 #Sentiment Analysis

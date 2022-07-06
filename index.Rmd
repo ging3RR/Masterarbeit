@@ -6,6 +6,8 @@ output:
   bookdown::pdf_book:
     toc: yes
     toc_depth: 3
+    lof: yes
+    lot: yes
     includes:
       #in_header: tex/frontpage.tex
   bookdown::gitbook: default
