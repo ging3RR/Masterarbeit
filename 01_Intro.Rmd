@@ -1,23 +1,8 @@
-
-
-
-Aufbau der Masterarbeit:
-
-* Einführung
-* Forschungsgegenstand:
-  * Arbeitszeitverkürzung - Was ist Arbeitszeitverkürzung?
-  * Organisationen - Feldbeschreibung
-  * Forschungsfrage
-  * Historisch-juristische Entwicklung
-* Methoden & Daten
-* Resultate
-* Kritik
-* Zusammenfassung
-
-
-
 # Einführung
 
 
 
 
+## Homeoffice
+
+Die Chancen des Homeoffice werden in unterschiedlichen Beiträgen diskutiert. Positive Auswirkungen auf die Zufriedenheit (well-being) von Eltern [@canales-romeroJugglingSchoolWork2022]. Chancen für die bessere räumliche Verteilung von Arbeit [@garnadtRaeumlicheFlexibilisierungDurch2020]. Diese Erkenntnisse sind jedoch mit ein bisschen Vorsicht zu geniessen. Einerseits stammen die Untersuchungen aus der anfänglichen Zeit der Covid19 Pandemie. Es kann gut sein, dass sich die Umstände nach zwei Jahren Pandemie geändert haben. Andererseits sind die Studien zu Homeoffice meistens Studien einer privilegierten Gesellschaftsschicht. Einen Hinweis auf die Problematik von Homeoffice und Finanzierung findet sich bei Möhring et al. [@mohringCOVID19PandemicSubjective2021]. Die Autor:innen weisen ausserdem darauf hin, dass sich die Entwicklungen je nach Geschlecht und Familiensituation anders auswirken.
