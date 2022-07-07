@@ -35,13 +35,13 @@ df_workers_involved  <- workers_involved  %>% rename(country = ï..ref_area.labe
 
 #plot
 
-ggplot(df_days_not_worked, aes(x = time, y = days_in_th)) + 
+ggplot(df_days_not_worked, aes(x = time, y = days_in_th, colour = country)) + 
   geom_line()+ facet_grid(rows = vars(country), scales = "free_y") + 
   ggtitle("Tage nicht gearbeitet in tausend pro Land") + theme_bw() 
 
 
 
-ggplot(df_workers_involved, aes(x = time, y = workers_in_th)) + 
+ggplot(df_workers_involved, aes(x = time, y = workers_in_th, colour = country)) + 
   geom_line() + facet_grid(rows = vars(country), scales = "free_y") +
   ggtitle("Beteiligte Arbeitnehmer:innen") + theme_bw()
 

@@ -120,7 +120,7 @@ names(Corpus_Prototype_Arbeitgeber) = paste0("id", seq_along(Corpus_Prototype_Ar
 #use tic toc to measure time
 tic("LDA_Prototype")
 LDA_Prototype_Arbeitgeber <- LDAPrototype(docs = Corpus_Prototype_Arbeitgeber, vocabLDA = wordlist_Arbeitgeber$words,
-                              n = 50, seeds = 1:50, id = "first_try", K = 15, progress = TRUE)
+                              n = 50, seeds = 1:50, id = "first_try", K = 12, progress = TRUE)
 toc()
 
 toc()

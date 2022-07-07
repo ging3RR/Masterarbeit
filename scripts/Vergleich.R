@@ -92,15 +92,16 @@ Arbeitgeber_csv$complete_text <- gsub(pattern = "\\. .\\s+",
 Arbeitgeber_csv$organisation <- "Arbeitgeber"
 TextArbeitszeit$organisation <- "Arbeitnehmer"
 
-#create one object of both corpora objects
-TextArbeitszeit$date <- as.character(TextArbeitszeit$date)
-filter_Arbeitsnehmer <- TextArbeitszeit %>%  select(doc_id, text, date, organisation)
-Arbeitgeber_csv$date <- as.character(Arbeitgeber_csv$date)
-filter_Arbeitsgeber <- Arbeitgeber_csv %>% select(doc_id, complete_text, date, 
-                                                  organisation) %>% rename(text = complete_text) 
-                       
-                        
-all_texts <- bind_rows(filter_Arbeitsgeber, filter_Arbeitsnehmer)
+# #create one object of both corpora objects
+# TextArbeitszeit$date <- as.character(TextArbeitszeit$date)
+# filter_Arbeitsnehmer <- TextArbeitszeit %>%  select(doc_id, text, date, organisation)
+# Arbeitgeber_csv$date <- as.character(Arbeitgeber_csv$date)
+# filter_Arbeitsgeber <- Arbeitgeber_csv %>% select(doc_id, complete_text, date, 
+#                                                   organisation) %>% rename(text = complete_text) 
+#                        
+#                         
+# all_texts <- bind_rows(filter_Arbeitsgeber, filter_Arbeitsnehmer)
+
 #create corpus objects
 corpus_Arbeitgeber <- corpus(Arbeitgeber_csv, text_field = "complete_text")
 corpus_Arbeitnehmer <- corpus(TextArbeitszeit)
@@ -171,5 +172,115 @@ corpus_dfm_text <- tokens(corpus_combined, remove_punct = T,
                           remove_numbers = T)  %>% 
   tokens_remove(sw) %>% 
   dfm() %>% dfm_wordstem() %>% dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+# pre and after WWII----
+
+# make two corpora
+
+pre_corpus <- corpus_subset(corpus_combined, date <= 1950) 
+  
+after_corpus <- corpus_subset(corpus_combined, date > 1950)
+
+#dfm
+pre_corpus_dfm <- tokens(pre_corpus, remove_punct = T, 
+                     remove_symbols = T,
+                     remove_numbers = T)  %>% 
+  tokens_remove(sw) %>% tokens_group(groups = organisation) %>% 
+  dfm() %>% dfm_wordstem()
+
+
+after_corpus_dfm <- tokens(after_corpus, remove_punct = T, 
+                         remove_symbols = T,
+                         remove_numbers = T)  %>% 
+  tokens_remove(sw) %>% tokens_group(groups = organisation) %>% 
+  dfm() %>% dfm_wordstem()
+
+# sentiment
+# sentiment pro organisation
+pre_corpus_sentiment <- pre_corpus_dfm %>% 
+  dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+pre_corpus_sentiment_prop <- dfm_weight(pre_corpus_sentiment, scheme = "prop")
+
+after_corpus_sentiment <- after_corpus_dfm %>% 
+  dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+after_corpus_sentiment_prop <- dfm_weight(after_corpus_sentiment, scheme = "prop")
+
+# plot pre
+sentiment.org_pre <- convert(pre_corpus_sentiment_prop, "data.frame") %>% 
+  gather(positive, negative, key = "Polarität", value = "Sentiment")
+
+sentiment_plot_pre <- ggplot(sentiment.org_pre, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
+  geom_bar(stat="identity") + scale_colour_brewer(palette = "Set1") + 
+  scale_fill_brewer(palette = "Accent") + labs(subtitle = "Vor 1950") +
+  ggtitle("Sentiment-Scores in den Zeitungen nach Verband") +
+  xlab("") + ylab("Anteil") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# plot after
+sentiment.org_after <- convert(after_corpus_sentiment_prop, "data.frame") %>% 
+  gather(positive, negative, key = "Polarität", value = "Sentiment")
+
+sentiment_plot_after <- ggplot(sentiment.org_after, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
+  geom_bar(stat="identity") + scale_colour_brewer(palette = "Set1") + 
+  scale_fill_brewer(palette = "Accent") + 
+  ggtitle("Sentiment-Scores in den Zeitungen nach Verband") + labs(subtitle = "Nach 1950") +
+  xlab("") + ylab("Anteil") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+# sentiment pro jahr----
+
+#dfm pro Organisation
+
+meine.dfm.Arbeitnehmer <- tokens(corpus_Arbeitnehmer, remove_punct = T, 
+                     remove_symbols = T,
+                     remove_numbers = T)  %>% 
+  tokens_remove(sw) %>%  
+  dfm() %>% dfm_wordstem() %>% dfm_group(groups = date) %>% dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+meine.dfm.Arbeitgeber <- tokens(corpus_Arbeitgeber, remove_punct = T, 
+                                 remove_symbols = T,
+                                 remove_numbers = T)  %>% 
+  tokens_remove(sw) %>%  
+  dfm() %>%  dfm_wordstem() %>% dfm_group(groups = date) %>% 
+  dfm_lookup(dictionary = sentiment.lexikon.rauh) 
+
+
+
+
+# sentiment pro Organisation
+sentiment.Arbeitgeber.prop <- dfm_weight(meine.dfm.Arbeitgeber, scheme = "prop") %>% 
+  convert("data.frame") %>%
+  gather(positive, negative, key = "Polarität", value = "Sentiment") %>% 
+  mutate(Organisation = "Arbeitgeber") %>% rename(date = doc_id) 
+
+sentiment.Arbeitnehmer.prop <- dfm_weight(meine.dfm.Arbeitnehmer, scheme = "prop") %>% 
+  convert("data.frame") %>%
+  gather(positive, negative, key = "Polarität", value = "Sentiment") %>% 
+  mutate(Organisation = "Arbeitnehmer") %>% rename(date = doc_id) 
+
+# zusammenfügen und reskalieren
+sentiment.beide <- bind_rows(sentiment.Arbeitgeber.prop, sentiment.Arbeitnehmer.prop) %>% 
+  filter(Polarität == "positive") %>% 
+  select(date, Organisation, Sentiment) %>% 
+  mutate(Sentiment = rescale(Sentiment, to = c(-1,1))) %>%
+  mutate(Organisation = as.factor(Organisation)) 
+
+# data wrangling for date variable
+sentiment.beide$date <- unlist(sentiment.beide$date)
+sentiment.beide$date <- as.Date(sentiment.beide$date, format = "%Y")
+# plot
+ggplot(sentiment.beide , aes(date, Sentiment, colour = Organisation, group = Organisation)) + 
+  geom_line() + 
+  geom_hline(yintercept = 0, linetype = "dashed", color = "lightgray") + 
+  geom_vline(xintercept =  as.numeric(lubridate::ymd("1950-01-01")), linetype = "dashed", color = "black") +
+  scale_colour_brewer(palette = "Set1") + 
+  scale_x_date(date_breaks = "6 years", date_labels = "%Y") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ggtitle("Verrechnete Sentiment-Scores für beide Verbände") + 
+  xlab("Jahr") + facet_grid(rows = vars(Organisation))
+
 
 
