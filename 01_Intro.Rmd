@@ -1,8 +1,25 @@
 # Einführung
 
 
+## Digitalisierung
 
+Industrie / Arbeit 4.0 als neue Revolution. Ist nicht wirklich neu und hat nicht nur mit der technischen Entwicklung zu tun. Kann als eine Chance gesehen werden, wenn es humanzentriert und nicht technikzentriert entwickelt wird [@fleckerDigitalisierungArbeitWelche2016]. Auch für Frauen kann die Entwicklung positive Einflüsse haben [@hauerDigitalisierungSelbstlaeuferRichtung2016]. Beide Artikel sehen die Arbeitszeitverkürzung als ein effektives und wichtiges Mittel, um die Vorteile der technischen Fortschritte und der Automatisierung nutzen zu können.
+
+Internetzugang verbessert den Zugang zum Arbeitsmarkt für Frauen. Dennoch stehen einige Hindernisse im Weg bis die Digitalisierung sich positiv für Frauen auswirkt. Unter anderem sind dies Probleme des Zugangs zu technischen Mitteln, von patriarchalischen Normen und Einbindung in die technischen Branchen [@watsonDigitalisationWomenWorkforce2018].
+
+Kontrolle am Arbeitsplatz [@christlDigitaleUberwachungUnd2021]
 
 ## Homeoffice
 
-Die Chancen des Homeoffice werden in unterschiedlichen Beiträgen diskutiert. Positive Auswirkungen auf die Zufriedenheit (well-being) von Eltern [@canales-romeroJugglingSchoolWork2022]. Chancen für die bessere räumliche Verteilung von Arbeit [@garnadtRaeumlicheFlexibilisierungDurch2020]. Diese Erkenntnisse sind jedoch mit ein bisschen Vorsicht zu geniessen. Einerseits stammen die Untersuchungen aus der anfänglichen Zeit der Covid19 Pandemie. Es kann gut sein, dass sich die Umstände nach zwei Jahren Pandemie geändert haben. Andererseits sind die Studien zu Homeoffice meistens Studien einer privilegierten Gesellschaftsschicht. Einen Hinweis auf die Problematik von Homeoffice und Finanzierung findet sich bei Möhring et al. [@mohringCOVID19PandemicSubjective2021]. Die Autor:innen weisen ausserdem darauf hin, dass sich die Entwicklungen je nach Geschlecht und Familiensituation anders auswirken.
+Die Chancen des Homeoffice werden in unterschiedlichen Beiträgen diskutiert. Positive Auswirkungen auf die Zufriedenheit (well-being) von Eltern [@canales-romeroJugglingSchoolWork2022]. Chancen für die bessere räumliche Verteilung von Arbeit [@garnadtRaeumlicheFlexibilisierungDurch2020]. Diese Erkenntnisse sind jedoch mit ein bisschen Vorsicht zu geniessen. Einerseits stammen die Untersuchungen aus der anfänglichen Zeit der Covid-19 Pandemie. Es kann gut sein, dass sich die Umstände nach zwei Jahren Pandemie geändert haben. Andererseits sind die Studien zu Homeoffice meistens Studien einer privilegierten Gesellschaftsschicht. Einen Hinweis auf die Problematik von Homeoffice und Finanzierung findet sich bei Möhring et al. [@mohringCOVID19PandemicSubjective2021]. Die Autor:innen weisen ausserdem darauf hin, dass sich die Entwicklungen je nach Geschlecht und Familiensituation anders auswirken.
+
+
+## Flexibilisierung
+
+Das Normalarbeitsverhältnis ist wichtig für die kollektive Verhandlung von Arbeitsbedingungen. Insbesondere der Regulierung der Arbeitszeit kommt eine wichtige Rolle zu: 
+
+>*"Mit dem Verlust einer
+gemeinsamen Bezugsgröße für die Artikulation von Arbeitszeitinteressen könnten sich schließlich die Arbeitszeitinteressen der abhängig Beschäftigten und in der Folge ihre Interessen in der Lohn- und Sozialpolitik zersplittern und wären damit weniger konflikt- und durchsetzungsfähig."*
+>
+> `r tufte::quote_footer("---[@boschHatNormalarbeitsverhaltnisZukunft1986, S. 174]")`
+
