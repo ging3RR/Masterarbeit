@@ -43,6 +43,7 @@ knitr::opts_chunk$set(
 
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/functions.R")
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
+source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 ```
 
 

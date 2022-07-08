@@ -92,14 +92,14 @@ Arbeitgeber_csv$complete_text <- gsub(pattern = "\\. .\\s+",
 Arbeitgeber_csv$organisation <- "Arbeitgeber"
 TextArbeitszeit$organisation <- "Arbeitnehmer"
 
-# #create one object of both corpora objects
-# TextArbeitszeit$date <- as.character(TextArbeitszeit$date)
-# filter_Arbeitsnehmer <- TextArbeitszeit %>%  select(doc_id, text, date, organisation)
-# Arbeitgeber_csv$date <- as.character(Arbeitgeber_csv$date)
-# filter_Arbeitsgeber <- Arbeitgeber_csv %>% select(doc_id, complete_text, date, 
-#                                                   organisation) %>% rename(text = complete_text) 
-#                        
-#                         
+#create one object of both corpora objects
+TextArbeitszeit$date <- as.character(TextArbeitszeit$date)
+filter_Arbeitsnehmer <- TextArbeitszeit %>%  select(doc_id, text, date, organisation)
+Arbeitgeber_csv$date <- as.character(Arbeitgeber_csv$date)
+filter_Arbeitsgeber <- Arbeitgeber_csv %>% select(doc_id, complete_text, date,
+                                                  organisation) %>% rename(text = complete_text)
+
+
 # all_texts <- bind_rows(filter_Arbeitsgeber, filter_Arbeitsnehmer)
 
 #create corpus objects
