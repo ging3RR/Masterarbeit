@@ -66,13 +66,13 @@ summary(my_corpus)
 
 #tokenize it
 
-my_corpus_token <- tokens(my_corpus, remove_punct = T)
+my_corpus_token <- tokens(my_corpus, remove_punct = T, remove_symbols = T) %>% tokens_remove(sw)
 
 #dfm
 
-my_dfm <- dfm(my_corpus_token)
+my_dfm <- dfm(my_corpus_token) 
 
-my_dfm <- dfm_remove(my_dfm, stopwords("de"), min_nchar = 3) #take out stopwords
+my_dfm <- dfm_remove(my_dfm, min_nchar = 3) #take out stopwords
 
 topfeatures(my_dfm, 50) 
 
@@ -100,11 +100,11 @@ textplot_wordcloud(my_dfm, min_count = 20, random_order = FALSE, rotation = 0.25
 
 #topic models-----
 
-my_dfm_trim <- dfm_trim(my_dfm, min_termfreq = 100)
+my_dfm_trim <- dfm_trim(my_dfm, min_termfreq = 5)
 
 set.seed(100)
 if (require("stm")) {
-  my_lda_fit20 <- stm(my_dfm_trim, K = 20, verbose = FALSE)
+  my_lda_fit20 <- stm(my_dfm_trim, K = 10, verbose = FALSE)
   plot(my_lda_fit20)
 }
 
@@ -115,10 +115,10 @@ library(topicmodels)
 my_dtm <- convert(my_dfm_trim, to = "topicmodels") #convert to topicmodels format
 
 set.seed(100)
-lda_topicmodel <- topicmodels::LDA(my_dtm, method = "VEM", k = 10 )
+lda_topicmodel <- topicmodels::LDA(my_dtm, method = "VEM", k = 8 )
 Topics_VEM_10 <- terms(lda_topicmodel, 20)
 
-Topics_VEM_10[, 10]
+Topics_VEM_10[5, ]
 
 
 #LDA Prototype after Rieger-----
@@ -179,5 +179,13 @@ clustRes <- clusterTopics(ldaresult = Prototype_LDA, xlab = "Topic", ylab = "Dis
 
 
 #topics over time 
-plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = getID(LDA_Prototype),
-          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7))
+plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "topleft", ylim = c(0, 0.5), unit = "year",
+          select = c(1,2,5,6,7))
+
+
+plotArea(ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype), 
+         meta =  tosca_corpus$meta, 
+         unit = "year", sort = FALSE)
+
+plotScot(tosca_corpus, curves = "both", unit = "year")

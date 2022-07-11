@@ -89,11 +89,13 @@ Arbeitgeber_csv$date <- yrs
 
 # make the tosca corpus
 
+Arbeitgeber_csv <- Arbeitgeber_csv %>% select(text, date, doc_id.1, complete_text)
+
 corpus_tosca_Arbeitgeber <- textmeta(meta = as.meta(x = Arbeitgeber_csv, 
                                         cols = colnames(Arbeitgeber_csv), 
-                                        idCol = "doc_id",
+                                        idCol = "text",
                                         dateCol = "date", 
-                                        titleCol = "path"),
+                                        titleCol = "doc_id.1"),
                          dateFormat = "%Y-%m-%d",
                          text = Arbeitgeber_csv$complete_text)
 
@@ -138,19 +140,105 @@ clustRes_Arbeitgeber <- clusterTopics(ldaresult = Prototype_LDA_Arbeitgeber, xla
 save(Topwords_Arbeitgeber, file = "data/Topwords_Arbeitgeber.rds")
 
 
-
-
-
-
-
-
-
 #topics over time 
 #clean the date variable
-tosca_corpus_Arbeitgeber$meta$date <- as.Date(tosca_corpus_Arbeitgeber$meta$date, "%Y-%m-%d")
+tosca_corpus_Arbeitgeber$meta$date<- lubridate::round_date(tosca_corpus_Arbeitgeber$meta$date, "year")
 #plot
-plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, ldaID = names(Corpus_Prototype_Arbeitgeber),
-          unit = "year",
-          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7))
+plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
+          ldaID = names(Corpus_Prototype_Arbeitgeber),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7), unit = "year")
+
+# validating
+
+intWords_Arbeitgeber <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 1,
+                                      numTopwords = 10, printSolution = T)
+
+# LDA with full corpus----
+
+##3rd step LDA
+tic("full_LDA")
+tic("prep")
+Arbeitgeber_alle <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/all_xml_exports.csv", encoding = "UTF-8")
+#create the textmeta
+
+#rename the text Variable to path to avoid confusion
+Arbeitgeber_alle  <- rename(.data = Arbeitgeber_alle , path = text )
+#create date variable
+Arbeitgeber_alle$date <- str_extract(string = Arbeitgeber_alle$path, pattern = "[1][9][0-9][0-9]") # find the 4 number pattern with 1 in as first number = year
+
+Arbeitgeber_alle$date <- as.numeric(Arbeitgeber_alle$date)
+Arbeitgeber_alle <- filter(Arbeitgeber_alle, date <= 1970)
+Arbeitgeber_alle <- filter(Arbeitgeber_alle, date >= 1930)
+
+
+#remove all the whitespaces, words separated by - can now be tokenized as one word
+Arbeitgeber_alle$complete_text <- gsub(pattern = "\\-\\s+", 
+                                      replacement = "", 
+                                      x = Arbeitgeber_alle$complete_text) 
+Arbeitgeber_alle$complete_text <- gsub(pattern = "\\;\\s+", 
+                                      replacement = "", 
+                                      x = Arbeitgeber_alle$complete_text) 
+Arbeitgeber_alle$complete_text <- gsub(pattern = "\\..\\s+", 
+                                      replacement = " ", 
+                                      x = Arbeitgeber_alle$complete_text) 
+Arbeitgeber_alle$complete_text <- gsub(pattern = "\\. .\\s+", 
+                                      replacement = "", 
+                                      x = Arbeitgeber_alle$complete_text) 
+#create an LDA package ready corpus
+
+yrs <- Arbeitgeber_alle$date
+yrs <- lubridate::ymd(yrs, truncated = 2L) #R cannot make a date variable with only a year, so make a dummy year variable
+#source https://stackoverflow.com/questions/30255833/convert-four-digit-year-values-to-class-date
+
+Arbeitgeber_alle$date <- yrs
+
+
+
+# make the tosca corpus
+
+corpus_tosca_Arbeitgeber_alle <- textmeta(meta = as.meta(x = Arbeitgeber_alle, 
+                                                    cols = colnames(Arbeitgeber_alle), 
+                                                    idCol = "doc_id",
+                                                    dateCol = "date", 
+                                                    titleCol = "path"),
+                                     dateFormat = "%Y-%m-%d",
+                                     text = Arbeitgeber_alle$complete_text)
+
+
+
+#create clean corpus
+tosca_corpus_Arbeitgeber_alle <- cleanTexts(object = corpus_tosca_Arbeitgeber_alle, sw = sw, ucp = T)
+#somehow the cleanTexts() removes all meta, fill in the meta again
+tosca_corpus_Arbeitgeber_alle$meta <- corpus_tosca_Arbeitgeber_alle$meta
+
+
+
+#make wordlist
+wordlist_Arbeitgeber_alle <- makeWordlist(tosca_corpus_Arbeitgeber_alle$text)
+
+Corpus_Prototype_Arbeitgeber_alle <- LDAprep(text = tosca_corpus_Arbeitgeber_alle$text,
+                                        vocab = wordlist_Arbeitgeber_alle$words, reduce = T)
+
+#save(Corpus_Prototype, file = "Arbeitszeit_docs.rda") only run this once to save the files
+#save(wordlist, file = "Arbeitszeit_vocab.rda") 
+
+toc()
+#use the LDAPrototpye function
+names(Corpus_Prototype_Arbeitgeber_alle) = paste0("id", seq_along(Corpus_Prototype_Arbeitgeber_alle)) #to name the lists, otherwise the code cannot run
+#use tic toc to measure time
+tic("LDA_Prototype")
+LDA_Prototype_Arbeitgeber_alle <- LDAPrototype(docs = Corpus_Prototype_Arbeitgeber_alle, vocabLDA = wordlist_Arbeitgeber_alle$words,
+                                          n = 50, seeds = 1:50, id = "first_try", K = 15, progress = TRUE)
+toc()
+
+toc()
+
+#get the Prototype LDA
+Prototype_LDA_Arbeitgeber_alle <- getLDA(LDA_Prototype_Arbeitgeber_alle)
+#get the topics of the Prototype LDA
+topics_Prototype_Arbeitgeber_alle <- getTopics(LDA_Prototype_Arbeitgeber_alle)
+#see the n top words of the Prototype Topics
+Topwords_Arbeitgeber_alle <- tosca::topWords(topics_Prototype_Arbeitgeber_alle, 7)
+
 
 

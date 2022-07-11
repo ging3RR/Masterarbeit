@@ -284,3 +284,4 @@ ggplot(sentiment.beide , aes(date, Sentiment, colour = Organisation, group = Org
 
 
 
+
