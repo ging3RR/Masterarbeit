@@ -9,7 +9,7 @@ load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds"
 Topwords_Arbeitnehmer <- t(Topwords_Arbeitnehmer)
 Topwords_Arbeitnehmer <- as.data.frame(Topwords_Arbeitnehmer)
 
-# Sentiment
+# Corpus and DFM
 load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/TextArbeitszeit.rda")
 
 Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
