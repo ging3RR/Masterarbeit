@@ -162,7 +162,7 @@ Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, re
 names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
 tic("LDA_Prototype")
 LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
-                              n = 50, seeds = 1:50, id = "first_try", K = 8)
+                              n = 50, seeds = 1:50, id = "first_try", K = 9)
 toc()
 
 
