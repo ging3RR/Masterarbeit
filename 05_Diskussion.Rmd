@@ -6,3 +6,12 @@
 * Zu homogene Texte
 * zu wenig Texte beim Arbeitnehmerkorpus
 * zu viel Text ohne Inhalt (Inhaltsverzeichnis, Preamble etc.)
+* Problem mit zu grossen Textmengen --> Computational Power, kann Umgangen werden mit Geld oder Mitteln
+
+
+## Erkenntnisse
+
+* Computergestützte Verfahren sind vor allem für die predictive Modelling und Vorhersagen bekannt, können aber auch retroperspektiv oder für historische Analysen eingesetzt werden
+* Die Verfahren sind gut im Muster erkennen, was in diesem Fall so mässig geklappt hat
+* Die Methode des LDA eignet sich gut für die explorative Untersuchung von Textkorpora, gerade bei viel Material ist es extrem hilfreich um sich einen Überblick zu verschaffen.
+* Wichtigster Punkt für die Analyse von grossen Textkorpora bleibt aber immer noch das Wissen über den Gegenstand und die Vetrautheit mit dem empirischen Material. Ohne das theoretische Fundament ist es nicht möglich aus dem Material soziologisch sinnvolle Erkenntnisse zu ziehen (Muster können immer erkannt werden, können aber auch unnütz oder falsch sein). Ohne die Kenntnisse über das empirische Material ist es nicht (oder schlechter) möglich die Ergebnisse aus den computergestützten Verfahren zu interpretieren.
