@@ -1,6 +1,22 @@
 # Resultate
 
 ```{r Setup Results, include=FALSE}
+# Load files
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/TextArbeitszeit.rda")
+Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
+#load LDA Results
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/LDA_Prototype_Arbeitnehmer.rda")
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/LDA_Prototype_Arbeitgeber.rda")
+#get the Prototype LDA
+Prototype_LDA <- getLDA(LDA_Prototype)
+Prototype_LDA_Arbeitgeber <- getLDA(LDA_Prototype_Arbeitgeber)
+#load the LDA Objects
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/tosca_corpus.rda")
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Corpus_Prototype.rda")
+
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/tosca_corpus_Arbeitgeber.rda")
+load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Corpus_Prototype_Arbeitgeber.rda")
+
 # Topwords
 load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitgeber.rds")
 Topwords_Arbeitgeber <- t(Topwords_Arbeitgeber)
@@ -9,10 +25,7 @@ load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Topwords_Arbeitnehmer.rds"
 Topwords_Arbeitnehmer <- t(Topwords_Arbeitnehmer)
 Topwords_Arbeitnehmer <- as.data.frame(Topwords_Arbeitnehmer)
 
-# Corpus and DFM
-load(file = "E:/R Projects/Daten_MA/Masterarbeit/data/TextArbeitszeit.rda")
 
-Arbeitgeber_csv <- readtext(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Arbeitgeber_Arbeitszeit.csv", encoding = "UTF-8")
 
 #clean corpora
 Arbeitgeber_csv$complete_text <- gsub(pattern = "\\-\\s+", 
@@ -82,6 +95,61 @@ sentiment_plot <- ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarit�
 ```{r,fig.cap="Sentiment Analyse"}
 plot(sentiment_plot)
 ```
+```{r Sentiment pro Jahr, include=FALSE}
+#dfm pro Organisation
+
+meine.dfm.Arbeitnehmer <- tokens(corpus_Arbeitnehmer, remove_punct = T, 
+                     remove_symbols = T,
+                     remove_numbers = T)  %>% 
+  tokens_remove(sw) %>%  
+  dfm() %>% dfm_wordstem() %>% dfm_group(groups = date) %>% dfm_lookup(dictionary = sentiment.lexikon.rauh)
+
+meine.dfm.Arbeitgeber <- tokens(corpus_Arbeitgeber, remove_punct = T, 
+                                 remove_symbols = T,
+                                 remove_numbers = T)  %>% 
+  tokens_remove(sw) %>%  
+  dfm() %>%  dfm_wordstem() %>% dfm_group(groups = date) %>% 
+  dfm_lookup(dictionary = sentiment.lexikon.rauh) 
+
+
+
+
+# sentiment pro Organisation
+sentiment.Arbeitgeber.prop <- dfm_weight(meine.dfm.Arbeitgeber, scheme = "prop") %>% 
+  convert("data.frame") %>%
+  gather(positive, negative, key = "Polarität", value = "Sentiment") %>% 
+  mutate(Organisation = "Arbeitgeber") %>% rename(date = doc_id) 
+
+sentiment.Arbeitnehmer.prop <- dfm_weight(meine.dfm.Arbeitnehmer, scheme = "prop") %>% 
+  convert("data.frame") %>%
+  gather(positive, negative, key = "Polarität", value = "Sentiment") %>% 
+  mutate(Organisation = "Arbeitnehmer") %>% rename(date = doc_id) 
+
+# zusammenfügen und reskalieren
+sentiment.beide <- bind_rows(sentiment.Arbeitgeber.prop, sentiment.Arbeitnehmer.prop) %>% 
+  filter(Polarität == "positive") %>% 
+  select(date, Organisation, Sentiment) %>% 
+  mutate(Sentiment = rescale(Sentiment, to = c(-1,1))) %>%
+  mutate(Organisation = as.factor(Organisation)) 
+
+# data wrangling for date variable
+sentiment.beide$date <- unlist(sentiment.beide$date)
+sentiment.beide$date <- as.Date(sentiment.beide$date, format = "%Y")
+```
+
+
+```{r, fig.cap="verrechneter Sentiment Score pro Jahr pro Organisation"}
+ggplot(sentiment.beide , aes(date, Sentiment, colour = Organisation, group = Organisation)) + 
+  geom_line() + 
+  geom_hline(yintercept = 0, linetype = "dashed", color = "lightgray") + 
+  geom_vline(xintercept =  as.numeric(lubridate::ymd("1950-01-01")), linetype = "dashed", color = "black") +
+  scale_colour_brewer(palette = "Set1") + 
+  scale_x_date(date_breaks = "6 years", date_labels = "%Y") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ggtitle("Verrechnete Sentiment-Scores für beide Verbände") + 
+  xlab("Jahr") + facet_grid(rows = vars(Organisation))
+
+```
 
 
 ## LDA
@@ -93,9 +161,53 @@ kbl(Topwords_Arbeitnehmer, caption = "Topics Arbeitnehmer", booktabs = T) %>%
   kable_styling(latex_options = c("scale_down", "hold_position"))
 ```
 
+
+
+```{r Prepare PlotTopics SGB, include=FALSE}
+tosca_corpus$meta$id <- paste("id", tosca_corpus$meta$id, sep = "")
+
+```
+
+
+
+```{r, fig.cap="Topics verteilt über die Jahre SGB"}
+plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "topleft", ylim = c(0, 0.5), unit = "year",
+          select = c(1,2,3,4,5,6,8), tnames = c("Automation", "rechtliche Bestimmungen", "Frauen", "International",
+                                                "Statistik", "SGB", "Mehr"))
+```
+
+
+
 ### Arbeitgeber:innen
 
-```{r}
+```{r Topword Arbeitgeber:innen}
 kbl(Topwords_Arbeitgeber, caption = "Topics Arbeitgeber", booktabs = T) %>% 
   kable_styling(latex_options = c("scale_down", "hold_position"))
 ```
+
+
+
+```{r Prepare PlotTopics ZSAO, include=FALSE}
+#topics over time 
+tosca_corpus_Arbeitgeber$meta$id <- paste("id", tosca_corpus_Arbeitgeber$meta$id, sep = "")
+
+```
+
+
+```{r, fig.cap="Topics verteilt über die Jahre ZSAO"}
+plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
+          ldaID = names(Corpus_Prototype_Arbeitgeber),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
+          select = c(1,4,6,8,9),
+          tnames = c("rechtliche Bestimmungen", "Gewerkschaften", "48h-Woche", "Ferien", "Mehr"))
+```
+
+```{r, fig.cap="Statistik Topics verteilt über die Jahre ZSAO"}
+plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
+          ldaID = names(Corpus_Prototype_Arbeitgeber),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
+          select = c(3,10,11),
+          tnames = c("Unfälle", "Index", "Jahr"))
+```
+

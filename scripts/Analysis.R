@@ -148,11 +148,12 @@ tosca_corpus <- cleanTexts(object = corpus_tosca, sw = sw, ucp = T)
 #somehow the cleanTexts() removes all meta, fill in the meta again
 tosca_corpus$meta <- corpus_tosca$meta
 
-
+save(tosca_corpus, file = "data/tosca_corpus.rda")
 #make wordlist
 wordlist <- makeWordlist(tosca_corpus$text)
 
 Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, reduce = T)
+
 
 #save(Corpus_Prototype, file = "Arbeitszeit_docs.rda") only run this once to save the files
 #save(wordlist, file = "Arbeitszeit_vocab.rda") 
@@ -160,11 +161,13 @@ Corpus_Prototype <- LDAprep(text = tosca_corpus$text, vocab = wordlist$words, re
 
 #use the LDAPrototpye function
 names(Corpus_Prototype) = paste0("id", seq_along(Corpus_Prototype)) #to name the lists, otherwise the code cannot run
+save(Corpus_Prototype, file = "data/Corpus_Prototype.rda")
 tic("LDA_Prototype")
 LDA_Prototype <- LDAPrototype(docs = Corpus_Prototype, vocabLDA = wordlist$words,
                               n = 50, seeds = 1:50, id = "first_try", K = 9)
 toc()
 
+save(LDA_Prototype, file = "data/LDA_Prototype_Arbeitnehmer.rda")
 
 #get the Prototype LDA
 Prototype_LDA <- getLDA(LDA_Prototype)
@@ -179,10 +182,13 @@ clustRes <- clusterTopics(ldaresult = Prototype_LDA, xlab = "Topic", ylab = "Dis
 
 
 #topics over time 
+
+tosca_corpus$meta$id <- paste("id", tosca_corpus$meta$id, sep = "")
+
 plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "topleft", ylim = c(0, 0.5), unit = "year",
-          select = c(1,2,5,6,7))
-
+          select = c(1,2,3,4,5,6,8), tnames = c("Automation", "rechtliche Bestimmungen", "Frauen", "International",
+                                                "Statistik", "SGB", "Mehr"))
 
 plotArea(ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype), 
          meta =  tosca_corpus$meta, 

@@ -80,24 +80,25 @@ Arbeitgeber_csv$complete_text <- gsub(pattern = "\\. .\\s+",
                                       replacement = "", 
                                       x = Arbeitgeber_csv$complete_text) 
 #create an LDA package ready corpus ----
+Arbeitgeber_csv_LDA <- Arbeitgeber_csv %>% select(text, date, doc_id.1, complete_text)
 
-yrs <- Arbeitgeber_csv$date
+yrs <- Arbeitgeber_csv_LDA$date
 yrs <- lubridate::ymd(yrs, truncated = 2L) #R cannot make a date variable with only a year, so make a dummy year variable
 #source https://stackoverflow.com/questions/30255833/convert-four-digit-year-values-to-class-date
 
-Arbeitgeber_csv$date <- yrs
+Arbeitgeber_csv_LDA$date <- yrs
 
 # make the tosca corpus
 
-Arbeitgeber_csv <- Arbeitgeber_csv %>% select(text, date, doc_id.1, complete_text)
 
-corpus_tosca_Arbeitgeber <- textmeta(meta = as.meta(x = Arbeitgeber_csv, 
-                                        cols = colnames(Arbeitgeber_csv), 
+
+corpus_tosca_Arbeitgeber <- textmeta(meta = as.meta(x = Arbeitgeber_csv_LDA, 
+                                        cols = colnames(Arbeitgeber_csv_LDA), 
                                         idCol = "text",
                                         dateCol = "date", 
                                         titleCol = "doc_id.1"),
                          dateFormat = "%Y-%m-%d",
-                         text = Arbeitgeber_csv$complete_text)
+                         text = Arbeitgeber_csv_LDA$complete_text)
 
 
 
@@ -106,7 +107,7 @@ tosca_corpus_Arbeitgeber <- cleanTexts(object = corpus_tosca_Arbeitgeber, sw = s
 #somehow the cleanTexts() removes all meta, fill in the meta again
 tosca_corpus_Arbeitgeber$meta <- corpus_tosca_Arbeitgeber$meta
 
-
+save(tosca_corpus_Arbeitgeber, file = "data/tosca_corpus_Arbeitgeber.rda")
 
 #make wordlist
 wordlist_Arbeitgeber <- makeWordlist(tosca_corpus_Arbeitgeber$text)
@@ -119,6 +120,7 @@ Corpus_Prototype_Arbeitgeber <- LDAprep(text = tosca_corpus_Arbeitgeber$text, vo
 
 #use the LDAPrototpye function
 names(Corpus_Prototype_Arbeitgeber) = paste0("id", seq_along(Corpus_Prototype_Arbeitgeber)) #to name the lists, otherwise the code cannot run
+save(Corpus_Prototype_Arbeitgeber, file = "data/Corpus_Prototype_Arbeitgeber.rda")
 #use tic toc to measure time
 tic("LDA_Prototype")
 LDA_Prototype_Arbeitgeber <- LDAPrototype(docs = Corpus_Prototype_Arbeitgeber, vocabLDA = wordlist_Arbeitgeber$words,
@@ -126,6 +128,8 @@ LDA_Prototype_Arbeitgeber <- LDAPrototype(docs = Corpus_Prototype_Arbeitgeber, v
 toc()
 
 toc()
+
+save(LDA_Prototype_Arbeitgeber, file = "data/LDA_Prototype_Arbeitgeber.rda")
 
 #get the Prototype LDA
 Prototype_LDA_Arbeitgeber <- getLDA(LDA_Prototype_Arbeitgeber)
@@ -141,12 +145,19 @@ save(Topwords_Arbeitgeber, file = "data/Topwords_Arbeitgeber.rds")
 
 
 #topics over time 
-#clean the date variable
-tosca_corpus_Arbeitgeber$meta$date<- lubridate::round_date(tosca_corpus_Arbeitgeber$meta$date, "year")
+tosca_corpus_Arbeitgeber$meta$id <- paste("id", tosca_corpus_Arbeitgeber$meta$id, sep = "")
 #plot
 plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
           ldaID = names(Corpus_Prototype_Arbeitgeber),
-          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "none", ylim = c(0, 0.7), unit = "year")
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
+          select = c(1,4,6,8,9),
+          tnames = c("rechtliche Bestimmungen", "Gewerkschaften", "48h-Woche", "Ferien", "Mehr"))
+
+plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
+          ldaID = names(Corpus_Prototype_Arbeitgeber),
+          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
+          select = c(3,10,11),
+          tnames = c("Unfälle", "Index", "Jahr"))
 
 # validating
 
