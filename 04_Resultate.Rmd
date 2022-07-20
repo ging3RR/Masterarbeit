@@ -61,6 +61,7 @@ corpus_dfm <- tokens(corpus_combined, remove_punct = T,
   dfm() %>% dfm_wordstem()
 ```
 
+In diesem Kapitel werden die Resultate aus den beiden Methoden vorgestellt. Im ersten Teil werden die Ergebnisse der Sentiment Analyse besprochen. Im zweiten Teil die Ergebnisse der LDA Methode. 
 
 ## Sentiment Analyse
 ```{r Setup Sentiment Analyse, include=FALSE}
@@ -92,9 +93,12 @@ sentiment_plot <- ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarit�
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+Bei der Sentiment Analyse werden die unterschiedlichen Wörter nach in positive oder negative Kategorien eingeteilt. Es wird auch die *Stärke* der Ausprägung gewichtet. In einer ersten Analyse ist ein Plot zu sehen, auf dem der Sentiment Score dargestellt wird. In dieser Darstellung wird der Anteil von positiven und negativen Wörtern über den ganzen Korpus aufgezeigt. Dabei spielt die Gewichtung der Wörter keine Rolle. Die Idee des Plots ist aufzuzeigen, ob es bei den beiden Verbänden grundsätzliche Unterschiede gibt, wie in Artikeln zum Thema Arbeitszeit geschrieben wird. Auf der rechten Seite befindet sich der Plot für den Korpus des SGB. Auf der linken Seite der Plot für den Korpus vom ZSAO. Es fällt auf, dass zwischen den beiden fast kein Unterschied besteht. Für beide Verbände befindet sich der Anteil der positiven Wörter bei etwas über 65%. Beim SGB ist der Anteil von negativen Wörtern ganz wenig höher als beim ZSAO. 
 ```{r,fig.cap="Sentiment Analyse"}
 plot(sentiment_plot)
+
 ```
+
 ```{r Sentiment pro Jahr, include=FALSE}
 #dfm pro Organisation
 
@@ -137,7 +141,7 @@ sentiment.beide$date <- unlist(sentiment.beide$date)
 sentiment.beide$date <- as.Date(sentiment.beide$date, format = "%Y")
 ```
 
-
+In einer zweiten Analyse wurde die Gewichtung der Wörter miteinbezogen. Dafür wurden die Scores der Wörter anhand der Gewichtung des Wörterbuchs miteinander verrechnet. Anschliessend wurde das Ergebnis auf einer Skala von -1 bis 1 herunterskaliert. Die Darstellung wird auf einer Zeitachse dargestellt, um damit besser die Entwicklungen abbilden zu können. Dies gibt mehr Informationen, die interpretiert werden können, als wenn es für den ganzen Korpus berechnet worden wäre. In der Darstellung ist zu sehen, dass die Schwankung beim SGB um einiges ausgeprägter ist, als beim ZSAO. Beim Arbeitgeber:innenverband wird ab Mitte der 30er Jahre eher neutral über das Thema Arbeitszeit geschrieben. Der verrechnete Sentiment-Score schwankt in einem Bereich zwischen -0.5 und 0.5. Vor dieser Stabilisierung wurde beim ZSAO aber sehr negativ über das Thema berichtet. Der Sentiment-Score im Jahr 1936 erreicht sogar das Ende der negativen Skala. Dieses Ende der Skala wird bei der Zeitschrift des SGB nie erreicht. Beim Arbeitnehmer:innenverband schwankt der Score in einem grösseren Bereich und bleibt kaum stabil. Spitzenwerte werden sowohl auf der positiven Skala (1) wie auch auf der negativen Skala (-0.9) erreicht. Generell scheint der SGB somit mit stärker ausgeprägten Emotionen über das Thema der Arbeitszeit zu berichten.
 ```{r, fig.cap="verrechneter Sentiment Score pro Jahr pro Organisation"}
 ggplot(sentiment.beide , aes(date, Sentiment, colour = Organisation, group = Organisation)) + 
   geom_line() + 
@@ -154,8 +158,11 @@ ggplot(sentiment.beide , aes(date, Sentiment, colour = Organisation, group = Org
 
 ## LDA
 
+Bei der LDA wurden die beiden Korpora getrennt voneinander analysiert. Aus diesem Grund werden die Ergebnisse in zwei Unterkapiteln beschrieben. Bei beiden Korpora mussten die Anzahl Topics vom Autor festgelegt werden. Dieses Vorgehen wird bei beiden Korpora beschrieben. Ausserdem wurde nebst den quantitativen Klassifizierung auch noch qualitative Auswertung von Zufallsstichproben gemacht. Dabei wurden die Texte zufällig aus den beiden Korpora ausgewählt und anschliessend von Hand codiert. Eine Übersicht über diese Kodierung findet sich im Anhang. Diese qualitative Auswertung hat geholfen die Anzahl der Topics besser festlegen zu können. Einerseits konnten so Topics, die vorher nicht interpretierbar waren, verstanden werden. So zum Beispiel wenn Abkürzungen in den Topwörtern nicht aufgefallen sind oder wenn Wörter nicht eindeutig interpretierbar waren. Andererseits konnte ein besseres Verständnis bestimmte Topics erreicht werden. Zum Beispiel die Statistik Topics und die Erkenntnis, dass französische Wörter in den Statistiktabelle vorkommen, konnte dank dieser Ergänzung erkannt werden. Für Topwörter, die trotz diesen zufällig ausgewählten Texten nicht interpretiert werden konnten, wurde jeweils eine `KWIC` Suche durchgeführt. Dies erlaubte es das Wort eventuell mihilfe des Kontexts verstehen zu können. Ein weiterer Parameter, der bei der LDA Analyse von Rieger et al. ausgewählt werden muss ist die Anzahl der Wiederholungen. Im Text werden mindestens 50 Durchgänge vorgeschlagen. Diese Anzahl erwies sich für die Auswertungen dieser Korpora als sehr robust. Bei den Durchgängen mit derselben Anzahl Topics wurden die Topics immer wieder erkannt. Der einzige Unterschied waren die Sortierung der Topics. Es gibt keine genaue Dokumentation über die Häufigkeit der Analysen. Die LDA Analysen mit den ausgewählten Parametern sind aber mindestens 30x durchgeführt worden. Grund dafür waren vor allem das Debugging von Scripten oder Plots, das nicht an einem Tag durchgeführt werden konnte. Dabei wurde jeweils immer wieder der ganze Durchlauf reproduziert, inklusive den LDA Analysen.
+
 ### Arbeitnehmer:innen
 
+Für die Gewerkschaftliche Rundschau wurden neun verschiedene Topics vorgegeben. Die Resultate lassen sich mit neun Topics am besten interpretieren. Bei einer grösseren Anzahl Topics gibt es mehr nicht gebrauchbare Topics, die nicht interpretiert werden können. Bei weniger Topics fielen aber jeweils einige der sonst differenzierbaren Topics weg. Die Anzahl der Topics wurde in Annäherungsschritten so ausgewählt. Dabei wurden LDA Analysen mit fünf bis 15 Topics durchgeführt. Eine Übersicht über die Topics findet sich in der nachfolgenden Abbildung. Dort werden die 8 häufigsten Wörter (auch Topwords genannt) der Topics in einer Tabelle dargestellt.
 ```{r, results='asis'}
 kbl(Topwords_Arbeitnehmer, caption = "Topics Arbeitnehmer", booktabs = T) %>% 
   kable_styling(latex_options = c("scale_down", "hold_position"))
@@ -173,20 +180,20 @@ tosca_corpus$meta$id <- paste("id", tosca_corpus$meta$id, sep = "")
 ```{r, fig.cap="Topics verteilt über die Jahre SGB"}
 plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "topleft", ylim = c(0, 0.5), unit = "year",
-          select = c(1,2,3,4,5,6,8), tnames = c("Automation", "rechtliche Bestimmungen", "Frauen", "International",
-                                                "Statistik", "SGB", "Mehr"))
+          select = c(1,2,3,4,5,6,8), tnames = c("Automation", "rechtliche Bestimmungen", "Frauen", "International", "Statistik", "SGB", "Mehr"))
 ```
 
 
 
 ### Arbeitgeber:innen
 
+Auch beim Korpus des *Schweizer Arbeitgeber* wurde die Anzahl Topics mit Annäherungsschritten bestimmt. Da der Korpus allerdings um einiges grösser ist wurde auch die Anzahl der Topics grösser gewählt. Ausprobiert wurden LDA's mit sieben bis 20 Topics. Schlussendlich wurde das Ergebniss mit 12 Topics ausgewählt. Auch hier aus dem Grund, dass bei weniger Topics einige der vorhandenen spannenden Topics nicht mehr angezeigt werden. Auch hier sind die Topwords der Topics in einer Tabelle dargestellt:
 ```{r Topword Arbeitgeber:innen}
 kbl(Topwords_Arbeitgeber, caption = "Topics Arbeitgeber", booktabs = T) %>% 
   kable_styling(latex_options = c("scale_down", "hold_position"))
 ```
 
-
+Die Anzahl der nicht auswertbaren Topics ist bei diesem Korpus ein bisschen höher als beim Arbeitnehmer:innenkorpus.
 
 ```{r Prepare PlotTopics ZSAO, include=FALSE}
 #topics over time 
@@ -211,3 +218,4 @@ plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeb
           tnames = c("Unfälle", "Index", "Jahr"))
 ```
 
+### Validierung
