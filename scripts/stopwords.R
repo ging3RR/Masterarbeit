@@ -57,5 +57,9 @@ sw<- c(tm::stopwords("german"), #standard stopwords
        "chiffr",
        "valeur",
        "marché",
-       "faillit"
+       "faillit",
+       "e",
+       "i",
+       "a",
+       "u"
        ) 
