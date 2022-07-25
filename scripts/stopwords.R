@@ -61,5 +61,6 @@ sw<- c(tm::stopwords("german"), #standard stopwords
        "e",
        "i",
        "a",
-       "u"
+       "u",
+       "b"
        ) 
