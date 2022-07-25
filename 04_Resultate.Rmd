@@ -209,16 +209,16 @@ tosca_corpus_Arbeitgeber$meta$id <- paste("id", tosca_corpus_Arbeitgeber$meta$id
 plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
           ldaID = names(Corpus_Prototype_Arbeitgeber),
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
-          select = c(1,4,6,8,9),
-          tnames = c("rechtliche Bestimmungen", "Gewerkschaften", "48h-Woche", "Ferien", "Mehr"))
+          select = c(2,4,6,8,9),
+          tnames = c("Mehr", "Ferien", "48h-Woche", "Unternehmen", "rechtliche Bestimmungen"))
 ```
 
 ```{r, fig.cap="Statistik Topics verteilt über die Jahre ZSAO"}
 plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
           ldaID = names(Corpus_Prototype_Arbeitgeber),
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
-          select = c(3,10,11),
-          tnames = c("Unfälle", "Index", "Jahr"))
+          select = c(3,7,12),
+          tnames = c("Kosten", "Index", "Export"))
 ```
 
 ### Validierung
