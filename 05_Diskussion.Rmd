@@ -2,7 +2,7 @@
 
 ## Resultate
 
-* Die Themen Arbeitsfrieden (Streik Topic 10), Fremdarbeiter:innen (Statistik Topic 4) und Konjunkturlage (Statistiktopics) sind nicht ausgeprägt in den Topics zu finden.Das Wort Konjunktur oder Konjunkturlage wurde auch in keinem der Topics erkannt. Dennoch lässt sich die Lage der Volkswirtschaft in einigen Topics zumindest annähernd vermuten. So zum Beispiel beim Export Topic.
+* Die Themen Arbeitsfrieden (Streik Topic 10), Fremdarbeiter:innen (Statistik Topic 4 und Topic 2 Wohnungen) und Konjunkturlage (Statistiktopics) sind nicht ausgeprägt in den Topics zu finden.Das Wort Konjunktur oder Konjunkturlage wurde auch in keinem der Topics erkannt. Dennoch lässt sich die Lage der Volkswirtschaft in einigen Topics zumindest annähernd vermuten. So zum Beispiel beim Export Topic.
 * Die Ergebnisse zeigen, dass die Frage um Arbeitszeit immer auch mit anderen Themen diskutiert wird. Besonders das Thema Ferien sticht heraus. Auch die Diskussionen um die Arbeitsbedingungen von Frauen und Jugendlichen kommt öfters vor. Das Thema Lohn ist nur wenig zu erkennen (*Stundenverdienste* Topic 2)
 * Differenzen: 
   * International (SGB), Automation & Freiheit (SGB) 
