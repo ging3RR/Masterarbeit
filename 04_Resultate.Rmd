@@ -59,7 +59,7 @@ corpus_dfm <- tokens(corpus_combined, remove_punct = T,
   dfm() %>% dfm_wordstem()
 ```
 
-In diesem Kapitel werden die Resultate aus den beiden Methoden vorgestellt. Im ersten Teil werden die Ergebnisse der Sentiment Analyse besprochen. Im zweiten Teil die Ergebnisse der LDA Methode. **GENERELLE PLOTS ZUR ANZAHL DER TEXTE PRO JAHR**
+In diesem Kapitel werden die Resultate aus den beiden Methoden vorgestellt. Im ersten Teil werden die Ergebnisse der Sentiment Analyse besprochen. Im zweiten Teil die Ergebnisse der LDA Methode.
 
 ## Sentiment Analyse
 ```{r Setup Sentiment Analyse, include=FALSE}
