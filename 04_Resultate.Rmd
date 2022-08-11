@@ -220,14 +220,6 @@ plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeb
 
 Bei dieser Grafik fällt direkt auf, dass der Anteil des Topic 1 am gesamten Korpus extrem hoch ist. Teilweise ist es in fast 50% aller Texte zu finden. Es besteht eine grosse Differenz zwischen diesem Topic und den restlichen. Einzig das Ferien Topic kommt einmal in die Nähe. Mitte der 40er Jahre scheint das Ferien Topic den Anteil des Topic 1 zu übernehmen. Nach diesem kurzen hoch fällt der Anteil aber schnell wieder auf unter 10%. Am Ende des Untersuchungszeitraums steigt der Anteil wieder steil an. Das Topic zur Rechtslage hat auch einen kurzen Anstieg zu Beginn der 40er Jahren. Zwei weiteren Spitzenwerte erreicht das Topic in den 60er Jahren. Das Topic der 44-Stundenwocheinitiative wird kurz vor den 50er Jahren bis Ende der 60er Jahre diskutiert. Dies bestätigt die Annahme, dass es sich wirklich um die beiden Initiativen handelt. Der Sammelbeginn der Initiative zur 44-Stundenwoche war 1954 und die Abstimmung schlussendlich 1958. Bei der Initiative des SGB wurde 1959 begonnen Unterschriften zu sammeln, bis sie 1964 schlussendlich zurückgezogen worden ist. Die letzten Topics über Streik, die Diskussion um Arbeit und der Aktivität des Verbandes kommen selten vor. Der höchste Anteil des Streik Topics wird zu Beginn des Zeitstrahls in den 30er Jahren gemessen. Nach dem Friedensabkommen von 1937 steigt der Anteil aber kaum über 5%, mit Ausnahme von vier Jahren um 1950. Beim Topic 3 sind vor allem zwei Phasen mit höherem Anteil zu erkennen. Die erste Phase dauer ca. 10 Jahre zwischen 1935 - 45. Die zweite Phase ist kürzer und dauert von ca. 1949 - 1954. Ähnlich wie beim Ferien Topic steigt am Ende des Untersuchungszeitraums der Anteil dieses Topics wieder an. Das Aktivitätstopic hat bis Mitte der 40er Jahre einen kleinen Anteil zu verzeichnen. Dannach kommt es kaum noch vor bis es schlussendlich am Ende des Zeitstrahls wieder ansteigt.
 
-```{r, fig.cap="Statistik Topics verteilt über die Jahre ZSAO"}
-plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeber, 
-          ldaID = names(Corpus_Prototype_Arbeitgeber),
-          rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
-          select = c(2,11,7,4),
-          tnames = c("Kosten", "Index", "Export", "Arbeitsmigrant:innen"))
-```
-
 
 ### Validität
 
