@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.20)  11 AUG 2022 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.20)  12 AUG 2022 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,14 +577,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout4 = `_main.toc'.
 
 [2]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 136.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[][][][]$\T1/lmr/m/n/10 https : / / www . theguardian . com / technology / 2020 / feb / 05 / amazon -[] workers -[] protest -[] unsafe -[]
+ []
+
+
 Underfull \hbox (badness 1248) in paragraph at lines 136--137
 []\T1/lmr/m/n/12 Aber nicht alle sind von solchen hoff-nungsvollen und pos-i-tiven En-twick-lun-gen
  []
 
 [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 138.
-
 Underfull \hbox (badness 10000) in paragraph at lines 138--138
 [][][][]$\T1/lmr/m/n/10 https : / / www . forbes . com / sites / annakaplan / 2022 / 02 / 15 / belgium -[] becomes -[] latest -[] country -[] to -[] let -[]
  []
@@ -599,7 +604,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 [][][]\T1/lmr/m/n/10 Siehe dazu die Diskus-sio-nen in Deutsch-land []$https : / / www . zeit . de / arbeit / 2022 -[] 06 /
  []
 
-[4] [5] [6] [7] [8]
+[4] [5]
+Underfull \hbox (badness 1178) in paragraph at lines 145--147
+\T1/lmr/m/n/12 Diese Mas-ter-ar-beit beschäftigt sich mit der De-batte um die bish-erige Ar-beit-
+ []
+
+[6] [7] [8]
 Underfull \hbox (badness 1728) in paragraph at lines 151--153
 []\T1/lmr/m/n/12 Als Grund-lage für die Anal-yse wer-den die Mit-gliederzeitschriften des Ar-beit-
  []
@@ -614,27 +624,22 @@ Overfull \hbox (167.42014pt too wide) detected at line 166
  []
 
 [11]
-Overfull \hbox (101.85814pt too wide) detected at line 170
-\OML/lmm/m/it/12 echteFreizeit \OT1/lmr/m/n/12 = 24\OML/lmm/m/it/12 Stunden \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 (\OML/lmm/m/it/12 nominelleArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Erholungszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Schlaf \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Freizeitverpflichtungen\OT1/lmr/m/n/12 )
+Overfull \hbox (64.1877pt too wide) detected at line 170
+\OML/lmm/m/it/12 echteFreizeit \OT1/lmr/m/n/12 = 24\OML/lmm/m/it/12 h \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 (\OML/lmm/m/it/12 nominelleArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Erholungszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Schlaf \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Freizeitverpflichtungen\OT1/lmr/m/n/12 )
  []
 
-
+[12]
 Underfull \hbox (badness 2443) in paragraph at lines 174--175
 \T1/lmr/m/n/12 Ein-er-seits er-laubt diese Quan-tifizierung Ver-gle-iche und sozi-ol-o-gis-che Anal-y-sen
  []
 
-[12] [13]
-Underfull \hbox (badness 1436) in paragraph at lines 192--194
-[]\T1/lmr/m/n/12 Nebst dem SGB gab es noch weit-ere Ver-bunde, die sich nicht nur der Ar-
- []
-
-
-Underfull \hbox (badness 3138) in paragraph at lines 192--194
-\T1/lmr/m/n/12 beiter:innenbewegung an-schlossen, son-dern sich ide-ol-o-gisch auch noch an-ders
+[13]
+Overfull \hbox (5.68202pt too wide) in paragraph at lines 192--194
+[]\T1/lmr/m/n/12 Nebst dem SGB gab es noch weit-ere Ver-bunde, die sich zwar der Ar-beiter:innenbewegung
  []
 
 [14] [15]
-<images/Arbeitszeitgesetze_vor_1874.jpg, id=371, 1378.14874pt x 2375.87625pt>
+<images/Arbeitszeitgesetze_vor_1874.jpg, id=355, 1378.14874pt x 2375.87625pt>
 File: images/Arbeitszeitgesetze_vor_1874.jpg Graphic file (type jpg)
 <use images/Arbeitszeitgesetze_vor_1874.jpg>
 Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 211.
@@ -664,143 +669,139 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 23
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [20] [21]
-Underfull \hbox (badness 5036) in paragraph at lines 253--255
-\T1/lmr/m/n/12 Die Beach-tung der ver-schiede-nen Kon-junk-tur-phase oder generell der Volk-
+Underfull \hbox (badness 5563) in paragraph at lines 253--254
+\T1/lmr/m/n/12 Die Beach-tung der ver-schiede-nen Kon-junk-tur-phase oder generell der volk-
  []
 
 [22] [23] [24]
-Overfull \hbox (7.01042pt too wide) in paragraph at lines 271--272
-\T1/lmr/m/n/12 von Seiten der Ar-beit-nehmer:innen (Streiks) und Ar-beit-ge-ber:innen(Arbeitsausschlüsse).
- []
-
-[25]
-Underfull \hbox (badness 3029) in paragraph at lines 281--282
+Underfull \hbox (badness 3029) in paragraph at lines 282--283
 []\T1/lmr/m/n/12 Ein wichtiger Punkt in der En-twick-lung des Ar-beits-friedens war das so-ge-
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 281--282
+Underfull \hbox (badness 2080) in paragraph at lines 282--283
 \T1/lmr/m/n/12 nan-nte Friedens-abkom-men von 1937. In diesem Jahr schlossen die Ar-beit-
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 281--282
+Underfull \hbox (badness 4621) in paragraph at lines 282--283
 \T1/lmr/m/n/12 nehmer:innenverbände der Met-allindus-trie (unter an-derem der Schweiz-erische
  []
 
+[25]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26]
-<_main_files/figure-latex/unnamed-chunk-2-1.pdf, id=457, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-2-1.pdf, id=443, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 315.
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 316.
 (pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
-<_main_files/figure-latex/unnamed-chunk-3-1.pdf, id=458, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-3-1.pdf, id=445, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 321.
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 324.
 (pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
 [27] [28 <./_main_files/figure-latex/unnamed-chunk-2-1.pdf>] [29 <./_main_files/figure-latex/unnamed-chunk-3-1.pdf>] [30]
-Underfull \hbox (badness 1342) in paragraph at lines 347--349
+Underfull \hbox (badness 1342) in paragraph at lines 348--350
 []\T1/lmr/m/n/12 Der Gew-erkschafts-bund kri-tisierte zwar die schlechten Ar-beits-be-din-gun-gen und
  []
 
 [31] [32] [33]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 362.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 363.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [34] [35] [36] [37] [38]
-<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=624, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=605, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 395.
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 396.
 (pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
 [39]
-<_main_files/figure-latex/unnamed-chunk-5-1.pdf, id=633, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-5-1.pdf, id=614, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 398.
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 399.
 (pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
 [40 <./_main_files/figure-latex/unnamed-chunk-4-1.pdf>] [41 <./_main_files/figure-latex/unnamed-chunk-5-1.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 ...{tab:unnamed-chunk-6}Topics Arbeitnehmer}
+l.413 ...{tab:unnamed-chunk-6}Topics Arbeitnehmer}
                                                    [42] [43]
-<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=663, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=644, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 442.
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 443.
 (pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.443 ...nk-7}Topics verteilt Ã¼ber die Jahre SGB}
+l.444 ...nk-7}Topics verteilt Ã¼ber die Jahre SGB}
                                                    [44 <./_main_files/figure-latex/unnamed-chunk-7-1.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [45] [46]
-<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=684, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=665, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 489.
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 490.
 (pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.490 ...k-9}Topics verteilt Ã¼ber die Jahre ZSAO}
-                                                   [47] [48 <./_main_files/figure-latex/unnamed-chunk-9-1.pdf>] [49] [50] [51] [52] [53] [54] [55] [56] [57]
-Underfull \hbox (badness 4084) in paragraph at lines 602--604
+l.491 ...k-9}Topics verteilt Ã¼ber die Jahre ZSAO}
+                                                   [47] [48 <./_main_files/figure-latex/unnamed-chunk-9-1.pdf>] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]
+Underfull \hbox (badness 4084) in paragraph at lines 606--608
 \T1/lmr/m/n/12 Mono-lin-gual Dic-tio-nar-ies at the Leipzig Cor-pora Col-lec-tion: From 100
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 602--604
+Underfull \hbox (badness 2790) in paragraph at lines 606--608
 \T1/lmr/m/n/12 to 200 Lan-guages.'' In \T1/lmr/m/it/12 Pro-ceed-ings of the Eighth In-ter-na-tional Con-fer-
  []
 
-[58] [59]
-Overfull \hbox (5.33pt too wide) in paragraph at lines 644--646
+[59]
+Overfull \hbox (5.33pt too wide) in paragraph at lines 648--650
 \T1/lmr/m/n/12 theoretischer Beitrag zur Geschichte und zur Prob-lematik der Ar-beit-szeitsverkürzung
  []
 
 [60] [61] [62]
-Underfull \hbox (badness 1975) in paragraph at lines 749--751
+Underfull \hbox (badness 1975) in paragraph at lines 753--755
 []\T1/lmr/m/n/12 Wunderlich, Fabian, and Daniel Mem-mert. 2020. ``In-no-va-tive Ap-proaches
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 749--751
+Underfull \hbox (badness 3612) in paragraph at lines 753--755
 \T1/lmr/m/n/12 in Sports Science---Lexicon-Based Sen-ti-ment Anal-y-sis as a Tool to An-
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 749--751
+Underfull \hbox (badness 3078) in paragraph at lines 753--755
 \T1/lmr/m/n/12 a-lyze Sports-Related Twit-ter Com-mu-ni-ca-tion.'' \T1/lmr/m/it/12 Ap-plied Sci-ences \T1/lmr/m/n/12 10 (2).
  []
 
-[63] (./_main.aux)
+[63] [64] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: C5F3D051C2338B781EAD7253F5B7688B;4146.
+(rerunfilecheck)             Checksum: 839C36033B6485D3FBE41400A42716E7;4146.
  ) 
 Here is how much of TeX's memory you used:
- 13182 strings out of 479983
- 213011 string characters out of 5886392
+ 13186 strings out of 479983
+ 213099 string characters out of 5886392
  517287 words of memory out of 5000000
  30889 multiletter control sequences out of 15000+600000
  537185 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,10n,77p,6095b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,77p,5867b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (63 pages, 2220804 bytes).
+Output written on _main.pdf (64 pages, 2220036 bytes).
 PDF statistics:
- 957 PDF objects out of 1000 (max. 8388607)
- 846 compressed objects within 9 object streams
- 218 named destinations out of 1000 (max. 500000)
+ 940 PDF objects out of 1000 (max. 8388607)
+ 828 compressed objects within 9 object streams
+ 222 named destinations out of 1000 (max. 500000)
  244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
