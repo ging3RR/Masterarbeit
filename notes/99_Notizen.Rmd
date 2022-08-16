@@ -180,3 +180,12 @@ https://www.e-periodica.ch/digbib/volumes?UID=wis-001
 https://slsp-rzs.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9913258390105505&context=L&vid=41SLSP_RZS:VU15&lang=de&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=41SLSP_RZS_MyInst_and_CI&query=any,contains,Digitalisierung%20Arbeit&offset=20
 
 https://slsp-rzs.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9914343065805505&context=L&vid=41SLSP_RZS:VU15&lang=de&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=41SLSP_RZS_MyInst_and_CI&query=any,contains,Digitalisierung&sortby=rank&offset=10
+
+
+# to do
+
+- Anhang(Codierung von Hand, Ergebnisse Validitätsprüfung)
+- Tabelle Gallati
+- Vorwort(Gendern)
+- Gestaltung
+- Titelblatt
