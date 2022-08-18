@@ -9,17 +9,17 @@ Streik <- read.csv("E:/R Projects/Daten_MA//Masterarbeit/data/Streik_1922_1971.c
 
 ## Validität
 
-Hans_Arbeitnehmer1 <- intruderWords(beta = Prototype_LDA$topics, numIntruder = 0:1, numTopwords = 10)
+Timo_Arbeitnehmer1 <- intruderWords(beta = Prototype_LDA$topics, numIntruder = 0:1, numTopwords = 10)
 
-Hans_Arbeitnehmer2 <- intruderWords(beta = Prototype_LDA$topics, numIntruder = 0:1, numTopwords = 10)
+Timo_Arbeitnehmer2 <- intruderWords(beta = Prototype_LDA$topics, numIntruder = 0:1, numTopwords = 10)
 
-Hans_Arbeitnehmer3 <- intruderWords(beta = Prototype_LDA$topics, numIntruder = 0:1, numTopwords = 10)
+Timo_Arbeitnehmer3 <- intruderWords(beta = Prototype_LDA$topics, numIntruder = 0:1, numTopwords = 10)
 
 
-Hans_Arbeitgeber1 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
+Timo_Arbeitgeber1 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
 
-Hans_Arbeitgeber2 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
+Timo_Arbeitgeber2 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
 
-Hans_Arbeitgeber3 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
+Timo_Arbeitgeber3 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
 
 
