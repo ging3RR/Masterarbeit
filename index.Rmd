@@ -10,13 +10,14 @@ output:
     lot: yes
     includes:
       #in_header: tex/frontpage.tex
+    citation_package: none
+    pandoc_args: [ "--csl", "springer-vs-author-date.csl" ]
   bookdown::gitbook: default
   html_document:
     toc: true #table of contents
     
 
 bibliography: "references.bib"
-biblio-style: "apalike"
 link-citations: true
 
 fontsize: 12pt
