@@ -184,8 +184,7 @@ https://slsp-rzs.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9914343
 
 # to do
 
-- Anhang(Codierung von Hand, Ergebnisse Validitätsprüfung)
+
 - Tabelle Gallati
-- Vorwort(Gendern)
 - Gestaltung
-- Titelblatt
+

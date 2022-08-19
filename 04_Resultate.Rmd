@@ -83,16 +83,18 @@ meine_dfm_sentiment_org_prop <- dfm_weight(meine_dfm_sentiment_org, scheme = "pr
 sentiment.org <- convert(meine_dfm_sentiment_org_prop, "data.frame") %>% 
   gather(positive, negative, key = "Polarität", value = "Sentiment")
 
-sentiment_plot <- ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
+
+```
+
+Bei der Sentiment-Analyse werden die unterschiedlichen Wörter in positive oder negative Kategorien eingeteilt und zusätzlich wird auch die „Stärke“ der Ausprägung angegeben. In einer ersten Analyse ist ein Plot zu sehen, auf dem der Sentiment Score dargestellt wird. In dieser Darstellung wird der Anteil von positiven und negativen Wörtern über den ganzen Korpus aufgezeigt. Damit soll identifiziert werden, ob es bei den beiden Verbänden grundsätzliche Unterschiede bei der Kommunikation betreffend der Arbeitszeit gab. Auf der rechten Seite befindet sich der Plot für den Korpus des SGB und auf der linken Seite der Plot für den Korpus vom ZSAO. Es fällt auf, dass zwischen den beiden fast kein Unterschied besteht. Für beide Verbände befand sich der Anteil der positiven Wörter bei knapp über 65%. Beim SGB war der Anteil von negativen Wörtern mit 34.1% ganz wenig höher als beim ZSAO mit 33.5%. 
+
+
+```{r, fig.cap="Sentiment Score der beiden Zeitschriften"}
+ggplot(sentiment.org, aes(doc_id, Sentiment, colour = Polarität, fill = Polarität)) + 
   geom_bar(stat="identity") + scale_colour_brewer(palette = "Set1") + 
   scale_fill_brewer(palette = "Accent") + 
   xlab("") + ylab("Anteil") + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-```
-
-Bei der Sentiment-Analyse werden die unterschiedlichen Wörter in positive oder negative Kategorien eingeteilt und zusätzlich wird auch die „Stärke“ der Ausprägung angegeben. In einer ersten Analyse ist ein Plot zu sehen, auf dem der Sentiment Score dargestellt wird. In dieser Darstellung wird der Anteil von positiven und negativen Wörtern über den ganzen Korpus aufgezeigt. Damit soll identifiziert werden, ob es bei den beiden Verbänden grundsätzliche Unterschiede bei der Kommunikation betreffend der Arbeitszeit gab. Auf der rechten Seite befindet sich der Plot für den Korpus des SGB und auf der linken Seite der Plot für den Korpus vom ZSAO. Es fällt auf, dass zwischen den beiden fast kein Unterschied besteht. Für beide Verbände befand sich der Anteil der positiven Wörter bei knapp über 65%. Beim SGB war der Anteil von negativen Wörtern mit 34.1% ganz wenig höher als beim ZSAO mit 33.5%. 
-```{r,fig.cap="Sentiment Score der beiden Zeitschriften"}
-plot(sentiment_plot)
 
 ```
 
@@ -139,7 +141,10 @@ sentiment.beide$date <- as.Date(sentiment.beide$date, format = "%Y")
 ```
 
 In einer zweiten Analyse wird der Fokus nicht auf den gesamten Korpus, sondern auf die Texte pro Jahr gelegt. Dies gibt mehr interpretierbare Informationen, da die Umstände in den einzelnen Jahren berücksichtigt werden können. In diesem Verfahren wurden die Scores der Wörter anhand der Gewichtung des Wörterbuchs miteinander verrechnet. Anschliessend wurde das Ergebnis auf einer Skala von -1 bis 1 herunterskaliert. In der Darstellung ist zu sehen, dass die Schwankung beim SGB um einiges ausgeprägter war, als beim ZSAO. Beim Arbeitgeber:innenverband wurde ab Mitte der 1930er-Jahre eher neutral über das Thema Arbeitszeit geschrieben. Der verrechnete Sentiment-Score schwankte in einem Bereich zwischen -0.5 und 0.5. Vor dieser Stabilisierung wurde beim ZSAO aber sehr negativ über das Thema berichtet. Der Sentiment-Score im Jahr 1936 erreichte sogar das Ende der negativen Skala. Dieses negative Ende der Skala wurde bei der Zeitschrift des SGB nie erreicht. Beim Arbeitnehmer:innenverband schwankte der Score in einem grösseren Bereich und blieb kaum stabil. Spitzenwerte wurden sowohl auf der positiven Skala (1) wie auch auf der negativen Skala (-0.9) erreicht. Generell schien der SGB somit emotionaler über das Thema der Arbeitszeit zu berichten als der ZSAO.
-```{r, fig.cap="verrechneter Sentiment Score pro Jahr pro Organisation"}
+
+
+```{r, fig.cap="verrechneter Sentiment Score pro Jahr pro Verband"}
+
 ggplot(sentiment.beide , aes(date, Sentiment, colour = Organisation, group = Organisation)) + 
   geom_line() + 
   geom_hline(yintercept = 0, linetype = "dashed", color = "lightgray") + 
@@ -183,7 +188,7 @@ tosca_corpus$meta$id <- paste("id", tosca_corpus$meta$id, sep = "")
 ```{r, fig.cap="Anteil der Topics beim SGB verteilt über die Jahre"}
 plotTopic(object = tosca_corpus, ldaresult = Prototype_LDA, ldaID = names(Corpus_Prototype),
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "topleft", ylim = c(0, 0.5), unit = "year",
-          select = c(1,2,3,4,5,6,8), tnames = c("Automation", "Rechtslage", "Frauen", "International", "Statistik", "SGB", "Mehr"))
+          select = c(1,2,3,4,5,6,8), tnames = c("Automation", "Rechtslage", "Frauen", "International", "Statistik", "SGB", "Mehr"), xlab = "Jahr", ylab = "Anteil", main = "Anteil Topics pro Jahr")
 ```
 
 Am häufigsten vertreten war Topic 8, das die negativen Erfahrungen in der Diskussion um die Arbeitszeit ausdrückt. Bis ins Jahr 1962 hatte dieses Topic, mit kleinen Ausnahmen, den höchsten Anteil aller Topics am Gesamtkorpus. Nach 1962 fiel das Topic steil, bis es 1967 wieder stark anstieg und bis 1970 wieder das meist vertretene Topic war. Das zweite starke Topic war die Nummer 5, das die Spitzenposition vom Topic 8 in den 40er-Jahren kurz abgelöst hat und durchgehend stark vertreten war. Dabei handelte es sich um die Statistiken über die Arbeitszeit. Das letzte Topic mit hohen Höchstwerten war das internationale-Topic. Auch dieses Topic blieb konstant wichtig, war jedoch von hoher Fluktuation gekennzeichnet.
@@ -222,7 +227,8 @@ plotTopic(object = tosca_corpus_Arbeitgeber, ldaresult = Prototype_LDA_Arbeitgeb
           ldaID = names(Corpus_Prototype_Arbeitgeber),
           rel = TRUE, curves = "smooth", smooth = 0.1, legend = "left", ylim = c(0, 0.5), unit = "year",
           select = c(1,3,5,6,8,9,10),
-          tnames = c("Mehr","Arbeit", "Rechtslage", "Initiativen", "ZSAO", "Ferien", "Streik"))
+          tnames = c("Mehr","Arbeit", "Rechtslage", "Initiativen", "ZSAO", "Ferien", "Streik"),
+          xlab = "Jahr", ylab = "Anteil", main = "Anteil Topics pro Jahr")
 ```
 
 Bei dieser Grafik fällt direkt auf, dass der Anteil des Topic 1 am gesamten Korpus hoch war. Teilweise war es in fast 50% aller Texte zu finden. Es bestand eine grosse Differenz zwischen diesem Topic und den restlichen. Einzig das Ferien-Topic hatte einmal einen Anteil im ähnlichen Bereich. Mitte der 1940er-Jahre schien das Ferien Topic den Anteil des Topic 1 zu übernehmen. Nach diesem kurzen Hoch fiel der Anteil aber schnell wieder auf unter 10%. Am Ende des Untersuchungszeitraums stieg der Anteil des Ferien Topic wieder steil an. Das Topic zur Rechtslage hatte auch einen kurzen Anstieg zu Beginn der 40er-Jahren. Zwei weitere Spitzenwerte erreicht das Topic in den 1960er-Jahren. Das Topic der Initiativen wurde kurz vor den 50er-Jahren bis Ende der 60er-Jahre diskutiert. Dies bestätigt die Annahme, dass es sich wirklich um die beiden Initiativen handelte. Der Sammelbeginn der Initiative zur 44-Stundenwoche war 1954 und die Abstimmung schlussendlich 1958. Bei der Initiative des SGB wurde 1959 begonnen, Unterschriften zu sammeln, bis sie 1964 schlussendlich zurückgezogen worden ist.

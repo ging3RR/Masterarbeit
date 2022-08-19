@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.19)  19 AUG 2022 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.19)  19 AUG 2022 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -127,6 +127,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
@@ -262,8 +264,6 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \cslentryspacingunit=\skip63
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
@@ -288,6 +288,11 @@ Package babel Info: Making " an active character on input line 122.
 ))) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 11.
+) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip64
+\thanksmargin=\skip65
+\droptitle=\skip66
 ) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -395,7 +400,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip64
+\Hy@SectionHShift=\skip67
 ) (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-08-05 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
@@ -403,24 +408,24 @@ File: l3backend-pdftex.def 2022-08-05 L3 backend support: PDF output (pdfTeX)
 ) (./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -434,21 +439,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(86.72377pt, 440.84746pt, 86.72377pt)
-* v-part:(T,H,B)=(86.72377pt, 621.52245pt, 86.72377pt)
+* modes: twoside 
+* h-part:(L,W,R)=(113.81102pt, 415.12572pt, 85.35826pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=440.84746pt
-* \textheight=621.52245pt
-* \oddsidemargin=14.45378pt
-* \evensidemargin=14.45378pt
-* \topmargin=-22.54622pt
+* \textwidth=415.12572pt
+* \textheight=652.70622pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=95.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -456,849 +461,1146 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 115.
+Package hyperref Info: Link coloring OFF on input line 118.
 (./_main.out) (./_main.out)
 \@outlinefile=\write3
 \openout3 = `_main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 117.
+<data/Logo_Universitaet_Luzern.pdf, id=164, 376.40625pt x 383.32462pt>
+File: data/Logo_Universitaet_Luzern.pdf Graphic file (type pdf)
+<use data/Logo_Universitaet_Luzern.pdf>
+Package pdftex.def Info: data/Logo_Universitaet_Luzern.pdf  used on input line 155.
+(pdftex.def)             Requested size: 223.51936pt x 227.62767pt.
+[1
+
+{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./data/Logo_Universitaet_Luzern.pdf>] (./_main.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 117.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 117.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 5.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 117.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 5.
 (c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 117.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 117.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 117.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 117.
-(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 117.
-(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./_main.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 5.
-[1
-
-{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2])
 \tf@toc=\write4
 \openout4 = `_main.toc'.
 
+(./_main.lof)
+\tf@lof=\write5
+\openout5 = `_main.lof'.
+
+(./_main.lot)
+\tf@lot=\write6
+\openout6 = `_main.lot'.
+
+[3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 126.
-[2] [3]
-Underfull \hbox (badness 1248) in paragraph at lines 133--134
-[]\T1/lmr/m/n/12 Aber nicht al-le sind von sol-chen hoff-nungs-vol-len und po-si-ti-ven Ent-wick-lun-gen
- []
+(Font)              <10> on input line 179.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 179.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 179.
 
-[4]
-Underfull \hbox (badness 5652) in paragraph at lines 135--135
-[][][]\T1/lmr/m/n/10 In der Mo-ti-on 21.4642 wird die Re-duk-ti-on der Ar-beits-zeit in-nert 10 Jah-ren auf
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 135--135
-\T1/lmr/m/n/10 pro Wo-che bei vol-lem Lohn-aus-gleich für Löh-ne un-ter (1.5x tiefer) dem durch-schnitt-li-chen
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[][][][]$\T1/lmr/m/n/10 https : / / www . b^^\t -[] bund . de / DE / Publikation / empfehlung -[] gendergerechte -[] digital -[]
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 135--135
-\T1/lmr/m/n/10 Brut-to-ein-kom-men []$https : / / www . parlament . ch / de / ratsbetrieb / suche -[] curia -[] vista / geschaeft ? A^^[airId =
+Overfull \hbox (22.17972pt too wide) in paragraph at lines 179--179
+\T1/lmr/m/n/10 barrierefreie -[] sprache -[] studie -[] koehler -[] wahl . html ; jsessionid = 2D40C8605C5689662F44F17493A28EAD ?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
-[][][][]$\T1/lmr/m/n/10 https : / / www . forbes . com / sites / annakaplan / 2022 / 02 / 15 / belgium -[] becomes -[] latest -[] country -[] to -[] let -[]
+Underfull \hbox (badness 1122) in paragraph at lines 179--180
+\T1/lmr/m/n/12 in RStu-dio, ent-spricht der Stern ei-ner be-stimm-ten Ak-ti-on. Im Tex-te-di-tor
+ []
+
+[4] [5] [6]
+Underfull \hbox (badness 1810) in paragraph at lines 190--190
+[][][]\T1/lmr/m/n/10 In der In-itia-ti-ve 98.447 for-dert Renn-wald die Ar-beits-zeit-be-gren-zung auf 32 -- 36
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 4846) in paragraph at lines 190--190
+\T1/lmr/m/n/10 Stun-den pro Wo-che bei vol-lem Lohn-aus-gleich für Löh-ne un-ter (1.5x tiefer) dem
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 190--190
+\T1/lmr/m/n/10 durch-schnitt-li-chen Brut-to-ein-kom-men []$https : / / www . parlament . ch / de / ratsbetrieb / suche -[] curia -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[][][][]$\T1/lmr/m/n/10 https : / / www . forbes . com / sites / annakaplan / 2022 / 02 / 15 / belgium -[] becomes -[] latest -[] country -[]
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 190--190
 [][][]\T1/lmr/m/n/10 Siehe da-zu die Dis-kus-sio-nen in Deutsch-land: []$https : / / www . zeit . de / arbeit / 2022 -[] 06 /
  []
 
-[5]
-Underfull \hbox (badness 3209) in paragraph at lines 137--138
-\T1/lmr/m/n/12 Das Ziel ist die ex-plo-ra-ti-ve Un-ter-su-chung der Mit-glie-der-kom-mu-ni-ka-ti-on von
- []
-
-
-Underfull \hbox (badness 3746) in paragraph at lines 137--138
-\T1/lmr/m/n/12 in der Schweiz be-tei-ligt wa-ren. Da-für wer-den die Zeit-schrif-ten der bei-den
- []
-
-[6]
-Overfull \hbox (18.4332pt too wide) in paragraph at lines 144--146
-\T1/lmr/m/n/12 Diese Mas-ter-ar-beit be-schäf-tigt sich mit der De-bat-te um die bis-he-ri-ge Ar-beits-zeit-ver-kür-zung
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 144--146
-\T1/lmr/m/n/12 in der Schweiz. Aus be-reits er-wähn-ten Grün-den -- näm-lich der mass-ge-ben-den
- []
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 144--146
-\T1/lmr/m/n/12 Ver-än-de-run-gen in der ers-ten Pha-se die-ses Zeit-raums und der Ak-tua-li-tät des
- []
-
-
-Underfull \hbox (badness 2970) in paragraph at lines 144--146
-\T1/lmr/m/n/12 The-mas in der zwei-ten Pha-se -- wur-de da-für der Zeit-raum zwi-schen 1930
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 144--146
-\T1/lmr/m/n/12 und 1970 ge-wählt. Das The-ma Ar-beits-zeit-ver-kür-zung rund um den zwei-ten
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 144--146
-\T1/lmr/m/n/12 In die-sem Ka-pi-tel wird auf ei-ni-ge die-ser Wer-ke ein-ge-gan-gen und ver-sucht,
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 144--146
-\T1/lmr/m/n/12 die wich-ti-gen Er-kennt-nis-se zu-sam-men-zu-tra-gen. Ein Teil die-ser Wer-ke setzt
- []
-
-
-Underfull \hbox (badness 1062) in paragraph at lines 144--146
-\T1/lmr/m/n/12 sich mit den wirt-schaft-li-chen und recht-li-chen Fra-gen der Ar-beits-zeit-ver-kür-zung
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 144--146
-\T1/lmr/m/n/12 zwi-schen den in-vol-vier-ten Or-ga-ni-sa-tio-nen.[][][] Sel-te-ner mit-ein-be-zo-gen wur-de die
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 144--146
-\T1/lmr/m/n/12 Kom-mu-ni-ka-ti-on der Ord-nungs-fak-to-ren (mit Aus-nah-me der Kom-mu-ni-ka-ti-on des
- []
-
-
-Overfull \hbox (19.55081pt too wide) in paragraph at lines 144--146
-\T1/lmr/m/n/12 dem Ar-beit-ge-ber:innenverband \T1/lmr/m/it/12 Zen-tral-ver-band Schwei-ze-ri-scher Arbeitgeber-Organisationen
- []
-
 [7]
-Underfull \hbox (badness 2608) in paragraph at lines 147--148
-[]\T1/lmr/m/n/12 Die Ver-bän-de der Ar-beit-neh-mer:innen und Ar-beit-ge-ber:innen las-sen sich aus
+Underfull \hbox (badness 6741) in paragraph at lines 192--193
+\T1/lmr/m/n/12 Dies soll durch die Ana-ly-sen von ver-gan-ge-nen Ar-beits-zeit-dis-kus-sio-nen
  []
 
 
-Underfull \hbox (badness 5133) in paragraph at lines 147--148
-\T1/lmr/m/n/12 or-ga-ni-sa-ti-ons-so-zio-lo-gi-scher Sicht von Un-ter-neh-men un-ter-schei-den. Es han-delt
+Underfull \hbox (badness 5008) in paragraph at lines 192--193
+\T1/lmr/m/n/12 in der Schweiz er-reicht wer-den. Da-für wer-den zwei com-pu-ter-ge-stütz-te
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 147--148
-\T1/lmr/m/n/12 sich bei den Ver-bän-den um Or-ga-ni-sa-tio-nen aus dem drit-ten Sek-tor ([]Sei-bel
+Underfull \hbox (badness 1389) in paragraph at lines 192--193
+\T1/lmr/m/n/12 Text-ana-ly-sen durch-ge-führt. Das Ziel ist die ex-plo-ra-ti-ve Un-ter-su-chung der
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 192--193
+\T1/lmr/m/n/12 Mit-glie-der-kom-mu-ni-ka-ti-on von zwei Ver-hand-lungs-par-tei-en, die mass-ge-blich
  []
 
 [8]
-Overfull \hbox (11.8094pt too wide) in paragraph at lines 149--151
-[]\T1/lmr/m/n/12 Die An-zahl der Mit-glie-der bei den Ar-beit-neh-mer:innenverbänden, auch Or-ga-ni-sa-ti-ons-grad
+Underfull \hbox (badness 3942) in paragraph at lines 199--201
+\T1/lmr/m/n/12 Diese Mas-ter-ar-beit be-schäf-tigt sich mit der De-bat-te um die bis-he-ri-ge
  []
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 149--151
-\T1/lmr/m/n/12 ge-nannt, ist je nach Land un-ter-schied-lich. In den 1970er Jah-ren sind die
+Underfull \hbox (badness 2165) in paragraph at lines 199--201
+\T1/lmr/m/n/12 Ar-beits-zeit-ver-kür-zung in der Schweiz. Aus be-reits er-wähn-ten Grün-den --
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 149--151
-\T1/lmr/m/n/12 Mit-glied-schaf-ten in den Nach-bar-län-dern zwi-schen 25% (Frank-reich) und über
+Underfull \hbox (badness 2119) in paragraph at lines 199--201
+\T1/lmr/m/n/12 den po-li-ti-schen Ver-hand-lun-gen zwi-schen den in-vol-vier-ten Or-ga-ni-sa-tio-nen.[][][]
  []
 
 
-Overfull \hbox (7.63591pt too wide) in paragraph at lines 149--151
-\T1/lmr/m/n/12 Or-ga-ni-sa-ti-ons-grad der Ar-beit-ge-ber:innenverbände. Im Bei-trag zur Ar-beits-zeit-ver-kür-zung
+Underfull \hbox (badness 3849) in paragraph at lines 199--201
+\T1/lmr/m/n/12 Sel-te-ner mit-ein-be-zo-gen wur-de die Kom-mu-ni-ka-ti-on der Ord-nungs-fak-to-ren
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 149--151
-\T1/lmr/m/n/12 zwi-schen den Ar-beit-ge-ber:innen zeig-te sich un-ter an-de-rem bei der fi-nan-zi-el-len
+Overfull \hbox (21.1195pt too wide) in paragraph at lines 199--201
+\T1/lmr/m/n/12 Ar-beit-ge-ber:innenverband \T1/lmr/m/it/12 Zen-tral-ver-band Schwei-ze-ri-scher Arbeitgeber-Organisationen
  []
 
 [9]
-Overfull \hbox (58.59001pt too wide) in paragraph at lines 152--153
-[]\T1/lmr/m/n/12 Als Grund-la-ge für die Ana-ly-se wer-den die Mit-glie-der-zeit-schrif-ten des Ar-beit-neh-mer:innenverbandes
+Underfull \hbox (badness 1831) in paragraph at lines 202--203
+\T1/lmr/m/n/12 Ent-schei-dun-gen für kol-lek-ti-ve Pro-ble-me zu er-rei-chen oder zu ver-hin-dern.
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 156--157
-[]\T1/lmr/m/n/12 Für die Ana-ly-se die-ser Tex-te wer-den com-pu-ter-ge-stütz-te Text-ana-ly-se-ver-fah-ren
+Underfull \hbox (badness 1253) in paragraph at lines 202--203
+\T1/lmr/m/n/12 kön-nen und zu-sätz-lich neue Mit-glie-der ge-win-nen kön-nen (Mit-glie-der-lo-gik).
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 156--157
-\T1/lmr/m/n/12 die Me-tho-den an die-sem spe-zi-fi-schen em-pi-ri-schen Ma-te-ri-al aus-zu-pro-bie-ren und
+Underfull \hbox (badness 3375) in paragraph at lines 202--203
+\T1/lmr/m/n/12 den Zweck und die po-li-ti-sche Ak-ti-vi-tät re-kru-tiert wer-den müs-sen. Bei
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+\T1/lmr/m/n/12 den Ar-beit-ge-ber:innenverbänden funk-tio-nie-ren die Mit-glie-der meist als
  []
 
 [10]
-Underfull \hbox (badness 1082) in paragraph at lines 163--164
-\T1/lmr/m/n/12 Dies zeigt u.a. ein Bei-spiel der Fir-ma 25h Ho-tels.[][][] Das Un-ter-neh-men führ-te
+Underfull \hbox (badness 4673) in paragraph at lines 204--206
+[]\T1/lmr/m/n/12 Die An-zahl der Mit-glie-der bei den Ar-beit-neh-mer:innenverbänden, auch
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 204--206
+\T1/lmr/m/n/12 Jah-ren sind die Mit-glied-schaf-ten in den Nach-bar-län-dern zwi-schen 25%
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 204--206
+\T1/lmr/m/n/12 durch die er-fass-ten Ar-beit-neh-mer:innen be-stimmt ([]Gal-la-ti 1976, S. 27[]).
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 204--206
+\T1/lmr/m/n/12 der Ba-sis und der ^^Reli-tär-en`` Füh-rung in den Ge-werk-schaf-ten ([]Kauf-mann
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 204--206
+\T1/lmr/m/n/12 un-ter an-de-rem bei der fi-nan-zi-el-len Un-ter-stüt-zung der Gip-ser:innenbetriebe
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 204--206
+\T1/lmr/m/n/12 Un-ter-neh-men wird sich wahr-schein-lich auch auf den Ver-band über-tra-gen
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 204--206
+\T1/lmr/m/n/12 las-sen, so-lan-ge der Ver-band die wich-ti-gen po-li-ti-schen Zie-le er-reicht. Bei
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 204--206
+\T1/lmr/m/n/12 kei-nen Hin-weis auf Fi-nan-zie-rungs-pro-ble-me, heu-te sieht dies je-doch an-ders
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 204--206
+\T1/lmr/m/n/12 die Arbeitgeber:innen- wie auch die Ar-beit-neh-mer:innenverbände mit den
  []
 
 [11]
-
-LaTeX Warning: Command \" invalid in math mode on input line 170.
-
-
-Overfull \hbox (167.42014pt too wide) detected at line 170
-\OML/lmm/m/it/12 nominelleArbeitszeit \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 produktiveArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Pausen \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Krankheitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 nichtproduktiveArbeitszeit \OT1/lmr/m/n/12 + Ü\OML/lmm/m/it/12 berstunden
+Underfull \hbox (badness 5893) in paragraph at lines 207--208
+[]\T1/lmr/m/n/12 Als Grund-la-ge für die Ana-ly-se wer-den die Mit-glie-der-zeit-schrif-ten des
  []
 
-[12]
-Overfull \hbox (64.1877pt too wide) detected at line 174
-\OML/lmm/m/it/12 echteFreizeit \OT1/lmr/m/n/12 = 24\OML/lmm/m/it/12 h \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 (\OML/lmm/m/it/12 nominelleArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Erholungszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Schlaf \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Freizeitverpflichtungen\OT1/lmr/m/n/12 )
- []
-
-[13]
-Underfull \hbox (badness 1221) in paragraph at lines 182--183
-\T1/lmr/m/it/12 und So-zi-al-po-li-tik zer-split-tern und wä-ren da-mit we-ni-ger konflikt- und
+[12] [13]
+Underfull \hbox (badness 1199) in paragraph at lines 218--219
+\T1/lmr/m/n/12 für ei-ne Ar-beits-zeit-ver-kür-zung steht, ist die Vier-ta-ge-wo-che. Die-ser Be-griff
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 191--192
-\T1/lmr/m/n/12 In die-ser Ar-beit wird un-ter ei-ner Ar-beits-zeit-ver-kür-zung \T1/lmr/m/it/12 die Ver-kür-zung der
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 191--192
-\T1/lmr/m/it/12 ge-setz-lich fest-ge-leg-ten ma-xi-ma-len wö-chent-li-chen Nor-ma-l-ar-beits-zeit mit zu-min-dest
+Underfull \hbox (badness 2452) in paragraph at lines 218--219
+\T1/lmr/m/n/12 at-trak-ti-ver-er Ar-beits-ver-hält-nis-se ge-nutzt wer-den, oh-ne die Ar-beits-zeit zu
  []
 
 [14]
-Underfull \hbox (badness 3701) in paragraph at lines 196--197
-\T1/lmr/m/n/12 zu-sam-men-ge-schlos-sen und teil-wei-se un-ab-hän-gig von-ein-an-der wa-ren. Ei-ne der
+Underfull \hbox (badness 1688) in paragraph at lines 222--224
+[]\T1/lmr/m/n/12 Aber nicht nur der Be-griff Ar-beits-zeit-ver-kür-zung ist un-ein-deu-tig. Be-reits
+ []
+
+[15]
+
+LaTeX Warning: Command \" invalid in math mode on input line 225.
+
+
+Overfull \hbox (76.44675pt too wide) detected at line 225
+\OML/lmm/m/it/12 nominelleArbeitszeit \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 produktive \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Pausen \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Krankheitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 nichtproduktive \OT1/lmr/m/n/12 + Ü\OML/lmm/m/it/12 berstunden
  []
 
 
-Overfull \hbox (8.29457pt too wide) in paragraph at lines 198--200
+Overfull \hbox (89.90944pt too wide) detected at line 229
+\OML/lmm/m/it/12 echteFreizeit \OT1/lmr/m/n/12 = 24\OML/lmm/m/it/12 h \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 (\OML/lmm/m/it/12 nominelleArbeitszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Erholungszeit \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Schlaf \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 Freizeitverpflichtungen\OT1/lmr/m/n/12 )
+ []
+
+[16]
+Underfull \hbox (badness 1888) in paragraph at lines 233--234
+[]\T1/lmr/m/n/12 Die Ar-beits-zeit kann mit un-ter-schied-li-chen Zeit-an-ga-ben nor-miert wer-den.
+ []
+
+
+Overfull \hbox (6.69817pt too wide) in paragraph at lines 233--234
+\T1/lmr/m/n/12 Ta-ges-ar-beits-zei-ten ge-spro-chen. Zu Be-ginn der Dis-kus-si-on um Ar-beits-zeit-ver-kür-zung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+[]\T1/lmr/m/it/12 ``Mit dem Ver-lust ei-ner ge-mein-sa-men Be-zugs-grö-ÿe für die
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 237--238
+\T1/lmr/m/it/12 Ar-ti-ku-la-ti-on von Ar-beits-zei-t-in-ter-es-sen könn-ten sich schlieÿ-lich
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 242--243
+\T1/lmr/m/n/12 um die Fe-ri-en und den Lohn ge-führt wor-den. Die Ana-ly-se die-ser bei-den
+ []
+
+[17]
+Overfull \hbox (23.65923pt too wide) in paragraph at lines 244--245
+[]\T1/lmr/m/n/12 Bei der Dis-kus-si-on des Loh-nes gibt es einen Be-griff, der bei der Ar-beits-zeit-ver-kür-zun-gen
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 246--247
+[]\T1/lmr/m/n/12 Zusammenfassend lässt sich sa-gen, dass es für die Be-grif-fe Lohn- bzw.
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 246--247
+\T1/lmr/m/n/12 Er-werbs-ar-beit und Ar-beits-zeit kei-ne ein-heit-li-che De-fi-ni-ti-on gibt. Auch im
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 246--247
+\T1/lmr/m/n/12 Ar-beits-zeit-ver-kür-zung \T1/lmr/m/it/12 die Ver-kür-zung der ge-setz-lich fest-ge-leg-ten ma-xi-ma-len
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+\T1/lmr/m/it/12 wö-chent-li-chen Nor-ma-l-ar-beits-zeit mit zu-min-dest ei-nem Teil-lohn-aus-gleich
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 251--252
+\T1/lmr/m/n/12 wich-tigs-ten Dach-or-ga-ni-sa-tio-nen war der Schwei-ze-ri-sche Ge-werk-schafts-bund
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 251--252
+\T1/lmr/m/n/12 (SGB). Vie-le Ge-werk-schafts-ver-bän-de wa-ren Teil des SGB. Nach dem
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 251--252
+\T1/lmr/m/n/12 Zwei-ten Welt-krieg wa-ren dies un-ter an-de-rem der \T1/lmr/m/it/12 Schwei-ze-ri-sche Metall-
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 251--252
+\T1/lmr/m/it/12 und Uh-ren-ar-bei-ter-ver-band (SMUV) \T1/lmr/m/n/12 oder der \T1/lmr/m/it/12 Schwei-ze-ri-sche Textil- und
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 251--252
+\T1/lmr/m/it/12 Fa-brik-ar-bei-ter-ver-band (STFV)\T1/lmr/m/n/12 . Aber auch der \T1/lmr/m/it/12 Schwei-ze-ri-sche Ver-band des
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 251--252
+\T1/lmr/m/it/12 Per-so-nals öf-fent-li-cher Diens-te (VPOD)\T1/lmr/m/n/12 , der heut-zu-ta-ge zu den gröss-ten
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 251--252
+\T1/lmr/m/n/12 und Be-trie-be (rund 100'000 Mit-glie-der) auch Mit-glie-der ei-nes Ver-ban-des
+ []
+
+[18]
+Overfull \hbox (34.01631pt too wide) in paragraph at lines 253--255
 []\T1/lmr/m/n/12 Neben dem SGB gab es noch wei-te-re Ver-bun-de, die sich zwar der Ar-bei-ter:innenbewegung
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 198--200
-\T1/lmr/m/n/12 an-ge-schlos-sen, aber po-li-tisch an-ders po-si-tio-niert hat-ten. Die-se von Wü-th-rich
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
+\T1/lmr/m/n/12 be-zeich-ne-ten Min-der-heits-ge-werk-schaf-ten wa-ren der \T1/lmr/m/it/12 Christlich-Nationale
  []
 
 
-Overfull \hbox (22.63837pt too wide) in paragraph at lines 198--200
-\T1/lmr/m/n/12 be-zeich-ne-ten Min-der-heits-ge-werk-schaf-ten wa-ren der \T1/lmr/m/it/12 Christlich-Nationale Ge-werk-schafts-bund
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
+\T1/lmr/m/it/12 Ge-werk-schafts-bund (CNG)\T1/lmr/m/n/12 , der \T1/lmr/m/it/12 Schwei-ze-ri-sche Ver-band Evan-ge-li-scher
  []
 
-[15]
-Overfull \hbox (51.30974pt too wide) in paragraph at lines 203--204
+
+Underfull \hbox (badness 2111) in paragraph at lines 256--257
+[]\T1/lmr/m/n/12 Eine Zu-sam-men-ar-beit zwi-schen den Min-der-heits-ge-werk-schaf-ten, dem VSA
+ []
+
+
+Overfull \hbox (77.03148pt too wide) in paragraph at lines 258--259
 \T1/lmr/m/it/12 Handels- und In-dus-trie-ver-ein (SHIV)\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Zen-tral-ver-band schwei-ze-ri-scher Arbeitgeber-Organisationen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 1509) in paragraph at lines 258--259
 \T1/lmr/m/it/12 (ZSAO)\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Schwei-ze-ri-scher Ge-wer-be-ver-band (SGV) \T1/lmr/m/n/12 und dem \T1/lmr/m/it/12 Schwei-ze-ri-schen
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 203--204
-\T1/lmr/m/it/12 Bau-ern-ver-band (SBV)\T1/lmr/m/n/12 . Der wich-tigs-te Ver-band für die po-li-ti-sche Stel-lung der
+Underfull \hbox (badness 1436) in paragraph at lines 258--259
+\T1/lmr/m/it/12 Bau-ern-ver-band (SBV)\T1/lmr/m/n/12 . Der wich-tigs-te Ver-band für die po-li-ti-sche Stel-lung
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 210--210
-[][][]\T1/lmr/m/n/10 Weitere Ar-ti-kel sind Art. 11 Ziff. 1 (Schutz von Ju-gend-li-chen und Kin-dern), Art. 22
+Underfull \hbox (badness 1168) in paragraph at lines 258--259
+\T1/lmr/m/n/12 ge-grün-det wur-de. Der Aus-tausch zwi-schen den Ar-beit-ge-ber:innenverbänden
  []
 
-[16]
-Underfull \hbox (badness 1546) in paragraph at lines 212--213
-[]\T1/lmr/m/n/12 Bevor die Ar-beits-zeit für al-le Bran-chen und Ar-beit-neh-mer:innen ab 1964 im
- []
-
-<images/Arbeitszeitgesetze_vor_1874.jpg, id=442, 1378.14874pt x 2375.87625pt>
-File: images/Arbeitszeitgesetze_vor_1874.jpg Graphic file (type jpg)
-<use images/Arbeitszeitgesetze_vor_1874.jpg>
-Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 219.
-(pdftex.def)             Requested size: 360.51825pt x 621.51982pt.
-
-Underfull \hbox (badness 2027) in paragraph at lines 217--220
-\T1/lmr/m/n/12 zu den 1960er Jah-ren lie-fert die Dis-ser-ta-ti-on von Kauf-mann. An-läss-lich der
- []
-
-
-Underfull \hbox (badness 1303) in paragraph at lines 217--220
-\T1/lmr/m/n/12 Dis-kus-sio-nen um die 40-Stundenwoche schreibt Kauf-mann über die his-to-ri-sche
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 217--220
-\T1/lmr/m/n/12 Jahr 1874 war es dem Bund recht-lich nicht er-laubt die Ar-beits-zeit ge-setz-lich
- []
-
-[17] [18 <./images/Arbeitszeitgesetze_vor_1874.jpg>] [19]
-Underfull \hbox (badness 1968) in paragraph at lines 231--232
-[]\T1/lmr/m/n/12 In der Schweiz gab es bis zum Ar-beits-ge-setz von 1964 kei-ne eid-ge-nös-si-sche
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 231--232
-\T1/lmr/m/n/12 Ge-setz-ge-bung der Ar-beits-zeit, die auf al-le Ar-beit-neh-men-den zu-ge-trof-fen hät-te.
+[19]
+Underfull \hbox (badness 1648) in paragraph at lines 265--266
+\T1/lmr/m/n/12 über die Ar-beit in In-dus-trie, Ge-wer-be und Han-del (Ar-beits-ge-setz). Ei-ne
  []
 
 [20]
-Underfull \hbox (badness 1158) in paragraph at lines 236--237
-\T1/lmr/m/n/12 Die Re-ge-lung der Ar-beits-zeit wur-de seit Be-ginn der 1920er-Jahre meis-tens in
- []
+<images/Arbeitszeitgesetze_vor_1874.jpg, id=472, 1378.14874pt x 2375.87625pt>
+File: images/Arbeitszeitgesetze_vor_1874.jpg Graphic file (type jpg)
+<use images/Arbeitszeitgesetze_vor_1874.jpg>
+Package pdftex.def Info: images/Arbeitszeitgesetze_vor_1874.jpg  used on input line 274.
+(pdftex.def)             Requested size: 378.60304pt x 652.69733pt.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 243.
-(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [21]
-Underfull \hbox (badness 2644) in paragraph at lines 259--260
-\T1/lmr/m/n/12 Werner Wü-th-rich schreibt in sei-ner Dis-ser-ta-ti-on von ei-nem ^^Rschwei-ze-ri-schen,
- []
-
-
-Overfull \hbox (6.19328pt too wide) in paragraph at lines 259--260
-\T1/lmr/m/n/12 ar-beits-zeit-po-li-ti-schen Stil``, der vor al-lem durch ei-ne star-ke Dis-zi-plin im Ar-beits-ver-hält-nis
+Underfull \hbox (badness 3019) in paragraph at lines 272--275
+\T1/lmr/m/n/12 der Dis-kus-sio-nen um die 40-Stundenwoche schreibt Kauf-mann über die
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 259--260
-\T1/lmr/m/n/12 der Ein-füh-rung des Ar-beits-ge-set-zes gut zu be-ob-ach-ten. Die öffentlich-rechtliche
+Underfull \hbox (badness 3746) in paragraph at lines 272--275
+\T1/lmr/m/n/12 his-to-ri-sche Ent-wick-lung der Ar-beits-zeit-ver-kür-zun-gen in der Schweiz. Im
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 261--262
-\T1/lmr/m/n/12 dem Lan-des-s-treik von 1918 wur-de ei-ne pro-gres-si-ve Re-duk-ti-on der Ar-beits-zeit
- []
-
-[22]
-Overfull \hbox (17.65536pt too wide) in paragraph at lines 266--267
-\T1/lmr/m/n/12 Die Be-ach-tung der ver-schie-de-nen Kon-junk-tur-pha-sen oder ge-ne-rell der volks-wirt-schaft-li-chen
+Underfull \hbox (badness 1769) in paragraph at lines 272--275
+\T1/lmr/m/n/12 ers-ten Teil wid-met er sich da-bei der Ar-beits-zeit-ge-setz-ge-bung ([]Kauf-mann
  []
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 271--272
-[]\T1/lmr/m/it/12 ``Unter Be-rück-sich-ti-gung der Tat-sa-che, dass von den durch ei-ne
+Underfull \hbox (badness 1515) in paragraph at lines 272--275
+\T1/lmr/m/n/12 die Ar-beits-zeit ge-setz-lich zu re-geln. Die Ge-setz-ge-bung in die-sem Be-reich
  []
 
 
-Overfull \hbox (4.51878pt too wide) in paragraph at lines 271--272
-\T1/lmr/m/it/12 Pro-duk-ti-ons-vo-lu-men so-wie die Hö-he der Lohn-sät-ze, der Un-ter-neh-mer-ge-win-ne
+Underfull \hbox (badness 1281) in paragraph at lines 272--275
+\T1/lmr/m/n/12 aus-ge-rich-tet. Für einen Über-blick der wich-tigs-ten Ar-beits-zeit-be-stim-mun-gen
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 276--277
-\T1/lmr/m/n/12 für ei-ne Ar-beits-zeit-re-duk-ti-on. In ei-nem Nie-der-gang wä-re das po-li-ti-sche Kli-ma
+Underfull \hbox (badness 5359) in paragraph at lines 272--275
+\T1/lmr/m/n/12 in den Kan-to-nen sie-he fol-gen-de Ab-bil-dung ([]Kauf-mann 1960, S. 18[]):
+ []
+
+[21]
+Underfull \hbox (badness 1917) in paragraph at lines 276--277
+[]\T1/lmr/m/n/12 Nach der Ver-fas-sun-gre-vi-si-on von 1874 war es auch dem Bund mög-lich,
+ []
+
+[22 <./images/Arbeitszeitgesetze_vor_1874.jpg>]
+Underfull \hbox (badness 1259) in paragraph at lines 278--279
+\T1/lmr/m/n/12 Ge-set-zes-vor-ga-ben schliess-lich um-ge-setzt wer-den konn-ten, kam es aus-ge-löst
  []
 
 [23]
-Underfull \hbox (badness 2644) in paragraph at lines 278--279
-\T1/lmr/m/n/12 Per-spek-ti-ve. Vie-le der theo-re-ti-schen An-nah-men grün-den so-mit in der Leh-re
+Underfull \hbox (badness 1874) in paragraph at lines 282--283
+\T1/lmr/m/n/12 Bau und Be-trieb von Ei-sen-bah-nen in Kraft. In die-sem Ge-setz war die
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 278--279
-\T1/lmr/m/n/12 ver-bun-den ist. Be-ste-hen-de Struk-tu-ren wer-den ver-än-dert und op-ti-miert, so-dass
+Underfull \hbox (badness 1152) in paragraph at lines 282--283
+\T1/lmr/m/n/12 re-gel-te die nor-ma-le täg-li-che Ar-beits-zeit auf 12 Stun-den (72 Stun-den pro
  []
 
 [24]
-Underfull \hbox (badness 1783) in paragraph at lines 280--281
-[]\T1/lmr/m/n/12 Zweitens geht Mi-chae-lis von der An-nah-me aus, dass Lohn-ver-hand-lun-gen den
+Underfull \hbox (badness 1152) in paragraph at lines 286--287
+\T1/lmr/m/n/12 9 Ziff. 1 Lit. a) fest-ge-legt. Für al-le üb-ri-gen Ar-beit-neh-mer:innen war die
  []
 
 
-Overfull \hbox (17.0171pt too wide) in paragraph at lines 280--281
-\T1/lmr/m/n/12 Ar-beits-zeit-ver-hand-lun-gen zu-vor-kom-men und erst wenn der Lohn auf der ^^Rge-recht-fer-tig-ten``
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 280--281
-\T1/lmr/m/n/12 Hö-he ist, über-haupt über die Ar-beits-zeit dis-ku-tiert wer-den kann. Wie be-reits
+Underfull \hbox (badness 3138) in paragraph at lines 291--292
+\T1/lmr/m/n/12 di-rek-ten Ver-bän-den und von Ar-beit-neh-mer:innenverbänden un-ter-schrie-ben
  []
 
 [25]
-Underfull \hbox (badness 2142) in paragraph at lines 295--296
-[]\T1/lmr/m/n/12 Renatus Gal-la-ti un-ter-schei-det zwei un-ter-schied-li-che Ar-ten des Ar-beits-frie-dens.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 298.
+(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 3482) in paragraph at lines 309--310
+\T1/lmr/m/n/12 mach-bar. Die Ar-beit-neh-mer:innen ih-rer-seits be-fürch-te-ten einen Still-stand
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 295--296
-\T1/lmr/m/n/12 ein-ge-hal-ten wer-den. Da-bei gibt es die ne-ga-ti-ve Sei-te der Frie-dens-pflicht, bei
+Underfull \hbox (badness 1917) in paragraph at lines 314--315
+\T1/lmr/m/n/12 ar-beits-zeit-po-li-ti-schen Stil``, der vor al-lem durch ei-ne star-ke Dis-zi-plin im
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 295--296
-\T1/lmr/m/n/12 der bei-den Par-tei-en ver-bo-ten wird, die Be-stim-mun-gen auf-zu-lö-sen oder Ge-walt
+Underfull \hbox (badness 2197) in paragraph at lines 314--315
+\T1/lmr/m/n/12 Ar-beits-ver-hält-nis und der Be-rück-sich-ti-gung der volks-wirt-schaft-li-chen La-ge
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 314--315
+\T1/lmr/m/n/12 Re-duk-ti-on der Nor-ma-l-ar-beits-zeit. Bei der Ein-füh-rung des Ar-beits-ge-set-zes
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 314--315
+\T1/lmr/m/n/12 lag die durch-schnitt-li-che Ar-beits-zeit in der In-dus-trie bei 44.8 Stun-den.
  []
 
 [26]
-Overfull \hbox (1.40628pt too wide) in paragraph at lines 297--298
-\T1/lmr/m/n/12 Frie-dens-ab-kom-men von 1937. In die-sem Jahr schlos-sen die Ar-beit-neh-mer:innenverbände
+Underfull \hbox (badness 1642) in paragraph at lines 316--317
+\T1/lmr/m/n/12 zur Zeit sei-ner Ein-füh-rung ei-nes der ar-beit-neh-mer:innenfreundlichsten der
  []
 
 
-Overfull \hbox (9.36021pt too wide) in paragraph at lines 297--298
-\T1/lmr/m/n/12 der Me-tall-in-dus-trie (un-ter an-de-rem der Schwei-ze-ri-sche Metall- und Uh-ren-ar-bei-ter-ver-band
- []
-
-
-Overfull \hbox (3.60226pt too wide) in paragraph at lines 297--298
-\T1/lmr/m/n/12 SMUV) und der Ar-beit-ge-ber-ver-band schwei-ze-ri-scher Maschinen- und Me-tall-in-dus-tri-el-ler
- []
-
-
-Underfull \hbox (badness 2538) in paragraph at lines 301--302
-[]\T1/lmr/m/n/12 Eine Aus-wir-kung des Ar-beits-frie-dens sind die fried-li-chen Ver-hand-lun-gen und
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 301--302
-\T1/lmr/m/n/12 so-mit das Aus-blei-ben von Ar-beits-kämp-fen. Als Ar-beits-kämp-fe wer-den Streiks
- []
-
-
-Underfull \hbox (badness 2119) in paragraph at lines 301--302
-\T1/lmr/m/n/12 (Ar-beit-neh-mer:innen) oder Ar-beits-aus-schlüs-se (Ar-beit-ge-ber:innen) de-fi-niert. Die
+Underfull \hbox (badness 3343) in paragraph at lines 316--317
+\T1/lmr/m/n/12 Fa-brik-ge-set-zes nach dem Lan-des-s-treik von 1918 wur-de ei-ne pro-gres-si-ve
  []
 
 [27]
-<_main_files/figure-latex/unnamed-chunk-2-1.pdf, id=542, 469.755pt x 325.215pt>
-File: _main_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 333.
-(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
-<_main_files/figure-latex/unnamed-chunk-3-1.pdf, id=544, 469.755pt x 325.215pt>
-File: _main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 341.
-(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
-[28] [29 <./_main_files/figure-latex/unnamed-chunk-2-1.pdf>] [30 <./_main_files/figure-latex/unnamed-chunk-3-1.pdf>]
-Overfull \hbox (4.76059pt too wide) in paragraph at lines 350--351
-\T1/lmr/m/n/12 Die Fra-gen rund um die Volks-wirt-schaft, die Kon-junk-tur-la-ge und das Frie-dens-ab-kom-men
+Underfull \hbox (badness 7030) in paragraph at lines 321--322
+\T1/lmr/m/n/12 Die Be-ach-tung der ver-schie-de-nen Kon-junk-tur-pha-sen oder ge-ne-rell der
  []
 
 
-Overfull \hbox (44.58414pt too wide) in paragraph at lines 350--351
-\T1/lmr/m/n/12 ha-ben den Dis-kurs im Par-la-ment, dem Bun-des-rat und zwi-schen den Ar-beit-ge-ber:innenverbänden
+Underfull \hbox (badness 7133) in paragraph at lines 326--327
+\T1/lmr/m/it/12 das Pro-duk-ti-ons-vo-lu-men so-wie die Hö-he der Lohn-sät-ze, der
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 363--364
-\T1/lmr/m/n/12 der Ar-beits-mi-grant:innen in der Schweiz. Die Ar-beits-mi-grant:innen wur-den in
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+\T1/lmr/m/it/12 Un-ter-neh-mer-ge-win-ne und der Real-ein-kom-men die wich-tigs-ten
+ []
+
+[28]
+Overfull \hbox (23.668pt too wide) in paragraph at lines 331--332
+\T1/lmr/m/n/12 bes-ten ver-kraft-bar ist. Bei ei-nem Auf-schwung ist der Wil-le, die Pro-duk-ti-vi-täts-ein-bus-sen
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 331--332
+\T1/lmr/m/n/12 Sicht. Je we-ni-ger der Hö-he-punkt der Kon-junk-tur zu-rück-liegt, de-sto mehr
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 333--334
+\T1/lmr/m/n/12 der Wirt-schafts-wis-sen-schaf-ten. Ge-ra-de aus so-zio-lo-gi-scher Per-spek-ti-ve ist es
+ []
+
+[29]
+Underfull \hbox (badness 1845) in paragraph at lines 335--336
+\T1/lmr/m/n/12 Ar-beits-zeit-ver-hand-lun-gen zu-vor-kom-men und erst wenn der Lohn auf der
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 335--336
+\T1/lmr/m/n/12 Ar-beits-zeit-re-duk-ti-on den Lohn zu er-hö-hen. Die Re-duk-ti-on der Ar-beits-zeit
+ []
+
+[30]
+Underfull \hbox (badness 5388) in paragraph at lines 342--343
+\T1/lmr/m/n/12 De-bat-te ist Ar-beits-frie-den ei-ne spe-zi-el-le Ei-gen-schaft der schwei-ze-ri-sche
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 342--343
+\T1/lmr/m/n/12 Ar-beits-recht-ver-hand-lun-gen. Die-se Aus-prä-gung des Ar-beits-frie-dens ist in
  []
 
 [31]
-Underfull \hbox (badness 4913) in paragraph at lines 365--366
-[]\T1/lmr/m/n/12 Erwähnt wird der Druck des ita-lie-ni-schen Staa-tes, die Ar-beits-be-din-gun-gen
+Underfull \hbox (badness 4967) in paragraph at lines 352--353
+[]\T1/lmr/m/n/12 Ein wich-ti-ger Punkt in der Ent-wick-lung des Ar-beits-frie-dens war das
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 365--366
-\T1/lmr/m/n/12 zu ver-bes-sern. Der ita-lie-ni-sche Ar-beits-mi-nis-ter Fio-ren-ti-no Sullo reis-te in den
+Underfull \hbox (badness 4168) in paragraph at lines 352--353
+\T1/lmr/m/n/12 so-ge-nann-te Frie-dens-ab-kom-men von 1937. In die-sem Jahr schlos-sen die
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 365--366
-\T1/lmr/m/n/12 Arbeits- und Wohn-ver-hält-nis-se und die Rück-stän-dig-keit der schwei-ze-ri-schen
+Overfull \hbox (8.9751pt too wide) in paragraph at lines 352--353
+\T1/lmr/m/n/12 Ar-beit-neh-mer:innenverbände der Me-tall-in-dus-trie (un-ter an-de-rem der Schwei-ze-ri-sche
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 365--366
-\T1/lmr/m/n/12 So-zi-al-ver-si-che-rung ma-chen. Sullo kri-ti-sier-te dies aufs Schärfs-te und for-der-te
+Underfull \hbox (badness 5504) in paragraph at lines 352--353
+\T1/lmr/m/n/12 Metall- und Uh-ren-ar-bei-ter-ver-band SMUV) und der Ar-beit-ge-ber-ver-band
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 365--366
-\T1/lmr/m/n/12 ei-ne An-pas-sung des Ab-kom-mens mit der Schweiz. Ein neu-es Ab-kom-men mit
+Underfull \hbox (badness 3000) in paragraph at lines 352--353
+\T1/lmr/m/n/12 schwei-ze-ri-scher Maschinen- und Me-tall-in-dus-tri-el-ler ASM zu-sam-men einen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
-[]\T1/lmr/m/n/12 Der Ge-werk-schafts-bund kri-ti-sier-te zwar die schlech-ten Ar-beits-be-din-gun-gen
+Underfull \hbox (badness 2103) in paragraph at lines 352--353
+\T1/lmr/m/n/12 in der Ver-gan-gen-heit eher ver-fein-det wa-ren. Grund für die-ses plötz-li-che
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 367--369
-\T1/lmr/m/n/12 und die Tief-lohn-in-seln, nahm aber in der gan-zen De-bat-te teil-wei-se auch ei-ne
+Underfull \hbox (badness 1622) in paragraph at lines 352--353
+\T1/lmr/m/n/12 ein-ge-nom-men, nur bei Pro-ble-men zwi-schen den Ver-bän-den schritt er als
  []
 
 [32]
-Underfull \hbox (badness 1024) in paragraph at lines 370--371
-\T1/lmr/m/n/12 Ar-beits-zeit-de-bat-ten in der Nach-kriegs-zeit. Er-sicht-lich ist das et-wa am Bei-spiel
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (12.34286pt too wide) in paragraph at lines 384--385
+\T1/lmr/m/n/12 Ty-pen. In Ös-ter-reich und Deutsch-land sind es eher fried-li-che Ar-beits-markt-stra-te-gi-en,
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 375--376
-\T1/lmr/m/n/12 der SGB, auf der Ar-beit-ge-ber:innenseite der ZSAO. Die drit-te Ord-nungs-kraft
+Underfull \hbox (badness 2600) in paragraph at lines 384--385
+\T1/lmr/m/n/12 ver-brei-tet sind. Gal-la-ti be-schreibt in die-sem Zu-sam-men-hang die Län-der
  []
 
 [33]
-Underfull \hbox (badness 1092) in paragraph at lines 380--381
-\T1/lmr/m/n/12 so-wie an der recht-li-chen Um-set-zung von Ar-beits-zeit-re-gu-lie-run-gen be-tei-ligt. Die
- []
-
-[34]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 384.
-(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [35]
-Underfull \hbox (badness 1629) in paragraph at lines 389--392
-\T1/lmr/m/n/12 der Da-ten, die für die Ana-ly-sen ge-nutzt wor-den sind. Wie im theo-re-ti-schen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 389--392
-\T1/lmr/m/n/12 heisst \T1/lmr/m/it/12 Ge-werk-schaft-li-che Rund-schau \T1/lmr/m/n/12 und wur-de im Un-ter-su-chungs-zeit-raum
+<_main_files/figure-latex/unnamed-chunk-2-1.pdf, id=575, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 388.
+(pdftex.def)             Requested size: 415.12747pt x 287.39594pt.
+<_main_files/figure-latex/unnamed-chunk-3-1.pdf, id=577, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 396.
+(pdftex.def)             Requested size: 415.12747pt x 287.39594pt.
+[34] [35 <./_main_files/figure-latex/unnamed-chunk-2-1.pdf> <./_main_files/figure-latex/unnamed-chunk-3-1.pdf>]
+Underfull \hbox (badness 3657) in paragraph at lines 405--406
+\T1/lmr/m/n/12 Die Fra-gen rund um die Volks-wirt-schaft, die Kon-junk-tur-la-ge und das
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 389--392
-\T1/lmr/m/n/12 der \T1/lmr/m/it/12 Ge-werk-schaft-li-chen Rund-schau \T1/lmr/m/n/12 sind auf dem E-Periodica-Archiv der ETH
+Underfull \hbox (badness 1048) in paragraph at lines 405--406
+\T1/lmr/m/n/12 Frie-dens-ab-kom-men ha-ben den Dis-kurs im Par-la-ment, dem Bun-des-rat und
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 389--392
-\T1/lmr/m/n/12 zu-sam-men-ge-fasst. Für die-se Ar-beit hat der Au-tor die di-gi-ta-li-sier-ten Tex-te im
+Underfull \hbox (badness 1448) in paragraph at lines 413--414
+\T1/lmr/m/it/12 ih-ren je spe-zi-fi-schen Po-si-tio-nie-run-gen zu in-ter-es-sie-ren wie auch
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 393--394
-[]\T1/lmr/m/n/12 Die bei-den Kor-po-ra sind von un-ter-schied-li-cher Grös-se. Die \T1/lmr/m/it/12 Ge-werk-schaft-li-che
+Underfull \hbox (badness 7362) in paragraph at lines 418--419
+[]\T1/lmr/m/n/12 Damir Sken-de-ro-vic schreibt, wie die spä-te-re Ge-schichts-schrei-bung der
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 418--419
+\T1/lmr/m/n/12 1960er-Jahre von Be-dro-hungs-ängs-ten der ak-tu-el-len Zeit be-ein-flusst wor-den
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 418--419
+\T1/lmr/m/n/12 ([]Po-g-lia Mi-le-ti 2019, S. 63f[].). Kri-ti-siert wird auch aus wel-cher Sicht die
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 418--419
+\T1/lmr/m/n/12 und po-li-ti-schen De-bat-ten ge-nom-men hät-ten. Hier do-mi-niert ein Bild von
  []
 
 [36]
-Overfull \vbox (0.42758pt too high) has occurred while \output is active []
+Underfull \hbox (badness 2302) in paragraph at lines 420--421
+\T1/lmr/m/n/12 zu ver-bes-sern. Der ita-lie-ni-sche Ar-beits-mi-nis-ter Fio-ren-ti-no Sullo reis-te in
+ []
 
 [37]
-Underfull \hbox (badness 1178) in paragraph at lines 405--407
-\T1/lmr/m/n/12 die To-pics auf ih-re in-ter-sub-jek-ti-ve Nach-voll-zieh-bar-keit und ih-re Kon-sis-tenz zu
+Underfull \hbox (badness 1728) in paragraph at lines 422--424
+[]\T1/lmr/m/n/12 Der Ge-werk-schafts-bund kri-ti-sier-te zwar die schlech-ten Ar-beits-be-din-gun-gen
  []
 
 [38]
-Underfull \hbox (badness 5681) in paragraph at lines 408--409
-[]\T1/lmr/m/n/12 Eine wei-te-re ver-wen-de-te Me-tho-de ist die Sentiment-Analyse mit-hil-fe ei-nes
+Overfull \hbox (0.88661pt too wide) in paragraph at lines 430--431
+\T1/lmr/m/n/12 Ein-fluss-fak-to-ren ab-hän-gig. Wie in den meis-ten Län-dern wur-den die Ver-hand-lun-gen
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 430--431
+\T1/lmr/m/n/12 der wich-tigs-ten The-men, ne-ben der Ar-beits-zeit, wa-ren die Ver-hand-lun-gen
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 430--431
+\T1/lmr/m/n/12 durch ei-ne kon-ser-va-ti-ve Hal-tung. Wenn bran-chen-über-grei-fen-de ge-setz-li-che
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 430--431
+\T1/lmr/m/n/12 ur-sprüng-lich aus dem Jah-re 1937, fan-den kaum Ar-beits-kämp-fe statt. Ein
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 430--431
+\T1/lmr/m/n/12 auf die Ar-beits-zeit-ver-kür-zung aus-ge-wirkt hat, ist schwie-rig zu sa-gen. Die
  []
 
 [39]
-<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=704, 469.755pt x 325.215pt>
-File: _main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 419.
-(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
-[40]
-<_main_files/figure-latex/unnamed-chunk-5-1.pdf, id=716, 469.755pt x 325.215pt>
-File: _main_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 422.
-(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
-[41 <./_main_files/figure-latex/unnamed-chunk-4-1.pdf>] [42 <./_main_files/figure-latex/unnamed-chunk-5-1.pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.436 ...{tab:unnamed-chunk-6}Topics Arbeitnehmer}
-                                                   [43]
-Underfull \hbox (badness 3623) in paragraph at lines 460--461
-[]\T1/lmr/m/n/12 Die an-de-ren sie-ben To-pics zeig-ten gut ab-grenz-ba-re The-men, die mit dem
+Underfull \hbox (badness 1264) in paragraph at lines 435--436
+\T1/lmr/m/n/12 für die Ana-ly-se der Da-ten be-schrie-ben. Im Fo-kus steht die Ana-ly-se der
  []
 
-[44]
-<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=746, 469.755pt x 325.215pt>
-File: _main_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 470.
-(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
+[40]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 439.
+(c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 2617) in paragraph at lines 439--440
+\T1/lmr/m/n/12 sind in RMark-down ge-schrie-ben und wer-den mit-hil-fe von \T1/lmtt/m/n/12 Bookdown \T1/lmr/m/n/12 zu
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 439--440
+\T1/lmr/m/n/12 ge-schrie-ben ([]R Co-re Team 2022[]). Ei-nes der Data-Cleaning-Scripts wur-de
+ []
+
+[41]
+Underfull \hbox (badness 1584) in paragraph at lines 444--447
+\T1/lmr/m/n/12 wa-ren. Es un-ter-schei-det sich so-mit von ei-nem Flug-blatt oder po-li-ti-schen
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 444--447
+\T1/lmr/m/n/12 Ei-ne di-gi-ta-li-sier-te Ver-si-on der Zeit-schrif-ten konn-te das Wirt-schafts-ar-chiv
+ []
+
+[42] [43]
+Underfull \hbox (badness 1062) in paragraph at lines 458--459
+\T1/lmr/m/n/12 dient, die Di-men-sio-nen ei-nes Kor-pus zu ver-rin-gern ([]Blei et al. 2003[]). In
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 458--459
+\T1/lmr/m/n/12 er-ge-ben.[][][] Um dies zu ver-hin-dern wer-den beim \T1/lmtt/m/n/12 LDA-Prototype-Package
+ []
+
+[44] [45]
+Underfull \hbox (badness 1067) in paragraph at lines 463--464
+[]\T1/lmr/m/n/12 Eine wei-te-re ver-wen-de-te Me-tho-de ist die Sentiment-Analyse mit-hil-fe ei-nes
+ []
+
+[46]
+<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=753, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 477.
+(pdftex.def)             Requested size: 415.12747pt x 287.39594pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.471 ...Topics beim SGB verteilt Ã¼ber die Jahre}
-                                                   [45 <./_main_files/figure-latex/unnamed-chunk-7-1.pdf>]
-Underfull \hbox (badness 1838) in paragraph at lines 483--484
-\T1/lmr/m/n/12 Auch beim Kor-pus des \T1/lmr/m/it/12 Schwei-zer Ar-beit-ge-bers \T1/lmr/m/n/12 wur-de die An-zahl To-pics mit
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[46]
-Underfull \hbox (badness 1331) in paragraph at lines 511--512
-\T1/lmr/m/n/12 auf die Be-trie-be und Mit-ar-bei-ten-den (^^RMit-ar-bei-ter``, ^^RBe-trieb``, ^^RVor-ge-setz-ten``,
+l.478 ...Sentiment Score der beiden Zeitschriften}
+                                                  
+Underfull \hbox (badness 1742) in paragraph at lines 481--482
+\T1/lmr/m/n/12 schwank-te der Sco-re in ei-nem grös-se-ren Be-reich und blieb kaum sta-bil.
  []
 
 [47]
-<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=767, 469.755pt x 325.215pt>
-File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 521.
-(pdftex.def)             Requested size: 440.84581pt x 305.20094pt.
+<_main_files/figure-latex/unnamed-chunk-5-1.pdf, id=760, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 485.
+(pdftex.def)             Requested size: 415.12747pt x 287.39594pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.522 ...opics beim ZSAO verteilt Ã¼ber die Jahre}
-                                                   [48] [49 <./_main_files/figure-latex/unnamed-chunk-9-1.pdf>]
-Underfull \hbox (badness 1168) in paragraph at lines 534--535
-[]\T1/lmr/m/n/12 Bei den To-pics des SGB Kor-pus konn-ten die Per-so-nen oh-ne Vor-wis-sen zwölf
+l.486 ...ter Sentiment Score pro Jahr pro Verband}
+                                                   [48 <./_main_files/figure-latex/unnamed-chunk-4-1.pdf>] [49 <./_main_files/figure-latex/unnamed-chunk-5-1.pdf>]
+Underfull \hbox (badness 4193) in paragraph at lines 497--498
+\T1/lmr/m/n/12 Für die \T1/lmr/m/it/12 Ge-werk-schaft-li-che Rund-schau \T1/lmr/m/n/12 wur-den neun ver-schie-de-ne To-pics
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 534--535
-\T1/lmr/m/n/12 In-tru-der-words rich-tig iden-ti-fi-zie-ren. Dies ent-spricht bei ei-nem To-tal von 54
- []
-
-[50] [51]
-Underfull \hbox (badness 2229) in paragraph at lines 548--549
-\T1/lmr/m/n/12 be-ein-fluss-ten. Bei-de Fak-to-ren steu-er-ten zur kon-ser-va-ti-ven ar-beits-zeit-po-li-ti-schen
+Underfull \hbox (badness 2237) in paragraph at lines 497--498
+\T1/lmr/m/n/12 vor-ge-ge-ben. Bei ei-ner grös-se-ren An-zahl To-pics gab es sol-che, die nicht
  []
 
 
-Overfull \hbox (14.8575pt too wide) in paragraph at lines 550--551
-[]\T1/lmr/m/n/12 Die Ar-beits-mi-grant:innen wur-den im ZSAO-Korpus im To-pic 4 er-wähnt (^^Raus-län-di-schen``),
+Underfull \hbox (badness 1515) in paragraph at lines 497--498
+\T1/lmr/m/n/12 der sonst dif-fe-ren-zier-ba-ren To-pics weg. Die An-zahl der To-pics wur-de in
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 550--551
-\T1/lmr/m/n/12 The-ma-tik bei der Kom-mu-ni-ka-ti-on mit den Mit-glie-dern kei-ne wich-ti-ge Rol-le
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.501 ...{tab:unnamed-chunk-6}Topics Arbeitnehmer}
+                                                   [50]
+Underfull \hbox (badness 1377) in paragraph at lines 527--528
+\T1/lmr/m/n/12 wahr-schein-lich die Be-stim-mun-gen zu Ju-gend-li-chen und Fe-ri-en be-spro-chen.
  []
 
-
-Underfull \hbox (badness 2005) in paragraph at lines 552--553
-\T1/lmr/m/n/12 An-nah-me aus dem theo-re-ti-schen Teil be-stä-tigt. Die Arbeitnehmer:innen- und
- []
-
+[51]
+<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=790, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 535.
+(pdftex.def)             Requested size: 415.12747pt x 287.39594pt.
 [52]
-Underfull \hbox (badness 1184) in paragraph at lines 556--557
-\T1/lmr/m/n/12 die Ar-beit-neh-mer:innen. Da-her ist es am sinn-volls-ten die-se To-pics nicht nach
+Underfull \hbox (badness 1859) in paragraph at lines 541--544
+\T1/lmr/m/n/12 Be-stim-mun-gen blieb bis Mit-te der 1940er-Jahre ziem-lich stark ver-tre-ten.
  []
 
-[53]
-Underfull \hbox (badness 1248) in paragraph at lines 560--561
-\T1/lmr/m/n/12 vor. Die Ar-beit sei ein Grund-be-dürf-nis des Men-schen und je-de Per-son soll-te
+
+Underfull \hbox (badness 1603) in paragraph at lines 541--544
+\T1/lmr/m/n/12 Das Frauen-Topic war da mit Ab-stand das meist ver-tre-te-ne To-pic. Das
+ []
+
+[53 <./_main_files/figure-latex/unnamed-chunk-7-1.pdf>]
+Underfull \hbox (badness 1259) in paragraph at lines 574--575
+\T1/lmr/m/n/12 ^^RArt``) der Un-ter-neh-men und Ge-werk-schaf-ten zu ge-hen. Das To-pic 8 im
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 574--575
+\T1/lmr/m/n/12 und den Be-stand des Ver-ban-des. Nebst der Be-richt-er-stat-tung über sei-ne
  []
 
 [54]
-Underfull \hbox (badness 2503) in paragraph at lines 562--563
-[]\T1/lmr/m/n/12 Nach der In-ter-pre-ta-ti-on der LDA-Ergebnisse kön-nen auch die Re-sul-ta-te der
+Underfull \hbox (badness 3312) in paragraph at lines 576--577
+\T1/lmr/m/n/12 und Mit-ar-bei-ten-den (^^RMit-ar-bei-ter``, ^^RBe-trieb``, ^^RVor-ge-setz-ten``, ^^RAr-bei-ter``,
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 567--568
-\T1/lmr/m/n/12 Durch die Re-sul-ta-te wer-den ei-ni-ge Schwie-rig-kei-ten bei der An-wen-dung von
+Underfull \hbox (badness 1248) in paragraph at lines 578--579
+[]\T1/lmr/m/n/12 Im Kor-pus des ZSAO wa-ren Wör-ter, die quan-ti-fi-zie-ren, um ei-ni-ges öf-ter
+ []
+
+[55]
+<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=815, 469.755pt x 325.215pt>
+File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 586.
+(pdftex.def)             Requested size: 415.12747pt x 287.39594pt.
+[56]
+Underfull \hbox (badness 3118) in paragraph at lines 592--593
+\T1/lmr/m/n/12 des Ver-ban-des ka-men sel-ten vor. Der höchs-te An-teil des Streik-Topics
+ []
+
+[57 <./_main_files/figure-latex/unnamed-chunk-9-1.pdf>] [58]
+Underfull \hbox (badness 1546) in paragraph at lines 613--614
+[]\T1/lmr/m/n/12 Die spe-zi-el-len Cha-rak-terei-gen-schaf-ten der Schwei-zer Ar-beits-zeit-ver-hand-lung
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 567--568
-\T1/lmr/m/n/12 der In-ter-pre-ta-ti-on der Er-geb-nis-se. Ob-wohl es mög-lich ist, Er-klä-run-gen für die
- []
-
-[55] [56]
-Underfull \hbox (badness 2103) in paragraph at lines 578--579
-\T1/lmr/m/n/12 wur-den die Mit-glie-der-zeit-schrif-ten von zwei so-ge-nann-ten Ord-nungs-kräf-ten, die
- []
-
-[57]
-Underfull \hbox (badness 1014) in paragraph at lines 580--582
-\T1/lmr/m/n/12 nur zum Teil nach-voll-zieh-bar sind. Die aus der Li-te-ra-tur zu-sam-men-ge-tra-ge-nen
+Underfull \hbox (badness 1052) in paragraph at lines 613--614
+\T1/lmr/m/n/12 wa-ren in den Re-sul-ta-ten nicht aus-ge-prägt er-kenn-bar. Die Wich-tig-keit der
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 580--582
-\T1/lmr/m/n/12 Kom-mu-ni-ka-ti-on wei-ter-hin an die Ver-bän-de ge-bun-den blei-ben oder idea-ler-wei-se
+Underfull \hbox (badness 1082) in paragraph at lines 613--614
+\T1/lmr/m/n/12 volks-wirt-schaft-li-chen Zah-len hin. Ob die-se wirk-lich für die Ar-gu-men-ta-ti-on
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 580--582
-\T1/lmr/m/n/12 Mit-glie-der-lo-gik von po-li-ti-schen Or-ga-ni-sa-tio-nen ab. Aus me-tho-do-lo-gi-scher Sicht
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 580--582
-\T1/lmr/m/n/12 die Er-klä-rung von Mus-tern mit Ad-hoc-Hypothesen. Mit die-ser Ar-beit wur-de
- []
-
-
-Underfull \hbox (badness 2351) in paragraph at lines 580--582
-\T1/lmr/m/n/12 ein Grund-stein für die wei-te-re Er-for-schung der Mit-glie-der-kom-mu-ni-ka-ti-on der
- []
-
-[58]
-Underfull \hbox (badness 1655) in paragraph at lines 599--601
-[]\T1/lmr/m/n/12 Baumann, Sa-rah. 2014. \T1/lmr/m/it/12 und es ka-men auch Frau-en: En-ga-ge-ment ita-lie-ni-scher
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 605--607
-\T1/lmr/m/it/12 on Pro-gram Com-pre-hen-si-on\T1/lmr/m/n/12 , 26--36. New York: As-so-cia-ti-on for Com-pu-ting
- []
-
-
-Overfull \hbox (9.30731pt too wide) in paragraph at lines 611--613
-[]\T1/lmr/m/n/12 Bosch, Ger-hard. 1986. Hat Das Nor-ma-l-ar-beits-ver-hält-nis Ei-ne Zu-kunft? \T1/lmr/m/it/12 WSI-Mitteilungen
+Underfull \hbox (badness 1281) in paragraph at lines 613--614
+\T1/lmr/m/n/12 ge-braucht wor-den sind oder ob die Sta-tis-ti-ken ^^Rrein`` in-for-ma-ti-ve Zwe-cke
  []
 
 [59]
-Underfull \hbox (badness 3954) in paragraph at lines 647--649
-[]\T1/lmr/m/n/12 Na-tio-na-les Ba-ro-me-ter Zur Gleich-stel-lung 2021: Fo-kus Er-werbs-ar-beit Und
+Underfull \hbox (badness 2426) in paragraph at lines 615--616
+[]\T1/lmr/m/n/12 Die Ar-beits-mi-grant:innen wur-den im ZSAO-Korpus im To-pic 4 er-wähnt
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 656--658
-[]\T1/lmr/m/n/12 Goldhahn, Dirk, Tho-mas Eckart, und Uwe Quast-hoff. 2012. Buil-ding Lar-ge
+Underfull \hbox (badness 2538) in paragraph at lines 615--616
+\T1/lmr/m/n/12 die The-se ei-ner Über-re-prä-sen-ta-ti-on des ^^RÜber-frem-dungs-dis-kur-ses`` in der
  []
 
 [60]
-Underfull \hbox (badness 1629) in paragraph at lines 677--679
-\T1/lmr/m/n/12 Hrsg. Ma-ja Apelt und Ve-ro-ni-ka Ta-cke, 63--90. Wies-ba-den: VS Ver-lag für
+Underfull \hbox (badness 2435) in paragraph at lines 619--620
+\T1/lmr/m/n/12 Ar-beits-be-din-gun-gen. Auch wenn bei-de Ver-bän-de un-ter-schied-li-che The-men
  []
 
 
-Overfull \hbox (1.9557pt too wide) in paragraph at lines 680--682
-[]\T1/lmr/m/n/12 Holst, Ha-jo, An-dre-as Aust, und Su-san-ne Per-nicka. 2008. []Kol-lek-ti-ve In-ter-es-sen-ver-tre-tung
+Underfull \hbox (badness 1005) in paragraph at lines 621--621
+[][][]\T1/lmr/m/n/10 Dies ist ei-ne Ver-ein-fa-chung der gan-zen De-bat-te um die Ar-beits-zeit. Na-tür-lich gab
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 621--622
+\T1/lmr/m/n/12 Sicht der Ar-beit-neh-mer:innen wä-re es sinn-voll zu er-war-ten, dass sie ei-ne
  []
 
 [61]
-Overfull \hbox (22.50189pt too wide) in paragraph at lines 698--700
+Underfull \hbox (badness 1990) in paragraph at lines 623--624
+[]\T1/lmr/m/n/12 Eine letz-te Ge-mein-sam-keit der bei-den Kor-po-ra war die Er-wäh-nung von
+ []
+
+[62] [63]
+Underfull \hbox (badness 1112) in paragraph at lines 632--633
+\T1/lmr/m/n/12 für die un-ter-schied-li-chen To-pics oder die Sentiment-Scores zu for-mu-lie-ren,
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 632--633
+\T1/lmr/m/n/12 im zwei-ten Teil be-spro-chen wur-den, sind zen-tral für das Ver-ständ-nis der
+ []
+
+[64]
+Underfull \hbox (badness 1418) in paragraph at lines 634--635
+[]\T1/lmr/m/n/12 Neben den all-ge-mei-nen Pro-ble-men der Ver-fah-ren gab es auch spe-zi-fi-sche
+ []
+
+[65]
+Underfull \hbox (badness 2990) in paragraph at lines 641--642
+\T1/lmr/m/n/12 im-mer wie-der ge-än-dert. In den letz-ten Jah-ren wur-de die-ses Ver-hält-nis
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 643--644
+[]\T1/lmr/m/n/12 In die-ser Mas-ter-ar-beit wur-de die letz-te gros-se Ar-beits-zeit-dis-kus-si-on in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
+\T1/lmr/m/n/12 der Schweiz be-han-delt. Aus-schlag-ge-bend war die Ver-ab-schie-dung des
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 643--644
+\T1/lmr/m/n/12 Ar-beits-ge-set-zes von 1964, in dem die Nor-ma-l-ar-beits-zeit auf 46 bzw. 50
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 643--644
+\T1/lmr/m/n/12 Stun-den fest-ge-legt wor-den war. Da-für wur-den die Mit-glie-der-zeit-schrif-ten
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 643--644
+\T1/lmr/m/n/12 der Ar-beits-zeit be-tei-ligt wa-ren, ana-ly-siert. Auf der einen Sei-te war dies
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 643--644
+\T1/lmr/m/n/12 der Schwei-ze-ri-sche Ge-werk-schafts-bund, auf der an-de-ren Sei-te war es der
+ []
+
+[66]
+Overfull \hbox (18.14526pt too wide) in paragraph at lines 645--647
+[]\T1/lmr/m/n/12 Aus den Re-sul-ta-ten wird er-sicht-lich, dass die Er-geb-nis-se bis-he-ri-ger For-schungs-ar-bei-ten
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 645--647
+\T1/lmr/m/n/12 ge-bun-den blei-ben oder idea-ler-wei-se so-gar noch mehr Mit-glie-der ge-won-nen
+ []
+
+[67]
+Underfull \hbox (badness 3199) in paragraph at lines 655--657
+\T1/lmr/m/n/12 Arendt, Han-nah. 1960. \T1/lmr/m/it/12 Vi-ta ac-ti-va oder Vom tä-ti-gen Le-ben\T1/lmr/m/n/12 . Stutt-gart:
+ []
+
+[68]
+Underfull \hbox (badness 2205) in paragraph at lines 670--672
+[]\T1/lmr/m/n/12 Binkley, Da-vid, Da-niel Heinz, Dawn La-wrie, und Jus-tin Over-felt. 2014.
+ []
+
+
+Underfull \hbox (badness 4739) in paragraph at lines 676--678
+[]\T1/lmr/m/n/12 Bosch, Ger-hard. 1986. Hat Das Nor-ma-l-ar-beits-ver-hält-nis Ei-ne Zu-kunft?
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 685--687
+[]\T1/lmr/m/n/12 Callon, Mi-chel. 1998. \T1/lmr/m/it/12 The Laws of the Mar-kets\T1/lmr/m/n/12 . Ox-ford: Black-well/The
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 694--696
+\T1/lmr/m/n/12 Von der Aus-wei-tung be-trieb-li-cher Da-ten-er-fas-sung zum al-go-rith-mi-schen
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 697--699
+[]\T1/lmr/m/n/12 D'Agostino Mc-Go-wan, Lu-cy. 2018. One Ye-ar to Dis-ser-ta-te. \T1/lmr/m/it/12 Li-ve Free or
+ []
+
+[69]
+Underfull \hbox (badness 1242) in paragraph at lines 703--705
+[]\T1/lmr/m/n/12 Espeland, Wen-dy Nel-son, und Mit-chell L. Ste-vens. 2008. A So-cio-lo-gy of
+ []
+
+
+Overfull \hbox (3.7152pt too wide) in paragraph at lines 706--708
+[]\T1/lmr/m/n/12 Falk, Fran-ces-ca. 2019. Wir brau-chen ei-ne Mi-gran-ti-sie-rung der Ge-schichts-schrei-bung
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 709--711
+[]\T1/lmr/m/n/12 Flecker, Jörg, An-ni-ka Schö-nau-er, und Tho-mas Riesenecker-Caba. 2016.
+ []
+
+
+Overfull \hbox (21.73618pt too wide) in paragraph at lines 715--717
+[]\T1/lmr/m/n/12 Gallati, Re-na-tus. 1976. Der Ar-beits-frie-de in der Schweiz und sei-ne wohl-stands-po-li-ti-sche
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 718--720
+[]\T1/lmr/m/n/12 Garnadt, Ni-klas, Mo-ni-ka Schnit-zer, und Stef-fen Vie-te. 2020. []Räum-li-che
+ []
+
+[70]
+Overfull \hbox (12.6005pt too wide) in paragraph at lines 736--738
+[]\T1/lmr/m/n/12 Hardmeier, Ben-no. 1970. \T1/lmr/m/it/12 Aus Der Ge-schich-te Der Schwei-ze-ri-schen Ar-bei-ter-be-we-gung\T1/lmr/m/n/12 .
+ []
+
+
+Overfull \hbox (5.9173pt too wide) in paragraph at lines 742--744
+[]\T1/lmr/m/n/12 Hoebel, Tho-mas. 2012. []Po-li-ti-sche Or-ga-ni-sa-tio-nen[]. In \T1/lmr/m/it/12 Hand-buch Or-ga-ni-sa-ti-ons-ty-pen\T1/lmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (27.67744pt too wide) in paragraph at lines 745--747
+[]\T1/lmr/m/n/12 Holst, Ha-jo, An-dre-as Aust, und Su-san-ne Per-nicka. 2008. []Kol-lek-ti-ve In-ter-es-sen-ver-tre-tung
+ []
+
+
+Overfull \hbox (19.49391pt too wide) in paragraph at lines 748--750
+[]\T1/lmr/m/n/12 Horch, Heinz-Dieter. 1985. Per-so-na-li-sie-rung und Am-bi-va-lenz - Struk-tur-be-son-der-hei-ten
+ []
+
+
+Overfull \hbox (9.27252pt too wide) in paragraph at lines 748--750
+\T1/lmr/m/n/12 frei-wil-li-ger Ver-ei-ni-gun-gen. \T1/lmr/m/it/12 Köl-ner Zeit-schrift für So-zio-lo-gie und So-zi-al-psy-cho-lo-gie
+ []
+
+
+Overfull \hbox (48.22363pt too wide) in paragraph at lines 763--765
 []\T1/lmr/m/n/12 Kaufmann, Pe-ter. 1960. Vier-zig-stun-den-wo-che in der Schweiz?: Ein anschaulich-theoretischer
  []
 
-
-Underfull \hbox (badness 1442) in paragraph at lines 719--721
-[]\T1/lmr/m/n/12 Michaelis, Diet-rich. 1960. \T1/lmr/m/it/12 Zur Fra-ge der Ar-beits-zeit-ver-kür-zung in der Schweiz\T1/lmr/m/n/12 .
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 740--742
-\T1/lmr/m/n/12 Sym-bo-lic Di-men-si-ons[]. In \T1/lmr/m/it/12 Swit-zer-land and Mi-gra-ti-on: His-to-ri-cal and Cur-rent
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 740--742
-\T1/lmr/m/it/12 Per-spec-ti-ves on a Chan-ging Lands-ca-pe\T1/lmr/m/n/12 , Hrsg. Bar-ba-ra Lü-thi und Da-mir
- []
-
-[62]
-Underfull \hbox (badness 1648) in paragraph at lines 755--757
-\T1/lmr/m/it/12 In-tel-li-gence and Co-gni-ti-ve Com-pu-ting\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Ad-van-ces in In-tel-li-gent Sys-tems and
- []
-
-
-Underfull \hbox (badness 3098) in paragraph at lines 773--775
-[]\T1/lmr/m/n/12 Rudischhauser, Sa-bi-ne. 2017. From the 8-Hour Day to the 40-Hour Week:
- []
-
-[63]
-Overfull \hbox (14.1622pt too wide) in paragraph at lines 797--799
-\T1/lmr/m/n/12 Ge-werk-schaf-ten und so-zia-le Un-gleich-heit seit den 1970er Jah-ren: Ein Gra-du-ier-ten-kol-leg
- []
-
-
-Underfull \hbox (badness 2173) in paragraph at lines 797--799
-\T1/lmr/m/n/12 als Ko-ope-ra-ti-ons-pro-jekt des In-sti-tuts für Zeit-ge-schich-te, des Zen-trums für
- []
-
-
-Overfull \hbox (2.15532pt too wide) in paragraph at lines 797--799
-\T1/lmr/m/n/12 Zeit-his-to-ri-sche For-schung und des In-sti-tuts für so-zia-le Be-we-gun-gen[]. \T1/lmr/m/it/12 Vier-tel-jahrs-hef-te
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 800--802
-\T1/lmr/m/n/12 Co-ver-a-ge of the 201516 Re-fu-gee Cri-sis in Ger-man Newspa-pers[]. \T1/lmr/m/it/12 Jour-nal of
- []
-
-[64] [65] [66] [67] [68] [69] [70]
-Overfull \hbox (12.10521pt too wide) in paragraph at lines 1039--1040
-\T1/lmr/m/n/12 In die-sem An-hang be-fin-det sich ein For-schungs-me-mo, das wäh-rend dem For-schungs-pro-zess
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 1047--1048
-\T1/lmr/m/n/12 Stich-pro-be von 15 Ar-ti-keln ge-macht. Die-se wer-den hier hän-disch ko-diert. Die
- []
-
 [71]
-Underfull \hbox (badness 4859) in paragraph at lines 1080--1081
-[]\T1/lmr/m/n/12 1364 Pro-duk-ti-vi-täts-stei-ge-rung frag-haft, ver-früh-te Ar-beits-zeit-re-duk-ti-on in
+Underfull \hbox (badness 5147) in paragraph at lines 796--798
+[]\T1/lmr/m/n/12 Müller, Ro-land. 2017. Was Ist Ar-beits-zeit? \T1/lmr/m/it/12 Zeit-schrift des Ber-ni-schen
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 1099--1101
-[]\T1/lmr/m/n/12 69 Ana-ly-se Stoff-bran-chen, schlech-te Kon-junk-tur-la-ge zu we-nig Nach-fra-ge,
- []
-
-
-Overfull \hbox (55.24846pt too wide) in paragraph at lines 1115--1117
-[]\T1/lmr/m/n/12 377 Ana-ly-se Stoff-bran-chen, Ar-beits-frie-de, Kom-pro-miss zu mög-li-cher Ar-beits-zeit-ver-län-ge-rung 
+Underfull \hbox (badness 1472) in paragraph at lines 805--807
+[]\T1/lmr/m/n/12 Poglia Mi-le-ti, Fran-ces-ca. 2019. []La-bel-ling Mi-grants in Swit-zer-land: So-ci-al,
  []
 
 [72]
-Overfull \hbox (24.1786pt too wide) in paragraph at lines 1139--1141
-[]\T1/lmr/m/n/12 690 Wich-tig-keit von Ar-beit-neh-mer:innen Or-ga-ni-sa-ti-on für bes-se-re Ar-beits-be-din-gun-gen 
+Underfull \hbox (badness 2005) in paragraph at lines 823--825
+[]\T1/lmr/m/n/12 Riedo, René. 1976. Das Pro-blem der aus-län-di-schen Ar-beits-kräf-te in der
+ []
+
+
+Overfull \hbox (7.09541pt too wide) in paragraph at lines 829--831
+[]\T1/lmr/m/n/12 Rieger, Jo-nas, lkop-pers, Ken-neth Be-noit, und ka-rin-boc-zek. 2020. []Docma-TU/Tosca:
  []
 
 [73]
-Overfull \hbox (3.61336pt too wide) in paragraph at lines 1194--1196
-[]\T1/lmr/m/n/12 241 Ana-ly-se po-li-ti-sche/ökonimische La-ge, Aus-blick (und Be-to-nung Not-wen-dig-keit)
+Underfull \hbox (badness 3219) in paragraph at lines 844--846
+\T1/lmr/m/n/12 in Zeit-his-to-ri-scher Per-spek-ti-ve. \T1/lmr/m/it/12 Vier-tel-jahrs-hef-te für Zeit-ge-schich-te \T1/lmr/m/n/12 55:
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 1222--1224
-\T1/lmr/m/n/12 Grosser Un-ter-schied der Kon-junk-tur-la-ge ist beim ZSAO deut-lich zu spü-ren.
+Underfull \hbox (badness 1237) in paragraph at lines 847--849
+[]\T1/lmr/m/n/12 Schimank, Uwe. 2002. Or-ga-ni-sa-tio-nen: Ak-teur-kon-stel-la-tio-nen - Kor-po-ra-ti-ve
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1222--1224
-\T1/lmr/m/n/12 wür-de dar-um noch stär-ker scha-den. Aus Ar-beit-neh-mer:innensicht scheint die
+Underfull \hbox (badness 1845) in paragraph at lines 853--855
+\T1/lmr/m/n/12 in der Mi-gra-ti-ons-ge-schich-te der Schweiz. \T1/lmr/m/it/12 Schwei-ze-ri-sche Zeit-schrift für
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 1222--1224
-\T1/lmr/m/n/12 in ih-ren Kom-pro-mis-sen die mo-men-ta-ne La-ge mit ein-be-zieht (z.B. Pha-sen-wei-se
+Underfull \hbox (badness 2173) in paragraph at lines 862--864
+\T1/lmr/m/n/12 Ge-werk-schaf-ten und so-zia-le Un-gleich-heit seit den 1970er Jah-ren: Ein
  []
 
-[74] [75] (./_main.aux)
+
+Overfull \hbox (9.90836pt too wide) in paragraph at lines 865--867
+[]\T1/lmr/m/n/12 von Nord-heim, Ger-ret, Hen-rik Ml-ler, und Mi-cha-el Schep-pe. 2019-04-01T00:00:00///.
+ []
+
+[74]
+Underfull \hbox (badness 1308) in paragraph at lines 889--891
+\T1/lmr/m/it/12 En-ga-ge-ment: Quo va-dis?\T1/lmr/m/n/12 , Hrsg. An-net-te E. Zim-mer und Ruth Sim-sa,
+ []
+
+[75] [76] [77] [78] [79] [80] [81]
+Underfull \hbox (badness 1789) in paragraph at lines 1106--1107
+\T1/lmr/m/n/12 In die-sem An-hang be-fin-det sich ein For-schungs-me-mo, das wäh-rend dem
+ []
+
+[82]
+Overfull \hbox (19.73944pt too wide) in paragraph at lines 1158--1160
+[]\T1/lmr/m/n/12 1770 In-for-ma-ti-on Han-dels-kam-mer, Hoch-kon-junk-tur kei-ne Ar-beits-zeit-ver-kür-zung 
+ []
+
+[83]
+Underfull \hbox (badness 2856) in paragraph at lines 1182--1184
+[]\T1/lmr/m/n/12 377 Ana-ly-se Stoff-bran-chen, Ar-beits-frie-de, Kom-pro-miss zu mög-li-cher
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 1206--1208
+[]\T1/lmr/m/n/12 690 Wich-tig-keit von Ar-beit-neh-mer:innen Or-ga-ni-sa-ti-on für bes-se-re
+ []
+
+[84]
+Overfull \hbox (19.0873pt too wide) in paragraph at lines 1210--1212
+[]\T1/lmr/m/n/12 867 In-for-ma-ti-on zu Kom-pro-miss von Ar-beit-ge-ber:innen und Ar-beit-neh-mer:innen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1222
+[]\T1/lmr/m/n/12 845 Ju-gend-li-che und Ar-beit-neh-mer:innen, In-for-ma-ti-on zu ei-nem
+ []
+
+
+Overfull \hbox (22.04874pt too wide) in paragraph at lines 1243--1245
+[]\T1/lmr/m/n/12 846 Ana-ly-se Ge-ne-ral-streik, Di-stan-zie-rung von kom-mu-nis-ti-schen Be-schul-di-gun-gen 
+ []
+
+
+Overfull \hbox (12.55287pt too wide) in paragraph at lines 1255--1257
+[]\T1/lmr/m/n/12 726 Ana-ly-se USA, For-de-run-gen nach Lohn-er-hö-hung und Ar-beits-zeit-ver-kür-zung 
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 1261--1263
+[]\T1/lmr/m/n/12 241 Ana-ly-se po-li-ti-sche/ökonimische La-ge, Aus-blick (und Be-to-nung
+ []
+
+[85]
+Overfull \hbox (8.282pt too wide) in paragraph at lines 1289--1291
+\T1/lmr/m/n/12 In ei-ner schlech-ten Pha-se wird die Ar-beits-zeit-ver-kür-zung von Ar-beit-ge-ber:innenseite
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 1289--1291
+\T1/lmr/m/n/12 Auf-la-ge wahr-ge-nom-men, die das Wachs-tum der Un-ter-neh-men ver-hin-dert.
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 1289--1291
+\T1/lmr/m/n/12 Es be-steht ei-ne ho-he Nach-fra-ge und die Ar-beits-stun-den rei-chen nicht
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 1289--1291
+\T1/lmr/m/n/12 aus. Ei-ne Ar-beits-zeit-ver-kür-zung wür-de dar-um noch stär-ker scha-den. Aus
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 1289--1291
+\T1/lmr/m/n/12 Ar-beit-neh-mer:innensicht scheint die Ar-beits-zeit-ver-kür-zung ei-ne ideo-lo-gi-sche
+ []
+
+[86] [87] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: 914B284C24EB91880A68F4F436C7F990;6239.
+(rerunfilecheck)             Checksum: A806C728E2CEEDE8EBCBAB352C39C46D;6239.
  ) 
 Here is how much of TeX's memory you used:
- 12838 strings out of 479608
- 208187 string characters out of 5875392
- 537537 words of memory out of 5000000
- 30880 multiletter control sequences out of 15000+600000
- 537079 words of font info for 79 fonts, out of 8000000 for 9000
+ 12953 strings out of 479608
+ 210166 string characters out of 5875392
+ 534326 words of memory out of 5000000
+ 30966 multiletter control sequences out of 15000+600000
+ 539050 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,9n,77p,3628b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (75 pages, 2235944 bytes).
+ 72i,9n,77p,3628b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on _main.pdf (87 pages, 2239222 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 978 compressed objects within 10 object streams
- 264 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1166 PDF objects out of 1200 (max. 8388607)
+ 1030 compressed objects within 11 object streams
+ 280 named destinations out of 1000 (max. 500000)
+ 361 words of extra memory for PDF output out of 10000 (max. 10000000)
 

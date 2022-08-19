@@ -1,39 +1,24 @@
 ---
-title: "Masterarbeit"
-author: "Lukas Jakob"
-date: '2022-05-09'
 output:
   bookdown::pdf_book:
     toc: yes
     toc_depth: 3
-    lof: yes
-    lot: yes
     includes:
-      #in_header: tex/frontpage.tex
+      before_body: tex/frontpage.tex
+      in_header: tex/preamble.tex
     citation_package: default
     pandoc_args: [ "--csl", "springer-vs-author-date.csl" ]
-  bookdown::gitbook: default
-  html_document:
-    toc: true #table of contents
     
 bibliography: "references2.bib"
 link-citations: true
 
 fontsize: 12pt
-geometry: margin = 1.2in #Ränder
+linestretch: 1.5
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+classoption: twoside
+lof: yes
+lot: yes
 
-header-includes:
-- \usepackage{placeins} # https://cocky-elion-5880fb.netlify.app/2016/03/30/writing-your-thesis-with-r-markdown-5-the-thesis-layout/
-- \usepackage{setspace}
-- \usepackage{chngcntr}
-- \linespread{1.25}
-- \counterwithin{figure}{section}
-- \counterwithin{table}{section}
-- \usepackage[none]{hyphenat} #https://www.datascienced.co.uk/post/writing-your-thesis-with-bookdown/
-- \raggedbottom 
-- \usepackage[ngerman]{babel} #https://www.overleaf.com/learn/latex/German#Hyphenation
-- \usepackage{booktabs}
-- \usepackage{longtable}
 
 
 ---
@@ -52,7 +37,10 @@ source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/packages.R")
 source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 ```
 
+\newpage
 
 # Vorwort {-}
 
-In dieser Masterarbeit wird geschlechtegerechte Sprache verwendet. Im Leitfaden der Universität Luzern wird dabei entweder der Genderstern (*) oder der Gendergap (_) empfohlen. Die dritte Möglichkeit des Doppelpunkts wird im Leitfaden nicht erwähnt. In einer Studie der deutschen Überwachungsstelle für Barrierefreit von Informationstechnik wird die Verwendung des Gendersterns empfohlen.^[<In einer Studie der deutschen Überwachungsstelle für Barrierefreit von Informationstechnik>.] Da die Masterarbeit in RStudio verfasst wurde ist es nicht möglich den Genderstern zu benützen. In vielen Computerprogrammen, wie eben auch in RStudio, entspricht der Stern einer bestimmten Aktion. Im Texteditor RMarkdown, der in RStudio genutzt wird, führt die Verwendung eines Sterns zu kursiver oder fetter Schrift. In der Studie der Überwachungsstelle wird nur die Verwendung des Sterns und des Doppelpunkts untersucht, der Unterstrich wird nicht erwähnt. In einer Studie der Gleichbehandlungsanwaltschaft aus Österreich wird auch der Stern empfohlen. Dort findet sich ausserdem eine Angabe dazu, dass in letzter Zeit Annahmen geäussert wurden, dass der Doppelpunkt die beste Möglichkeit sei. Die sei jedoch in den Communities noch umstritten [@enGeschlechtersensibleSpracheDialog2021]. Der Unterstrich ist aus geschlechtersensibler Perspektive eine Alternative. Jedoch wird der Unterstrich bei der Barrierefreiheit nicht diskutiert. Aus diesem Grund wird in dieser Masterarbeit statt dem Unterstrich der Doppelpunkt verwendet.
+In dieser Masterarbeit wird geschlechtegerechte Sprache verwendet. Im Leitfaden der Universität Luzern wird dabei entweder der Genderstern (*) oder der Gendergap (_) empfohlen. Die dritte Möglichkeit des Doppelpunkts wird im Leitfaden nicht erwähnt. In einer Studie der deutschen Überwachungsstelle für Barrierefreit von Informationstechnik wird die Verwendung des Gendersterns empfohlen.^[<https://www.bfit-bund.de/DE/Publikation/empfehlung-gendergerechte-digital-barrierefreie-sprache-studie-koehler-wahl.html;jsessionid=2D40C8605C5689662F44F17493A28EAD?nn=1199124#doc1230362bodyText33>.] Da die Masterarbeit in RStudio verfasst wurde ist es nicht möglich den Genderstern zu benützen. In vielen Computerprogrammen, wie eben auch in RStudio, entspricht der Stern einer bestimmten Aktion. Im Texteditor RMarkdown, der in RStudio genutzt wird, führt die Verwendung eines Sterns zu kursiver oder fetter Schrift. In der Studie der Überwachungsstelle wird nur die Verwendung des Sterns und des Doppelpunkts untersucht, der Unterstrich wird nicht erwähnt. In einer Studie der Gleichbehandlungsanwaltschaft aus Österreich wird auch der Stern empfohlen. Dort findet sich ausserdem eine Angabe dazu, dass in letzter Zeit Annahmen geäussert wurden, dass der Doppelpunkt, auch wenn umstritten innerhalb der Communities, die beste Möglichkeit sei [@enGeschlechtersensibleSpracheDialog2021]. Der Unterstrich ist aus geschlechtersensibler Perspektive eine Alternative, jedoch wird der Unterstrich bei der Barrierefreiheit nicht diskutiert. Aus diesem Grund wird in dieser Masterarbeit statt dem Unterstrich der Doppelpunkt verwendet.
+
+\newpage
