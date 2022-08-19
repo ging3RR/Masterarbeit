@@ -1,1 +1,27 @@
 # Literaturverzeichnis
+
+<div id="refs"></div>
+
+
+# (APPENDIX) Appendix {-}
+
+# Ergebnisse der Validitätsprüfung
+
+```{r include=FALSE}
+
+Validitat_Arbeitgeber <- read.csv(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Validität_Arbeitgeber.csv")
+
+Validitat_Arbeitnehmer <- read.csv(file = "E:/R Projects/Daten_MA/Masterarbeit/data/Validität_Arbeitnehmer.csv")
+
+
+```
+
+```{r}
+
+Validitat_Arbeitnehmer
+```
+
+```{r}
+Validitat_Arbeitgeber
+```
+

@@ -16,9 +16,12 @@ output:
   html_document:
     toc: true #table of contents
     
-
 bibliography: "references.bib"
 link-citations: true
+language:
+  label:
+    fig: 'Abbildung'
+    tab: 'Tabelle'
 
 fontsize: 12pt
 geometry: margin = 1.2in #Ränder
@@ -30,6 +33,8 @@ header-includes:
 - \linespread{1.25}
 - \counterwithin{figure}{section}
 - \counterwithin{table}{section}
+- \usepackage[none]{hyphenat} #https://www.datascienced.co.uk/post/writing-your-thesis-with-bookdown/
+- \raggedbottom 
 
 ---
 ```{r setup, include=FALSE}
