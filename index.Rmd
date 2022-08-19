@@ -18,10 +18,6 @@ output:
     
 bibliography: "references.bib"
 link-citations: true
-language:
-  label:
-    fig: 'Abbildung'
-    tab: 'Tabelle'
 
 fontsize: 12pt
 geometry: margin = 1.2in #Ränder
@@ -35,6 +31,10 @@ header-includes:
 - \counterwithin{table}{section}
 - \usepackage[none]{hyphenat} #https://www.datascienced.co.uk/post/writing-your-thesis-with-bookdown/
 - \raggedbottom 
+- \usepackage[ngerman]{babel} #https://www.overleaf.com/learn/latex/German#Hyphenation
+- \usepackage{booktabs}
+- \usepackage{longtable}
+
 
 ---
 ```{r setup, include=FALSE}
@@ -53,4 +53,6 @@ source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 ```
 
 
+# Preface {-}
 
+In dieser Masterarbeit wird geschlechtegerechte Sprache verwendet. Im Leitfaden der Universität Luzern wird dabei entweder der Genderstern (*) oder der Gendergap (_) empfohlen. Die dritte Möglichkeit des Doppelpunkts wird im Leitfaden nicht erwähnt. In einer Studie der deutschen Überwachungsstelle für Barrierefreit von Informationstechnik wird die Verwendung des Gendersterns empfohlen.^[<In einer Studie der deutschen Überwachungsstelle für Barrierefreit von Informationstechnik>.] Da die Masterarbeit in RStudio verfasst wurde ist es nicht möglich den Genderstern zu benützen. In vielen Computerprogrammen, wie eben auch in RStudio, entspricht der Stern einer bestimmten Aktion. Im Texteditor RMarkdown, der in RStudio genutzt wird, führt die Verwendung eines Sterns zu kursiver oder fetter Schrift. In der Studie der Überwachungsstelle wird nur die Verwendung des Sterns und des Doppelpunkts untersucht, der Unterstrich wird nicht erwähnt. In einer Studie der Gleichbehandlungsanwaltschaft aus Österreich wird auch der Stern empfohlen. Dort findet sich ausserdem eine Angabe dazu, dass in letzter Zeit Annahmen geäussert wurden, dass der Doppelpunkt die beste Möglichkeit sei. Die sei jedoch in den Communities noch umstritten [@enGeschlechtersensibleSpracheDialog2021]. Der Unterstrich ist aus geschlechtersensibler Perspektive eine Alternative. Jedoch wird der Unterstrich bei der Barrierefreiheit nicht diskutiert. Aus diesem Grund wird in dieser Masterarbeit statt dem Unterstrich der Doppelpunkt verwendet.
