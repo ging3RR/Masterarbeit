@@ -237,17 +237,3 @@ Die Validitätsprüfung wurde mithilfe von Intruderwords durchgeführt. Das Ziel
 Bei den Topics des SGB Korpus konnten die Personen ohne Vorwissen zwölf Intruderwords richtig identifizieren. Dies entspricht bei einem Total von 54 Durchgängen einer 22%-Quote. Person 1 hat mit 33% besser abgeschnitten als Person 2 (11%). Der Autor konnte 22 der Intruderwords richtig erkennen. Dies entspricht einer Quote von 81% (27 Durchgänge). Zwischen den Personen ohne Vorwissen und dem Autor besteht ein Unterschied von 59%. Das Wissen den Forschungsgegenstand hat einen signifikanten Einfluss auf das Verständnis der Topics. Dennoch scheinen die Topics sprachlich nicht kohärent zu sein, da sonst die Ergebnisse der beiden Personen ohne Vorwissen besser sein müssten.
 
 Beim Korpus des ZSAO wurden pro Person 36 Durchgänge durchgeführt. Die beiden Personen ohne Vorwissen konnten zusammen 41% aller Intruderwords richtig identifizieren. Interessanterweise schneidet hier Person 2 mit 47% besser ab als Person 1 mit 36%. Während die beiden Personen ohne Vorwissen hier besser abschneiden, konnte der Autor nur noch 75% richtig erkennen. Der Unterschied beträgt noch 34% und ist weniger signifikant als beim Korpus des SGB. Die Topics hier scheinen sprachlich besser voneinander abtrennbar zu sein, da doch fast die Hälfte aller Intruderwords von den Personen ohne Vorwissen erkannt werden konnten. 
-
-
-„“
-Arbeitnehmer:
-Timo 3 richtig = 11%
-Hans 9 richtig = 33%
-Total 12 = 22%
-Lukas 22 richtig = 81 %
-
-Arbeitgeber:
-Timo 17 richtig = 47%
-Hans 13 richtig = 36%
-Total 30 = 41%
-Lukas 27 richtig = 75%
