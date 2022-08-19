@@ -232,3 +232,14 @@ Die letzten Topics über Streik, die Diskussion um Arbeit und die Aktivität des
 
 ### Validität
 
+Arbeitnehmer:
+Timo 3 richtig
+Hans 9 richtig
+Total 12
+Lukas 22 richtig
+
+Arbeitgeber:
+Timo 17 richtig
+Hans 13 richtig
+Total 30
+Lukas 27 richtig
