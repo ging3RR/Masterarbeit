@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.19)  21 AUG 2022 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.19)  21 AUG 2022 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,18 +1165,13 @@ Underfull \hbox (badness 1062) in paragraph at lines 456--457
 \T1/lmr/m/n/12 dient, die Di-men-sio-nen ei-nes Kor-pus zu ver-rin-gern ([]Blei et al. 2003[]). In
  []
 
-
-Underfull \hbox (badness 2478) in paragraph at lines 456--457
-\T1/lmr/m/n/12 er-ge-ben.[][][] Um dies zu ver-hin-dern wer-den beim \T1/lmtt/m/n/12 LDA-Prototype-Package
- []
-
 [44] [45]
 Underfull \hbox (badness 1067) in paragraph at lines 461--462
 []\T1/lmr/m/n/12 Eine wei-te-re ver-wen-de-te Me-tho-de ist die Sentiment-Analyse mit-hil-fe ei-nes
  []
 
 [46]
-<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=750, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-4-1.pdf, id=749, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 475.
@@ -1192,7 +1187,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 479--480
  []
 
 [47]
-<_main_files/figure-latex/unnamed-chunk-5-1.pdf, id=757, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-5-1.pdf, id=756, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 483.
@@ -1228,7 +1223,7 @@ Underfull \hbox (badness 1377) in paragraph at lines 525--526
  []
 
 [51]
-<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=787, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=786, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 533.
@@ -1264,7 +1259,7 @@ Underfull \hbox (badness 1248) in paragraph at lines 576--577
  []
 
 [55]
-<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=812, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=811, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 584.
@@ -1415,11 +1410,6 @@ Underfull \hbox (badness 3199) in paragraph at lines 654--656
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 657--659
-\T1/lmr/m/n/12 2020. \T1/lmr/m/it/12 We-ni-ger Ist Mehr - Der drei-fa-che Ge-winn ei-ner Re-duk-ti-on der
- []
-
-
 Underfull \hbox (badness 2205) in paragraph at lines 669--671
 []\T1/lmr/m/n/12 Binkley, Da-vid, Da-niel Heinz, Dawn La-wrie, und Jus-tin Over-felt. 2014.
  []
@@ -1435,8 +1425,8 @@ Underfull \hbox (badness 2547) in paragraph at lines 684--686
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 693--695
-\T1/lmr/m/n/12 Von der Aus-wei-tung be-trieb-li-cher Da-ten-er-fas-sung zum al-go-rith-mi-schen
+Underfull \hbox (badness 3679) in paragraph at lines 693--695
+\T1/lmr/m/it/12 Von der Aus-wei-tung be-trieb-li-cher Da-ten-er-fas-sung zum al-go-rith-mi-schen
  []
 
 
@@ -1455,18 +1445,28 @@ Overfull \hbox (3.7152pt too wide) in paragraph at lines 705--707
  []
 
 
+Underfull \hbox (badness 1502) in paragraph at lines 705--707
+\T1/lmr/m/n/12 und ei-ne Mo-bi-li-täts-kri-tik. \T1/lmr/m/it/12 Schwei-ze-ri-sche Zeit-schrift für Ge-schich-te \T1/lmr/m/n/12 69:
+ []
+
+
 Underfull \hbox (badness 4353) in paragraph at lines 708--710
 []\T1/lmr/m/n/12 Flecker, Jörg, An-ni-ka Schö-nau-er, und Tho-mas Riesenecker-Caba. 2016.
  []
 
 [70]
-Overfull \hbox (21.73618pt too wide) in paragraph at lines 714--716
-[]\T1/lmr/m/n/12 Gallati, Re-na-tus. 1976. Der Ar-beits-frie-de in der Schweiz und sei-ne wohl-stands-po-li-ti-sche
+Overfull \hbox (20.33324pt too wide) in paragraph at lines 714--716
+[]\T1/lmr/m/n/12 Gallati, Re-na-tus. 1976. \T1/lmr/m/it/12 Der Ar-beits-frie-de in der Schweiz und sei-ne wohl-stands-po-li-ti-sche
  []
 
 
 Underfull \hbox (badness 2735) in paragraph at lines 717--719
 []\T1/lmr/m/n/12 Garnadt, Ni-klas, Mo-ni-ka Schnit-zer, und Stef-fen Vie-te. 2020. []Räum-li-che
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 723--725
+\T1/lmr/m/n/12 Re-pro-du-ci-ble Re-se-arch Is li-ke Ri-ding a Bi-ke. \T1/lmr/m/it/12 PeerJ Pre-prints []$\T1/lmr/m/n/12 https :
  []
 
 
@@ -1479,12 +1479,12 @@ Overfull \hbox (5.9173pt too wide) in paragraph at lines 741--743
 []\T1/lmr/m/n/12 Hoebel, Tho-mas. 2012. []Po-li-ti-sche Or-ga-ni-sa-tio-nen[]. In \T1/lmr/m/it/12 Hand-buch Or-ga-ni-sa-ti-ons-ty-pen\T1/lmr/m/n/12 ,
  []
 
-
+[71]
 Overfull \hbox (27.67744pt too wide) in paragraph at lines 744--746
 []\T1/lmr/m/n/12 Holst, Ha-jo, An-dre-as Aust, und Su-san-ne Per-nicka. 2008. []Kol-lek-ti-ve In-ter-es-sen-ver-tre-tung
  []
 
-[71]
+
 Overfull \hbox (19.49391pt too wide) in paragraph at lines 747--749
 []\T1/lmr/m/n/12 Horch, Heinz-Dieter. 1985. Per-so-na-li-sie-rung und Am-bi-va-lenz - Struk-tur-be-son-der-hei-ten
  []
@@ -1495,8 +1495,13 @@ Overfull \hbox (9.27252pt too wide) in paragraph at lines 747--749
  []
 
 
-Overfull \hbox (48.22363pt too wide) in paragraph at lines 762--764
-[]\T1/lmr/m/n/12 Kaufmann, Pe-ter. 1960. Vier-zig-stun-den-wo-che in der Schweiz?: Ein anschaulich-theoretischer
+Overfull \hbox (49.45451pt too wide) in paragraph at lines 762--764
+[]\T1/lmr/m/n/12 Kaufmann, Pe-ter. 1960. \T1/lmr/m/it/12 Vier-zig-stun-den-wo-che in der Schweiz?: Ein anschaulich-theoretischer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--770
+[]\T1/lmr/m/n/12 Knowles, Thea. 2019. Dis-ser-ta-ting with RMark-down and Book-down.
  []
 
 [72]
@@ -1510,8 +1515,8 @@ Underfull \hbox (badness 1472) in paragraph at lines 804--806
  []
 
 [73]
-Underfull \hbox (badness 2005) in paragraph at lines 822--824
-[]\T1/lmr/m/n/12 Riedo, René. 1976. Das Pro-blem der aus-län-di-schen Ar-beits-kräf-te in der
+Underfull \hbox (badness 2799) in paragraph at lines 822--824
+[]\T1/lmr/m/n/12 Riedo, René. 1976. \T1/lmr/m/it/12 Das Pro-blem der aus-län-di-schen Ar-beits-kräf-te in der
  []
 
 
@@ -1537,11 +1542,6 @@ Underfull \hbox (badness 1845) in paragraph at lines 852--854
 
 Underfull \hbox (badness 2173) in paragraph at lines 861--863
 \T1/lmr/m/n/12 Ge-werk-schaf-ten und so-zia-le Un-gleich-heit seit den 1970er Jah-ren: Ein
- []
-
-
-Overfull \hbox (9.90836pt too wide) in paragraph at lines 864--866
-[]\T1/lmr/m/n/12 von Nord-heim, Ger-ret, Hen-rik Ml-ler, und Mi-cha-el Schep-pe. 2019-04-01T00:00:00///.
  []
 
 [75]
@@ -1632,10 +1632,10 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  72i,9n,77p,4641b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (88 pages, 2240276 bytes).
+Output written on _main.pdf (88 pages, 2241194 bytes).
 PDF statistics:
- 1167 PDF objects out of 1200 (max. 8388607)
- 1030 compressed objects within 11 object streams
+ 1169 PDF objects out of 1200 (max. 8388607)
+ 1032 compressed objects within 11 object streams
  281 named destinations out of 1000 (max. 500000)
  361 words of extra memory for PDF output out of 10000 (max. 10000000)
 
