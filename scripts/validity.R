@@ -21,5 +21,3 @@ Lukas_Arbeitgeber1 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, num
 Lukas_Arbeitgeber2 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
 
 Lukas_Arbeitgeber3 <- intruderWords(beta = Prototype_LDA_Arbeitgeber$topics, numIntruder = 0:1, numTopwords = 10)
-
-

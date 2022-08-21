@@ -167,7 +167,7 @@ Bei der LDA wurden die beiden Korpora getrennt voneinander analysiert. Aus diese
 Für die *Gewerkschaftliche Rundschau* wurden neun verschiedene Topics vorgegeben. Bei einer grösseren Anzahl Topics gab es solche, die nicht interpretiert werden konnten. Bei weniger Topics fielen aber jeweils einige der sonst differenzierbaren Topics weg. Die Anzahl der Topics wurde in Annäherungsschritten ausgewählt. Dabei wurden LDA-Analysen mit fünf bis 15 Topics durchgeführt. Eine Übersicht über die Topics findet sich in der nachfolgenden Abbildung. Dort werden die zehn häufigsten Wörter der Topics in einer Tabelle dargestellt.
 ```{r, results='asis'}
 kbl(Topwords_Arbeitnehmer, caption = "Topics Arbeitnehmer", booktabs = T) %>% 
-  kable_styling(latex_options = c("scale_down", "hold_position"))
+  kable_styling(latex_options = c("hold_position", "striped", "scale_down"))
 ```
 
 Aus diesen Topwords können nun die verschiedenen Topics herausgelesen werden. Wie in der Tabelle zu sehen ist, gab es zwei unbrauchbare Topics. Diese Topics hatten nichts mit dem Thema der Arbeitszeit zu tun, sondern sind aufgrund der Beschaffung des Datenmaterials herausgebildet worden. Das Topic 9 wird aus Wörtern gebildet, die jeweils in einem spezifischen Abschnitt der Zeitschrift zu finden waren. In diesem Abschnitten fanden sich die Angaben zum Herausgeber („Gewerkschaftsbund“, „Bern“), zu den Bestellmodalitäten des Hefts („jährlich“, „Bestellung“) sowie ein Hinweis zu einer Reihe von anderen Büchern, die bereits herausgegeben worden sind. Eines dieser Bücher ist von Max Weber und hat das Wort „Arbeitszeit“ im Titel. Dies ist auch der Grund, wieso immer wieder Texte mit der Auflistung dieser Informationen erschienen. Auch das Topic 7 wurde wahrscheinlich aufgrund dieser Auflistung geformt. Die Wörter „wurde(n)“ und „damals“ implizieren etwas Vergangenes. „Buch“, „Seiten“ und „Verfasser“ beziehen sich auf eine Publikation. Es ist möglich, dass dieses Topic auch teilweise in den Texten auftauchte, bei denen eine Referenz gemacht wurde. 
@@ -202,7 +202,7 @@ Generell ist auffällig, wie fast alle Topics im Jahr 1964 stark an Anteil verlo
 Auch beim Korpus des *Schweizer Arbeitgebers* wurde die Anzahl Topics mit Annäherungsschritten bestimmt. Da der Korpus allerdings um einiges grösser ist, wurde auch die Anzahl der Topics höher angesetzt. Ausprobiert wurden LDAs mit sieben bis 20 Topics. Schlussendlich wurde das Ergebniss mit 12 Topics ausgewählt, auch hier aus dem Grund, dass bei weniger Topics einige der vorhandenen spannenden Topics nicht mehr angezeigt werden. Die Topwords der Topics sind folgende:
 ```{r}
 kbl(Topwords_Arbeitgeber, caption = "Topics Arbeitgeber", booktabs = T) %>% 
-  kable_styling(latex_options = c("scale_down", "hold_position"))
+  kable_styling(latex_options = c("scale_down", "hold_position", "striped"))
 ```
 
 

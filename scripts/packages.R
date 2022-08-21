@@ -21,6 +21,7 @@ library(tictoc)
 library(knitr)
 library(tufte)
 library(kableExtra)
+library(pander)
 
 #Vergleich
 library(quanteda.textstats)
