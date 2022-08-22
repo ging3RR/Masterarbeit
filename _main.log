@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.19)  21 AUG 2022 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.19)  22 AUG 2022 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,7 +1350,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 513--514
  []
 
 [48]
-<_main_files/figure-latex/unnamed-chunk-6-1.pdf, id=754, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-6-1.pdf, id=757, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-6-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-6-1.pdf  used on input line 527.
@@ -1366,7 +1366,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 531--532
  []
 
 [49]
-<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=761, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-7-1.pdf, id=764, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 535.
@@ -1402,7 +1402,7 @@ Underfull \hbox (badness 1377) in paragraph at lines 577--578
  []
 
 [53]
-<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=790, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-9-1.pdf, id=793, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 585.
@@ -1443,7 +1443,7 @@ Underfull \hbox (badness 1248) in paragraph at lines 628--629
  []
 
 [57]
-<_main_files/figure-latex/unnamed-chunk-11-1.pdf, id=815, 469.755pt x 325.215pt>
+<_main_files/figure-latex/unnamed-chunk-11-1.pdf, id=818, 469.755pt x 325.215pt>
 File: _main_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/unnamed-chunk-11-1.pdf  used on input line 636.
@@ -1593,237 +1593,257 @@ Underfull \hbox (badness 2042) in paragraph at lines 699--700
 \T1/lmr/m/n/12 ge-setz-li-chen Fest-le-gung der Ar-beits-zeit lässt dar-auf schlies-sen, dass auch
  []
 
-[70]
-Underfull \hbox (badness 3657) in paragraph at lines 706--708
+[70] [71]
+Underfull \hbox (badness 3657) in paragraph at lines 707--709
 \T1/lmr/m/n/12 Arendt, Han-nah. 1960. \T1/lmr/m/it/12 Vi-ta ac-ti-va oder vom tä-ti-gen Le-ben\T1/lmr/m/n/12 . Stutt-gart:
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 709--711
-\T1/lmr/m/n/12 2020. \T1/lmr/m/it/12 We-ni-ger ist Mehr - Der drei-fa-che Ge-winn ei-ner Re-duk-ti-on der
+Underfull \hbox (badness 1584) in paragraph at lines 710--712
+\T1/lmr/m/n/12 2020. \T1/lmr/m/it/12 We-ni-ger Ist Mehr - Der drei-fa-che Ge-winn ei-ner Re-duk-ti-on der
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 721--723
+Underfull \hbox (badness 2205) in paragraph at lines 722--724
 []\T1/lmr/m/n/12 Binkley, Da-vid, Da-niel Heinz, Dawn La-wrie, und Jus-tin Over-felt. 2014.
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 721--723
-\T1/lmr/m/it/12 in-ter-na-tio-nal con-fe-rence on pro-gram com-pre-hen-si-on\T1/lmr/m/n/12 , 26--36. New York:
- []
-
-
-Underfull \hbox (badness 6396) in paragraph at lines 727--729
+Underfull \hbox (badness 6396) in paragraph at lines 728--730
 []\T1/lmr/m/n/12 Bosch, Ger-hard. 1986. Hat das Nor-ma-l-ar-beits-ver-hält-nis ei-ne Zu-kunft?
  []
 
-[71]
-Underfull \hbox (badness 3679) in paragraph at lines 745--747
+
+Overfull \hbox (24.04549pt too wide) in paragraph at lines 734--736
+\T1/lmr/m/it/12 2018\T1/lmr/m/n/12 . Neuchâtel htt-ps://www.bfs.admin.ch/bfs/de/home.assetdetail.8508843.html. 
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 737--739
+[]\T1/lmr/m/n/12 Callon, Mi-chel. 1998. \T1/lmr/m/it/12 The Laws of the Mar-kets\T1/lmr/m/n/12 . Ox-ford: Black-well/The
+ []
+
+[72]
+Underfull \hbox (badness 3679) in paragraph at lines 746--748
 \T1/lmr/m/it/12 Von der Aus-wei-tung be-trieb-li-cher Da-ten-er-fas-sung zum al-go-rith-mi-schen
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 748--750
-[]\T1/lmr/m/n/12 D'Agostino Mc-Go-wan, Lu-cy. 2018. One ye-ar to dis-ser-ta-te. \T1/lmr/m/it/12 Li-ve Free or
+Underfull \hbox (badness 1275) in paragraph at lines 749--751
+[]\T1/lmr/m/n/12 D'Agostino Mc-Go-wan, Lu-cy. 2018. One Ye-ar to Dis-ser-ta-te. \T1/lmr/m/it/12 Li-ve Free or
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 754--756
-[]\T1/lmr/m/n/12 Espeland, Wen-dy Nel-son, und Mit-chell L. Ste-vens. 2008. A so-cio-lo-gy of
+Overfull \hbox (34.02718pt too wide) in paragraph at lines 749--751
+\T1/lmr/m/it/12 Di-cho-to-mi-ze: https://livefreeordichotomize.com/2018/09/14/one-year-to-dissertate/\T1/lmr/m/n/12 . 
  []
 
 
-Overfull \hbox (3.7152pt too wide) in paragraph at lines 757--759
+Underfull \hbox (badness 1242) in paragraph at lines 755--757
+[]\T1/lmr/m/n/12 Espeland, Wen-dy Nel-son, und Mit-chell L. Ste-vens. 2008. A So-cio-lo-gy of
+ []
+
+
+Overfull \hbox (3.7152pt too wide) in paragraph at lines 758--760
 []\T1/lmr/m/n/12 Falk, Fran-ces-ca. 2019. Wir brau-chen ei-ne Mi-gran-ti-sie-rung der Ge-schichts-schrei-bung
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 757--759
+Underfull \hbox (badness 1502) in paragraph at lines 758--760
 \T1/lmr/m/n/12 und ei-ne Mo-bi-li-täts-kri-tik. \T1/lmr/m/it/12 Schwei-ze-ri-sche Zeit-schrift für Ge-schich-te \T1/lmr/m/n/12 69:
  []
 
 
-Underfull \hbox (badness 4353) in paragraph at lines 760--762
+Underfull \hbox (badness 4353) in paragraph at lines 761--763
 []\T1/lmr/m/n/12 Flecker, Jörg, An-ni-ka Schö-nau-er, und Tho-mas Riesenecker-Caba. 2016.
  []
 
 
-Overfull \hbox (20.33324pt too wide) in paragraph at lines 766--768
+Overfull \hbox (14.43921pt too wide) in paragraph at lines 764--766
+\T1/lmr/m/it/12 un-be-zahl-te Care-Arbeit[]\T1/lmr/m/n/12 . Schwei-ze-ri-sche Kon-fe-renz der Gleich-stel-lungs-be-auf-trag-ten
+ []
+
+
+Overfull \hbox (20.33324pt too wide) in paragraph at lines 767--769
 []\T1/lmr/m/n/12 Gallati, Re-na-tus. 1976. \T1/lmr/m/it/12 Der Ar-beits-frie-de in der Schweiz und sei-ne wohl-stands-po-li-ti-sche
  []
 
-[72]
-Underfull \hbox (badness 2735) in paragraph at lines 769--771
+[73]
+Underfull \hbox (badness 2735) in paragraph at lines 770--772
 []\T1/lmr/m/n/12 Garnadt, Ni-klas, Mo-ni-ka Schnit-zer, und Stef-fen Vie-te. 2020. []Räum-li-che
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 775--777
-\T1/lmr/m/n/12 Re-pro-du-ci-ble re-se-arch is li-ke ri-ding a bi-ke. \T1/lmr/m/it/12 PeerJ Pre-prints []$\T1/lmr/m/n/12 https :
+Underfull \hbox (badness 2221) in paragraph at lines 776--778
+\T1/lmr/m/n/12 Re-pro-du-ci-ble Re-se-arch Is li-ke Ri-ding a Bi-ke. \T1/lmr/m/it/12 PeerJ Pre-prints []$\T1/lmr/m/n/12 https :
  []
 
 
-Overfull \hbox (6.87854pt too wide) in paragraph at lines 787--789
+Overfull \hbox (6.87854pt too wide) in paragraph at lines 788--790
 []\T1/lmr/m/n/12 Hardmeier, Ben-no. 1970. \T1/lmr/m/it/12 Aus der Ge-schich-te der Schwei-ze-ri-schen Ar-bei-ter-be-we-gung\T1/lmr/m/n/12 .
  []
 
 
-Overfull \hbox (5.9173pt too wide) in paragraph at lines 793--795
+Overfull \hbox (5.9173pt too wide) in paragraph at lines 794--796
 []\T1/lmr/m/n/12 Hoebel, Tho-mas. 2012. []Po-li-ti-sche Or-ga-ni-sa-tio-nen[]. In \T1/lmr/m/it/12 Hand-buch Or-ga-ni-sa-ti-ons-ty-pen\T1/lmr/m/n/12 ,
  []
 
 
-Overfull \hbox (27.67744pt too wide) in paragraph at lines 796--798
+Overfull \hbox (27.67744pt too wide) in paragraph at lines 797--799
 []\T1/lmr/m/n/12 Holst, Ha-jo, An-dre-as Aust, und Su-san-ne Per-nicka. 2008. []Kol-lek-ti-ve In-ter-es-sen-ver-tre-tung
  []
 
-[73]
-Overfull \hbox (19.49391pt too wide) in paragraph at lines 799--801
+[74]
+Overfull \hbox (19.49391pt too wide) in paragraph at lines 800--802
 []\T1/lmr/m/n/12 Horch, Heinz-Dieter. 1985. Per-so-na-li-sie-rung und Am-bi-va-lenz - Struk-tur-be-son-der-hei-ten
  []
 
 
-Overfull \hbox (9.27252pt too wide) in paragraph at lines 799--801
+Overfull \hbox (9.27252pt too wide) in paragraph at lines 800--802
 \T1/lmr/m/n/12 frei-wil-li-ger Ver-ei-ni-gun-gen. \T1/lmr/m/it/12 Köl-ner Zeit-schrift für So-zio-lo-gie und So-zi-al-psy-cho-lo-gie
  []
 
 
-Overfull \hbox (10.82805pt too wide) in paragraph at lines 805--807
-\T1/lmr/m/n/12 and lock-outs by eco-no-mic ac-ti-vi-ty. \T1/lmr/m/it/12 https://ilostat.ilo.org/topics/work-stoppages/\T1/lmr/m/n/12 . 
+Overfull \hbox (20.2847pt too wide) in paragraph at lines 806--808
+\T1/lmr/m/n/12 and Lock-outs by Eco-no-mic Ac-ti-vi-ty. \T1/lmr/m/it/12 https://ilostat.ilo.org/topics/work-stoppages/\T1/lmr/m/n/12 . 
  []
 
 
-Overfull \hbox (53.71552pt too wide) in paragraph at lines 808--810
-\T1/lmr/m/n/12 lock-outs by eco-no-mic ac-ti-vi-ty (thou-sands). \T1/lmr/m/it/12 https://ilostat.ilo.org/topics/work-stoppages/\T1/lmr/m/n/12 . 
+Overfull \hbox (67.0888pt too wide) in paragraph at lines 809--811
+\T1/lmr/m/n/12 Lock-outs by Eco-no-mic Ac-ti-vi-ty (Thou-sands). \T1/lmr/m/it/12 https://ilostat.ilo.org/topics/work-stoppages/\T1/lmr/m/n/12 . 
  []
 
 
-Overfull \hbox (49.45451pt too wide) in paragraph at lines 814--816
+Overfull \hbox (49.45451pt too wide) in paragraph at lines 815--817
 []\T1/lmr/m/n/12 Kaufmann, Pe-ter. 1960. \T1/lmr/m/it/12 Vier-zig-stun-den-wo-che in der Schweiz?: Ein anschaulich-theoretischer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--822
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 []\T1/lmr/m/n/12 Knowles, Thea. 2019. Dis-ser-ta-ting with RMark-down and Book-down.
  []
 
-[74]
-Underfull \hbox (badness 5403) in paragraph at lines 847--849
+[75]
+Underfull \hbox (badness 2460) in paragraph at lines 845--847
+[]\T1/lmr/m/n/12 Muhr, Da-vid, Ken-neth Be-noit, und Ko-hei Wa-tana-be. 2021. [R-Package]
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 848--850
 []\T1/lmr/m/n/12 Müller, Ro-land. 2017. Was ist Ar-beits-zeit? \T1/lmr/m/it/12 Zeit-schrift des Ber-ni-schen
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 856--858
-\T1/lmr/m/n/12 and sym-bo-lic di-men-si-ons[]. In \T1/lmr/m/it/12 Swit-zer-land and mi-gra-ti-on: His-to-ri-cal and
+Underfull \hbox (badness 1472) in paragraph at lines 857--859
+[]\T1/lmr/m/n/12 Poglia Mi-le-ti, Fran-ces-ca. 2019. []La-bel-ling Mi-grants in Swit-zer-land: So-ci-al,
  []
 
-[75]
-Underfull \hbox (badness 2799) in paragraph at lines 874--876
+[76]
+Underfull \hbox (badness 2799) in paragraph at lines 875--877
 []\T1/lmr/m/n/12 Riedo, René. 1976. \T1/lmr/m/it/12 Das Pro-blem der aus-län-di-schen Ar-beits-kräf-te in der
  []
 
 
-Overfull \hbox (7.09541pt too wide) in paragraph at lines 880--882
-[]\T1/lmr/m/n/12 Rieger, Jo-nas, lkop-pers, Ken-neth Be-noit, und ka-rin-boc-zek. 2020. []Docma-TU/Tosca:
- []
-
-
-Underfull \hbox (badness 3769) in paragraph at lines 895--897
+Underfull \hbox (badness 3769) in paragraph at lines 896--898
 \T1/lmr/m/n/12 in zeit-his-to-ri-scher Per-spek-ti-ve. \T1/lmr/m/it/12 Vier-tel-jahrs-hef-te für Zeit-ge-schich-te \T1/lmr/m/n/12 55:
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 898--900
+Underfull \hbox (badness 1237) in paragraph at lines 899--901
 []\T1/lmr/m/n/12 Schimank, Uwe. 2002. Or-ga-ni-sa-tio-nen: Ak-teur-kon-stel-la-tio-nen - Kor-po-ra-ti-ve
  []
 
-
-Underfull \hbox (badness 1845) in paragraph at lines 904--906
+[77]
+Underfull \hbox (badness 1845) in paragraph at lines 905--907
 \T1/lmr/m/n/12 in der Mi-gra-ti-ons-ge-schich-te der Schweiz. \T1/lmr/m/it/12 Schwei-ze-ri-sche Zeit-schrift für
  []
 
-[76]
-Underfull \hbox (badness 2173) in paragraph at lines 913--915
+
+Underfull \hbox (badness 2173) in paragraph at lines 914--916
 \T1/lmr/m/n/12 Ge-werk-schaf-ten und so-zia-le Un-gleich-heit seit den 1970er Jah-ren: Ein
  []
 
-[77]
-Underfull \hbox (badness 1308) in paragraph at lines 940--942
+
+Underfull \hbox (badness 1286) in paragraph at lines 932--934
+[]\T1/lmr/m/n/12 Xie, Yi-hui. 2022. [R-Package] Book-down: Au-t-ho-ring Books and Tech-ni-cal
+ []
+
+[78]
+Underfull \hbox (badness 1308) in paragraph at lines 941--943
 \T1/lmr/m/it/12 En-ga-ge-ment: Quo va-dis?\T1/lmr/m/n/12 , Hrsg. An-net-te E. Zim-mer und Ruth Sim-sa,
  []
 
-[78] [79] [80] [81] [82] [83] [84]
-Underfull \hbox (badness 1789) in paragraph at lines 1157--1158
+[79] [80] [81] [82] [83] [84] [85]
+Underfull \hbox (badness 1789) in paragraph at lines 1158--1159
 \T1/lmr/m/n/12 In die-sem An-hang be-fin-det sich ein For-schungs-me-mo, das wäh-rend dem
  []
 
-[85]
-Overfull \hbox (19.73944pt too wide) in paragraph at lines 1209--1211
+[86]
+Overfull \hbox (19.73944pt too wide) in paragraph at lines 1210--1212
 []\T1/lmr/m/n/12 1770 In-for-ma-ti-on Han-dels-kam-mer, Hoch-kon-junk-tur kei-ne Ar-beits-zeit-ver-kür-zung 
  []
 
-[86]
-Underfull \hbox (badness 2856) in paragraph at lines 1233--1235
+[87]
+Underfull \hbox (badness 2856) in paragraph at lines 1234--1236
 []\T1/lmr/m/n/12 377 Ana-ly-se Stoff-bran-chen, Ar-beits-frie-de, Kom-pro-miss zu mög-li-cher
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 1257--1259
+Underfull \hbox (badness 6708) in paragraph at lines 1258--1260
 []\T1/lmr/m/n/12 690 Wich-tig-keit von Ar-beit-neh-mer:innen Or-ga-ni-sa-ti-on für bes-se-re
  []
 
-[87]
-Overfull \hbox (19.0873pt too wide) in paragraph at lines 1261--1263
+[88]
+Overfull \hbox (19.0873pt too wide) in paragraph at lines 1262--1264
 []\T1/lmr/m/n/12 867 In-for-ma-ti-on zu Kom-pro-miss von Ar-beit-ge-ber:innen und Ar-beit-neh-mer:innen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1271--1273
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1274
 []\T1/lmr/m/n/12 845 Ju-gend-li-che und Ar-beit-neh-mer:innen, In-for-ma-ti-on zu ei-nem
  []
 
 
-Overfull \hbox (22.04874pt too wide) in paragraph at lines 1294--1296
+Overfull \hbox (22.04874pt too wide) in paragraph at lines 1295--1297
 []\T1/lmr/m/n/12 846 Ana-ly-se Ge-ne-ral-streik, Di-stan-zie-rung von kom-mu-nis-ti-schen Be-schul-di-gun-gen 
  []
 
 
-Overfull \hbox (12.55287pt too wide) in paragraph at lines 1306--1308
+Overfull \hbox (12.55287pt too wide) in paragraph at lines 1307--1309
 []\T1/lmr/m/n/12 726 Ana-ly-se USA, For-de-run-gen nach Lohn-er-hö-hung und Ar-beits-zeit-ver-kür-zung 
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 1312--1314
+Underfull \hbox (badness 5050) in paragraph at lines 1313--1315
 []\T1/lmr/m/n/12 241 Ana-ly-se po-li-ti-sche/ökonimische La-ge, Aus-blick (und Be-to-nung
  []
 
-[88]
-Overfull \hbox (8.282pt too wide) in paragraph at lines 1340--1342
+[89]
+Overfull \hbox (8.282pt too wide) in paragraph at lines 1341--1343
 \T1/lmr/m/n/12 In ei-ner schlech-ten Pha-se wird die Ar-beits-zeit-ver-kür-zung von Ar-beit-ge-ber:innenseite
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 1340--1342
+Underfull \hbox (badness 2181) in paragraph at lines 1341--1343
 \T1/lmr/m/n/12 Auf-la-ge wahr-ge-nom-men, die das Wachs-tum der Un-ter-neh-men ver-hin-dert.
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 1340--1342
+Underfull \hbox (badness 3861) in paragraph at lines 1341--1343
 \T1/lmr/m/n/12 Es be-steht ei-ne ho-he Nach-fra-ge und die Ar-beits-stun-den rei-chen nicht
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 1340--1342
+Underfull \hbox (badness 1648) in paragraph at lines 1341--1343
 \T1/lmr/m/n/12 aus. Ei-ne Ar-beits-zeit-ver-kür-zung wür-de dar-um noch stär-ker scha-den. Aus
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 1340--1342
+Underfull \hbox (badness 1694) in paragraph at lines 1341--1343
 \T1/lmr/m/n/12 Ar-beit-neh-mer:innensicht scheint die Ar-beits-zeit-ver-kür-zung ei-ne ideo-lo-gi-sche
  []
 
-[89] [90] (./_main.aux)
+[90] [91] (./_main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1831,18 +1851,18 @@ Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: 724F4372063D096DC88CE4AAEAD64A2D;6443.
  ) 
 Here is how much of TeX's memory you used:
- 14445 strings out of 479608
- 235679 string characters out of 5875392
+ 14447 strings out of 479608
+ 235702 string characters out of 5875392
  576250 words of memory out of 5000000
  32404 multiletter control sequences out of 15000+600000
  539156 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  72i,11n,77p,4641b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/lukas/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on _main.pdf (90 pages, 491136 bytes).
+Output written on _main.pdf (91 pages, 491669 bytes).
 PDF statistics:
- 1175 PDF objects out of 1200 (max. 8388607)
- 1037 compressed objects within 11 object streams
- 281 named destinations out of 1000 (max. 500000)
+ 1182 PDF objects out of 1200 (max. 8388607)
+ 1043 compressed objects within 11 object streams
+ 283 named destinations out of 1000 (max. 500000)
  348 words of extra memory for PDF output out of 10000 (max. 10000000)
 
