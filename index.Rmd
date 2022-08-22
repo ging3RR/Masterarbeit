@@ -38,9 +38,3 @@ source(file = "E:/R Projects/Daten_MA/Masterarbeit/scripts/stopwords.R")
 ```
 
 \newpage
-
-# Vorwort {-}
-
-
-
-\newpage
